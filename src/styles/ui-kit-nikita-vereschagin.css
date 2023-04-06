@@ -1,0 +1,10 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+
+/*Я частное лицо / Я представляю компанию*/
+
+@import url(../blocks/ui-kit-nikita-vereschagin/company/company.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/company/__btns/company__btns.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/company/__btn/company__btn.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/company/__label/company__label.css);
+
