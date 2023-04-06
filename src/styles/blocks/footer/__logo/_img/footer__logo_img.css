@@ -1,0 +1,11 @@
+.footer__logo_img {
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 796px) { 
+    .footer__logo_img {
+      margin: 0;
+        
+    }
+}

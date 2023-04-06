@@ -1,0 +1,18 @@
+.header__icon-container {
+    position: absolute;
+    right: -42px;
+    border-radius: 0px 24px 24px 0px;
+    background-color: #73B6C0;
+    width: 40px;
+    height: 40px;
+    
+}
+
+
+@media screen and (max-width: 796px) { 
+    .header__icon-container {
+        height: 32px;
+        width: 32px;
+        right: -34px;
+    }
+}

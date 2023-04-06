@@ -1,0 +1,17 @@
+.footer__logo_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 77.78%;
+    margin-top: 64px;
+}
+
+@media screen and (max-width: 796px) { 
+    .footer__logo_container{
+       flex-direction: column;
+       margin-top: 16px;
+       justify-content: space-between;
+       
+        
+    }
+}

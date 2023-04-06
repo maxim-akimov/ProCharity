@@ -1,0 +1,31 @@
+.personal-account-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #73B6C0;
+    border: none;
+    border-radius: 24px;
+    width: 14.93%;
+    height: 48px;
+    padding: 0;
+    cursor: pointer;
+    
+   
+}
+.personal-account-button:hover {
+    background-color: #048AA7;
+}
+.personal-account-button:focus {
+    border: solid 2px;
+    color: #048AA7;
+}
+
+@media screen and (max-width: 796px) { 
+    .personal-account-button {
+        width: 32px;
+        height: 32px;
+        
+        
+    }
+}

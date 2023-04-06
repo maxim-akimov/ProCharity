@@ -1,0 +1,23 @@
+.footer__logo_title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7B878F;
+    /*margin: 0 10.2% 0 0;*/
+    margin: 0;
+    text-align: right;
+    width: 61.56%;
+    letter-spacing: 0.15px;
+    
+    
+    
+}
+
+@media screen and (max-width: 796px) { 
+    .footer__logo_title {
+      margin: 0 0 10px 0;
+      width: 144px;
+      text-align: left;
+        
+    }
+}

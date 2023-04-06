@@ -7,10 +7,124 @@
   <meta name="author" content="Группа 4">
   <title>Наборы элементов пользовательского интерфейса для проекта ProCharity</title>
 </head>
-<body>
-  <section>
+<body class="page">
+  
+  <header class="header">
+      <button class="menu-icon" type="menu"></button>
+      <img src="<%=require('./styles/images/logo.svg')%>" alt="logo" class="main-logo">
+      <div class="header__menu">
+          <a href="#" class="header__menu_link">О проекте</a>
+          <a href="#" class="header__menu_link">Задания</a>
+          <a href="#" class="header__menu_link">Волонтерам</a>
+          <a href="#" class="header__menu_link">Для НКО</a>
+          <a href="#" class="header__menu_link">Бизнесу</a>
+          <a href="#" class="header__menu_link">FAQ</a>
+      </div>
+      <button class="search" type="button"></button>
+      <button class="personal-account-button personal-account-button_none" type="button">
+          <h2 class="personal-account-button__title">Присоединиться</h2>
+          <!--Когда появляется аккаунт, у контейнера будет свойство display: none-->
+          <div class="header__icon-container">
+           <img src="<%=require('./styles/images/user.svg')%>" alt="user-icon" class="personal-account-button__icon_none">
+          </div>
+          <!-- Когда повляется аккаунт это изображение заменяет предыдущее
+          <img src="<%=require('./styles/images/img.svg')%>" class="personal-account-button__icon">
+          -->
+      </button>
+      <div class="pop-up-window">
+          <h2 class="pop-up-window__title">Профиль на модерации</h2>
+          <p class="pop-up-window__subtitle">Обычно это занимает до 2 рабочих дней. Как только все проверим, сообщим на email.</p>
+          <img src="<%=require('./styles/images/Group 12.svg')%>" alt="check mark" class="check-mark">
+          <img src="<%=require('./styles/images/close-icon.svg')%>" alt="close-icon" class="close-icon">
+          
+      </div>
+  </header>
+  <main class="content"></main>
+  <footer class="footer">
+      <div class="footer__menu">
+        <div class="footer__menu_chapter ">
+          <h2 class="footer__menu_title">О проекте</h2>
+          <a href="#" class="footer__menu_link">О платформе</a>
+          <a href="#" class="footer__menu_link">Команда</a>
+          <a href="#" class="footer__menu_link">Новости</a>
+          <a href="#" class="footer__menu_link">Документы</a>
+          <a href="#" class="footer__menu_link">Партнеры</a>
+          <a href="#" class="footer__menu_link">Отзывы</a>
+          <a href="#" class="footer__menu_link">Контакты</a>
+          <a href="#" class="footer__menu_link">Пожертвовать в фонды</a>
+        </div>
+        <div class="footer__menu_chapter">
+          <h2 class="footer__menu_title">Задания</h2>
+          <a href="#" class="footer__menu_link">Ждут исполнителей</a>
+          <a href="#" class="footer__menu_link">В работе</a>
+          <a href="#" class="footer__menu_link">Выполненные</a>
+        </div>
+        <div class="footer__menu_chapter">
+          <h2 class="footer__menu_title">Волонтерам</h2>
+          <a href="#" class="footer__menu_link">Как помочь</a>
+          <a href="#" class="footer__menu_link">Задания</a>
+          <a href="#" class="footer__menu_link">Список НКО</a>
+          <a href="#" class="footer__menu_link">Бонусы</a>
+          <a href="#" class="footer__menu_link">Отзывы волонтеров</a>
+          <a href="#" class="footer__menu_link">Премия ProCharity</a>
+        </div>
+        <div class="footer__menu_chapter">
+          <h2 class="footer__menu_title">Фондам</h2>
+          <a href="#" class="footer__menu_link">Как получить помощь</a>
+          <a href="#" class="footer__menu_link">Список волонтеров</a>
+          <a href="#" class="footer__menu_link">Компании-волонтеры</a>
+          <a href="#" class="footer__menu_link">Отзывы НКО</a>
+          <a href="#" class="footer__menu_link">Вебинары</a>
+        </div>
+        <div class="footer__menu_chapter">
+          <h2 class="footer__menu_title">Бизнесу</h2>
+          <a href="#" class="footer__menu_link">Как помочь</a>
+          <a href="#" class="footer__menu_link">Список НКО</a>
+          <a href="#" class="footer__menu_link">Отзывы НКО</a>
+        </div>
+        <div class="footer__menu_chapter">
+          <h2 class="footer__menu_title">FAQ</h2>
+        </div>
+    </div>
+    <div class="footer__logo_container">
+      <div class="footer__logo_box">
+          <div>
+              <h2 class="footer__logo_title">Создатель проекта</h2>
+          </div>
+          <img src="<%=require('./styles/images/logo_druzya.svg')%>" alt="logo_druzya" class="footer__logo_img">
+      </div>
+      <div class="footer__logo_box">
+          <div>
+              <h2 class="footer__logo_title">Генеральный партнёр</h2>
+          </div>
+          
+          <img src="<%=require('./styles/images/logo_mastercard.svg')%>" alt="logo_mastercard" class="footer__logo_img">
+      </div>
+      <div class="footer__logo_box">
+          <img src="<%=require('./styles/images/pgrants logo gark.svg')%>" alt="pgrants logo" class="footer__logo_img">
+      </div>
+    
+      <div class="footer__logo_social">
+          <a href="#" class="social-logo"> 
+              <img src="<%=require('./styles/images/facebook.svg')%>" alt="facebook-logo" class="footer__logo_img">
+          </a>
+          <a href="#" class="social-logo"> 
+              <img src="<%=require('./styles/images/instagramm.svg')%>" alt="instagramm-logo" class="footer__logo_img">
+          </a>
+          <a href="#" class="social-logo"> 
+              <img src="<%=require('./styles/images/vk.svg')%>" alt="vk-logo" class="footer__logo_img">
+          </a>
+      </div>
+  </div>
+  <div class="copy-container">
+     
+        <h2 class="copy">&copy;2017-2019 ProCharity</h2>
+        <h2 class="copy__text">Юридическая информация и защита персональных данных</h2>
+      
+      <img src="<%=require('./styles/images/logo_buroburo.svg')%>" alt="logo_buroburo" class="buroburo-logo">
+  </div>
 
-
-  </section>
+  </footer>
+  
 </body>
 </html>
