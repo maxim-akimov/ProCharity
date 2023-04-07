@@ -1,0 +1,14 @@
+.navigation__settings {
+    color: #7B878F;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    margin: 0;
+    cursor: pointer;
+}
+.navigation__settings:focus {
+    text-decoration: underline;
+    color: #048AA7;
+
+}
