@@ -5,6 +5,7 @@
     height: 40px;
     width: 168px;
     cursor: pointer;
+    margin-right: 40px;
     
     
     
@@ -24,6 +25,7 @@
         background-image: url(../../../images/add.svg);
         background-repeat: no-repeat;
         background-position: center;
+        margin-right: 32px;
         
     }
 }

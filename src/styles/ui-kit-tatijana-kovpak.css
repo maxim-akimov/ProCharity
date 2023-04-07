@@ -1,10 +1,13 @@
 @import url(./blocks/page/page.css);
 
 @import url(./blocks/header/header.css);
+@import url(./blocks/header/__wrap/header__wrap.css);
 @import url(./blocks/main-logo/main-logo.css);
 
 @import url(./blocks/header/__menu/header__menu.css);
-@import url(./blocks/header/__menu/__link/header__menu_link.css);
+@import url(./blocks/header/menu-nav/header__menu-nav.css);
+
+@import url(./blocks/header/__menu-link/header__menu-link.css);
 
 
 
@@ -19,8 +22,11 @@
 @import url(./blocks/footer/__menu/_chapter/footer__menu_chapter.css);
 @import url(./blocks/footer/__logo/_container/footer__logo_container.css);
 @import url(./blocks/footer/__logo/_img/footer__logo_img.css);
+
+@import url(./blocks/footer/__logo-box/footer__logo-box.css);
 @import url(./blocks/footer/__logo/_title/footer__logo_title.css);
-@import url(./blocks/footer/__logo/_box/footer__logo_box.css);
+
+
 @import url(./blocks/footer/__logo/_social/footer__logo_social.css);
 @import url(./blocks/social-logo/social-logo.css);
 
@@ -41,6 +47,9 @@
 @import url(./blocks/personal-account-button/__icon/personal-account-button__icon_none/personal-account-button__icon_none.css);
 @import url(./blocks/personal-account-button/_none/personal-account-button_none.css);
 @import url(./blocks/header/icon-container/header__icon-container.css);
+
+
+
 
 
 @import url(./blocks/check-mark/check-mark.css);

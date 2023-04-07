@@ -10,46 +10,63 @@
 <body class="page">
   
   <header class="header">
+    <div class="header__wrap">
       <button class="menu-icon" type="menu"></button>
       <img src="<%=require('./styles/images/logo.svg')%>" alt="logo" class="main-logo">
-      <div class="header__menu">
-          <a href="#" class="header__menu_link">О проекте</a>
-          <a href="#" class="header__menu_link">Задания</a>
-          <a href="#" class="header__menu_link">Волонтерам</a>
-          <a href="#" class="header__menu_link">Для НКО</a>
-          <a href="#" class="header__menu_link">Бизнесу</a>
-          <a href="#" class="header__menu_link">FAQ</a>
-      </div>
+      <nav class="header__menu-nav">
+      <ul class="header__menu">
+        <li>
+          <a href="#" class="header__menu-link">О проекте</a>
+        </li>
+        <li>
+          <a href="#" class="header__menu-link">Задания</a>
+        </li>
+        <li>
+          <a href="#" class="header__menu-link">Волонтерам</a>
+        </li>
+        <li>
+          <a href="#" class="header__menu-link">Для НКО</a>
+        </li>
+        <li>
+          <a href="#" class="header__menu-link">Бизнесу</a>
+        </li>
+        <li>
+          <a href="#" class="header__menu-link">FAQ</a>
+        </li>
+      
+      </ul>
+      </nav>
+
       <button class="search" type="button"></button>
-      <button class="personal-account-button personal-account-button_none" type="button">
+      <a href="#" class="personal-account-button personal-account-button_none" >
           <h2 class="personal-account-button__title">Присоединиться</h2>
           <!--Когда появляется аккаунт, у контейнера будет свойство display: none-->
           <div class="header__icon-container">
            <img src="<%=require('./styles/images/user.svg')%>" alt="user-icon" class="personal-account-button__icon_none">
           </div>
-          <!-- Когда повляется аккаунт это изображение заменяет предыдущее
+         <!-- Когда есть аккаунт, это изображение заменяет предыдущее
           <img src="<%=require('./styles/images/img.svg')%>" class="personal-account-button__icon">
           -->
-      </button>
+      </a>
       <div class="pop-up-window">
           <h2 class="pop-up-window__title">Профиль на модерации</h2>
           <p class="pop-up-window__subtitle">Обычно это занимает до 2 рабочих дней. Как только все проверим, сообщим на email.</p>
-          <img src="<%=require('./styles/images/Group 12.svg')%>" alt="check mark" class="check-mark">
           <img src="<%=require('./styles/images/close-icon.svg')%>" alt="close-icon" class="close-icon">
           
       </div>
+    </div>
   </header>
   <main class="content">
-    <div class="navigation">
+    <nav class="navigation">
       <a href="#" class="navigation__lk">Личный кабинет</a>
       <p class="navigation__separator">/</p>
       <a href="#" class="navigation__settings">Мои данные</a>
-    </div>
+    </nav>
   </main>
   <footer class="footer">
-      <div class="footer__menu">
+      <nav class="footer__menu">
         <div class="footer__menu_chapter ">
-          <h2 class="footer__menu_title">О проекте</h2>
+          <p class="footer__menu_title">О проекте</p>
           <a href="#" class="footer__menu_link">О платформе</a>
           <a href="#" class="footer__menu_link">Команда</a>
           <a href="#" class="footer__menu_link">Новости</a>
@@ -60,13 +77,13 @@
           <a href="#" class="footer__menu_link">Пожертвовать в фонды</a>
         </div>
         <div class="footer__menu_chapter">
-          <h2 class="footer__menu_title">Задания</h2>
+          <p class="footer__menu_title">Задания</p>
           <a href="#" class="footer__menu_link">Ждут исполнителей</a>
           <a href="#" class="footer__menu_link">В работе</a>
           <a href="#" class="footer__menu_link">Выполненные</a>
         </div>
         <div class="footer__menu_chapter">
-          <h2 class="footer__menu_title">Волонтерам</h2>
+          <p class="footer__menu_title">Волонтерам</p>
           <a href="#" class="footer__menu_link">Как помочь</a>
           <a href="#" class="footer__menu_link">Задания</a>
           <a href="#" class="footer__menu_link">Список НКО</a>
@@ -75,7 +92,7 @@
           <a href="#" class="footer__menu_link">Премия ProCharity</a>
         </div>
         <div class="footer__menu_chapter">
-          <h2 class="footer__menu_title">Фондам</h2>
+          <p class="footer__menu_title">Фондам</p>
           <a href="#" class="footer__menu_link">Как получить помощь</a>
           <a href="#" class="footer__menu_link">Список волонтеров</a>
           <a href="#" class="footer__menu_link">Компании-волонтеры</a>
@@ -83,32 +100,35 @@
           <a href="#" class="footer__menu_link">Вебинары</a>
         </div>
         <div class="footer__menu_chapter">
-          <h2 class="footer__menu_title">Бизнесу</h2>
+          <p class="footer__menu_title">Бизнесу</p>
           <a href="#" class="footer__menu_link">Как помочь</a>
           <a href="#" class="footer__menu_link">Список НКО</a>
           <a href="#" class="footer__menu_link">Отзывы НКО</a>
         </div>
         <div class="footer__menu_chapter">
-          <h2 class="footer__menu_title">FAQ</h2>
+          <p class="footer__menu_title">FAQ</p>
         </div>
-    </div>
+      </nav>
     <div class="footer__logo_container">
-      <div class="footer__logo_box">
-          <div>
-              <h2 class="footer__logo_title">Создатель проекта</h2>
-          </div>
+      <div class="footer__logo-box">
+        <div>
+            <h2 class="footer__logo_title">Создатель проекта</h2>
+        </div>
+        <a href="#">
           <img src="<%=require('./styles/images/logo_druzya.svg')%>" alt="logo_druzya" class="footer__logo_img">
+        </a>
       </div>
-      <div class="footer__logo_box">
-          <div>
-              <h2 class="footer__logo_title">Генеральный партнёр</h2>
-          </div>
-          
-          <img src="<%=require('./styles/images/logo_mastercard.svg')%>" alt="logo_mastercard" class="footer__logo_img">
+      
+      <div class="footer__logo-box">
+        <div>
+            <h2 class="footer__logo_title">Генеральный партнёр</h2>
+        </div>
+        <img src="<%=require('./styles/images/logo_mastercard.svg')%>" alt="logo_mastercard" class="footer__logo_img">
       </div>
-      <div class="footer__logo_box">
+      
+      
           <img src="<%=require('./styles/images/pgrants logo gark.svg')%>" alt="pgrants logo" class="footer__logo_img">
-      </div>
+      
     
       <div class="footer__logo_social">
           <a href="#" class="social-logo"> 

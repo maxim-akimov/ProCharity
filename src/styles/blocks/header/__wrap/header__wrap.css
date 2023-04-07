@@ -1,0 +1,16 @@
+.header__wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 88%;
+   
+}
+
+@media screen and (max-width: 796px) { 
+    .header__wrap {
+        width: 77%;
+        
+    }
+}

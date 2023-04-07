@@ -2,8 +2,12 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 77.78%;
     margin-top: 64px;
+    
+    width: 86%;
+    
+    
+    
     
 }
 
