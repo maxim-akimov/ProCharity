@@ -1,0 +1,22 @@
+.novigation-btns__submit-btn{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #E65609;
+    opacity: 1;
+    border-radius: 6px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 0;
+    cursor: pointer;
+    margin: 10px;
+}

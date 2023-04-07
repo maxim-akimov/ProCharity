@@ -1,0 +1,12 @@
+.text-area__count{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7B878F;
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    margin: 0;
+}

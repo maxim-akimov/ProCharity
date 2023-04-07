@@ -1,0 +1,8 @@
+.help-message__second-el{
+    background: url(../../../../images/squere.svg) no-repeat center;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 16px;
+}

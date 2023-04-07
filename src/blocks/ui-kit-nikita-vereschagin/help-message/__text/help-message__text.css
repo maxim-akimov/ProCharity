@@ -1,0 +1,10 @@
+.help-message__text{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #58646A;
+    max-width: 320px;
+    margin: 0;
+}

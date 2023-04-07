@@ -1,0 +1,15 @@
+.input__delete-icon{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0;
+    background: url(../../../../images/close-icon.svg) no-repeat center;
+    background-size: 10px 10px;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+    margin: 0;
+}
