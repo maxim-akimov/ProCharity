@@ -62,16 +62,27 @@
       <input type="date" class="input input_type_calendar" name="date" id="date">
       <button type="reset" class="input__delete-icon input__delete-icon_place-before-sth"></button>
     </div>
-    <div class="input__box">
-      <label for="social" class="input__label">Предпочитаемый способ связи</label>
-      <input class="input" name="social" id="social" value="Электронная почта">
-      <button type="button" class="input__arrow-btn"></button>
-    </div>
+
+    <select class="popup-list" aria-placeholder="Предпочитаемый способ связи">
+      <option>Электронная почта</option>
+      <option>Телефон</option>
+      <option>Telegram</option>
+      <option>Электронная почта и телефон</option>
+      <option>Электронная почта и Telegram</option>
+    </select>
 
     <div class="help-message">
       <div class="help-message__first-el"><p class="help-message__text">Если тебе удобнее, чтобы представители фондов писали в Telegram, укажи свой ник (без @ и url)</p></div>
       <div class="help-message__second-el"></div>
     </div>
+
+    <div class="links">
+      <input type="text" class="links__input" id="linkName" name="linkName" placeholder="Текст ссылки">
+      <input type="url" class="links__input" id="linkUrl" name="linkUrl" placeholder="https://">
+      <button type="reset" class="links__delete-btn"></button>
+    </div>
+    <button type="button" class="links__add-btn"></button>
+
   </section>
 </body>
 </html>
