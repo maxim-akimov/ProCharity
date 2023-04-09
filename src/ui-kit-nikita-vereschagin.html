@@ -78,11 +78,15 @@
 
     <div class="links">
       <input type="text" class="links__input" id="linkName" name="linkName" placeholder="Текст ссылки">
-      <input type="url" class="links__input" id="linkUrl" name="linkUrl" placeholder="https://">
-      <button type="reset" class="links__delete-btn"></button>
+      <form class="links__container">
+        <input type="url" class="links__input links__input_right" id="linkUrl" name="linkUrl" placeholder="https://">
+        <button type="reset" class="links__delete-btn"></button>        
+      </form>
     </div>
-    <button type="button" class="links__add-btn"></button>
-
+    <div class="links__add-container">
+      <button type="button" class="links__plus-btn"></button>
+      <button type="button" class="links__add-btn">Добавить ссылку</button>      
+    </div>
   </section>
 </body>
 </html>

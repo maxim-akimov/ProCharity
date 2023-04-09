@@ -41,3 +41,12 @@
 @import url(../blocks/ui-kit-nikita-vereschagin/help-message/__text/help-message__text.css);
 
 @import url(../blocks/ui-kit-nikita-vereschagin/popup-list/popup-list.css);
+
+@import url(../blocks/ui-kit-nikita-vereschagin/links/links.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/links/__input/links__input.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/links/__container/links__container.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/links/__delete-btn/links__delete-btn.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/links/__add-btn/links__add-btn.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/links/__add-container/links__add-container.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/links/__plus-btn/links__plus-btn.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/links/__input/_right/links__input_right.css);
