@@ -1,0 +1,15 @@
+.account-btn {
+  width: 218px;
+  height: 48px;
+  background: #73B6C0;
+  border-radius: 24px;
+  display: flex;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  .account-btn {
+    width: 66px;
+    height: 32px;
+  }
+}

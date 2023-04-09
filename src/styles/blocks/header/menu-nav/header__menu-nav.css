@@ -1,9 +1,0 @@
-.header__menu-nav {
-    width: 49.37%;
-}
-
-@media screen and (max-width: 796px) { 
-    .header__menu-nav {
-        display: none;
-    }
-}

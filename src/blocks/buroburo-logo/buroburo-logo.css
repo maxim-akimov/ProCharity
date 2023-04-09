@@ -1,0 +1,9 @@
+.buroburo-logo {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .buroburo-logo {
+    display: none;
+  }
+}
