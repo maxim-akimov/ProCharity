@@ -1,16 +1,16 @@
 .search {
-    background-image: url(../../images/Vector.svg);
-    width: 17.49px;
-    height: 17.49px;
-    background-color: rgba(0, 0, 0, 0); 
-    border: none;
-    padding: 0;
-    cursor: pointer;
-   
+  background-image: url(../../images/Vector.svg);
+  width: 17px;
+  height: 17px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
 }
 
-@media screen and (max-width: 796px) { 
-    .search {
-        display: none;
-    }
+@media screen and (max-width: 900px) {
+  .search {
+    display: none;
+  }
 }

@@ -3,7 +3,7 @@
     height: 104px;
 }
 
-@media screen and (max-width: 796px) { 
+@media screen and (max-width: 900px) {
     .main-logo {
         width: 48px;
         height: 48px;
