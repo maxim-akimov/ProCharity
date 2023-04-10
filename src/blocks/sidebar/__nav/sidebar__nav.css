@@ -1,0 +1,7 @@
+.sidebar__nav {
+  border: 1px solid #E3E9F0;
+  border-radius: 4px;
+  /* max-width: 256px; */
+  box-sizing: border-box;
+  padding: 20px;
+}

@@ -1,0 +1,25 @@
+@import url(../blocks/link/link.css);
+
+@import url(../blocks/nav/__lists/nav__lists.css);
+@import url(../blocks/sidebar/sidebar.css);
+@import url(../blocks/sidebar/__status/sidebar__status.css);
+@import url(../blocks/sidebar/__nav/sidebar__nav.css);
+@import url(../blocks/sidebar/__profile-progress/sidebar__profile-progress.css);
+@import url(../blocks/sidebar/__check-mark-lk/sidebar__check-mark-lk.css);
+@import url(../blocks/sidebar/__check-style-lk/sidebar__check-style-lk.css);
+@import url(../blocks/sidebar/__description/sidenar__description.css);
+@import url(../blocks/sidebar/__link/sidebar__link.css);
+@import url(../blocks/sidebar/__profile/sidebar__profile.css);
+@import url(../blocks/sidebar/__status-mark/sidebar__status-mark.css);
+@import url(../blocks/sidebar/__title/sidebar__title.css);
+
+@import url(../blocks/sidebar-nav/sidebar-nav.css);
+@import url(../blocks/sidebar-nav/__link-lk/sidebar-nav__link-lk.css);
+@import url(../blocks/sidebar-nav/__link-reg/sidebar-nav__link-reg.css);
+@import url(../blocks/sidebar-nav/__link-style-lk/sidebar-nav__link-style-lk.css);
+@import url(../blocks/sidebar-nav/__step/sidebar-nav__step.css);
+@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_current.css);
+@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_reg.css);
+@import url(../blocks/sidebar-nav/__lists-lk/sidebar-nav__lists-lk.css);
+@import url(../blocks/sidebar-nav/__item/sidebar-nav__item.css);
+@import url(../blocks/sidebar-nav/__item/_type/sidebar-nav__item_type_current.css);

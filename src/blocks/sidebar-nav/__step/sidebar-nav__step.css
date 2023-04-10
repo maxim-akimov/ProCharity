@@ -1,0 +1,15 @@
+.sidebar-nav__step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #F5F6F8;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.sidebar-nav__link-reg:focus .sidebar-nav__link-style-reg {
+  background-color: #E65609;
+  color: #fff;
+}

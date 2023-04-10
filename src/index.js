@@ -10,3 +10,4 @@ import './styles/settings-notifications.css';
 import './styles/settings-profile.css';
 
 import './styles/ui-kit-tatijana-kovpak.css';
+import './styles/ui-kit-albert-tagibov.css';
