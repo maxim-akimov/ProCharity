@@ -1,0 +1,14 @@
+.personal-account-button__icon_none {
+    position: absolute;
+    left: 12px;
+    top: 14px;
+    width: 12px;
+    height: 12px;
+}
+
+@media screen and (max-width: 796px) { 
+    .personal-account-button__icon_none {
+       left: 8px;
+       top: 10px;
+    }
+}
