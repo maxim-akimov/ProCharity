@@ -1,0 +1,12 @@
+.account-btn__content_type_default {
+  background: #E6560A;
+  border-left: solid 2px #7DCDD7;
+}
+
+@media screen and (max-width: 900px) {
+  .account-btn__content_type_default {
+    width: 32px;
+    height: 32px;
+    background: url(../../../../images/add.svg) no-repeat center center, #E6560A;
+  }
+}

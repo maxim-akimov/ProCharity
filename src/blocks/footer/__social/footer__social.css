@@ -1,0 +1,24 @@
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 32px;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer__social {
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer__social {
+    max-width: min-content;;
+    gap: 32px;
+  }
+}
