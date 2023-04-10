@@ -63,14 +63,6 @@
       <button type="reset" class="input__delete-icon input__delete-icon_place-before-sth"></button>
     </div>
 
-    <select class="popup-list" aria-placeholder="Предпочитаемый способ связи">
-      <option>Электронная почта</option>
-      <option>Телефон</option>
-      <option>Telegram</option>
-      <option>Электронная почта и телефон</option>
-      <option>Электронная почта и Telegram</option>
-    </select>
-
     <div class="help-message">
       <div class="help-message__first-el"><p class="help-message__text">Если тебе удобнее, чтобы представители фондов писали в Telegram, укажи свой ник (без @ и url)</p></div>
       <div class="help-message__second-el"></div>
@@ -83,10 +75,40 @@
         <button type="reset" class="links__delete-btn"></button>        
       </form>
     </div>
+
     <div class="links__add-container">
       <button type="button" class="links__plus-btn"></button>
       <button type="button" class="links__add-btn">Добавить ссылку</button>      
     </div>
+
+    <div class="popup-list">
+      <select class="popup-list_hidden" aria-placeholder="Предпочитаемый способ связи">
+        <option value="email">Электронная почта</option>
+        <option value="tel">Телефон</option>
+        <option value="tg">Telegram</option>
+        <option value="emailAndTel">Электронная почта и телефон</option>
+        <option value="emailAndTg">Электронная почта и Telegram</option>
+      </select>
+
+      <div class="popup-list__field">
+        <p class="popup-list__field-text">Предпочитаемый способ связи</p>
+        <button class="popup-list__arrow"></button>
+      </div>
+
+      <ul class="popup-list__list">
+        <li class="popup-list__item popup-list__item_choice" id="mail">Электронная почта</li>
+        <li class="popup-list__item" id="tel">Телефон</li>
+        <li class="popup-list__item" id="tg">Telegram</li>
+        <li class="popup-list__item" id="mailAndTel">Электронная почта и телефон</li>
+        <li class="popup-list__item" id="mailAndTg">Электронная почта и Telegram</li>
+      </ul>
+    </div>
+
+
+
+
+
+
   </section>
 </body>
 </html>

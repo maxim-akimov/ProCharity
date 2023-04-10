@@ -1,0 +1,13 @@
+.popup-list__arrow{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0;
+    background: url(../../../../images/arrow.svg) no-repeat center;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
