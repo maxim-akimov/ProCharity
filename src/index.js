@@ -8,3 +8,4 @@ import './styles/registration-new-volunteer.css';
 import './styles/settings-change-password.css';
 import './styles/settings-notifications.css';
 import './styles/settings-profile.css';
+import './styles/text-components.css'
