@@ -21,21 +21,21 @@
 
     <div class="novigation-btns">
       <button class="novigation-btns__back-btn">Назад</button>
-      <button type="submit" class="novigation-btns__submit-btn novigation-btns__submit-btn_type_reg-btn novigation-btns__submit-btn_inactive">зарегистрироваться</button>
-      <button type="submit" class="novigation-btns__submit-btn novigation-btns__submit-btn_type_reg-btn">зарегистрироваться</button>
+      <button type="submit" class="novigation-btns__submit-btn novigation-btns__submit-btn_inactive">зарегистрироваться</button>
+      <button type="submit" class="novigation-btns__submit-btn">зарегистрироваться</button>
       <button type="submit" class="novigation-btns__submit-btn novigation-btns__submit-btn_type_save-btn">сохранить</button>
     </div>
     <div class="text-area__box">
       <textarea class="text-area" name="why-am-i-here" id="why-am-i-here" maxlength="2000" required></textarea>
       <label class="text-area__label" for="why-am-i-here">Почему я хочу стать волонтером?</label>
       <button type="reset" class="text-area__delete-icon"></button>
-      <p class="text-area__count">0/2000</p>
+      <span class="text-area__count">0/2000</span>
     </div>
     <div class="text-area__box">
       <textarea class="text-area" name="skills" id="skills" maxlength="2000" required></textarea>
       <label class="text-area__label" for="skills">Какие мои знания и навыки будут полезны фондам?</label>    
       <button type="reset" class="text-area__delete-icon"></button>
-      <p class="text-area__count">0/2000</p>  
+      <span class="text-area__count">0/2000</span>  
     </div>
 
     <div class="input__box">
@@ -56,6 +56,7 @@
     </div>
     <div class="input__box input__box_password">
       <input type="password" class="input input_type_password" name="password" id="password">
+      <label for="password"><input type="checkbox" class="input__password-checkbox"></label>
     </div>
     <div class="input__box">
       <label for="date" class="input__label">Дата рождения</label>

@@ -1,11 +1,13 @@
 .input__label{
     position: absolute;
-    top: 7px;
-    left: 16px;
+    top: 0;
+    left: 0;
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
     color: #7B878F;
+    padding: 7px 0 0 16px;
+    right: 50px;
 }

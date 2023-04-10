@@ -13,7 +13,6 @@
 @import url(../blocks/novigation-btns/novigation-btns.css);
 @import url(../blocks/novigation-btns/__back-btn/novigation-btns__back-btn.css);
 @import url(../blocks/novigation-btns/__submit-btn/novigation-btns__submit-btn.css);
-@import url(../blocks/novigation-btns/__submit-btn/_type/novigation-btns__submit-btn_type_reg-btn.css);
 @import url(../blocks/novigation-btns/__submit-btn/_type/novigation-btns__submit-btn_type_save-btn.css);
 @import url(../blocks/novigation-btns/__submit-btn/_inactive/novigation-btns__submit-btn_inactive.css);
 
@@ -34,6 +33,7 @@
 @import url(../blocks/ui-kit-nikita-vereschagin/input/__delete-icon/_place-before-sth/input__delete-icon_place-before-sth.css);
 @import url(../blocks/ui-kit-nikita-vereschagin/input/__arrow-btn/input__arrow-btn.css);
 @import url(../blocks/ui-kit-nikita-vereschagin/input/__box/_password/input__box_password.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/input/__password-checkbox/input__password-checkbox.css);
 
 @import url(../blocks/ui-kit-nikita-vereschagin/help-message/help-message.css);
 @import url(../blocks/ui-kit-nikita-vereschagin/help-message/__first-el/help-message__first-el.css);
