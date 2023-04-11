@@ -1,16 +1,108 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Группа 4">
+  <link rel="stylesheet" href="./styles/sidebar-css-files/sidebar-reg.css">
+  <link rel="stylesheet" href="./styles/sidebar-css-files/sidebar-lk.css">
+  <link rel="stylesheet" href="./styles/sidebar-css-files/sidebar-regHKO.css">
+
   <title>Наборы элементов пользовательского интерфейса для проекта ProCharity</title>
 </head>
+
 <body>
-  <section>
+  <section class="sidebar">
+    <nav class="sidebar__nav">
+      <ul class="sidebar-nav__lists-reg">
+        <li>
+          <h3 class="sidebar-nav__title-reg"><img src="images/reg-logo.svg" alt=""> Регистрация</h3>
+        </li>
+        <li><a class="sidebar-nav__link-reg" href="#"><span class="sidebar-nav__link-style-reg">1</span>Личные
+            данные</a>
+        </li>
+        <li><a class="sidebar-nav__link-reg" href="#"><span class="sidebar-nav__link-style-reg">2</span>Фото</a></li>
+        <li><a class="sidebar-nav__link-reg" href="#"><span class="sidebar-nav__link-style-reg">3</span>Компетенции</a>
+        </li>
+        <li><a class="sidebar-nav__link-reg" href="#"><span class="sidebar-nav__link-style-reg">4</span>Мотивация</a>
+        </li>
+        <li><a class="sidebar-nav__link-reg" href="#"><span class="sidebar-nav__link-style-reg">5</span>Портфолио</a>
+        </li>
+        <li><a class="sidebar-nav__link-reg" href="#"><span class="sidebar-nav__link-style-reg">6</span>Социальные
+            сети</a></li>
+      </ul>
+    </nav>
+  </section>
+  <!-- ------------------------------------------------------------------------------------------- -->
 
+  <section class="sidebar">
+    <nav class="sidebar__nav">
+      <ul class="sidebar-nav__lists-lk">
+        <li><a class="sidebar-nav__link-lk" href="#"><span class="sidebar-nav__link-style-lk">1</span>Личные данные</a>
+        </li>
+        <li><a class="sidebar-nav__link-lk" href="#"><span class="sidebar-nav__link-style-lk">2</span>Компетенции</a>
+        </li>
+        <li><a class="sidebar-nav__link-lk" href="#"><span class="sidebar-nav__link-style-lk">3</span>Мотивация</a></li>
+        <li><a class="sidebar-nav__link-lk" href="#"><span class="sidebar-nav__link-style-lk">4</span>Портфолио</a></li>
+        <li><a class="sidebar-nav__link-lk" href="#"><span class="sidebar-nav__link-style-lk">5</span>Социальные
+            сети</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar__profile">
 
+      <p class="sidebar__title">Статус профиля</p>
+      <a href="#" class="sidebar__status">скрыт<img class="sidebar__status-mark"
+                                                    src="images/sidebar-status-question.svg" alt="">
+      </a>
+
+      <p class="sidebar__title">Профиль заполнен на 66%</p>
+      <div class="sidebar__check-lk">
+        <span class="sidebar__check-style-lk "> <span class="check-style-blue-66"></span></span>
+        <img class="sidebar__check-mark-lk" src="images/sidebar-check-logo.svg" alt="">
+      </div>
+
+      <p class="sidebar__discription-lk">Узнай, <a class="sidebar__discription-link-lk" href="">как заполнить
+          профиль,</a>
+        чтобы тебя выбрали исполнителем</p>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------------------------------- -->
+
+  <section class="sidebar">
+    <nav class="sidebar__nav">
+      <ul class="nav__lists">
+        <li><a class="sidebar-nav__link-regHKO" href="#"><span
+              class="sidebar-nav__link-style-regHKO link-style-regHKO_checked"><span
+                class="hidden-num hidden-num_checked">1</span></span>
+            Контактное лицо</a>
+        </li>
+        <li><a class="sidebar-nav__link-regHKO" href="#"><span class="sidebar-nav__link-style-regHKO"><span
+                class="hidden-num">2</span></span>
+            Реквизиты</a></li>
+        <li><a class="sidebar-nav__link-regHKO" href="#"><span class="sidebar-nav__link-style-regHKO"><span
+                class="hidden-num">3</span></span>
+            Документы и файлы</a>
+        </li>
+        <li><a class="sidebar-nav__link-regHKO" href="#"><span class="sidebar-nav__link-style-regHKO"><span
+                class="hidden-num">4</span></span>
+            Описание</a></li>
+        <li><a class="sidebar-nav__link-regHKO" href="#"><span class="sidebar-nav__link-style-regHKO"><span
+                class="hidden-num">5</span></span>
+            Ссылки</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar__profile">
+
+      <p class="sidebar__title">Статус профиля</p>
+      <a href="#" class="sidebar__status">скрыт<img class="sidebar__status-mark"
+                                                    src="images/sidebar-status-question.svg" alt="">
+      </a>
+
+    </div>
   </section>
 </body>
+
 </html>

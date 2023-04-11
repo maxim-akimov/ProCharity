@@ -1,0 +1,10 @@
+.breadcrumbs {
+  grid-column: 1 / -1;
+  display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .breadcrumbs {
+    display: none;
+  }
+}
