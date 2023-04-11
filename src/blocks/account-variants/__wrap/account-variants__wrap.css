@@ -1,0 +1,11 @@
+.account-variants__wrap {
+  background-color: #374146;
+  color: #fff;
+  width: 100%;
+  max-width: 706px;
+  height: 352px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

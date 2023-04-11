@@ -1,13 +1,14 @@
-@import url(./../blocks/page/page.css);
+/*@import url(./../blocks/page/page.css);
 
 @import url(./../blocks/header/header.css);
 @import url(./../blocks/header/__wrap/header__wrap.css);
-@import url(./../blocks/main-logo/main-logo.css);
 
 @import url(./../blocks/header/__nav/header__nav.css);
 @import url(./../blocks/header/__menu/header__menu.css);
-
 @import url(./../blocks/header/__menu-link/header__menu-link.css);
+
+
+@import url(./../blocks/main-logo/main-logo.css);
 
 @import url(./../blocks/search/search.css);
 
@@ -18,6 +19,7 @@
 @import url(../blocks/account-btn/__content/_type/account-btn__content_type_lk.css);
 @import url(../blocks/account-btn/__avatar/account-btn__avatar.css);
 @import url(../blocks/account-btn/__avatar/_type/account-btn__avatar_type_default.css);
+@import url(../blocks/account-btn/__img/account-btn__img.css);
 
 @import url(./../blocks/footer/footer.css);
 @import url(./../blocks/footer/__menu/footer__menu.css);
@@ -27,7 +29,7 @@
 @import url(./../blocks/footer/__menu-title/footer__menu-title.css);
 @import url(./../blocks/footer/__menu-title-link/footer__menu-title-link.css);
 @import url(../blocks/footer/__menu-chapter/footer__menu-chapter.css);
-@import url(../blocks/footer/__firms-list/footer__fitms-list.css);
+@import url(../blocks/footer/__firms-list/footer__firms-list.css);
 @import url(../blocks/footer/__firms-item/footer__firms-item.css);
 @import url(../blocks/footer/__firms-link/footer__firms-link.css);
 @import url(../blocks/footer/__logo-text/footer__logo-text.css);
@@ -43,11 +45,13 @@
 
 @import url(./../blocks/menu-icon/menu-icon.css);
 
+
 @import url(./../blocks/personal-account-button/personal-account-button.css);
 @import url(./../blocks/personal-account-button/__icon/personal-account-button__icon.css);
 
 
 /*...нет аккаунта*/
+/*
 @import url(./../blocks/personal-account-button/__icon/personal-account-button__icon_none/personal-account-button__icon_none.css);
 @import url(./../blocks/personal-account-button/_none/personal-account-button_none.css);
 @import url(./../blocks/header/icon-container/header__icon-container.css);
@@ -76,3 +80,4 @@
 @import url(./../blocks/breadcrumbs/__list/breadcrumbs__list.css);
 @import url(./../blocks/breadcrumbs/__item/breadcrumbs__item.css);
 @import url(./../blocks/breadcrumbs/__link/breadcrumbs__link.css);
+*/
