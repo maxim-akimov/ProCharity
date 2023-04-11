@@ -15,6 +15,7 @@
 @import url(../blocks/account-btn/__text/account-btn__text.css);
 @import url(../blocks/account-btn/__content/account-btn__content.css);
 @import url(../blocks/account-btn/__content/_type/account-btn__content_type_default.css);
+@import url(../blocks/account-btn/__content/_type/account-btn__content_type_lk.css);
 @import url(../blocks/account-btn/__avatar/account-btn__avatar.css);
 @import url(../blocks/account-btn/__avatar/_type/account-btn__avatar_type_default.css);
 
@@ -51,8 +52,18 @@
 @import url(./../blocks/personal-account-button/_none/personal-account-button_none.css);
 @import url(./../blocks/header/icon-container/header__icon-container.css);
 
+@import url(../blocks/main-layout/main-layout.css);
+@import url(../blocks/main-layout/_style/main-layout_style_first-step.css);
+@import url(../blocks/main-layout/_style/main-layout_style_registration.css);
+@import url(../blocks/main-layout/_style/main-layout_style_lk.css);
 
 @import url(../blocks/main/main.css);
+@import url(../blocks/main/_template/main_template_registration.css);
+@import url(../blocks/main/_template/main_template_registration-form.css);
+@import url(../blocks/main/_template/main_template_first-step.css);
+@import url(../blocks/main/_template/main_template_lk.css);
+
+@import url(../blocks/content/content.css);
 
 
 @import url(./../blocks/check-mark/check-mark.css);

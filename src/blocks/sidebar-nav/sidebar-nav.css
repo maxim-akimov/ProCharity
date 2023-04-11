@@ -1,11 +1,4 @@
 .sidebar-nav {
-  list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin: 0;
-  width: 100%;
-  border: 1px solid #E3E9F0;
-  padding: 20px;
-  box-sizing: border-box;
 }

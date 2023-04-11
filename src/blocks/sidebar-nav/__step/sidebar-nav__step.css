@@ -9,7 +9,10 @@
   font-weight: 700;
 }
 
-.sidebar-nav__link-reg:focus .sidebar-nav__link-style-reg {
-  background-color: #E65609;
-  color: #fff;
+@media screen and (max-width: 900px) {
+  .sidebar-nav__step {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
 }
