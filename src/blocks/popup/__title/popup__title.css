@@ -1,16 +1,16 @@
-.pop-up-window__title {
+.popup__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
     color: #58646A;
-    margin: 12px 44px 0;
     position: relative;
+    margin: 0;
+    padding: 0 16px 4px 28px;
 }
 
-.pop-up-window__title:before {
+.popup__title:before {
     content: url(../../../images/Group12.svg);
     position: absolute;
-    left: -27px;
+    left: 0px;
     top: 0;
-    
 }

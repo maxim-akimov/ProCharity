@@ -1,0 +1,13 @@
+.btn_type_close {
+  background: url(./../../../images/btn-close.svg) no-repeat center center;
+  width: 12px;
+  height: 12px;
+}
+
+.btn_type_close:hover {
+  background: url(./../../../images/btn-close.svg) no-repeat center center;
+}
+
+.btn_type_close:focus {
+  background: url(./../../../images/btn-close.svg) no-repeat center center;
+}

@@ -1,7 +1,8 @@
-.pop-up-window__subtitle {
+.popup__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: #58646A;
-    margin: 4px 32px 12px 44px;
+    margin: 0;
+    padding: 0 16px 0 28px;
 }

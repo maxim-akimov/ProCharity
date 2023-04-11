@@ -133,6 +133,11 @@ module.exports = {
             template: './src/ui-kit-tatijana-kovpak.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'ui-kit.html',
+            template: './src/ui-kit.html',
+            inject: 'body'
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin()
     ]
