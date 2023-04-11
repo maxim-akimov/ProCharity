@@ -1,0 +1,15 @@
+.personal-account-button__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-left: 11.16%;
+    align-self: center;
+}
+
+@media screen and (max-width: 796px) { 
+    .personal-account-button__title {
+        display: none;
+    }
+}

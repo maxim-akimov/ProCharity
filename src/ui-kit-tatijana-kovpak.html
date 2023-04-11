@@ -7,10 +7,255 @@
   <meta name="author" content="Группа 4">
   <title>Наборы элементов пользовательского интерфейса для проекта ProCharity</title>
 </head>
-<body>
-  <section>
+<body class="page">
+<header class="header">
+  <div class="header__wrap">
+    <button class="menu-icon" type="menu"></button>
+    <img src="<%=require('./images/logo.svg')%>" alt="logo" class="main-logo">
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li>
+          <a href="#" class="header__menu-link">О проекте</a>
+        </li>
+        <li>
+          <a href="#" class="header__menu-link">Задания</a>
+        </li>
+        <li>
+          <a href="#" class="header__menu-link">Волонтерам</a>
+        </li>
+        <li>
+          <a href="#" class="header__menu-link">Для НКО</a>
+        </li>
+        <li>
+          <a href="#" class="header__menu-link">Бизнесу</a>
+        </li>
+        <li>
+          <a href="#" class="header__menu-link">FAQ</a>
+        </li>
+      </ul>
+    </nav>
 
+    <button class="search" type="button"></button>
+
+    <!-- Для страниц регистрации -->
+    <a href="#" class="account-btn">
+      <span class="account-btn__content account-btn__content_type_default">
+        <span class="account-btn__text">Присоединиться</span>
+      </span>
+      <span class="account-btn__avatar account-btn__avatar_type_default">
+      </span>
+    </a>
+    <!-- Для страниц личного кабинета -->
+    <!-- РАСКОММЕНТИРОВАТЬ ДЛЯ ИСПОЛЬЗОВАНИЕ
+    <a href="#" class="account-btn">
+      <span class="account-btn__text">Личный кабинет</span>
+      <span class="account-btn__avatar">
+      -->
+        <!-- Если загружен аватар - необходимо только добавить тег img со ссылкой на картинку
+        если тег с картинкой отсутствует - будет показан placeholder-->
+    <!-- РАСКОММЕНТИРОВАТЬ ДЛЯ ИСПОЛЬЗОВАНИЕ
+    <img src="<%=require('./images/btn-avatar.svg')%>" alt="Личный кабинет">
+  </span>
+</a>
+-->
+
+
+<div class="pop-up-window">
+  <h2 class="pop-up-window__title">Профиль на модерации</h2>
+  <p class="pop-up-window__subtitle">Обычно это занимает до 2 рабочих дней. Как только все проверим, сообщим на
+    email.</p>
+  <img src="<%=require('./images/close-icon.svg')%>" alt="close-icon" class="close-icon">
+</div>
+</div>
+</header>
+<main class="main">
+  <nav class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a href="#" class="link">Личный кабинет</a>
+      </li>
+      <li class="breadcrumbs__item">
+        Мои данные
+      </li>
+    </ul>
+  </nav>
+  <section class="sidebar">
 
   </section>
+  <section class="content">
+
+  </section>
+</main>
+<footer class="footer">
+<nav class="footer__menu">
+<div class="footer__menu-chapter ">
+  <h4 class="footer__menu-title">
+    <a href="#" class="footer__menu-title-link" >О проекте</a>
+  </h4>
+  <ul class="footer__menu-list">
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">О платформе</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Команда</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Новости</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Документы</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Партнеры</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Отзывы</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Контакты</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Пожертвовать в фонды</a>
+    </li>
+  </ul>
+</div>
+<div class="footer__menu-chapter">
+  <h4 class="footer__menu-title">
+    <a href="#" class="footer__menu-title-link" >Задания</a>
+  </h4>
+  <ul class="footer__menu-list">
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Ждут исполнителей</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">В работе</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Выполненные</a>
+    </li>
+  </ul>
+</div>
+<div class="footer__menu-chapter">
+  <h4 class="footer__menu-title">
+    <a href="#" class="footer__menu-title-link" >Волонтерам</a>
+  </h4>
+  <ul class="footer__menu-list">
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Как помочь</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Задания</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Список НКО</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Бонусы</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Отзывы волонтеров</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Премия ProCharity</a>
+    </li>
+  </ul>
+</div>
+<div class="footer__menu-chapter">
+  <h4 class="footer__menu-title">
+    <a href="#" class="footer__menu-title-link" >Фондам</a>
+  </h4>
+  <ul class="footer__menu-list">
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Как получить помощь</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Список волонтеров</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Компании-волонтеры</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Отзывы НКО</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Вебинары</a>
+    </li>
+  </ul>
+</div>
+<div class="footer__menu-chapter">
+  <h4 class="footer__menu-title">
+    <a href="#" class="footer__menu-title-link" >Бизнесу</a>
+  </h4>
+  <ul class="footer__menu-list">
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Как помочь</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Список НКО</a>
+    </li>
+    <li class="footer__menu-item">
+      <a href="#" class="footer__menu-link">Отзывы НКО</a>
+    </li>
+  </ul>
+</div>
+<div class="footer__menu-chapter">
+  <h4 class="footer__menu-title">
+    <a href="#" class="footer__menu-title-link" >FAQ</a>
+  </h4>
+</div>
+</nav>
+<div class="footer__logo-container">
+<ul class="footer__firms-list">
+  <li class="footer__firms-item">
+    <p class="footer__logo-text">Создатель проекта</p>
+    <a href="#" class="footer__firms-link">
+      <img src="<%=require('./images/logo_fund_frainds.svg')%>" alt="Фонд Друзья" class="footer__logo-img">
+    </a>
+  </li>
+  <li class="footer__firms-item">
+    <p class="footer__logo-text">Генеральный партнер</p>
+    <a href="#" class="footer__firms-link">
+      <img src="<%=require('./images/logo_mastercard.svg')%>" alt="Mastercard" class="footer__logo-img">
+    </a>
+  </li>
+  <li class="footer__firms-item">
+    <a href="#" class="footer__firms-link">
+      <img src="<%=require('./images/pgrants logo gark.svg')%>" alt="Фонд президентских грантов"
+           class="footer__logo-img">
+    </a>
+  </li>
+</ul>
+
+<ul class="footer__social">
+  <li class="footer__social-item">
+    <a href="#" class="footer__social-link">
+      <img src="<%=require('./images/facebook.svg')%>" alt="Facebook" class="footer__social-img">
+    </a>
+  </li>
+  <li class="footer__social-item">
+    <a href="#" class="footer__social-link">
+      <img src="<%=require('./images/instagramm.svg')%>" alt="Instagramm-logo" class="footer__logo-img">
+    </a>
+  </li>
+  <li class="footer__social-item">
+    <a href="#" class="footer__social-link">
+      <img src="<%=require('./images/vk.svg')%>" alt="Vk" class="footer__logo-img">
+    </a>
+  </li>
+</ul>
+
+</div>
+<div class="copy">
+<p class="copy__text">&copy; 2017-2019 ProCharity</p>
+<p class="copy__text">
+  <a href="#" class="copy__link">Юридическая информация и защита персональных данных</a>
+</p>
+<a href="#" class="buroburo-logo">
+  <img src="<%=require('./images/logo_buroburo.svg')%>" alt="Бюробюро">
+</a>
+</div>
+
+</footer>
+
 </body>
 </html>

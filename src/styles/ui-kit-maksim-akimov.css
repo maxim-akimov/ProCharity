@@ -1,0 +1,11 @@
+@import url(../vendor/normalize.css);
+@import url(../blocks/account-variants/account-variants.css);
+@import url(../blocks/account-variants/__wrap/account-variants__wrap.css);
+@import url(../blocks/account-variants/__heading/account-variants__heading.css);
+@import url(../blocks/account-variants/__paragraph/account-variants__paragraph.css);
+@import url(../blocks/account-variants/__wrap/_type/account-variants__wrap_type_fund.css);
+@import url(../blocks/account-variants/__wrap/_type/account-variants__wrap_type_volunteer.css);
+@import url(../blocks/account-variants/__btn/account-variants__btn.css);
+
+@import url(../blocks/link/link.css);
+

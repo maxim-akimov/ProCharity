@@ -1,0 +1,18 @@
+.footer__logo-text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #7B878F;
+  text-decoration: none;
+  text-align: right;
+  max-width: min-content;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .footer__logo-text {
+    max-width: max-content;
+  }
+}
