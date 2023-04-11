@@ -1,0 +1,15 @@
+.sidebar-nav__description {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar-nav__description {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

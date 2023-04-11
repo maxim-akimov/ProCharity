@@ -1,0 +1,39 @@
+.sidebar__status {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #3A464C;
+  color: #fff;
+  width: 160px;
+  height: 24px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 0 0 0 12px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.sidebar__status:after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: url(../../../images/help-icon.svg) no-repeat center center;
+  right: 10px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+}
+
+.sidebar__status:hover {
+  opacity: 0.8;
+}
+
+.sidebar__status:focus {
+  border: 2px solid #E65609;
+}

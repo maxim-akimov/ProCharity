@@ -1,5 +1,14 @@
 .content {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1120px;
+}
+
+.main_template_lk .content {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+}
+
+@media screen and (max-width: 900px){
+  .main_template_lk .content {
+    grid-column: auto;
+    grid-row: 2;
+  }
 }

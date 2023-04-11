@@ -7,13 +7,12 @@
     height: 24px;
     background-color: rgba(0, 0, 0, 0); 
     padding: 0;
-    margin-right: 42px;
     cursor: pointer;
-    
 }
 
 @media screen and (max-width: 900px) {
     .menu-icon{
         display: block;
+        justify-self: left;
     }
 }

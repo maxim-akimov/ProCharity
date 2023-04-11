@@ -9,7 +9,8 @@
 
 @media screen and (max-width: 900px) {
   .account-btn {
-    width: 66px;
     height: 32px;
+    max-width: min-content;
+    justify-self: right;
   }
 }

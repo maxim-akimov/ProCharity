@@ -104,7 +104,7 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
-            filename: 'ui-kit-ui-kit-albert-taygibov.html',
+            filename: 'ui-kit-albert-taygibov.html',
             template: './src/ui-kit-albert-taygibov.html',
             inject: 'body'
         }),
