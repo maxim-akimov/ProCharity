@@ -1,0 +1,60 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+
+/*Я частное лицо / Я представляю компанию*/
+
+@import url(../blocks/ui-kit-nikita-vereschagin/company/company.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/company/__btns/company__btns.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/company/__btn/company__btn.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/company/__label/company__label.css);
+
+/*Кнопки Назад, Зарегистрироваться, Сохранить*/
+
+@import url(../blocks/novigation-btns/novigation-btns.css);
+@import url(../blocks/novigation-btns/__back-btn/novigation-btns__back-btn.css);
+@import url(../blocks/novigation-btns/__submit-btn/novigation-btns__submit-btn.css);
+@import url(../blocks/novigation-btns/__submit-btn/_type/novigation-btns__submit-btn_type_save-btn.css);
+@import url(../blocks/novigation-btns/__submit-btn/_inactive/novigation-btns__submit-btn_inactive.css);
+
+
+@import url(../blocks/ui-kit-nikita-vereschagin/text-area/__box/text-area__box.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/text-area/text-area.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/text-area/__label/text-area__label.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/text-area/__delete-icon/text-area__delete-icon.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/text-area/__count/text-area__count.css);
+
+@import url(../blocks/ui-kit-nikita-vereschagin/input/input.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/input/__box/input__box.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/input/__label/input__label.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/input/__delete-icon/input__delete-icon.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/input/__info-btn/input__info-btn.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/input/_type/input_type_calendar.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/input/_type/input_type_password.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/input/__delete-icon/_place-before-sth/input__delete-icon_place-before-sth.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/input/__arrow-btn/input__arrow-btn.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/input/__box/_password/input__box_password.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/input/__password-checkbox/input__password-checkbox.css);
+
+@import url(../blocks/ui-kit-nikita-vereschagin/help-message/help-message.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/help-message/__first-el/help-message__first-el.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/help-message/__second-el/help-message__second-el.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/help-message/__text/help-message__text.css);
+
+@import url(../blocks/ui-kit-nikita-vereschagin/links/links.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/links/__input/links__input.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/links/__container/links__container.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/links/__delete-btn/links__delete-btn.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/links/__add-btn/links__add-btn.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/links/__add-container/links__add-container.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/links/__plus-btn/links__plus-btn.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/links/__input/_right/links__input_right.css);
+
+@import url(../blocks/ui-kit-nikita-vereschagin/popup-list/popup-list.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/popup-list/_hidden/popup-list_hidden.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/popup-list/__list/popup-list__list.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/popup-list/__item/popup-list__item.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/popup-list/__field/popup-list__field.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/popup-list/__field-text/popup-list__field-text.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/popup-list/__arrow/popup-list__arrow.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/popup-list/__list/_hidden/popup-list__list_hidden.css);
+@import url(../blocks/ui-kit-nikita-vereschagin/popup-list/__item/_choice/popup-list__item_choice.css);

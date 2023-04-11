@@ -1,0 +1,26 @@
+.company__btn{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 100%;
+    background: #FFFFFF;
+    border: 1px solid #048AA7;
+    border-radius: 6px 0px 0px 6px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px -1px;
+    cursor: pointer;
+    transition: .5s;
+    color: #048AA7;
+}
+.company__btn:last-of-type{
+    border-radius: 0px 6px 6px 0px;
+    order: 1;
+}
+.company__btn:focus{
+    background: #72D0DC;
+    border-color: #72D0DC;
+}
+.company__btn:focus + .company__lable{
+    color: #FFFFFF;
+}

@@ -1,0 +1,9 @@
+.popup-list__list{
+    margin: 0;
+    padding: 8px 0px;
+    height: max-content;
+    max-width: 358px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 77, 95, 0.24);
+    border-radius: 8px;
+}

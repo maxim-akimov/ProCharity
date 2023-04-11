@@ -1,0 +1,11 @@
+.text-area__label{
+    position: absolute;
+    left: 16px;
+    top: 7px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #7B878F;
+}
