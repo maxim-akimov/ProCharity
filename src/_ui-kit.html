@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProCharity ui-kit</title>
+
+  <style>
+    body {
+      max-width: 736px;
+      display: flex;
+      gap: 50px;
+      font-family: Arial, Helvetica, sans-serif;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+
+<section>
+  <div class="company__btns">
+    <input type="radio" class="company__btn" name="fisical" id="fisical">
+    <label for="fisical" class="company__lable">я частное лицо</label>
+    <input type="radio" class="company__btn" name="company" id="company">
+    <label for="company" class="company__lable">я представляю компанию</label>
+  </div>
+
+  <div class="novigation-btns">
+    <button class="novigation-btns__back-btn">Назад</button>
+    <button type="submit" class="novigation-btns__submit-btn novigation-btns__submit-btn_inactive">Зарегистрироваться
+    </button>
+    <button type="submit" class="novigation-btns__submit-btn">Зарегистрироваться</button>
+    <button type="submit" class="novigation-btns__submit-btn novigation-btns__submit-btn_type_save-btn">Сохранить
+    </button>
+  </div>
+  <div class="text-area__box">
+    <textarea class="text-area" name="why-am-i-here" id="why-am-i-here" maxlength="2000" required></textarea>
+    <label class="text-area__label" for="why-am-i-here">Почему я хочу стать волонтером?</label>
+    <button type="reset" class="text-area__delete-icon"></button>
+    <span class="text-area__count">0/2000</span>
+  </div>
+  <div class="text-area__box">
+    <textarea class="text-area" name="skills" id="skills" maxlength="2000" required></textarea>
+    <label class="text-area__label" for="skills">Какие мои знания и навыки будут полезны фондам?</label>
+    <button type="reset" class="text-area__delete-icon"></button>
+    <span class="text-area__count">0/2000</span>
+  </div>
+
+  <div class="input__box">
+    <label for="name" class="input__label">Имя</label>
+    <input type="text" class="input" name="name" id="name">
+    <button type="reset" class="input__delete-icon"></button>
+  </div>
+  <div class="input__box">
+    <label for="tgname" class="input__label">Ник в Telegram</label>
+    <input type="text" class="input" name="tgname" id="tgname">
+    <button type="reset" class="input__delete-icon input__delete-icon_place-before-sth"></button>
+    <button type="button" class="input__info-btn"></button>
+  </div>
+  <div class="input__box">
+    <label for="email" class="input__label">Email</label>
+    <input type="email" class="input" name="email" id="email">
+    <button type="reset" class="input__delete-icon"></button>
+  </div>
+  <div class="input__box input__box_password">
+    <input type="password" class="input input_type_password" name="password" id="password">
+    <label for="password"><input type="checkbox" class="input__password-checkbox"></label>
+  </div>
+  <div class="input__box">
+    <label for="date" class="input__label">Дата рождения</label>
+    <input type="date" class="input input_type_calendar" name="date" id="date">
+    <button type="reset" class="input__delete-icon input__delete-icon_place-before-sth"></button>
+  </div>
+
+  <div class="help-message">
+    <div class="help-message__first-el"><p class="help-message__text">Если тебе удобнее, чтобы представители фондов
+      писали в Telegram, укажи свой ник (без @ и url)</p></div>
+    <div class="help-message__second-el"></div>
+  </div>
+
+  <div class="links">
+    <input type="text" class="links__input" id="linkName" name="linkName" placeholder="Текст ссылки">
+    <form class="links__container">
+      <input type="url" class="links__input links__input_right" id="linkUrl" name="linkUrl" placeholder="https://">
+      <button type="reset" class="links__delete-btn"></button>
+    </form>
+  </div>
+
+  <div class="links__add-container">
+    <button type="button" class="links__plus-btn"></button>
+    <button type="button" class="links__add-btn">Добавить ссылку</button>
+  </div>
+
+  <div class="popup-list">
+    <select class="popup-list_hidden" aria-placeholder="Предпочитаемый способ связи">
+      <option value="email">Электронная почта</option>
+      <option value="tel">Телефон</option>
+      <option value="tg">Telegram</option>
+      <option value="emailAndTel">Электронная почта и телефон</option>
+      <option value="emailAndTg">Электронная почта и Telegram</option>
+    </select>
+
+    <div class="popup-list__field">
+      <p class="popup-list__field-text">Предпочитаемый способ связи</p>
+      <button class="popup-list__arrow"></button>
+    </div>
+
+    <ul class="popup-list__list">
+      <li class="popup-list__item popup-list__item_choice" id="mail">Электронная почта</li>
+      <li class="popup-list__item" id="tel">Телефон</li>
+      <li class="popup-list__item" id="tg">Telegram</li>
+      <li class="popup-list__item" id="mailAndTel">Электронная почта и телефон</li>
+      <li class="popup-list__item" id="mailAndTg">Электронная почта и Telegram</li>
+    </ul>
+  </div>
+
+
+</section>
+
+
+
+<!--v-account / profile-->
+<section>
+  <ul class="unordered-list">
+    <li><p class="unordered-list__text">ты не сможешь откликаться на задания;</p></li>
+    <li><p class="unordered-list__text">твой профиль будет скрыт для всех пользователей</p></li>
+    <li><p class="unordered-list__text">ты не будешь получать от нас никаких писем.</p></li>
+  </ul>
+</section>
+
+<!--registration / description-->
+<section>
+  <ul class="unordered-list">
+    <li><p class="unordered-list__text">какова ее миссия,</p></li>
+    <li><p class="unordered-list__text">как строится работа,</p></li>
+    <li><p class="unordered-list__text">в чем заключалась ее деятельность, до официального оформления,</p></li>
+    <li><p class="unordered-list__text">для чего вам необходима регистрация на ProCharity,</p></li>
+    <li><p class="unordered-list__text">какие задания вы планируете давать волонтерам</p></li>
+  </ul>
+</section>
+
+
+<!--registration / volunteer-->
+<section>
+  <p class="paragraph">Представители фондов увидят эти данные на твоей странице</p>
+  <p class="paragraph">Контакты будут видны фондам, которые выберут тебя исполнителем задания</p>
+  <p class="paragraph">Пароль должен содержать не менее 8 знаков и может включать латинские буквы, цифры и специальные символы</p>
+</section>
+
+<!--reg-email info-->
+<section>
+  <p class="paragraph">Следующий шаг — подтверди свой email. Мы уже выслали на него приветственное письмо — открой его и следуй инструкциям.
+    Если письма во входящих нет, проверь папку «Спам».
+    Если и там его не нашлось, напиши на procharity@friends-foundation.com</p>
+</section>
+
+<!--v_account / contacts-->
+<section>
+  <p class="paragraph">Фонды увидят эти данные на твоей странице</p>
+  <p class="paragraph">Контакты будут видны фондам, которые выберут тебя исполнителем задания</p>
+</section>
+
+<!--v_account / competitions-->
+<section>
+  <p class="paragraph">Укажи, какие категории заданий тебе интересны и соответствуют твоим навыкам</p>
+</section>
+
+<!--v_account / motivation-->
+<section>
+  <p class="paragraph">Расскажи немного о себе и причинах, по которым стремишься помогать другим</p>
+  <p class="paragraph">Опиши свой опыт и навыки подробнее. Например, если ты выбрал категорию перевода, укажи язык, которым владеешь</p>
+</section>
+
+<!--v_account / portfolio-->
+<section>
+  <p class="paragraph">Наличие резюме или портфолио увеличит доверие к тебе как к профессионалу</p>
+</section>
+
+<!--v_account / social-->
+<section>
+  <p class="paragraph">Можешь прикрепить ссылки на свои профили в соцсетях — так представители фондов смогут лучше тебя узнать. А еще это может быть дополнительным способом с тобой связаться.</p>
+</section>
+
+<!--v_account / notification-->
+<section>
+  <p class="paragraph">Отметь события, оповещения о которых ты хотел бы получать на email:</p>
+</section>
+
+<!--v_account / profile-->
+<section>
+  <p class="paragraph">Приватный профиль будет скрыт для неавторизованных пользователей в списке волонтеров и в поиске по сайту</p>
+  <p class="paragraph">Если ты не хочешь больше быть волонтером ProCharity, можешь заблокировать свой профиль. Это значит:</p>
+  <p class="paragraph">Чтобы изменить этот статус, убери галочку в чекбоксе ниже и нажми "Сохранить"</p>
+</section>
+
+<!--registration / contacts-->
+<section>
+  <p class="paragraph">Волонтеры увидят эти данные на странице НКО и в ваших заданиях</p>
+  <p class="paragraph">Волонтеры не увидят эти данные. Будем использовать их, если понадобится уточнить детали или рассказать об изменениях</p>
+  <p class="paragraph">Пароль должен содержать не менее 8 знаков и может включать латинские буквы, цифры и специальные символы</p>
+</section>
+
+<!--registration / description-->
+<section>
+  <p class="paragraph">В отсутствие финансовой отчетности мы хотели бы узнать о вашей НКО подробнее:</p>
+</section>
+
+<!--registration / final-->
+<section>
+  <p class="paragraph">Обычно проверка занимает не более часа. Пока мы проверяем данные, вы можете добавить страницу для пожертвований либо пригласить сотрудников</p>
+</section>
+
+<!--account / description-->
+<section>
+  <p class="paragraph">В отсутствие финансовой отчетности мы хотели бы узнать о вашей НКО подробнее:</p>
+</section>
+
+<!--account / donations-->
+<section>
+  <p class="paragraph">Добавьте ссылку на страницу сбора средств, чтобы волонтеры могли помочь финансово</p>
+</section>
+
+<!--account / access / empty-->
+<section>
+  <p class="paragraph">Приглашайте сотрудников, чтобы они могли создавать задания от имени вашей НКО [перечислить ограничения]</p>
+</section>
+
+
+<section>
+  <p class="explanation">Jpg, png объемом не более 5 Мб</p>
+  <p class="explanation">Jpg, png, pdf объемом не более 20 Мб</p>
+  <p class="explanation">Jpg, png, tiff объемом не более 16 Мб</p>
+  <p class="explanation">Jpg, png объемом не более 5 Мб</p>
+  <p class="explanation">Jpg, png, pdf объемом не более 20 Мб каждый</p>
+  <p class="explanation">Doc, pdf объемом не более 20 Мб каждый</p>
+  <p class="explanation"></p>
+  <p class="explanation"></p>
+  <p class="explanation"></p>
+</section>
+</body>
+</html>

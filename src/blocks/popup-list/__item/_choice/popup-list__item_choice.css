@@ -1,0 +1,5 @@
+.popup-list__item_choice{
+    background: url(../../../../images/chose.svg) no-repeat;
+    background-size: 24px 24px;
+    background-position: calc(100%-12px) 8px;
+}

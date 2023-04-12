@@ -1,0 +1,68 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+
+/*Я частное лицо / Я представляю компанию*/
+
+@import url(../blocks/company/company.css);
+@import url(../blocks/company/__btns/company__btns.css);
+@import url(../blocks/company/__btn/company__btn.css);
+@import url(../blocks/company/__label/company__label.css);
+
+/*Кнопки Назад, Зарегистрироваться, Сохранить*/
+
+@import url(../blocks/novigation-btns/novigation-btns.css);
+@import url(../blocks/novigation-btns/__back-btn/novigation-btns__back-btn.css);
+@import url(../blocks/novigation-btns/__submit-btn/novigation-btns__submit-btn.css);
+@import url(../blocks/novigation-btns/__submit-btn/_type/novigation-btns__submit-btn_type_save-btn.css);
+@import url(../blocks/novigation-btns/__submit-btn/_inactive/novigation-btns__submit-btn_inactive.css);
+
+
+@import url(../blocks/text-area/__box/text-area__box.css);
+@import url(../blocks/text-area/text-area.css);
+@import url(../blocks/text-area/__label/text-area__label.css);
+@import url(../blocks/text-area/__delete-icon/text-area__delete-icon.css);
+@import url(../blocks/text-area/__count/text-area__count.css);
+
+@import url(../blocks/input/input.css);
+@import url(../blocks/input/__box/input__box.css);
+@import url(../blocks/input/__label/input__label.css);
+@import url(../blocks/input/__delete-icon/input__delete-icon.css);
+@import url(../blocks/input/__info-btn/input__info-btn.css);
+@import url(../blocks/input/_type/input_type_calendar.css);
+@import url(../blocks/input/_type/input_type_password.css);
+@import url(../blocks/input/__delete-icon/_place-before-sth/input__delete-icon_place-before-sth.css);
+@import url(../blocks/input/__arrow-btn/input__arrow-btn.css);
+@import url(../blocks/input/__box/_password/input__box_password.css);
+@import url(../blocks/input/__password-checkbox/input__password-checkbox.css);
+
+@import url(../blocks/help-message/help-message.css);
+@import url(../blocks/help-message/__first-el/help-message__first-el.css);
+@import url(../blocks/help-message/__second-el/help-message__second-el.css);
+@import url(../blocks/help-message/__text/help-message__text.css);
+
+@import url(../blocks/links/links.css);
+@import url(../blocks/links/__input/links__input.css);
+@import url(../blocks/links/__container/links__container.css);
+@import url(../blocks/links/__delete-btn/links__delete-btn.css);
+@import url(../blocks/links/__add-btn/links__add-btn.css);
+@import url(../blocks/links/__add-container/links__add-container.css);
+@import url(../blocks/links/__plus-btn/links__plus-btn.css);
+@import url(../blocks/links/__input/_right/links__input_right.css);
+
+@import url(../blocks/popup-list/popup-list.css);
+@import url(../blocks/popup-list/_hidden/popup-list_hidden.css);
+@import url(../blocks/popup-list/__list/popup-list__list.css);
+@import url(../blocks/popup-list/__item/popup-list__item.css);
+@import url(../blocks/popup-list/__field/popup-list__field.css);
+@import url(../blocks/popup-list/__field-text/popup-list__field-text.css);
+@import url(../blocks/popup-list/__arrow/popup-list__arrow.css);
+@import url(../blocks/popup-list/__list/_hidden/popup-list__list_hidden.css);
+@import url(../blocks/popup-list/__item/_choice/popup-list__item_choice.css);
+
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../styles/blocks/page/page.css);
+@import url(../styles/blocks/unordered-list/unordered-list.css);
+@import url(../styles/blocks/unordered-list/__text/unordered-list__text.css);
+@import url(../styles/blocks/paragraph/paragraph.css);
+@import url(../styles/blocks/explanation/explanation.css);
