@@ -66,3 +66,7 @@
 @import url(../styles/blocks/unordered-list/__text/unordered-list__text.css);
 @import url(../styles/blocks/paragraph/paragraph.css);
 @import url(../styles/blocks/explanation/explanation.css);
+
+@import url(../blocks/heading/heading.css);
+@import url(../blocks/heading/_type/heading_type_title.css);
+@import url(../blocks/heading/_type/heading_type_subtitle.css);
