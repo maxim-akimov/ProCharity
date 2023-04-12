@@ -49,19 +49,16 @@
 @import url(../blocks/links/__plus-btn/links__plus-btn.css);
 @import url(../blocks/links/__input/_right/links__input_right.css);
 
-@import url(../blocks/popup-list/popup-list.css);
-@import url(../blocks/popup-list/_hidden/popup-list_hidden.css);
-@import url(../blocks/popup-list/__list/popup-list__list.css);
-@import url(../blocks/popup-list/__item/popup-list__item.css);
-@import url(../blocks/popup-list/__field/popup-list__field.css);
-@import url(../blocks/popup-list/__field-text/popup-list__field-text.css);
-@import url(../blocks/popup-list/__arrow/popup-list__arrow.css);
-@import url(../blocks/popup-list/__list/_hidden/popup-list__list_hidden.css);
-@import url(../blocks/popup-list/__item/_choice/popup-list__item_choice.css);
+@import url(../blocks/custom-select/custom-select.css);
+@import url(../blocks/custom-select/__list/custom-select__list.css);
+@import url(../blocks/custom-select/__item/custom-select__item.css);
+@import url(../blocks/custom-select/__field/custom-select__field.css);
+@import url(../blocks/custom-select/__field-text/custom-select__field-text.css);
+@import url(../blocks/custom-select/__arrow/custom-select__arrow.css);
+@import url(../blocks/custom-select/__item/_selected/custom-select__item_selected.css);
 
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
-@import url(../styles/blocks/page/page.css);
 @import url(../blocks/unordered-list/unordered-list.css);
 @import url(../blocks/unordered-list/__text/unordered-list__text.css);
 @import url(../blocks/paragraph/paragraph.css);
