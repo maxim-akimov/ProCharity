@@ -1,3 +1,6 @@
 .custom-select__list-container {
-
+  display: none;
+  position: absolute;
+  width: 100%;
+  margin-top: 4px;
 }
