@@ -181,9 +181,59 @@
 
 
 /* ====================================================================================================================
-                      V        ПОДКЛЮЧЕНИЕ СТИЛЕЙ ДЛЯ ЭЛЕМЕНТОВ РАЗЕЛА CONTENT        V
+                      V        ПОДКЛЮЧЕНИЕ СТИЛЕЙ ДЛЯ ЭЛЕМЕНТОВ РАЗДЕЛА CONTENT        V
 ====================================================================================================================== */
 
 
+        /*====================  HEADING  ====================*/
 
+@import url(../blocks/heading/heading.css);
+@import url(../blocks/heading/_type/heading_type_title.css);
+@import url(../blocks/heading/_type/heading_type_subtitle.css);
 
+        /*====================  FORM-ITEM  ====================*/
+
+@import url(../blocks/form-item/form-item.css);
+@import url(../blocks/form-item/__legend/form-item__legend.css);
+@import url(../blocks/form-item/_company/form-item_company.css);
+@import url(../blocks/form-item/_type/form-item_type_text-area.css);
+
+        /*====================  COMPANY  ====================*/
+
+@import url(../blocks/company/company.css);
+@import url(../blocks/company/__btns/company__btns.css);
+@import url(../blocks/company/__btn/company__btn.css);
+@import url(../blocks/company/__label/company__label.css);
+
+        /*====================  NOBIGATION-BTNS  ====================*/
+
+@import url(../blocks/novigation-btns/__submit-btn/novigation-btns__submit-btn.css);
+@import url(../blocks/novigation-btns/__submit-btn/_type/novigation-btns__submit-btn_type_save-btn.css);
+@import url(../blocks/novigation-btns/__submit-btn/_inactive/novigation-btns__submit-btn_inactive.css);
+
+        /*====================  TEXT-AREA  ====================*/
+
+@import url(../blocks/text-area/__box/text-area__box.css);
+@import url(../blocks/text-area/text-area.css);
+@import url(../blocks/text-area/__label/text-area__label.css);
+@import url(../blocks/text-area/__delete-icon/text-area__delete-icon.css);
+@import url(../blocks/text-area/__count/text-area__count.css);
+@import url(../blocks/text-area/__box/_placeholder/text-area__box_placeholder.css);
+
+        /*====================  INPUT  ====================*/
+
+@import url(../blocks/input/input.css);
+@import url(../blocks/input/__box/input__box.css);
+@import url(../blocks/input/__label/input__label.css);
+@import url(../blocks/input/__delete-icon/input__delete-icon.css);
+@import url(../blocks/input/__info-btn/input__info-btn.css);
+@import url(../blocks/input/_type/input_type_calendar.css);
+@import url(../blocks/input/__delete-icon/_place-before-sth/input__delete-icon_place-before-sth.css);
+@import url(../blocks/input/__box/_placeholder/input__box_placeholder.css);
+
+        /*====================  HELP-MESSAGE  ====================*/
+
+@import url(../blocks/help-message/help-message.css);
+@import url(../blocks/help-message/__first-el/help-message__first-el.css);
+@import url(../blocks/help-message/__second-el/help-message__second-el.css);
+@import url(../blocks/help-message/__text/help-message__text.css);

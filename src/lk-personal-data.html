@@ -8,6 +8,11 @@
   <title>ProCharity - Личные данные</title>
 </head>
 <body class="page">
+
+
+<!-- ===========================   HEADER   =========================== -->
+
+
 <header class="header">
   <div class="header__wrap">
     <button class="menu-icon" type="button"></button>
@@ -44,7 +49,17 @@
   </div>
 </header>
 <div class="main-layout main-layout_style_lk">
+
+
+  <!-- ===========================   MAIN   =========================== -->
+
+
   <main class="main main_template_lk">
+
+
+    <!-- ===========================   BREADCRUMBS   =========================== -->
+
+
     <nav class="breadcrumbs">
       <ul class="breadcrumbs__list">
         <li class="breadcrumbs__item">
@@ -55,6 +70,11 @@
         </li>
       </ul>
     </nav>
+
+
+    <!-- ===========================   SIDEBAR   =========================== -->
+
+
     <section class="sidebar-nav sidebar__block">
       <ul class="sidebar-nav__list">
         <li class="sidebar-nav__item sidebar-nav__item_type_current">
@@ -100,10 +120,20 @@
         <p class="sidebar-nav__description-title">Профиль волонтера</p>
       </div>
     </section>
+
+    
+    <!-- ===========================   SIDEBAR PROFILE-STATUS   =========================== -->
+
+
     <section class="sidebar__block sidebar__profile-status">
       <h3 class="sidebar__title">Статус профиля</h3>
       <a href="#" class="sidebar__status">Cкрыт</a>
     </section>
+
+
+    <!-- ===========================   SIDEBAR PROFILE-PROGRESS   =========================== -->
+
+
     <section class="sidebar__block sidebar__profile-progress">
       <h3 class="sidebar__title">Профиль заполнен на 66%</h3>
       <div class="progress-bar">
@@ -115,11 +145,111 @@
       <p class="sidebar__description">Узнай, <a class="sidebar__link" href="">как заполнить
         профиль,</a> чтобы тебя выбрали исполнителем</p>
     </section>
+
+
+    <!-- ===========================   CONTENT   =========================== -->
+
+
     <section class="content">
-      Личные данные
+      <h1 class="heading heading_type_title">Личные данные</h1>
+      <form class="personal-date-form">
+        <div class="avatar__box">
+          
+        </div>
+        <fieldset class="form-item" id="userDate">
+
+          <legend class="form-item__legend heading_type_subtitle">Фонды увидят эти данные на твоей странице</legend>
+
+          <div class="input__box">
+            <label for="name" class="input__label">Имя</label>
+            <input type="text" class="input" name="name" id="name" required>
+            <button type="reset" class="input__delete-icon"></button>
+          </div>
+
+          <div class="input__box">
+            <label for="surname" class="input__label">Фамилия</label>
+            <input type="text" class="input" name="surname" id="surname" required>
+            <button type="reset" class="input__delete-icon"></button>
+          </div>
+
+          <div class="input__box">
+            <label for="date" class="input__label">Дата рождения</label>
+            <input type="date" class="input input_type_calendar" name="date" id="date" required>
+            <button type="reset" class="input__delete-icon input__delete-icon_place-before-sth"></button>
+          </div>
+
+          <div class="input__box">
+            <label for="city" class="input__label">Город</label>
+            <input type="text" class="input" name="city" id="city" required> 
+            <button type="reset" class="input__delete-icon"></button>
+          </div>
+
+        </fieldset>
+
+        <fieldset class="form-item" id="userContacts">
+
+          <legend class="form-item__legend">Контакты будут видны фондам, которые выберут тебя исполнителем задания</legend>
+
+          <div class="input__box">
+            <label for="email" class="input__label">Электронная почта</label>
+            <input type="email" class="input" name="email" id="email" required>
+            <button type="reset" class="input__delete-icon"></button>
+          </div>
+
+          <div class="input__box">
+            <label for="tel" class="input__label">Телефон</label>
+            <input type="tel" class="input" name="tel" id="tel" required>
+            <button type="reset" class="input__delete-icon"></button>
+          </div>
+
+          <div class="input__box">
+            <label for="tgname" class="input__label">Ник в Telegram</label>
+            <input type="text" class="input" name="tgname" id="tgname" required>
+            <button type="reset" class="input__delete-icon input__delete-icon_place-before-sth"></button>
+            <button type="button" class="input__info-btn"></button>
+          </div>  
+
+        </fieldset>
+
+        <fieldset class="form-item">
+
+          <div class="company__btns form-item_company">
+            <input type="radio" class="company__btn" name="btn" id="fisical">
+            <label for="fisical" class="company__lable">я частное лицо</label>
+            <input type="radio" class="company__btn" name="btn" id="company" >
+            <label for="company" class="company__lable">я представляю компанию</label>
+          </div>
+        
+          <div>
+            input
+          </div>
+
+          <div class="input__box input__box_placeholder">
+            <input type="text" class="input" name="post" id="post" placeholder="Должность" required>
+            <button type="reset" class="input__delete-icon"></button>
+          </div>
+
+        </fieldset>
+
+        <fieldset class="form-item form-item_type_text-area">
+          <div class="text-area__box text-area__box_placeholder">
+            <textarea class="text-area" name="how-found" id="howFound" maxlength="2000" placeholder="Как ты о нас узнал?" required></textarea>
+            <button type="reset" class="text-area__delete-icon"></button>
+            <span class="text-area__count">0/2000</span>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="novigation-btns__submit-btn novigation-btns__submit-btn_type_save-btn">Сохранить</button>
+
+      </form>
     </section>
   </main>
 </div>
+
+
+<!-- ===========================   FOOTER   =========================== -->
+
+
 <footer class="footer">
   <nav class="footer__menu">
     <div class="footer__menu-chapter ">
@@ -287,5 +417,12 @@
     </a>
   </div>
 </footer>
+
+<div class="help-message">
+  <div class="help-message__first-el"><p class="help-message__text">Если тебе удобнее, чтобы представители фондов
+    писали в Telegram, укажи свой ник (без @ и url)</p></div>
+  <div class="help-message__second-el"></div>
+</div>
+
 </body>
 </html>

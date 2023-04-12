@@ -17,10 +17,10 @@
     border-radius: 0px 6px 6px 0px;
     order: 1;
 }
-.company__btn:focus{
+.company__btn:checked{
     background: #72D0DC;
     border-color: #72D0DC;
 }
-.company__btn:focus + .company__lable{
+.company__btn:checked + .company__lable{
     color: #FFFFFF;
 }

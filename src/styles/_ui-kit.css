@@ -32,7 +32,7 @@
 @import url(../blocks/input/_type/input_type_password.css);
 @import url(../blocks/input/__delete-icon/_place-before-sth/input__delete-icon_place-before-sth.css);
 @import url(../blocks/input/__arrow-btn/input__arrow-btn.css);
-@import url(../blocks/input/__box/_password/input__box_password.css);
+@import url(../blocks/input/__box/_placeholder/input__box_placeholder.css);
 @import url(../blocks/input/__password-checkbox/input__password-checkbox.css);
 
 @import url(../blocks/help-message/help-message.css);
