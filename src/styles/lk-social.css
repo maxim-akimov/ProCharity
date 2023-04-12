@@ -101,6 +101,7 @@
 @import url(../blocks/btn/btn.css);
 
 @import url(../blocks/btn/_type/btn_type_refresh.css);
+@import url(../blocks/btn/_type/btn_type_close.css);
 
 
 
@@ -177,6 +178,21 @@
 
 
 @import url(./../blocks/buroburo-logo/buroburo-logo.css);
+
+
+
+@import url(../blocks/popup/popup.css);
+
+@import url(../blocks/popup/__title/popup__title.css);
+
+@import url(../blocks/popup/__text/popup__text.css);
+
+@import url(../blocks/popup/__btn-close/popup__btn-close.css);
+
+
+
+
+
 
 
 

@@ -1,0 +1,12 @@
+.input__arrow-btn{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../../../images/arrow.svg) no-repeat center;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    cursor: pointer;
+}

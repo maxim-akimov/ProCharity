@@ -104,33 +104,8 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
-            filename: 'ui-kit-albert-taygibov.html',
-            template: './src/ui-kit-albert-taygibov.html',
-            inject: 'body'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'ui-kit-tatijana-kovpak.html',
-            template: './src/ui-kit-tatijana-kovpak.html',
-            inject: 'body'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'ui-kit-artem-sobolevsky.html',
-            template: './src/ui-kit-artem-sobolevsky.html',
-            inject: 'body'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'ui-kit-maksim-akimov.html',
-            template: './src/ui-kit-maksim-akimov.html',
-            inject: 'body'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'ui-kit-nikita-vereschagin.html',
-            template: './src/ui-kit-nikita-vereschagin.html',
-            inject: 'body'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'ui-kit-tatijana-kovpak.html',
-            template: './src/ui-kit-tatijana-kovpak.html',
+            filename: '_ui-kit.html',
+            template: './src/_ui-kit.html',
             inject: 'body'
         }),
         new CleanWebpackPlugin(),
