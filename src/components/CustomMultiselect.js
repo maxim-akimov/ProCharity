@@ -27,7 +27,7 @@ export default class CustomMultiselect {
     optionsOpenedListContainerClass: 'custom-multiselect__list-container__opened',
     optionsListClass: 'custom-multiselect__list',
     optionClass: 'custom-multiselect__item',
-    optionArrowClass: 'custom-multiselect__item-arrow',
+    optionParentClass: 'custom-multiselect__item-parent',
     checkboxClass: 'custom-multiselect__checkbox',
     checkboxCheckedClass: 'custom-multiselect__checkbox_checked'
   }) {
@@ -37,16 +37,19 @@ export default class CustomMultiselect {
 
 
   _changeOption(option) {
-    // Изменение выбранного значения в исходном select
-    // (пригодится для реализации обычной передачи значений на сервер -
-    // значение будет передоваться из обычного select)
-    this._selectElement.value = option.dataset.val;
+    if (this._selectElement.multiple) {
+      const element = this._selectElement.querySelector(`[value="${option.dataset.val}"]`);
+
+      element.selected = !element.selected
+    } else {
+      this._selectElement.value = option.dataset.val;
+    }
   }
 
 
   _createWrap() {
     // Создание обертки для кастомного селекта
-    // Обертка позхволит позиционировать раскрывающийся список относительно поля выбора
+    // Обертка позволит позиционировать раскрывающийся список относительно поля выбора
     const element = document.createElement('div');
     element.classList.add(this._options.wrapClass);
 
@@ -130,15 +133,23 @@ export default class CustomMultiselect {
   _getOptions() {
     this._data = [];
 
+    // Рекурсивная функция для прохода по всем уровням вложенности элементов
     function createDataArray(array) {
+      //Результирующий массив
       const resultArray = [];
 
       array.forEach((item, index) => {
+        // Обрабатываются только элементы optgroup и option,
+        // в противном случае в результирующий массив попадут
+        // текстовые узлы
         if (item.tagName === 'OPTGROUP'
           || item.tagName === 'OPTION') {
+
+          // Объект с параметрами варианта выбора
           resultArray.push({
             tagName: item.tagName.toLocaleLowerCase(),
-            value: item.label || item.value,
+            value: item.value || null,
+            text: item.label || item.textContent,
             id: item.id,
             children: createDataArray(item.childNodes),
             isSelected: item.hasAttribute('selected')
@@ -152,7 +163,9 @@ export default class CustomMultiselect {
     const optgroups = this._selectElement.querySelectorAll('optgroup');
     const options = this._selectElement.querySelectorAll('option');
 
+    // Если удалось найти внутри элемента select элементы optgroup
     if (optgroups && optgroups.length > 0) {
+      //Передаем их в фукцию для рекурсивного получения данных
       return createDataArray(optgroups);
     }
 
@@ -190,10 +203,16 @@ export default class CustomMultiselect {
       // Создание элемента списка li
       const option = this._createItem();
 
+      // Добавление атрибута для связки элементов выбора с стандартным select
+      option.setAttribute('data-val', item.value);
+
+      // Установка отображаемого текстового значения
+      option.textContent = item.text;
+
       // Если имеются дочерние элементы
       if (item.children.length > 0) {
         // Добавляем стиль родительского пункта списка (стрелка)
-        option.classList.add(this._options.optionArrowClass);
+        option.classList.add(this._options.optionParentClass);
 
         //Создание контейнера (обертки) дочернего списка
         const container = this._createListContainer();

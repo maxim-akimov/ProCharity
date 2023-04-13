@@ -34,10 +34,13 @@ export default class CustomSelect {
 
 
   _changeOption(option) {
-    // Изменение выбранного значения в исходном select
-    // (пригодится для реализации обычной передачи значений на сервер -
-    // значение будет передоваться из обычного select)
-    this._selectElement.value = option.dataset.val;
+    if (this._selectElement.multiple) {
+      const element = this._selectElement.querySelector(`[value="${option.dataset.val}"]`);
+
+      element.selected = !element.selected
+    } else {
+      this._selectElement.value = option.dataset.val;
+    }
   }
 
 
@@ -93,6 +96,14 @@ export default class CustomSelect {
   }
 
 
+  _createItem() {
+    const element = document.createElement('li');
+    element.classList.add(this._options.optionClass);
+
+    return element;
+  }
+
+
   //Select
   _createDropdownBlock() {
     // Создание обертки для кастомного селекта
@@ -129,14 +140,45 @@ export default class CustomSelect {
 
 
   _getOptions() {
+    this._data = [];
+
+    // Рекурсивная функция для прохода по всем уровням вложенности элементов
+    function createDataArray(array) {
+      //Результирующий массив
+      const resultArray = [];
+
+      array.forEach((item, index) => {
+        // Обрабатываются только элементы optgroup и option,
+        // в противном случае в результирующий массив попадут
+        // текстовые узлы
+        if (item.tagName === 'OPTGROUP'
+          || item.tagName === 'OPTION') {
+
+          // Объект с параметрами варианта выбора
+          resultArray.push({
+            tagName: item.tagName.toLocaleLowerCase(),
+            value: item.value || null,
+            text: item.label || item.textContent,
+            id: item.id,
+            children: createDataArray(item.childNodes),
+            isSelected: item.hasAttribute('selected')
+          });
+        }
+      })
+
+      return resultArray;
+    }
+
     const optgroups = this._selectElement.querySelectorAll('optgroup');
     const options = this._selectElement.querySelectorAll('option');
 
+    // Если удалось найти внутри элемента select элементы optgroup
     if (optgroups && optgroups.length > 0) {
-      return optgroups
+      //Передаем их в фукцию для рекурсивного получения данных
+      return createDataArray(optgroups);
     }
 
-    return options;
+    return createDataArray(options);
   }
 
 
@@ -176,27 +218,38 @@ export default class CustomSelect {
   }
 
 
-  _setItems() {
-    this._getOptions().forEach((item, index) => {
-      const option = document.createElement('li');
+  _createItems(data, parentElement) {
+    data.forEach((item, index) => {
+      if (this._options.firstOptionIsTitle && index !== 0) {
+        // Создание элемента списка li
+        const option = this._createItem();
 
-      if (this._options.firstOptionIsTitle && index === 0) {
-        this._customSelectElement.querySelector(`.${this._options.fieldTextClass}`)
-          .textContent = item.textContent;
-
-      } else {
-        option.classList.add(this._options.optionClass);
+        // Добавление атрибута для связки элементов выбора с стандартным select
         option.setAttribute('data-val', item.value);
-        option.textContent = item.textContent;
 
-        if (item.hasAttribute('selected')) {
-          option.classList.add(this._options.optionSelectedClass);
+        // Установка отображаемого текстового значения
+        option.textContent = item.text;
+
+        // Если имеются дочерние элементы
+        if (item.children.length > 0) {
+          // Добавляем стиль родительского пункта списка (стрелка)
+          option.classList.add(this._options.optionArrowClass);
+
+          //Создание контейнера (обертки) дочернего списка
+          const container = this._createListContainer();
+
+          // Создание элемента дочернего списка
+          const list = this._createList();
+
+          // Рекурсивный вызов
+          this._createItems(item.children, list);
+          container.append(list)
+          option.append(container);
         }
 
-        this._customSelectElement.querySelector(`.${this._options.optionsListClass}`)
-          .append(option);
+        parentElement.append(option);
       }
-    })
+    });
   }
 
 
@@ -214,7 +267,10 @@ export default class CustomSelect {
 
 
     // Заполнение каркаса элементами списка
-    this._setItems();
+    this._createItems(
+      this._getOptions(),
+      this._optionsListElement
+    );
 
     // Сработает при инициализации, если параметр options.firstOptionIsTitle = true
     // первый option из списка будет являться подписью кастомного списка
