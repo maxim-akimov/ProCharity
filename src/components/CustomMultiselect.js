@@ -1,4 +1,4 @@
-export default class CustomSelect {
+export default class CustomMultiselect {
   /**
    *
    * @param selector - слектор элемента select, который необходимо кастомизировать
@@ -17,16 +17,19 @@ export default class CustomSelect {
    *                                    в кастомизированном списке
    */
   constructor(selector, options = {
-    wrapClass: 'custom-select__wrap',
-    fieldClass: 'custom-select__field',
-    fieldTextClass: 'custom-select__field-text',
-    fieldArrowClass: 'custom-select__arrow',
-    optionsListContainerClass: 'custom-select__list-container',
-    optionsOpenedListContainerClass: 'custom-select__list-container__opened',
-    optionsListClass: 'custom-select__list',
-    optionClass: 'custom-select__item',
-    optionSelectedClass: 'custom-select__item_selected',
-    firstOptionIsTitle: true
+    wrapClass: 'custom-multiselect__wrap',
+    fieldClass: 'custom-multiselect__field',
+    chipsClass: 'custom-multiselect__chips',
+    chipsTextClass: 'custom-multiselect__chips-text',
+    chipsDeleteBtnClass: 'custom-multiselect__chips-delete-btn',
+    fieldArrowClass: 'custom-multiselect__arrow',
+    optionsListContainerClass: 'custom-multiselect__list-container',
+    optionsOpenedListContainerClass: 'custom-multiselect__list-container__opened',
+    optionsListClass: 'custom-multiselect__list',
+    optionClass: 'custom-multiselect__item',
+    optionArrowClass: 'custom-multiselect__item-arrow',
+    checkboxClass: 'custom-multiselect__checkbox',
+    checkboxCheckedClass: 'custom-multiselect__checkbox_checked'
   }) {
     this._selectElement = document.querySelector(selector);
     this._options = options;
@@ -60,15 +63,6 @@ export default class CustomSelect {
   }
 
 
-  //Select
-  _createFieldText() {
-    const element = document.createElement('div');
-    element.classList.add(this._options.fieldTextClass);
-
-    return element;
-  }
-
-
   _createArrow() {
     const element = document.createElement('div');
     element.classList.add(this._options.fieldArrowClass);
@@ -93,7 +87,15 @@ export default class CustomSelect {
   }
 
 
-  //Select
+  _createItem() {
+    const element = document.createElement('li');
+    element.classList.add(this._options.optionClass);
+
+    return element;
+  }
+
+
+  //Multi
   _createDropdownBlock() {
     // Создание обертки для кастомного селекта
     this._customSelectElement = this._createWrap();
@@ -101,14 +103,11 @@ export default class CustomSelect {
     // Создание поля кастомного селекта
     this._fieldElement = this._createField();
 
-    // Создание текстового элемента поля
-    this._fieldTextElement = this._createFieldText(); //Select
-
     // Создание иконки раскрывающегося списка
     this._fieldArrowElement = this._createArrow();
 
     // Добавление текстового элемента и иконки к полю
-    this._fieldElement.append(this._fieldTextElement, this._fieldArrowElement); //Select
+    this._fieldElement.append(this._fieldArrowElement);
 
     // Добавление поля в контейнер
     this._customSelectElement.append(this._fieldElement);
@@ -129,14 +128,35 @@ export default class CustomSelect {
 
 
   _getOptions() {
+    this._data = [];
+
+    function createDataArray(array) {
+      const resultArray = [];
+
+      array.forEach((item, index) => {
+        if (item.tagName === 'OPTGROUP'
+          || item.tagName === 'OPTION') {
+          resultArray.push({
+            tagName: item.tagName.toLocaleLowerCase(),
+            value: item.label || item.value,
+            id: item.id,
+            children: createDataArray(item.childNodes),
+            isSelected: item.hasAttribute('selected')
+          });
+        }
+      })
+
+      return resultArray;
+    }
+
     const optgroups = this._selectElement.querySelectorAll('optgroup');
     const options = this._selectElement.querySelectorAll('option');
 
     if (optgroups && optgroups.length > 0) {
-      return optgroups
+      return createDataArray(optgroups);
     }
 
-    return options;
+    return createDataArray(options);
   }
 
 
@@ -146,12 +166,11 @@ export default class CustomSelect {
   }
 
 
-  //Select
+  //Multi
   _handleItemClick(evt) {
     this._resetSelectedOption();
 
     this._setSelectedOption(evt.target);
-    this._setFieldText(); //Select
 
     this._changeOption(evt.target);
   }
@@ -166,37 +185,29 @@ export default class CustomSelect {
   }
 
 
-  //Select
-  _setFieldText() {
-      const selectedOption = this._getSelectedOption();
+  _createItems(data, parentElement) {
+    data.forEach((item) => {
+      // Создание элемента списка li
+      const option = this._createItem();
 
-      if(selectedOption) {
-        this._fieldTextElement.textContent = selectedOption.textContent;
+      // Если имеются дочерние элементы
+      if (item.children.length > 0) {
+        // Добавляем стиль родительского пункта списка (стрелка)
+        option.classList.add(this._options.optionArrowClass);
+
+        //Создание контейнера (обертки) дочернего списка
+        const container = this._createListContainer();
+
+        // Создание элемента дочернего списка
+        const list = this._createList();
+
+        // Рекурсивный вызов
+        this._createItems(item.children, list);
+        container.append(list)
+        option.append(container);
       }
-  }
-
-
-  _setItems() {
-    this._getOptions().forEach((item, index) => {
-      const option = document.createElement('li');
-
-      if (this._options.firstOptionIsTitle && index === 0) {
-        this._customSelectElement.querySelector(`.${this._options.fieldTextClass}`)
-          .textContent = item.textContent;
-
-      } else {
-        option.classList.add(this._options.optionClass);
-        option.setAttribute('data-val', item.value);
-        option.textContent = item.textContent;
-
-        if (item.hasAttribute('selected')) {
-          option.classList.add(this._options.optionSelectedClass);
-        }
-
-        this._customSelectElement.querySelector(`.${this._options.optionsListClass}`)
-          .append(option);
-      }
-    })
+      parentElement.append(option);
+    });
   }
 
 
@@ -206,7 +217,7 @@ export default class CustomSelect {
   }
 
 
-  //Select
+  //Multi
   generate() {
     // Создание каркаса кастомного селекта
     this._createDropdownBlock();
@@ -214,11 +225,10 @@ export default class CustomSelect {
 
 
     // Заполнение каркаса элементами списка
-    this._setItems();
-
-    // Сработает при инициализации, если параметр options.firstOptionIsTitle = true
-    // первый option из списка будет являться подписью кастомного списка
-    this._setFieldText(); //Select
+    this._createItems(
+      this._getOptions(),
+      this._optionsListElement
+    );
 
     //Установка обработчиков событий
     this.setEventListeners();
@@ -244,14 +254,14 @@ export default class CustomSelect {
         // Закрытие выпадающего списка
         this.closeDropdown();
 
-      // Если клик был произведен по элементу списка
+        // Если клик был произведен по элементу списка
       } else if (evt.target.classList.contains(this._options.optionClass)) {
         // Обработка клика по элементу
         this._handleItemClick(evt);
         // Закрытие выпадающего списка
         this.closeDropdown();
 
-      // В остальных случаях
+        // В остальных случаях
       } else {
         // Если  контейнер выпадающего списка открыт
         if (this._optionsListContainerElement.classList
@@ -266,6 +276,6 @@ export default class CustomSelect {
       }
     });
   }
-  
+
 
 }

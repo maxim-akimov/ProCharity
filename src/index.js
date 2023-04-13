@@ -11,6 +11,7 @@ import './styles/settings-profile.css';
 import './styles/_ui-kit.css';
 
 import CustomSelect from "./components/CustomSelect";
+import CustomMultiselect from "./components/CustomMultiselect";
 
-const dd = new CustomSelect('.custom-select');
-dd.generate();
+new CustomSelect('#connection').generate();
+new CustomMultiselect('#competencies').generate();
