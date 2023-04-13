@@ -205,6 +205,14 @@
 @import url(../blocks/company/__btn/company__btn.css);
 @import url(../blocks/company/__label/company__label.css);
 
+        /*====================  AVATAR  ====================*/
+
+@import url(../blocks/avatar/avatar.css);
+@import url(../blocks/avatar/__box/avatar__box.css);
+@import url(../blocks/avatar/__btn/avatar__btn.css);
+@import url(../blocks/avatar/__img/avatar__img.css);
+@import url(../blocks/avatar/__max-volume/avatar__max-volume.css);        
+
         /*====================  NOBIGATION-BTNS  ====================*/
 
 @import url(../blocks/novigation-btns/__submit-btn/novigation-btns__submit-btn.css);
@@ -219,6 +227,7 @@
 @import url(../blocks/text-area/__delete-icon/text-area__delete-icon.css);
 @import url(../blocks/text-area/__count/text-area__count.css);
 @import url(../blocks/text-area/__box/_placeholder/text-area__box_placeholder.css);
+@import url(../blocks/text-area/_placeholder/text-area_placeholder.css);
 
         /*====================  INPUT  ====================*/
 

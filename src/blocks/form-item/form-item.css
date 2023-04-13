@@ -4,6 +4,7 @@
     grid-template-rows: 1fr 1fr;
     border: 0;
     padding: 0;
-    margin-bottom: 22px;
-    justify-content: left;
+    margin-bottom: 32px;
+    gap: 20px;
+    max-width: 736px;
 }

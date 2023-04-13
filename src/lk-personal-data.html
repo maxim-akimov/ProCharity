@@ -154,7 +154,11 @@
       <h1 class="heading heading_type_title">Личные данные</h1>
       <form class="personal-date-form">
         <div class="avatar__box">
-          
+          <div class="avatar">
+            <img class="avatar__img" alt="Твой аватар">
+            <button type="button" class="avatar__btn">добавить фотографию</button>
+          </div>
+          <p class="avatar__max-volume">Jpg, png <br>объемом не более 5 Мб</p>
         </div>
         <fieldset class="form-item" id="userDate">
 
@@ -188,7 +192,7 @@
 
         <fieldset class="form-item" id="userContacts">
 
-          <legend class="form-item__legend">Контакты будут видны фондам, которые выберут тебя исполнителем задания</legend>
+          <legend class="form-item__legend heading_type_subtitle">Контакты будут видны фондам, которые выберут тебя исполнителем задания</legend>
 
           <div class="input__box">
             <label for="email" class="input__label">Электронная почта</label>
@@ -233,7 +237,7 @@
 
         <fieldset class="form-item form-item_type_text-area">
           <div class="text-area__box text-area__box_placeholder">
-            <textarea class="text-area" name="how-found" id="howFound" maxlength="2000" placeholder="Как ты о нас узнал?" required></textarea>
+            <textarea class="text-area text-area_placeholder" name="how-found" id="howFound" maxlength="2000" placeholder="Как ты о нас узнал?" required></textarea>
             <button type="reset" class="text-area__delete-icon"></button>
             <span class="text-area__count">0/2000</span>
           </div>

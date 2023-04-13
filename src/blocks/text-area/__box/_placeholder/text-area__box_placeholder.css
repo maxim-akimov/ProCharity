@@ -1,3 +1,5 @@
 .text-area__box_placeholder{
+    box-sizing: border-box;
     padding: 12px 52px 25px 16px;
+    width: calc(100%-4px);
 }
