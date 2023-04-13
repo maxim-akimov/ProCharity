@@ -151,7 +151,7 @@
 
 
     <section class="content">
-      <h1 class="heading heading_type_title">Личные данные</h1>
+      <h1 class="heading heading heading_type_title">Личные данные</h1>
       <form class="personal-date-form">
         <div class="avatar__box">
           <div class="avatar">
@@ -162,7 +162,7 @@
         </div>
         <fieldset class="form-item" id="userDate">
 
-          <legend class="form-item__legend heading_type_subtitle">Фонды увидят эти данные на твоей странице</legend>
+          <legend class="form-item__legend heading heading_type_subtitle">Фонды увидят эти данные на твоей странице</legend>
 
           <div class="input__box">
             <label for="name" class="input__label">Имя</label>
@@ -192,7 +192,7 @@
 
         <fieldset class="form-item" id="userContacts">
 
-          <legend class="form-item__legend heading_type_subtitle">Контакты будут видны фондам, которые выберут тебя исполнителем задания</legend>
+          <legend class="form-item__legend heading heading_type_subtitle">Контакты будут видны фондам, которые выберут тебя исполнителем задания</legend>
 
           <div class="input__box">
             <label for="email" class="input__label">Электронная почта</label>
@@ -218,10 +218,8 @@
         <fieldset class="form-item">
 
           <div class="company__btns form-item_company">
-            <input type="radio" class="company__btn" name="btn" id="fisical">
-            <label for="fisical" class="company__lable">я частное лицо</label>
-            <input type="radio" class="company__btn" name="btn" id="company" >
-            <label for="company" class="company__lable">я представляю компанию</label>
+            <label class="company__lable"><input type="radio" class="company__btn" name="btn" id="fisical"> <p class="company__text">я частное лицо</p></label>
+            <label class="company__lable"><input type="radio" class="company__btn company__btn_last" name="btn" id="company"> <p class="company__text">я представляю компанию</p></label>
           </div>
         
           <div>

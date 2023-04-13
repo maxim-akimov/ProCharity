@@ -204,6 +204,8 @@
 @import url(../blocks/company/__btns/company__btns.css);
 @import url(../blocks/company/__btn/company__btn.css);
 @import url(../blocks/company/__label/company__label.css);
+@import url(../blocks/company/__text/company__text.css);
+@import url(../blocks/company/__btn/_last/company__btn_last.css);
 
         /*====================  AVATAR  ====================*/
 
