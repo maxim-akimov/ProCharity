@@ -1,0 +1,6 @@
+.registration-block__link {
+    color: #7DCDD7;
+    text-decoration: underline;
+    z-index: 2;
+    position: relative;
+}

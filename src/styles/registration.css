@@ -183,7 +183,23 @@
 /* ====================================================================================================================
                       V        ПОДКЛЮЧЕНИЕ СТИЛЕЙ ДЛЯ ЭЛЕМЕНТОВ РАЗЕЛА CONTENT        V
 ====================================================================================================================== */
+@import url(./../blocks/content/__start-page/content__start-page.css);
+@import url(./../blocks/content/__start-page/__header/content__start-page__header.css);
+@import url(./../blocks/content/__start-page/__log-in/content__start-page__log-in.css);
+@import url(./../blocks/content/__start-page/__log-in/_link/content__start-page__log-in_link.css);
 
+@import url(./../blocks/registration-block/registration-block.css);
+@import url(./../blocks/registration-block/__header/registration-block__header.css);
+@import url(./../blocks/registration-block/__text/registration-block__text.css);
+@import url(./../blocks/registration-block/__link/registration-block__link.css);
+@import url(./../blocks/registration-block/__new-acc-link/registration-block__new-acc-link.css);
+@import url(./../blocks/registration-block/__container/registration-block__container.css);
+
+@import url(./../blocks/registration-block/_volunteer/registration-block_volunteer.css);
+@import url(./../blocks/registration-block/_NKO/registration-block_NKO.css);
+
+@import url(./../blocks/lifeline-img/lifeline-img.css);
+@import url(./../blocks/mouthepiece-img/mouthpiece-img.css);
 
 
 

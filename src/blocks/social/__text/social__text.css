@@ -1,0 +1,16 @@
+.social__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #58646A;
+    width: 736px;
+    margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .social__text {
+        width: 312px;
+        height: 144px;
+       
+    }
+}

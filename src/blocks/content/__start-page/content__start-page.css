@@ -1,0 +1,14 @@
+.content__start-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    .content__start-page {
+    
+    
+        
+    }
+}

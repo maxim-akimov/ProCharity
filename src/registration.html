@@ -45,8 +45,26 @@
 </header>
 <div class="main-layout main-layout_style_registration">
   <main class="main main_template_registration">
-    <section class="content">
-      Стартовая страница регистрации
+    <section class="content content__start-page">
+      <h2 class="content__start-page__header">Регистрация</h2>
+      <div class="registration-block__container">
+      <div class="registration-block registration-block_volunteer ">
+        <h2 class="registration-block__header">Для волонтера</h2>
+        <p class="registration-block__text">Рады приветствовать профессионала с доброй душой и открытым сердцем! Пожалуйста, ознакомься <a href="#" class="registration-block__link">с правилами регистрации и работы на ProCharity</a></p>
+        <a href="#" class="registration-block__new-acc-link">Создать аккаунт</a>
+        <img src="<%=require('./images/start-page-img-mouthpiece.svg')%>" alt="mouthpiece-img" class="mouthpiece-img">
+        
+      </div>
+      <div class="registration-block registration-block_NKO">
+        <h2 class="registration-block__header">Для НКО</h2>
+        <p class="registration-block__text">Найдите своего профессионала на ProCharity! Для регистрации вам потребуются некоторые документы. Пожалуйста, прочтите <a href="#" class="registration-block__link"> условия регистрации</a></p>
+        <a href="#" class="registration-block__new-acc-link">Создать аккаунт</a>
+        
+        <img src="<%=require('./images/start-page-img-sircle.svg')%>" alt="lifeline-img" class="lifeline-img">
+      </div>
+    </div>
+      <p class="content__start-page__log-in">Уже есть аккаунт? <a href="#" class="content__start-page__log-in_link">Войти</a></p>
+
     </section>
   </main>
 </div>

@@ -1,0 +1,26 @@
+.registration-block__header {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 64px 13.59% 0 13.59%;
+}
+
+
+@media screen and (max-width: 1250px) {
+    .registration-block__header {
+        font-size: 28px;
+        margin: 64px 5% 0 5%;
+        
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .registration-block__header {
+        margin: 48px 6.66% 0 6.66%;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+        
+    }
+}

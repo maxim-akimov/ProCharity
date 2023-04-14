@@ -1,0 +1,22 @@
+.registration-block {
+   
+    height: 352px;
+    background-color: #374045;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.registration-block:hover {
+    background-color: #EA5A0A;
+}
+
+@media screen and (max-width: 900px) {
+    .registration-block {
+    height: 288px;
+    
+    
+        
+    }
+}

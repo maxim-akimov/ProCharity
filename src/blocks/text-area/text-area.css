@@ -14,4 +14,17 @@
     background: #F1F5F9;
     padding: 0;
     outline: none;
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .text-area {
+        min-width: 600px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .text-area {
+        min-width: 248px;
+    }
 }
