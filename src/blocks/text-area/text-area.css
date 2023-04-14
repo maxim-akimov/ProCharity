@@ -1,7 +1,6 @@
 .text-area{
     -webkit-appearance: none;
     -moz-appearance: none;
-    min-width: 672px; 
     min-height: 96px;
     font-family: 'Arial';
     font-style: normal;
