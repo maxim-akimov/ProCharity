@@ -127,7 +127,16 @@
      <form class="notifications-form">
       <h4 class="heading heading_type_subtitle notifications-form__legend">Отметь события, оповещения о которых ты хотел бы получать на email:</h4>
       <fieldset class="notifications-form__item">
-        <label class="notifications-form__label"><input type="checkbox" class="notifications-form__checkbox"><p class="notifications-form__label-text">изменения по моим заданиям<button type="button" class="notifications-form__help-btn"></button></p></label>
+        <label class="notifications-form__label"><input type="checkbox" class="notifications-form__checkbox"><p class="notifications-form__label-text">изменения по моим заданиям</p>
+          <div class="help-message__box">
+            <button type="button" class="notifications-form__help-btn"></button>
+              <div class="help-message help-message_top">
+              <div class="help-message__first-el"><p class="help-message__text">Мы будем присылать на email все важные уведомления по твоим заданиям</p></div>
+              <div class="help-message__second-el help-message__second-el_top"></div>
+            </div>
+          </div>
+
+        </label>
         <label class="notifications-form__label"><input type="checkbox" class="notifications-form__checkbox"><p class="notifications-form__label-text">фонд выбрал другого исполнителя</p></label>
         <label class="notifications-form__label"><input type="checkbox" class="notifications-form__checkbox"><p class="notifications-form__label-text">подборка заданий по моим компетенциям (раз в неделю)</p></label>
         <label class="notifications-form__label"><input type="checkbox" class="notifications-form__checkbox"><p class="notifications-form__label-text">новые задания по моим компетенциям (по мере появления)</p></label>
@@ -311,13 +320,6 @@
     </a>
   </div>
 </footer>
-
-<!-- ===========================   HELP MESSAGE   =========================== -->
-
-<div class="help-message hidden">
-  <div class="help-message__first-el"><p class="help-message__text">Мы будем присылать на email все важные уведомления по твоим заданиям</p></div>
-  <div class="help-message__second-el"></div>
-</div>
 
 </body>
 </html>
