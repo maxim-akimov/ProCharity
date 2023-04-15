@@ -228,8 +228,6 @@
 @import url(../blocks/text-area/__label/text-area__label.css);
 @import url(../blocks/text-area/__delete-icon/text-area__delete-icon.css);
 @import url(../blocks/text-area/__count/text-area__count.css);
-@import url(../blocks/text-area/__box/_placeholder/text-area__box_placeholder.css);
-@import url(../blocks/text-area/_placeholder/text-area_placeholder.css);
 
         /*====================  INPUT  ====================*/
 
@@ -240,7 +238,6 @@
 @import url(../blocks/input/__info-btn/input__info-btn.css);
 @import url(../blocks/input/_type/input_type_calendar.css);
 @import url(../blocks/input/__delete-icon/_place-before-sth/input__delete-icon_place-before-sth.css);
-@import url(../blocks/input/__box/_placeholder/input__box_placeholder.css);
 
         /*====================  HELP-MESSAGE  ====================*/
 

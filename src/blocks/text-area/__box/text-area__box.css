@@ -1,9 +1,10 @@
 .text-area__box{
-    width: max-content;
     height: max-content;
     position: relative;
     margin: 0;  
     background: #F1F5F9;
-    padding: 23px 48px 25px 16px;
+    padding: 0;
     border-radius: 6px;
+    width: 100%;
+    display: flex;
 }
