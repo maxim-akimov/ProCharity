@@ -117,11 +117,11 @@
         
         <fieldset class="new-reg-form__item">  
           <div class="input__box input__box_placeholder">
-            <input type="text" class="input" name="name" id="name" placeholder="Имя">
+            <input type="text" class="input" name="name" id="name" placeholder="Имя" required>
             <button type="reset" class="input__delete-icon"></button>
           </div>
           <div class="input__box input__box_placeholder">
-            <input type="text" class="input" name="surname" id="surname" placeholder="Фамилия">
+            <input type="text" class="input" name="surname" id="surname" placeholder="Фамилия" required>
             <button type="reset" class="input__delete-icon"></button>
           </div>
         </fieldset>
@@ -130,13 +130,18 @@
 
         <fieldset class="new-reg-form__item">
           <div class="input__box input__box_placeholder">
-            <input type="email" class="input" name="email" id="email" placeholder="Email">
+            <input type="email" class="input" name="email" id="email" placeholder="Email" required>
             <button type="reset" class="input__delete-icon"></button>
           </div>
           <div class="input__box input__box_placeholder">
-            <input type="text" class="input" name="tgname" id="tgname" placeholder="Ник в Telegram">
+            <input type="text" class="input" name="tgname" id="tgname" placeholder="Ник в Telegram" required>
             <button type="reset" class="input__delete-icon input__delete-icon_place-before-sth"></button>
             <button type="button" class="input__info-btn"></button>
+            <div class="help-message help-message_place_tg">
+            <div class="help-message__first-el"><p class="help-message__text">Если тебе удобнее, чтобы представители фондов
+              писали в Telegram, укажи свой ник (без @ и url)</p></div>
+            <div class="help-message__second-el"></div>
+            </div>
           </div>
         </fieldset>
         
@@ -145,11 +150,11 @@
         <fieldset class="new-reg-form__item">
           
           <div class="input__box input__box_password">
-            <input type="password" class="input input_type_password" name="password" id="password" placeholder="Пароль">
+            <input type="password" class="input input_type_password" name="password" id="password" placeholder="Пароль" required>
             <label for="password"><input type="checkbox" class="input__password-checkbox"></label>
           </div>
           <div class="input__box input__box_password">
-            <input type="password" class="input input_type_password" name="password" id="password" placeholder="Подтверди пароль">
+            <input type="password" class="input input_type_password" name="password" id="password" placeholder="Подтверди пароль" required>
             <label for="password"><input type="checkbox" class="input__password-checkbox"></label>
           </div>
         </fieldset>

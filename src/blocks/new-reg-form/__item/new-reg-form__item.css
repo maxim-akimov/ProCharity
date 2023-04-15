@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 900px){
     .new-reg-form__item{
-        grid-template: 1fr 1fr / max-content;
+        grid-template: 1fr 1fr / 1fr;
         gap: 16px;
     }
 }
