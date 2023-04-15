@@ -1,0 +1,8 @@
+.popup-edit__btn-close {
+    width: 14px;
+    height: 14px;
+    background-size: cover;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

@@ -61,7 +61,6 @@
 
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
-@import url(../styles/blocks/page/page.css);
 @import url(../blocks/unordered-list/unordered-list.css);
 @import url(../blocks/unordered-list/__text/unordered-list__text.css);
 @import url(../blocks/paragraph/paragraph.css);
@@ -70,3 +69,11 @@
 @import url(../blocks/heading/heading.css);
 @import url(../blocks/heading/_type/heading_type_title.css);
 @import url(../blocks/heading/_type/heading_type_subtitle.css);
+
+@import url(../blocks/popup-edit/popup-edit.css);
+@import url(../blocks/popup-edit/__container/popup-edit__container.css);
+@import url(../blocks/popup-edit/__title/popup-edit__title.css);
+@import url(../blocks/popup-edit/__image/popup-edit__image.css);
+@import url(../blocks/popup-edit/_opened/popup-edit_opened.css);
+@import url(../blocks/novigation-btns/__submit-btn/_from/novigation-btns__submit-btn_from_popup-edit.css);
+@import url(../blocks/popup-edit/__btn-close/popup-edit__btn-close.css);
