@@ -248,3 +248,11 @@
 @import url(../blocks/help-message/__first-el/help-message__first-el.css);
 @import url(../blocks/help-message/__second-el/help-message__second-el.css);
 @import url(../blocks/help-message/__text/help-message__text.css);
+@import url(../blocks/help-message/__box/help-message__box.css);
+@import url(../blocks/help-message/_top/help-message_top.css);
+@import url(../blocks/help-message/__second-el/_top/help-message__second-el_top.css);
+@import url(../blocks/help-message/_place/help-message_place_tg.css);
+
+        /*====================  HIDDEN  ====================*/
+
+@import url(../blocks/hidden/hidden.css);
