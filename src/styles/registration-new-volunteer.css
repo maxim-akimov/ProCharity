@@ -203,6 +203,7 @@
 @import url(../blocks/input/__delete-icon/_place-before-sth/input__delete-icon_place-before-sth.css);
 @import url(../blocks/input/__box/_password/input__box_password.css);
 @import url(../blocks/input/__password-checkbox/input__password-checkbox.css);
+@import url(../blocks/input/_type/input__box_placeholder.css);
 
         /*====================  HELP MESSAGE  ====================*/
 

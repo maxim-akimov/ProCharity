@@ -1,3 +1,22 @@
 .new-reg-form__src{
-    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 0.25px;
+    color: rgba(4, 138, 167, 1);
+    text-decoration: none;
+    border-bottom: solid 1px rgba(4, 138, 167, 1) ;
+    padding-bottom: 1px;
+}
+.new-reg-form__src:hover{
+    border: 0;
+}
+.new-reg-form__src:active{
+    border: 0;
+    color: #374146;
+}
+.new-reg-form__src:visited{
+    border: 0;
+    color: #7B878F;
 }

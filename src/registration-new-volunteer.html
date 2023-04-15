@@ -113,33 +113,37 @@
 
       <form class="new-reg-form">
         
-        <fieldset class="new-reg-form__item">
-          <h4 class="heading heading_type_subtitle new-reg-form__legend">Представители фондов увидят эти данные на твоей странице</h4>
-          <div class="input__box">
+        <h4 class="heading heading_type_subtitle new-reg-form__legend">Представители фондов увидят эти данные на твоей странице</h4>
+        
+        <fieldset class="new-reg-form__item">  
+          <div class="input__box input__box_placeholder">
             <input type="text" class="input" name="name" id="name" placeholder="Имя">
             <button type="reset" class="input__delete-icon"></button>
           </div>
-          <div class="input__box">
+          <div class="input__box input__box_placeholder">
             <input type="text" class="input" name="surname" id="surname" placeholder="Фамилия">
             <button type="reset" class="input__delete-icon"></button>
           </div>
         </fieldset>
 
+        <h4 class="heading heading_type_subtitle new-reg-form__legend">Контакты будут видны фондам, которые выберут тебя исполнителем задания</h4>
+
         <fieldset class="new-reg-form__item">
-          <h4 class="heading heading_type_subtitle">Контакты будут видны фондам, которые выберут тебя исполнителем задания</h4>
-          <div class="input__box">
+          <div class="input__box input__box_placeholder">
             <input type="email" class="input" name="email" id="email" placeholder="Email">
             <button type="reset" class="input__delete-icon"></button>
           </div>
-          <div class="input__box">
+          <div class="input__box input__box_placeholder">
             <input type="text" class="input" name="tgname" id="tgname" placeholder="Ник в Telegram">
             <button type="reset" class="input__delete-icon input__delete-icon_place-before-sth"></button>
             <button type="button" class="input__info-btn"></button>
           </div>
         </fieldset>
-
+        
+        <h4 class="heading heading_type_subtitle new-reg-form__legend">Пароль должен содержать не менее 8 знаков и может включать латинские буквы, цифры и специальные символы</h4>
+        
         <fieldset class="new-reg-form__item">
-          <h4 class="heading heading_type_subtitle">Пароль должен содержать не менее 8 знаков и может включать латинские буквы, цифры и специальные символы</h4>
+          
           <div class="input__box input__box_password">
             <input type="password" class="input input_type_password" name="password" id="password" placeholder="Пароль">
             <label for="password"><input type="checkbox" class="input__password-checkbox"></label>
@@ -151,12 +155,12 @@
         </fieldset>
 
         <label class="new-reg-form__src-label">
+          <input class="new-reg-form__checkbox" type="checkbox" required>
           <p class="new-reg-form__src-text">Соглашаюсь с 
             <span>
               <a class="new-reg-form__src" href="https://procharity.ru/legal_information.php">правилами сайта</a>
             </span>
           </p>
-          <input class="new-reg-form__checkbox" type="checkbox" required>
         </label>
 
         <div class="novigation-btns">
