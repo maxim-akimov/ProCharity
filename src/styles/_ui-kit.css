@@ -61,7 +61,7 @@
 
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
-@import url(../styles/blocks/page/page.css);
+/* @import url(../styles/blocks/page/page.css); */
 @import url(../blocks/unordered-list/unordered-list.css);
 @import url(../blocks/unordered-list/__text/unordered-list__text.css);
 @import url(../blocks/paragraph/paragraph.css);
