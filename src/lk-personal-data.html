@@ -164,28 +164,32 @@
 
           <legend class="form-item__legend heading heading_type_subtitle">Фонды увидят эти данные на твоей странице</legend>
 
-          <div class="input__box">
+          <div class="input__box input__box_error">
             <input type="text" class="input" name="name" id="name" placeholder="Имя" required>
             <label for="name" class="input__label">Имя</label>
             <button type="reset" class="input__delete-icon"></button>
+            <span class="input__error">Ошибка</span>
           </div>
 
-          <div class="input__box">
+          <div class="input__box input__box_error">
             <input type="text" class="input" name="surname" id="surname" placeholder="Фамилия" required>
             <label for="surname" class="input__label">Фамилия</label>
             <button type="reset" class="input__delete-icon"></button>
+            <span class="input__error">Ошибка</span>
           </div>
 
-          <div class="input__box">
+          <div class="input__box input__box_error">
             <input type="date" class="input input_type_calendar" name="date" id="date" placeholder="Дата рождения" required>
             <label for="date" class="input__label">Дата рождения</label>
             <button type="reset" class="input__delete-icon input__delete-icon_place-before-sth"></button>
+            <span class="input__error">Ошибка</span>
           </div>
 
-          <div class="input__box">
+          <div class="input__box input__box_error">
             <input type="text" class="input" name="city" id="city" placeholder="Город" required>
             <label for="city" class="input__label">Город</label> 
             <button type="reset" class="input__delete-icon"></button>
+            <span class="input__error">Ошибка</span>
           </div>
 
         </fieldset>
@@ -194,23 +198,26 @@
 
           <legend class="form-item__legend heading heading_type_subtitle">Контакты будут видны фондам, которые выберут тебя исполнителем задания</legend>
 
-          <div class="input__box">
+          <div class="input__box input__box_error">
             <input type="email" class="input" name="email" id="email" placeholder="Электронная почта" required>
             <label for="email" class="input__label">Электронная почта</label>
             <button type="reset" class="input__delete-icon"></button>
+            <span class="input__error">Ошибка</span>
           </div>
 
-          <div class="input__box">
+          <div class="input__box input__box_error">
             <input type="tel" class="input" name="tel" id="tel" placeholder="Телефон" required>
             <label for="tel" class="input__label">Телефон</label>
             <button type="reset" class="input__delete-icon"></button>
+            <span class="input__error">Ошибка</span>
           </div>
 
-          <div class="input__box">
+          <div class="input__box input__box_error">
             <input type="text" class="input" name="tgname" id="tgname" placeholder="Ник в Telegram" required>
             <label for="tgname" class="input__label">Ник в Telegram</label>
             <button type="reset" class="input__delete-icon input__delete-icon_place-before-sth"></button>
             <button type="button" class="input__info-btn"></button>
+            <span class="input__error">Ошибка</span>
             <div class="help-message help-message_place_tg">
               <div class="help-message__first-el"><p class="help-message__text">Если тебе удобнее, чтобы представители фондов
                 писали в Telegram, укажи свой ник (без @ и url)</p></div>
@@ -231,10 +238,11 @@
             input
           </div>
 
-          <div class="input__box">
+          <div class="input__box input__box_error">
             <input type="text" class="input" name="post" id="post" placeholder="Должность" required>
             <label for="tgname" class="input__label">Должность</label>
             <button type="reset" class="input__delete-icon"></button>
+            <span class="input__error">Ошибка</span>
           </div>
 
         </fieldset>

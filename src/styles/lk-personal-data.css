@@ -238,6 +238,8 @@
 @import url(../blocks/input/__info-btn/input__info-btn.css);
 @import url(../blocks/input/_type/input_type_calendar.css);
 @import url(../blocks/input/__delete-icon/_place-before-sth/input__delete-icon_place-before-sth.css);
+@import url(../blocks/input/__error/input__error.css);
+@import url(../blocks/input/__box/_error/input__box_error.css);
 
         /*====================  HELP-MESSAGE  ====================*/
 
