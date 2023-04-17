@@ -187,7 +187,57 @@
 /* ====================================================================================================================
                       V        ПОДКЛЮЧЕНИЕ СТИЛЕЙ ДЛЯ ЭЛЕМЕНТОВ РАЗЕЛА CONTENT        V
 ====================================================================================================================== */
+@import url(../blocks/heading/heading.css);
 
+@import url(../blocks/heading/_type/heading_type_title.css);
+@import url(../blocks/heading/_type/heading_type_subtitle.css);
+
+
+
+@import url(../blocks/novigation-btns/novigation-btns.css);
+
+@import url(../blocks/novigation-btns/__back-btn/novigation-btns__back-btn.css);
+
+@import url(../blocks/novigation-btns/__submit-btn/novigation-btns__submit-btn.css);
+
+
+
+@import url(../blocks/custom-select/custom-select.css);
+
+@import url(../blocks/custom-select/__wrap/custom-select__wrap.css);
+@import url(../blocks/custom-select/__wrap/_style/custom-select__wrap_style_multiselect.css);
+
+@import url(../blocks/custom-select/__list/custom-select__list.css);
+
+@import url(../blocks/custom-select/__list-container/custom-select__list-container.css);
+@import url(../blocks/custom-select/__list-container/_opened/custom-select__list-container__opened.css);
+
+@import url(../blocks/custom-select/__heading/custom-select__heading.css);
+
+@import url(../blocks/custom-select/__btn-close/custom-select__btn-close.css);
+
+@import url(../blocks/custom-select/__item/custom-select__item.css);
+@import url(../blocks/custom-select/__item/_style/custom-select__item_style_parent.css);
+@import url(../blocks/custom-select/__item/_style/custom-select__item_style_parent-opened.css);
+@import url(../blocks/custom-select/__item/_style/custom-select__item_style_checkbox.css);
+@import url(../blocks/custom-select/__item/_selected/custom-select__item_selected.css);
+@import url(../blocks/custom-select/__item/_selected/custom-select__item_selected-checkbox.css);
+
+@import url(../blocks/custom-select/__field/custom-select__field.css);
+@import url(../blocks/custom-select/__field/_style/custom-select__field_style_multiselect.css);
+
+@import url(../blocks/custom-select/__field-text/custom-select__field-text.css);
+
+@import url(../blocks/custom-select/__chips/custom-select__chips.css);
+
+@import url(../blocks/custom-select/__chips-text/custom-select__chips-text.css);
+
+@import url(../blocks/custom-select/__chips-delete-btn/custom-select__chips-delete-btn.css);
+
+@import url(../blocks/custom-select/__link/custom-select__link.css);
+@import url(../blocks/custom-select/__link/_type/custom-select__link_type_select-all.css);
+
+@import url(../blocks/custom-select/__btn/custom-select__btn.css);
 
 
 
