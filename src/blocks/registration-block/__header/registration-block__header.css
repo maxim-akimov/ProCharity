@@ -1,0 +1,18 @@
+.registration-block__header {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    color: #FFFFFF;
+    padding: 0 0 28px 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .registration-block__header {
+        padding-bottom: 16px;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+    }
+}

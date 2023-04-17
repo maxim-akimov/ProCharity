@@ -1,0 +1,17 @@
+.content__start-page__header {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #374045;
+    margin: 0 0 64px 0;
+}
+
+@media screen and (max-width: 900px) {
+    .content__start-page__header {
+        align-self: flex-start;
+        margin: 0 0 32px 6.66%;
+        font-size: 24px;
+        line-height: 32px;
+        
+    }
+}

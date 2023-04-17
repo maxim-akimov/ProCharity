@@ -59,15 +59,20 @@
 @import url(../blocks/popup-list/__list/_hidden/popup-list__list_hidden.css);
 @import url(../blocks/popup-list/__item/_choice/popup-list__item_choice.css);
 
-@import url(../vendor/normalize.css);
-@import url(../vendor/fonts.css);
+
+/*@import url(../styles/blocks/page/page.css);*//*вроде-бы тут косяк*/
 @import url(../blocks/unordered-list/unordered-list.css);
 @import url(../blocks/unordered-list/__text/unordered-list__text.css);
+/*
 @import url(../blocks/paragraph/paragraph.css);
 @import url(../blocks/explanation/explanation.css);
 
+ */
+
+/*
 @import url(../blocks/heading/heading.css);
 @import url(../blocks/heading/_type/heading_type_title.css);
 @import url(../blocks/heading/_type/heading_type_subtitle.css);
 
+ */
 @import url(../blocks/paragraph/_style/paragraph_style_first-step.css);

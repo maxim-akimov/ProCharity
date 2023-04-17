@@ -1,0 +1,11 @@
+.heading_type_registration {
+  margin: 0 auto;
+  padding-bottom: 64px;
+}
+
+@media screen and (max-width: 900px) {
+  .heading_type_registration {
+    margin: 0 auto 0 0;
+    padding: 0 0 32px 24px;
+  }
+}
