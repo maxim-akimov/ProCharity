@@ -1,0 +1,9 @@
+.heading_type_title-desktop {
+  display: block;
+}
+
+@media screen and (max-width: 900px) {
+  .heading_type_title-desktop {
+    display: none;
+  }
+}

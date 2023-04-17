@@ -1,13 +1,10 @@
 .main-layout_style_first-step {
-  background: #F1F7FF;
-  background-image: url(../../../images/first-step-background.svg);
-  background-repeat: no-repeat;
-  background-position: right top;
+  background: url(../../../images/first-step-background.svg) no-repeat right top, #F1F7FF;
 }
 
 @media screen and (max-width: 900px){
   .main-layout_style_first-step {
-    background-image: url(../../../images/first-step-background-reverse.svg);
-    background-position: bottom 9px left -50px;
+    background: url(../../../images/first-step-background-reverse.svg) no-repeat bottom 10px center;
+
   }
 }
