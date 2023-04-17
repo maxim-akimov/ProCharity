@@ -1,6 +1,14 @@
 .novigation-btns{
-    /*height: 300px;
-    width: 500px;*/
-    max-width: 312px;
-    height: 56px;
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template: 1fr/ max-content max-content;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 900px){
+    .novigation-btns{
+        grid-template: 1fr 1fr / 1fr;
+        gap: 16px;
+    }
 }

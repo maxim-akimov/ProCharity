@@ -1,15 +1,33 @@
 .input{
     -webkit-appearance: none;
     -moz-appearance: none;
-    background: #F1F5F9;
+    background: none;
     border: 0;
-    font-family: 'Arial';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: #374045;
-    width: 80%;
+    color: #374045;    
     outline: none;
     padding-left: 16px;
+    height: max-content;
+    box-sizing: border-box;
+    align-self: flex-end;
+    padding-bottom: 5px;
+}
+.input:placeholder-shown{
+    padding-bottom: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B878F;
+    align-self: center;
+}
+.input:not(:placeholder-shown) + .input__label{
+    display: flex;
+}
+.input:not(:placeholder-shown) ~ .input__delete-icon{
+    display: flex;
+}
+.input:not(:placeholder-shown) ~ .input__password-checkbox{
+    display: flex;
 }

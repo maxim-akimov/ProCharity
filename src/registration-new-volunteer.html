@@ -94,7 +94,64 @@
       </div>
     </section>
     <section class="content">
-      Регистрация нового волонтера
+      <h1 class="heading heading_type_title">Регистрация нового волонтера</h1>
+      <form class="new-reg-form">
+        <h4 class="heading heading_type_subtitle new-reg-form__legend">Представители фондов увидят эти данные на твоей странице</h4>
+        <fieldset class="new-reg-form__item">  
+          <div class="input__box">
+            <input type="text" class="input" name="name" id="name" placeholder="Имя" required>
+            <label for="name" class="input__label">Имя</label>
+            <button type="reset" class="input__delete-icon"></button>
+          </div>
+          <div class="input__box">
+            <input type="text" class="input" name="surname" id="surname" placeholder="Фамилия" required>
+            <label for="surname" class="input__label">Фамилия</label>
+            <button type="reset" class="input__delete-icon"></button>
+          </div>
+        </fieldset>
+        <h4 class="heading heading_type_subtitle new-reg-form__legend">Контакты будут видны фондам, которые выберут тебя исполнителем задания</h4>
+        <fieldset class="new-reg-form__item">
+          <div class="input__box">
+            <input type="email" class="input" name="email" id="email" placeholder="Email" required>
+            <label for="email" class="input__label">Email</label>
+            <button type="reset" class="input__delete-icon"></button>
+          </div>
+          <div class="input__box">
+            <input type="text" class="input" name="tgname" id="tgname" placeholder="Ник в Telegram" required>
+            <label for="tgname" class="input__label">Ник в Telegram</label>
+            <button type="reset" class="input__delete-icon input__delete-icon_place-before-sth"></button>
+            <button type="button" class="input__info-btn"></button>
+            <div class="help-message help-message_place_tg">
+            <div class="help-message__first-el"><p class="help-message__text">Если тебе удобнее, чтобы представители
+              фондов писали в Telegram, укажи свой ник (без @ и url)</p></div>
+            <div class="help-message__second-el"></div>
+            </div>
+          </div>
+        </fieldset>
+        <h4 class="heading heading_type_subtitle new-reg-form__legend">Пароль должен содержать не менее 8 знаков и может включать латинские буквы, цифры и специальные символы</h4>
+        <fieldset class="new-reg-form__item">
+          <div class="input__box">
+            <input type="password" class="input input_type_password" name="password" id="password" placeholder="Пароль" required>
+            <label for="password" class="input__label">Пароль<input type="checkbox" class="input__password-checkbox"></label>
+          </div>
+          <div class="input__box">
+            <input type="password" class="input input_type_password" name="repassword" id="repassword" placeholder="Подтверди пароль" required>
+            <label for="repassword" class="input__label">Подтверди пароль<input type="checkbox" class="input__password-checkbox"></label>
+          </div>
+        </fieldset>
+        <label class="new-reg-form__src-label">
+          <input class="new-reg-form__checkbox" type="checkbox" required>
+          <p class="new-reg-form__src-text">Соглашаюсь с 
+            <span>
+              <a class="new-reg-form__src" href="https://procharity.ru/legal_information.php">правилами сайта</a>
+            </span>
+          </p>
+        </label>
+        <div class="novigation-btns">
+          <button type="button" class="novigation-btns__back-btn">Назад</button>
+          <button type="submit" class="novigation-btns__submit-btn">Зарегистрироваться</button>
+        </div>
+      </form>
     </section>
   </main>
 </div>

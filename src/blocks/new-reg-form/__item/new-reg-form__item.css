@@ -1,0 +1,16 @@
+.new-reg-form__item{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template: max-content / 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+@media screen and (max-width: 900px){
+    .new-reg-form__item{
+        grid-template: 1fr 1fr / 1fr;
+        gap: 16px;
+    }
+}

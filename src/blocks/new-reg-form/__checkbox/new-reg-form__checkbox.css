@@ -1,0 +1,14 @@
+.new-reg-form__checkbox{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #F1F5F9;
+    border-radius: 2px;
+    margin: 0;
+    padding: 0;
+}
+.new-reg-form__checkbox:checked{
+    background: url(../../../images/checkbox.svg) no-repeat center;
+    background-size: 16px 16px;
+}

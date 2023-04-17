@@ -1,30 +1,35 @@
 .text-area{
     -webkit-appearance: none;
     -moz-appearance: none;
-    min-width: 672px; 
-    min-height: 96px;
-    font-family: 'Arial';
-    font-style: normal;
+    min-height: 88px;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: #374045;
     border: 0;
     resize: none;
-    background: #F1F5F9;
+    background: none;
     padding: 0;
     outline: none;
-    
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 23px;
+    padding-left: 16px;
+}
+.text-area:placeholder-shown{
+    padding-top: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B878F;
+}
+.text-area:not(:placeholder-shown) + .text-area__label{
+    display: flex;
 }
 
-@media screen and (max-width: 1200px) {
-    .text-area {
-        min-width: 600px;
-    }
+.text-area:not(:placeholder-shown) ~ .text-area__count{
+    display: flex;
 }
-
-@media screen and (max-width: 900px) {
-    .text-area {
-        min-width: 248px;
-    }
+.text-area:not(:placeholder-shown) ~ .text-area__delete-icon{
+    display: flex;
 }
