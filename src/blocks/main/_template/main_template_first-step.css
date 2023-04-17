@@ -2,12 +2,13 @@
   grid-template-columns: 100%;
   grid-template-rows: auto;
   padding-top: 64px;
+  padding-bottom: 312px;
 }
 
 @media screen and (max-width: 900px){
   .main_template_first-step {
     grid-template-columns: 100%;
-    grid-template-rows: repeat(4, minmax(min-content, max-content));
     padding-top: 24px;
+    padding-bottom: 236px;
   }
 }

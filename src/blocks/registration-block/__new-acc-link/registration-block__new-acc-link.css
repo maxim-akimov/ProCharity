@@ -1,0 +1,29 @@
+.registration-block__new-acc-link {
+    color: #7DCDD7;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.registration-block__new-acc-link:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.registration-block:hover .registration-block__new-acc-link {
+    color: #374146;
+}
+
+
+@media screen and (max-width: 900px) {
+    .registration-block__new-acc-link {
+    }
+}

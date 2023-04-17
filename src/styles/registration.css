@@ -183,7 +183,47 @@
 /* ====================================================================================================================
                       V        ПОДКЛЮЧЕНИЕ СТИЛЕЙ ДЛЯ ЭЛЕМЕНТОВ РАЗЕЛА CONTENT        V
 ====================================================================================================================== */
+@import url(./../blocks/content/__start-page/content__start-page.css);
 
+
+@import url(../blocks/heading/heading.css);
+
+@import url(../blocks/heading/_type/heading_type_title.css);
+
+@import url(../blocks/heading/_type/heading_type_registrtion.css);
+
+
+@import url(./../blocks/content/__start-page/__log-in/_link/content__start-page__log-in_link.css);
+
+
+
+
+
+@import url(../blocks/paragraph/paragraph.css);
+
+@import url(./../blocks/paragraph/_style/paragraph_style_login.css);
+
+
+
+@import url(../blocks/link/link.css);
+
+
+
+@import url(./../blocks/registration-block/registration-block.css);
+
+@import url(./../blocks/registration-block/__container/registration-block__container.css);
+
+@import url(./../blocks/registration-block/__header/registration-block__header.css);
+
+@import url(./../blocks/registration-block/__text/registration-block__text.css);
+
+@import url(./../blocks/registration-block/__link/registration-block__link.css);
+
+@import url(./../blocks/registration-block/__new-acc-link/registration-block__new-acc-link.css);
+
+@import url(./../blocks/registration-block/_volunteer/registration-block_volunteer.css);
+
+@import url(./../blocks/registration-block/_NKO/registration-block_NKO.css);
 
 
 
