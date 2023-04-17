@@ -1,0 +1,15 @@
+.content__start-page__log-in {
+    color: #58646A;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin:  64px 0 0 0;
+}
+
+@media screen and (max-width: 900px) {
+    .content__start-page__log-in {
+    width: 70.2%;
+    top: 160px;
+        
+    }
+}

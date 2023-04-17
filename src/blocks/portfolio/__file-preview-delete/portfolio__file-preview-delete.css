@@ -1,0 +1,9 @@
+.portfolio__file-preview-delete {
+  padding: 0;
+  border: none;
+  outline: none;
+  width: 17px;
+  height: 19px;
+  background: url(../../../images/delete-icon.svg) center no-repeat;
+  cursor: pointer;
+}

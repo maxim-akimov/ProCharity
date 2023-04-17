@@ -1,0 +1,8 @@
+.popup-edit__container {
+    position: relative;
+    box-sizing: border-box;
+    padding: 36px 36px 40px;
+    width: 544px;
+    border-radius: 12px;
+    background-color: #fff;
+}

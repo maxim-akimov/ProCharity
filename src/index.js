@@ -2,6 +2,7 @@ import './styles/lk-competencies.css';
 import './styles/lk-personal-data.css';
 import './styles/lk-portfolio.css';
 import './styles/lk-social.css';
+import './styles/lk-motivation.css';
 import './styles/registration.css';
 import './styles/registration-first-step.css';
 import './styles/registration-new-volunteer.css';
@@ -15,3 +16,4 @@ import CustomMultiselect from "./components/CustomMultiselect";
 
 //new CustomSelect('#connection').generate();
 new CustomMultiselect('#competencies').generate();
+import { Popup } from './components/Popup';

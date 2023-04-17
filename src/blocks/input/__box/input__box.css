@@ -1,9 +1,8 @@
 .input__box{
-    min-height: 20px;
+    height: 48px;
     max-width: 358px;
-    margin: 10px;
     position: relative;
-    padding: 21px 0 5px 0;
     background: #F1F5F9;
     border-radius: 6px;
+    display: flex;
 }

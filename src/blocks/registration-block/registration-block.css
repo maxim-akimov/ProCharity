@@ -1,0 +1,21 @@
+.registration-block {
+  height: 352px;
+  background-color: #374045;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  box-sizing: border-box;
+}
+
+.registration-block:hover {
+  background-color: #EA5A0A;
+}
+
+@media screen and (max-width: 900px) {
+  .registration-block {
+    height: 288px;
+    padding: 48px 24px;
+  }
+}

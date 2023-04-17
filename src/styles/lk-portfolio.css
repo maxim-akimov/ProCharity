@@ -185,5 +185,27 @@
 ====================================================================================================================== */
 
 
+@import url(../blocks/setting-btn/setting-btn.css);
 
-
+@import url(../blocks/portfolio/portfolio.css);
+@import url(../blocks/portfolio/__url-add/portfolio__url-add.css);
+@import url(../blocks/portfolio/__url-delete/portfolio__url-delete.css);
+@import url(../blocks/portfolio/__url-input/portfolio__url-input.css);
+@import url(../blocks/portfolio/__url-item/portfolio__url-item.css);
+@import url(../blocks/portfolio/__text-click/_style/portfolio__text-click_style.css);
+@import url(../blocks/portfolio/__text-click/portfolio__text-click.css);
+@import url(../blocks/portfolio/__file-preview-delete/portfolio__file-preview-delete.css);
+@import url(../blocks/portfolio/__file-preview-elements/portfolio__file-preview-elements.css);
+@import url(../blocks/portfolio/__file-preview-error/portfolio__file-preview-error.css);
+@import url(../blocks/portfolio/__file-preview-img/portfolio__file-preview-img.css);
+@import url(../blocks/portfolio/__file-preview-item/portfolio__file-preview-item.css);
+@import url(../blocks/portfolio/__file-preview-title/portfolio__file-preview-title.css);
+@import url(../blocks/portfolio/__file-preview/portfolio__file-preview.css);
+@import url(../blocks/portfolio/__file-input-info/portfolio__file-input-info.css);
+@import url(../blocks/portfolio/__file-input/portfolio__file-input.css);
+@import url(../blocks/portfolio/__file-item/portfolio__file-item.css);
+@import url(../blocks/portfolio/__file/portfolio__file.css);
+@import url(../blocks/portfolio/__form/portfolio__form.css);
+@import url(../blocks/portfolio/__label/portfolio__label.css);
+@import url(../blocks/portfolio/__text/portfolio__text.css);
+@import url(../blocks/portfolio/__title/portfolio__title.css);

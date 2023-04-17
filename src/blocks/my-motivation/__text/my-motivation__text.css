@@ -1,0 +1,15 @@
+.my-motivation__text {
+    color: #58646A;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 736px;
+    margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .my-motivation__text {
+        
+        max-width: 312px;
+    }
+}

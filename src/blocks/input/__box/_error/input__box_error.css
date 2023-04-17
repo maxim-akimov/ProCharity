@@ -1,0 +1,5 @@
+.input__box_error{
+    border: 1px solid #D20202;
+    margin-bottom: 24px;
+    box-sizing: content-box;
+}

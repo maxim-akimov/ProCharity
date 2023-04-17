@@ -102,7 +102,8 @@
     </section>
     <section class="sidebar__block">
       <h3 class="sidebar__title">Статус профиля</h3>
-      <a href="#" class="sidebar__status">Cкрыт</a>
+      <!--Сменить статус на "На модерации"-->
+      <a href="#" class="sidebar__status">На модерации</a>
     </section>
     <section class="sidebar__block sidebar__profile-progress">
       <h3 class="sidebar__title">Профиль заполнен на 66%</h3>
@@ -116,7 +117,48 @@
         профиль,</a> чтобы тебя выбрали исполнителем</p>
     </section>
     <section class="content">
-      Мое портфолио
+      <h2 class="heading_type_title">Социальные сети</h2>
+      <p class="paragraph">Можешь прикрепить ссылки на свои профили в соцсетях — так представители фондов смогут
+        лучше тебя узнать. А еще это может быть дополнительным способом с тобой связаться.</p>
+      <form>
+        <fieldset class="social">
+          <img src="<%=require('./images/linkedin.svg')%>" alt="linkedin" class="social__icon">
+          <div class="social__input-container">
+            <input type="url" placeholder="https://linkedin.com/username/" class="social__input">
+            <button class="text-area__delete-icon" type="reset"></button>
+          </div>
+          <img src="<%=require('./images/vk-social.svg')%>" alt="vk" class="social__icon">
+          <div class="social__input-container">
+            <input type="url" placeholder="https://vk.com/username/" class="social__input">
+            <button class="text-area__delete-icon" type="reset"></button>
+          </div>
+          <img src="<%=require('./images/ok-social.svg')%>" alt="ok" class="social__icon">
+          <div class="social__input-container">
+            <input type="url" placeholder="https://ok.com/username/" class="social__input">
+            <button class="text-area__delete-icon" type="reset"></button>
+          </div>
+          <img src="<%=require('./images/instagram-social.svg')%>" alt="instagram" class="social__icon">
+          <div class="social__input-container">
+            <input type="url" placeholder="https://instagram.com/username/" class="social__input">
+            <button class="text-area__delete-icon" type="reset"></button>
+          </div>
+          <img src="<%=require('./images/facebook-social.svg')%>" alt="facebook" class="social__icon">
+          <div class="social__input-container">
+            <input type="url" placeholder="https://facebook.com/username/" class="social__input">
+            <button class="text-area__delete-icon" type="reset"></button>
+          </div>
+        </fieldset>
+        <div class="social__warning">
+          <p class="note">Facebook и Instagram — продукты Meta Platforms Inc.</p>
+          <p class="note">Meta Platforms Inc. признана экстремистской организацией, запрещена на территории
+            России</p>
+        </div>
+        <button type="submit" class="novigation-btns__submit-btn novigation-btns__submit-btn_type_save-btn">
+          Сохранить
+        </button>
+      </form>
+
+
     </section>
   </main>
 </div>

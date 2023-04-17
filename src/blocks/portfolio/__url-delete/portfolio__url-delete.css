@@ -1,0 +1,13 @@
+.portfolio__url-delete {
+  padding: 0;
+  border: none;
+  outline: none;
+  width: 10px;
+  height: 10px;
+  background: url(../../../images/delete-icon-url.svg);
+  position: absolute;
+  top: 50%;
+  right: 19px;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.telegram{
+    box-sizing: border-box;
+    display: grid;
+    grid-template: 1fr / 1fr min-content;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px;
+    width: 100%;
+    height: max-content;
+    border: 1px solid #A0ABB5;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+@media screen and (max-width: 900px){
+    .telegram{
+        grid-template: 1fr min-content / 1fr;
+        gap: 12px;
+    }
+}
