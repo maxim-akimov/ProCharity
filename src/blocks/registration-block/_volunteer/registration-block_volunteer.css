@@ -1,0 +1,45 @@
+.registration-block_volunteer {
+    text-align: right;
+    align-items: flex-end;
+    border-radius: 0 5px 5px 0;
+    padding-right: 96px;
+}
+
+.registration-block_volunteer:before {
+    background: url(../../../images/volunteer-start-image.svg) no-repeat top right;
+    content: '';
+    top: -64px;
+    display: block;
+    width: 336px;
+    height: 415px;
+    position: absolute;
+    left: 0;
+}
+
+.registration-block_volunteer:hover:before {
+    background: url(../../../images/volunteer-start-image-gray.svg) no-repeat top right;
+}
+
+@media screen and (max-width: 1400px) {
+    .registration-block_volunteer {
+        padding-right: 24px;
+    }
+
+    .registration-block_volunteer:before {
+        background: url(../../../images/volunteer-start-image.svg) no-repeat top right;
+        background-size: cover;
+        content: '';
+        top: -5px;
+        display: block;
+        width: 157px;
+        height: 240px;
+        position: absolute;
+        left: 0;
+    }
+
+    .registration-block_volunteer:hover:before {
+        background: url(../../../images/volunteer-start-image-gray.svg) no-repeat top right;
+        background-size: cover;
+
+    }
+}
