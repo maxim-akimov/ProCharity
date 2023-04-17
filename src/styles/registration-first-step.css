@@ -184,6 +184,8 @@
                       V        ПОДКЛЮЧЕНИЕ СТИЛЕЙ ДЛЯ ЭЛЕМЕНТОВ РАЗЕЛА CONTENT        V
 ====================================================================================================================== */
 
+@import url(../blocks/heading/_type/heading_type_title-desktop.css);
+@import url(../blocks/heading/_type/heading_type_title-mobile.css);
 
 
 
