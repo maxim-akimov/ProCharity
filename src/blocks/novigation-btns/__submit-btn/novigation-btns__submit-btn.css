@@ -1,4 +1,4 @@
-.novigation-btns__submit-btn{
+.novigation-btns__submit-btn {
     -webkit-appearance: none;
     -moz-appearance: none;
     display: flex;
@@ -19,4 +19,5 @@
     border: 0;
     cursor: pointer;
     padding: 20px 32px;
+    justify-content: center;
 }

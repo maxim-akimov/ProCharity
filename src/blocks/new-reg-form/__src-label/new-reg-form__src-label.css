@@ -1,0 +1,9 @@
+.new-reg-form__src-label{
+    display: grid;
+    grid-template: max-content / max-content max-content;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    margin-bottom: 32px;
+}

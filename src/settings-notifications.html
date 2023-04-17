@@ -8,6 +8,9 @@
   <title>ProCharity - Уведомления</title>
 </head>
 <body class="page">
+
+<!-- ===========================   HEADER   =========================== -->
+
 <header class="header">
   <div class="header__wrap">
     <button class="menu-icon" type="button"></button>
@@ -45,8 +48,17 @@
     </a>
   </div>
 </header>
+
+<!-- ===========================   MAIN LAYOUT   =========================== -->
+
 <div class="main-layout main-layout_style_lk">
+
+  <!-- ===========================   MAIN   =========================== -->
+
   <main class="main main_template_lk">
+
+    <!-- ===========================   BREADCRUMBS   =========================== -->
+
     <nav class="breadcrumbs">
       <ul class="breadcrumbs__list">
         <li class="breadcrumbs__item">
@@ -57,6 +69,9 @@
         </li>
       </ul>
     </nav>
+
+    <!-- ===========================   SIDEBAR   =========================== -->
+
     <section class="sidebar-nav sidebar__block">
       <ul class="sidebar-nav__list">
         <li class="sidebar-nav__item sidebar-nav__item_type_current">
@@ -86,6 +101,9 @@
         <p class="sidebar-nav__description-title">Настройки</p>
       </div>
     </section>
+
+    <!-- ===========================   SIDEBAR BLOCK   =========================== -->
+
     <section class="sidebar__block">
       <h3 class="sidebar__title">Статус профиля</h3>
       <a href="#" class="sidebar__status">Cкрыт</a>
@@ -101,11 +119,40 @@
       <p class="sidebar__description">Узнай, <a class="sidebar__link" href="">как заполнить
         профиль,</a> чтобы тебя выбрали исполнителем</p>
     </section>
+
+    <!-- ===========================   CONTENT   =========================== -->
+
     <section class="content">
-      Уведомления
+     <h1 class="heading heading_type_title">Уведомления</h1>
+     <form class="notifications-form">
+      <h4 class="heading heading_type_subtitle notifications-form__legend">Отметь события, оповещения о которых ты хотел бы получать на email:</h4>
+      <fieldset class="notifications-form__item">
+        <label class="notifications-form__label"><input type="checkbox" class="notifications-form__checkbox"><p class="notifications-form__label-text">изменения по моим заданиям</p>
+          <div class="help-message__box">
+            <button type="button" class="notifications-form__help-btn"></button>
+              <div class="help-message help-message_top">
+              <div class="help-message__first-el"><p class="help-message__text">Мы будем присылать на email все важные уведомления по твоим заданиям</p></div>
+              <div class="help-message__second-el help-message__second-el_top"></div>
+            </div>
+          </div>
+
+        </label>
+        <label class="notifications-form__label"><input type="checkbox" class="notifications-form__checkbox"><p class="notifications-form__label-text">фонд выбрал другого исполнителя</p></label>
+        <label class="notifications-form__label"><input type="checkbox" class="notifications-form__checkbox"><p class="notifications-form__label-text">подборка заданий по моим компетенциям (раз в неделю)</p></label>
+        <label class="notifications-form__label"><input type="checkbox" class="notifications-form__checkbox"><p class="notifications-form__label-text">новые задания по моим компетенциям (по мере появления)</p></label>
+      </fieldset>
+      <div class="telegram">
+        <p class="telegram__text">Получай уведомления о новых заданиях от бота ProCharity в Telegram. При этом рекомендуем отключить уведомления на email из пункта выше.</p>
+        <button type="button" class="telegram__btn"></button>
+      </div>
+      <button type="submit" class="novigation-btns__submit-btn novigation-btns__submit-btn_type_save-btn">Сохранить</button>
+     </form>
     </section>
   </main>
 </div>
+
+<!-- ===========================   FOOTER   =========================== -->
+
 <footer class="footer">
   <nav class="footer__menu">
     <div class="footer__menu-chapter ">
@@ -273,5 +320,6 @@
     </a>
   </div>
 </footer>
+
 </body>
 </html>
