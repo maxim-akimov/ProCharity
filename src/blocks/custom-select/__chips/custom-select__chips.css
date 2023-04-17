@@ -1,0 +1,12 @@
+.custom-select__chips {
+  background: #FF6100;
+  border-radius: 20px;
+  max-width: max-content;
+  padding: 4px 11px 4px 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+}

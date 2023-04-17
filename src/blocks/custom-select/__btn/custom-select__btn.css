@@ -1,0 +1,12 @@
+.custom-select__btn {
+  width: 100%;
+  max-width: 312px;
+  margin: 16px auto 0 auto;
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .custom-select__btn {
+    display: block;
+  }
+}

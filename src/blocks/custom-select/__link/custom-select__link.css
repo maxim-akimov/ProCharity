@@ -1,0 +1,15 @@
+.custom-select__link {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .custom-select__link {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #048AA7;
+    width: fit-content;
+  }
+}

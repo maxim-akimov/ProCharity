@@ -1,0 +1,31 @@
+.custom-select__list{
+    margin: 0;
+    padding: 8px 0;
+    height: max-content;
+    max-width: 358px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 24px rgba(0, 77, 95, 0.24);
+    border-radius: 8px;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 900px) {
+    .custom-select__list {
+        box-shadow: none;
+        border-radius: 0;
+        max-width: 100%;
+        background: none;
+        font-family: HelveticaNeueCyr, Helvetica, Arial, sans-serif;
+        padding: 16px 24px 16px 24px;
+        color: #A0ABB5;
+    }
+
+    .custom-select__item .custom-select__list {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
