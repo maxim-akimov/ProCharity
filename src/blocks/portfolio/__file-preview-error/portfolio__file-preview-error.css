@@ -1,0 +1,8 @@
+.portfolio__file-preview-error {
+  display: block;
+  color: #D20202;
+  font-size: 14px;
+  line-height: 20px;
+
+  margin: 4px 0 0 0;
+}

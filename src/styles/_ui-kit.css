@@ -29,10 +29,8 @@
 @import url(../blocks/input/__delete-icon/input__delete-icon.css);
 @import url(../blocks/input/__info-btn/input__info-btn.css);
 @import url(../blocks/input/_type/input_type_calendar.css);
-@import url(../blocks/input/_type/input_type_password.css);
 @import url(../blocks/input/__delete-icon/_place-before-sth/input__delete-icon_place-before-sth.css);
 @import url(../blocks/input/__arrow-btn/input__arrow-btn.css);
-@import url(../blocks/input/__box/_password/input__box_password.css);
 @import url(../blocks/input/__password-checkbox/input__password-checkbox.css);
 
 @import url(../blocks/help-message/help-message.css);
@@ -61,11 +59,16 @@
 
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
+
 @import url(../blocks/unordered-list/unordered-list.css);
 @import url(../blocks/unordered-list/__text/unordered-list__text.css);
+/*
 @import url(../blocks/paragraph/paragraph.css);
 @import url(../blocks/explanation/explanation.css);
 
+ */
+
+/*
 @import url(../blocks/heading/heading.css);
 @import url(../blocks/heading/_type/heading_type_title.css);
 @import url(../blocks/heading/_type/heading_type_subtitle.css);
@@ -77,3 +80,5 @@
 @import url(../blocks/popup-edit/_opened/popup-edit_opened.css);
 @import url(../blocks/novigation-btns/__submit-btn/_from/novigation-btns__submit-btn_from_popup-edit.css);
 @import url(../blocks/popup-edit/__btn-close/popup-edit__btn-close.css);
+@import url(../blocks/paragraph/_style/paragraph_style_first-step.css);
+

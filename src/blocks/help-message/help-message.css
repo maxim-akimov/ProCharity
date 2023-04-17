@@ -1,6 +1,14 @@
 .help-message{
-    position: relative;
-    max-width: 352px;
-    margin: 20px;
+    position: absolute;
+    min-width: 352px;
+    margin: 0;
     height: max-content;
+    z-index: 2;
+    bottom: 36px;
+    right: -12px;
+}
+@media screen and (max-width: 900px){
+    .help-message{
+        min-width: 312px;
+    }
 }

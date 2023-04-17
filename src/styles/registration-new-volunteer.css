@@ -185,5 +185,46 @@
 ====================================================================================================================== */
 
 
+        /*====================  NOVIGATION BTNS  ====================*/
 
+@import url(../blocks/novigation-btns/novigation-btns.css);
+@import url(../blocks/novigation-btns/__back-btn/novigation-btns__back-btn.css);
+@import url(../blocks/novigation-btns/__submit-btn/novigation-btns__submit-btn.css);
+@import url(../blocks/novigation-btns/__submit-btn/_inactive/novigation-btns__submit-btn_inactive.css);
 
+        /*====================  INPUT  ====================*/
+
+@import url(../blocks/input/input.css);
+@import url(../blocks/input/__box/input__box.css);
+@import url(../blocks/input/__label/input__label.css);
+@import url(../blocks/input/__delete-icon/input__delete-icon.css);
+@import url(../blocks/input/__info-btn/input__info-btn.css);
+@import url(../blocks/input/_type/input_type_password.css);
+@import url(../blocks/input/__delete-icon/_place-before-sth/input__delete-icon_place-before-sth.css);
+@import url(../blocks/input/__password-checkbox/input__password-checkbox.css);
+
+        /*====================  HELP MESSAGE  ====================*/
+
+@import url(../blocks/help-message/help-message.css);
+@import url(../blocks/help-message/__first-el/help-message__first-el.css);
+@import url(../blocks/help-message/__second-el/help-message__second-el.css);
+@import url(../blocks/help-message/__text/help-message__text.css);
+@import url(../blocks/help-message/__second-el/_top/help-message__second-el_top.css);
+@import url(../blocks/help-message/_place/help-message_place_tg.css);
+@import url(../blocks/help-message/_top/help-message_top.css);
+
+        /*====================  HEADING  ====================*/
+
+@import url(../blocks/heading/heading.css);
+@import url(../blocks/heading/_type/heading_type_title.css);
+@import url(../blocks/heading/_type/heading_type_subtitle.css);
+
+        /*====================  NEW REG FORM  ====================*/
+
+@import url(../blocks/new-reg-form/new-reg-form.css);
+@import url(../blocks/new-reg-form/__checkbox/new-reg-form__checkbox.css);
+@import url(../blocks/new-reg-form/__item/new-reg-form__item.css);
+@import url(../blocks/new-reg-form/__legend/new-reg-form__legend.css);
+@import url(../blocks/new-reg-form/__src-label/new-reg-form__src-label.css);
+@import url(../blocks/new-reg-form/__src-text/new-reg-form__src-text.css);
+@import url(../blocks/new-reg-form/__src/new-reg-form__src.css);

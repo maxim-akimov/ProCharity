@@ -1,0 +1,9 @@
+.social__warning {
+    padding: 12px 0 32px 0;
+}
+
+@media screen and (max-width: 900px) {
+    .social__warning {
+        width: 312px;
+    }
+}
