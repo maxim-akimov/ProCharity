@@ -1,0 +1,350 @@
+/* Заголовки */
+
+@import url(../blocks/heading/heading.css);
+
+@import url(../blocks/heading/_type/heading_type_title.css);
+@import url(../blocks/heading/_type/heading_type_subtitle.css);
+@import url(../blocks/heading/_type/heading_type_registrtion.css);
+@import url(../blocks/heading/_type/heading_type_title-desktop.css);
+@import url(../blocks/heading/_type/heading_type_title-mobile.css);
+
+
+
+
+/* Кнопки */
+
+@import url(../blocks/btn/btn.css);
+
+@import url(../blocks/btn/_style/btn_style_primary.css);
+@import url(../blocks/btn/_style/btn_style_secondary.css);
+@import url(../blocks/btn/_style/btn_style_inactive.css);
+
+
+
+/* Пользовательское отображение select */
+
+@import url(../blocks/custom-select/custom-select.css);
+
+@import url(../blocks/custom-select/__wrap/custom-select__wrap.css);
+@import url(../blocks/custom-select/__wrap/_style/custom-select__wrap_style_multiselect.css);
+
+@import url(../blocks/custom-select/__list/custom-select__list.css);
+
+@import url(../blocks/custom-select/__list-container/custom-select__list-container.css);
+@import url(../blocks/custom-select/__list-container/_opened/custom-select__list-container__opened.css);
+
+@import url(../blocks/custom-select/__heading/custom-select__heading.css);
+
+@import url(../blocks/custom-select/__btn-close/custom-select__btn-close.css);
+
+@import url(../blocks/custom-select/__item/custom-select__item.css);
+@import url(../blocks/custom-select/__item/_style/custom-select__item_style_parent.css);
+@import url(../blocks/custom-select/__item/_style/custom-select__item_style_parent-opened.css);
+@import url(../blocks/custom-select/__item/_style/custom-select__item_style_checkbox.css);
+@import url(../blocks/custom-select/__item/_selected/custom-select__item_selected.css);
+@import url(../blocks/custom-select/__item/_selected/custom-select__item_selected-checkbox.css);
+
+@import url(../blocks/custom-select/__field/custom-select__field.css);
+@import url(../blocks/custom-select/__field/_style/custom-select__field_style_multiselect.css);
+
+@import url(../blocks/custom-select/__field-text/custom-select__field-text.css);
+
+@import url(../blocks/custom-select/__chips/custom-select__chips.css);
+
+@import url(../blocks/custom-select/__chips-text/custom-select__chips-text.css);
+
+@import url(../blocks/custom-select/__chips-delete-btn/custom-select__chips-delete-btn.css);
+
+@import url(../blocks/custom-select/__link/custom-select__link.css);
+@import url(../blocks/custom-select/__link/_type/custom-select__link_type_select-all.css);
+
+@import url(../blocks/custom-select/__btn/custom-select__btn.css);
+
+
+
+/* Отображение форм */
+
+@import url(../blocks/form-item/form-item.css);
+
+@import url(../blocks/form-item/__legend/form-item__legend.css);
+
+@import url(../blocks/form-item/_company/form-item_company.css);
+
+@import url(../blocks/form-item/_type/form-item_type_text-area.css);
+
+
+
+/* fieldset */
+
+@import url(../blocks/fieldset/fieldset.css);
+
+
+
+/* radio выбора категории волонтера */
+
+@import url(../blocks/company/company.css);
+
+@import url(../blocks/company/__btns/company__btns.css);
+
+@import url(../blocks/company/__btn/company__btn.css);
+
+@import url(../blocks/company/__label/company__label.css);
+
+@import url(../blocks/company/__text/company__text.css);
+
+@import url(../blocks/company/__btn/_last/company__btn_last.css);
+
+
+
+/* textarea */
+
+@import url(../blocks/text-area/text-area.css);
+
+@import url(../blocks/text-area/__box/text-area__box.css);
+
+@import url(../blocks/text-area/__label/text-area__label.css);
+
+@import url(../blocks/text-area/__delete-icon/text-area__delete-icon.css);
+
+@import url(../blocks/text-area/__count/text-area__count.css);
+
+
+
+/* input */
+
+@import url(../blocks/input/input.css);
+
+@import url(../blocks/input/__box/input__box.css);
+@import url(../blocks/input/__box/_error/input__box_error.css);
+
+@import url(../blocks/input/__label/input__label.css);
+
+@import url(../blocks/input/__delete-icon/input__delete-icon.css);
+
+@import url(../blocks/input/__info-btn/input__info-btn.css);
+
+@import url(../blocks/input/_type/input_type_calendar.css);
+
+@import url(../blocks/input/__delete-icon/_place-before-sth/input__delete-icon_place-before-sth.css);
+
+@import url(../blocks/input/__error/input__error.css);
+
+@import url(../blocks/input/_type/input_type_password.css);
+
+@import url(../blocks/input/__password-checkbox/input__password-checkbox.css);
+
+
+
+/* Отображение формы регистрации */
+
+@import url(../blocks/new-reg-form/new-reg-form.css);
+
+@import url(../blocks/new-reg-form/__checkbox/new-reg-form__checkbox.css);
+
+@import url(../blocks/new-reg-form/__item/new-reg-form__item.css);
+
+@import url(../blocks/new-reg-form/__legend/new-reg-form__legend.css);
+
+@import url(../blocks/new-reg-form/__src-label/new-reg-form__src-label.css);
+
+@import url(../blocks/new-reg-form/__src-text/new-reg-form__src-text.css);
+
+@import url(../blocks/new-reg-form/__src/new-reg-form__src.css);
+
+
+
+/* Всплывающие подсказки */
+
+@import url(../blocks/help-message/help-message.css);
+
+@import url(../blocks/help-message/__first-el/help-message__first-el.css);
+
+@import url(../blocks/help-message/__second-el/help-message__second-el.css);
+
+@import url(../blocks/help-message/__text/help-message__text.css);
+
+@import url(../blocks/help-message/__box/help-message__box.css);
+
+@import url(../blocks/help-message/_top/help-message_top.css);
+
+@import url(../blocks/help-message/__second-el/_top/help-message__second-el_top.css);
+
+@import url(../blocks/help-message/_place/help-message_place_tg.css);
+
+
+
+@import url(../blocks/hidden/hidden.css);
+
+
+
+/*Отображение и изменение аватара*/
+
+@import url(../blocks/avatar/avatar.css);
+
+@import url(../blocks/avatar/__box/avatar__box.css);
+@import url(../blocks/avatar/__btn/avatar__btn.css);
+@import url(../blocks/avatar/__img/avatar__img.css);
+
+@import url(../blocks/avatar/__max-volume/avatar__max-volume.css);
+
+
+
+/* ? */
+@import url(../blocks/setting-btn/setting-btn.css);
+
+
+
+/* Элементы раздела "Портфолио" */
+
+@import url(../blocks/portfolio/portfolio.css);
+
+@import url(../blocks/portfolio/__url-add/portfolio__url-add.css);
+
+@import url(../blocks/portfolio/__url-delete/portfolio__url-delete.css);
+
+@import url(../blocks/portfolio/__url-input/portfolio__url-input.css);
+
+@import url(../blocks/portfolio/__url-item/portfolio__url-item.css);
+
+@import url(../blocks/portfolio/__text-click/portfolio__text-click.css);
+@import url(../blocks/portfolio/__text-click/_style/portfolio__text-click_style.css);
+
+@import url(../blocks/portfolio/__file-preview-delete/portfolio__file-preview-delete.css);
+
+@import url(../blocks/portfolio/__file-preview-elements/portfolio__file-preview-elements.css);
+
+@import url(../blocks/portfolio/__file-preview-error/portfolio__file-preview-error.css);
+
+@import url(../blocks/portfolio/__file-preview-img/portfolio__file-preview-img.css);
+
+@import url(../blocks/portfolio/__file-preview-item/portfolio__file-preview-item.css);
+
+@import url(../blocks/portfolio/__file-preview-title/portfolio__file-preview-title.css);
+
+@import url(../blocks/portfolio/__file-preview/portfolio__file-preview.css);
+
+@import url(../blocks/portfolio/__file-input-info/portfolio__file-input-info.css);
+
+@import url(../blocks/portfolio/__file-input/portfolio__file-input.css);
+
+@import url(../blocks/portfolio/__file-item/portfolio__file-item.css);
+
+@import url(../blocks/portfolio/__file/portfolio__file.css);
+
+@import url(../blocks/portfolio/__form/portfolio__form.css);
+
+@import url(../blocks/portfolio/__label/portfolio__label.css);
+
+@import url(../blocks/portfolio/__text/portfolio__text.css);
+
+@import url(../blocks/portfolio/__title/portfolio__title.css);
+
+
+
+/* Элементы раздела "Социальные сети" */
+
+@import url(./../blocks/social/social.css);
+
+@import url(./../blocks/social/__icon/social__icon.css);
+
+@import url(./../blocks/social/input-container/social__input-container.css);
+
+@import url(./../blocks/social/warning/social__warning.css);
+
+@import url(./../blocks/social/__input/social__input.css);
+
+
+
+/* Примечания */
+
+@import url(../blocks/note/note.css);
+
+
+
+/* Элементы отображения стартовой страницы */
+
+@import url(./../blocks/content/__start-page/content__start-page.css);
+
+@import url(./../blocks/registration-block/registration-block.css);
+
+@import url(./../blocks/registration-block/__container/registration-block__container.css);
+
+@import url(./../blocks/registration-block/__header/registration-block__header.css);
+
+@import url(./../blocks/registration-block/__text/registration-block__text.css);
+
+@import url(./../blocks/registration-block/__link/registration-block__link.css);
+
+@import url(./../blocks/registration-block/__new-acc-link/registration-block__new-acc-link.css);
+
+@import url(./../blocks/registration-block/_volunteer/registration-block_volunteer.css);
+
+@import url(./../blocks/registration-block/_NKO/registration-block_NKO.css);
+
+
+
+/* Элементы оформления текста */
+
+@import url(../blocks/paragraph/paragraph.css);
+
+@import url(./../blocks/paragraph/_style/paragraph_style_login.css);
+
+
+
+/* Ссылки */
+
+@import url(../blocks/link/link.css);
+
+
+
+/* Элементы отображения раздела "Смена пароля" */
+
+@import url(../blocks/change-password/change-password.css);
+@import url(../blocks/change-password/__title/change-password__title.css);
+@import url(../blocks/change-password/__grid-input/change-password__grid-input.css);
+@import url(../blocks/change-password/__item/change-password__item.css);
+@import url(../blocks/change-password/__input/change-password__input.css);
+@import url(../blocks/change-password/__icon/change-password__icon.css);
+@import url(../blocks/setting-btn/setting-btn.css);
+
+
+
+/* Элементы отображения страницы "Смена пароля */
+
+@import url(../blocks/notifications-form/notifications-form.css);
+
+@import url(../blocks/notifications-form/__item/notifications-form__item.css);
+
+@import url(../blocks/notifications-form/__checkbox/notifications-form__checkbox.css);
+
+@import url(../blocks/notifications-form/__label/notifications-form__label.css);
+
+@import url(../blocks/notifications-form/__label-text/notifications-form__label-text.css);
+
+@import url(../blocks/notifications-form/__legend/notifications-form__legend.css);
+
+@import url(../blocks/notifications-form/__help-btn/notifications-form__help-btn.css);
+
+
+
+/* Блок подписки на телеграм-бот */
+
+@import url(../blocks/telegram/telegram.css);
+
+@import url(../blocks/telegram/__btn/telegram__btn.css);
+@import url(../blocks/telegram/__text/telegram__text.css);
+
+
+
+/* Элементы отображения раздела "Профиль" */
+
+@import url(../blocks/setting-btn/setting-btn.css);
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/profile/__text/profile__text.css);
+@import url(../blocks/profile/__title/profile__title.css);
+@import url(../blocks/profile/__lists/profile__lists.css);
+@import url(../blocks/profile/__list/profile__list.css);
+@import url(../blocks/profile/__list-style/profile__list-style.css);
+@import url(../blocks/profile/__checkbox/profile__checkbox.css);
+@import url(../blocks/profile/__label-checkbox/profile__label-checkbox.css);
+@import url(../blocks/profile/__label-checkbox/_hide/profile__label-checkbox_hide.css);

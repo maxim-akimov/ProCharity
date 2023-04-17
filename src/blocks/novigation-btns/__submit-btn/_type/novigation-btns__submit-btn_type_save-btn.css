@@ -1,9 +1,0 @@
-.novigation-btns__submit-btn_type_save-btn{
-    padding: 20px 32px;
-}
-@media screen and (max-width: 900px){
-    .novigation-btns__submit-btn_type_save-btn{
-        justify-content: center;
-        width: 100%;
-    }
-  }

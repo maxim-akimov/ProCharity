@@ -49,17 +49,17 @@
 @import url(../blocks/main-layout/main-layout.css);
 
 @import url(../blocks/main-layout/_style/main-layout_style_lk.css);
-/*@import url(../blocks/main-layout/_style/main-layout_style_first-step.css);*/
-/*@import url(../blocks/main-layout/_style/main-layout_style_registration.css);*/
+@import url(../blocks/main-layout/_style/main-layout_style_first-step.css);
+@import url(../blocks/main-layout/_style/main-layout_style_registration.css);
 
 
 
 @import url(../blocks/main/main.css);
 
 @import url(../blocks/main/_template/main_template_lk.css);
-/*@import url(../blocks/main/_template/main_template_registration.css);*/
-/*@import url(../blocks/main/_template/main_template_registration-form.css);*/
-/*@import url(../blocks/main/_template/main_template_first-step.css);*/
+@import url(../blocks/main/_template/main_template_registration.css);
+@import url(../blocks/main/_template/main_template_registration-form.css);
+@import url(../blocks/main/_template/main_template_first-step.css);
 
 
 
@@ -101,6 +101,7 @@
 @import url(../blocks/btn/btn.css);
 
 @import url(../blocks/btn/_type/btn_type_refresh.css);
+@import url(../blocks/btn/_type/btn_type_close.css);
 
 
 
@@ -180,18 +181,10 @@
 
 
 
-/* ====================================================================================================================
-                      V        ПОДКЛЮЧЕНИЕ СТИЛЕЙ ДЛЯ ЭЛЕМЕНТОВ РАЗЕЛА CONTENT        V
-====================================================================================================================== */
+@import url(../blocks/popup/popup.css);
 
+@import url(../blocks/popup/__title/popup__title.css);
 
-@import url(../blocks/setting-btn/setting-btn.css);
-@import url(../blocks/profile/profile.css);
-@import url(../blocks/profile/__text/profile__text.css);
-@import url(../blocks/profile/__title/profile__title.css);
-@import url(../blocks/profile/__lists/profile__lists.css);
-@import url(../blocks/profile/__list/profile__list.css);
-@import url(../blocks/profile/__list-style/profile__list-style.css);
-@import url(../blocks/profile/__checkbox/profile__checkbox.css);
-@import url(../blocks/profile/__label-checkbox/profile__label-checkbox.css);
-@import url(../blocks/profile/__label-checkbox/_hide/profile__label-checkbox_hide.css);
+@import url(../blocks/popup/__text/popup__text.css);
+
+@import url(../blocks/popup/__btn-close/popup__btn-close.css);

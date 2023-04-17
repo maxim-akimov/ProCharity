@@ -30,7 +30,7 @@ export default class CustomMultiselect {
     linkClass: 'custom-select__link',
     selectAllGroupLinkClass: 'custom-select__link_type_select-all',
     resetAllGroupLinkClass: 'custom-select__link_type_reset',
-    selectBtnClass: ['novigation-btns__submit-btn', 'custom-select__btn', 'custom-select__btn_type_select'],
+    selectBtnClass: ['btn', 'btn_style_primary', 'custom-select__btn', 'custom-select__btn_type_select'],
     resetBtnClass: ['novigation-btns__back-btn', 'custom-select__btn', 'custom-select__btn_type_reset'],
     optionsListClass: 'custom-select__list',
     optionClass: 'custom-select__item',

@@ -9,12 +9,10 @@
     border: 0;
     resize: none;
     background: none;
-    padding: 0;
+    padding: 23px 48px 0 16px;
     outline: none;
     width: 100%;
     box-sizing: border-box;
-    padding-top: 23px;
-    padding-left: 16px;
 }
 .text-area:placeholder-shown{
     padding-top: 12px;
