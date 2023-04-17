@@ -1,9 +1,25 @@
-.custom-select__item{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #58646A;
-    padding: 8px 0px 8px 16px;
-    cursor: pointer;
+.custom-select__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #58646A;
+  padding: 8px 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+@media screen and (min-width: 900px) {
+  .custom-select__item:hover {
+    background-color: #F5F6F8;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .custom-select__item {
+    font-weight: 700;
+    padding: 11px 8px;
+    border-bottom: solid .5px #A0ABB5;
+    line-height: 16px;
+  }
 }

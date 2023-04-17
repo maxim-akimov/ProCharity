@@ -13,5 +13,5 @@ import './styles/_ui-kit.css';
 import CustomSelect from "./components/CustomSelect";
 import CustomMultiselect from "./components/CustomMultiselect";
 
-new CustomSelect('#connection').generate();
+//new CustomSelect('#connection').generate();
 new CustomMultiselect('#competencies').generate();

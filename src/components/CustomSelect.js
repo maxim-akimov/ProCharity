@@ -25,6 +25,7 @@ export default class CustomSelect {
     optionsOpenedListContainerClass: 'custom-select__list-container__opened',
     optionsListClass: 'custom-select__list',
     optionClass: 'custom-select__item',
+    optionParentClass: 'custom-select__item_style_parent',
     optionSelectedClass: 'custom-select__item_selected',
     firstOptionIsTitle: true
   }) {
@@ -48,7 +49,7 @@ export default class CustomSelect {
     // Создание обертки для кастомного селекта
     // Обертка позхволит позиционировать раскрывающийся список относительно поля выбора
     const element = document.createElement('div');
-    element.classList.add(this._options.wrapClass);
+    element.classList.add(...this._handleClassList(this._options.wrapClass));
 
     return element;
   }
@@ -57,7 +58,7 @@ export default class CustomSelect {
   _createField() {
     // Создание поля кастомного селекта
     const element = document.createElement('div');
-    element.classList.add(this._options.fieldClass);
+    element.classList.add(...this._handleClassList(this._options.fieldClass));
 
     return element;
   }
@@ -66,7 +67,7 @@ export default class CustomSelect {
   //Select
   _createFieldText() {
     const element = document.createElement('div');
-    element.classList.add(this._options.fieldTextClass);
+    element.classList.add(...this._handleClassList(this._options.fieldTextClass));
 
     return element;
   }
@@ -74,7 +75,7 @@ export default class CustomSelect {
 
   _createArrow() {
     const element = document.createElement('div');
-    element.classList.add(this._options.fieldArrowClass);
+    element.classList.add(...this._handleClassList(this._options.fieldArrowClass));
 
     return element;
   }
@@ -82,7 +83,7 @@ export default class CustomSelect {
 
   _createListContainer() {
     const element = document.createElement('div');
-    element.classList.add(this._options.optionsListContainerClass);
+    element.classList.add(...this._handleClassList(this._options.optionsListContainerClass));
 
     return element;
   }
@@ -90,7 +91,7 @@ export default class CustomSelect {
 
   _createList() {
     const element = document.createElement('ul');
-    element.classList.add(this._options.optionsListClass);
+    element.classList.add(...this._handleClassList(this._options.optionsListClass));
 
     return element;
   }
@@ -98,7 +99,7 @@ export default class CustomSelect {
 
   _createItem() {
     const element = document.createElement('li');
-    element.classList.add(this._options.optionClass);
+    element.classList.add(...this._handleClassList(this._options.optionClass));
 
     return element;
   }
@@ -199,6 +200,14 @@ export default class CustomSelect {
   }
 
 
+  _handleClassList(classList) {
+    if (typeof classList === 'string') {
+      return [classList];
+    }
+    return classList;
+  }
+
+
   _resetSelectedOption() {
     const selectedOption = this._getSelectedOption();
 
@@ -226,6 +235,7 @@ export default class CustomSelect {
 
         // Добавление атрибута для связки элементов выбора с стандартным select
         option.setAttribute('data-val', item.value);
+        option.setAttribute('data-is-selectable', item.isSelectable);
 
         // Установка отображаемого текстового значения
         option.textContent = item.text;
@@ -233,7 +243,9 @@ export default class CustomSelect {
         // Если имеются дочерние элементы
         if (item.children.length > 0) {
           // Добавляем стиль родительского пункта списка (стрелка)
-          option.classList.add(this._options.optionArrowClass);
+          option.classList.add(
+            ...this._handleClassList(this._options.optionParentClass)
+          );
 
           //Создание контейнера (обертки) дочернего списка
           const container = this._createListContainer();
@@ -299,15 +311,17 @@ export default class CustomSelect {
       if (!evt.target.closest(`.${this._options.wrapClass}`)) {
         // Закрытие выпадающего списка
         this.closeDropdown();
+      }
+    });
 
-      // Если клик был произведен по элементу списка
-      } else if (evt.target.classList.contains(this._options.optionClass)) {
+    this._customSelectElement.addEventListener('mousedown', (evt) => {
+      if (evt.target.classList.contains(this._options.optionClass)) {
         // Обработка клика по элементу
         this._handleItemClick(evt);
         // Закрытие выпадающего списка
         this.closeDropdown();
 
-      // В остальных случаях
+        // В остальных случаях
       } else {
         // Если  контейнер выпадающего списка открыт
         if (this._optionsListContainerElement.classList

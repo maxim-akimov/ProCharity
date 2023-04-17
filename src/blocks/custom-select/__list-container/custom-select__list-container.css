@@ -3,4 +3,35 @@
   position: absolute;
   width: 100%;
   margin-top: 4px;
+  z-index: 2;
+}
+
+@media screen and (min-width: 900px) {
+  .custom-select__item:hover > .custom-select__list-container {
+    display: block;
+    left: 100%;
+    top: -12px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .custom-select__list-container {
+    position: fixed;
+    overflow: hidden;
+    overflow-y: auto;
+    background: #F1F5F9;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+  }
+
+  .custom-select__item > .custom-select__list-container {
+    display: none;
+    position: initial;
+    padding-top: 19px;
+    margin-left: -8px;;
+    width: calc(100% + 16px);
+  }
 }

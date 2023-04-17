@@ -1,0 +1,20 @@
+.custom-select__chips-delete-btn {
+  background: url(../../../images/delete-chips-btn.svg) no-repeat center center;
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+}
+
+.custom-select__chips-delete-btn:hover {
+  background: url(../../../images/delete-chips-btn.svg) no-repeat center center;
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+}
+
+.custom-select__chips-delete-btn:focus {
+  background: url(../../../images/delete-chips-btn.svg) no-repeat center center;
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+}

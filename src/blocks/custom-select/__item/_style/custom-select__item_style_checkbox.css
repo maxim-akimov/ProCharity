@@ -1,0 +1,18 @@
+.custom-select__item_style_checkbox {
+  background: url(../../../../images/checkbox.svg) no-repeat 12px center;
+  padding-left: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .custom-select__item_style_checkbox {
+    background: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: #58646A;
+    padding: 8px 12px;
+    border: solid 1px #C7D0DA;
+    border-radius: 20px;
+    font-weight: 400;
+    width: fit-content;
+  }
+}
