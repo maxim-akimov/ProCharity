@@ -1,6 +1,43 @@
 .registration-block_NKO {
-    
     align-items: flex-start;
     text-align: left;
-    
+    border-radius: 5px 0 0 5px;
+    padding-left: 96px;
+}
+
+.registration-block_NKO:after {
+    background: url(../../../images/nko-start-image.svg) no-repeat bottom left;
+    content: '';
+    bottom: -64px;
+    display: block;
+    width: 312px;
+    height: 415px;
+    position: absolute;
+    right: 0;
+}
+
+.registration-block_NKO:hover:after {
+    background: url(../../../images/nko-start-image-gray.svg) no-repeat bottom left;
+}
+
+@media screen and (max-width: 1400px) {
+    .registration-block_NKO {
+        padding-left: 24px;
+    }
+
+    .registration-block_NKO:after {
+        background: url(../../../images/nko-start-image-small.svg) no-repeat bottom left;
+        background-size: contain;
+        content: '';
+        bottom: -44px;
+        display: block;
+        width: 173px;
+        height: 240px;
+        position: absolute;
+        right: 0;
+    }
+
+    .registration-block_NKO:hover:after {
+        background: url(../../../images/nko-start-image-small-gray.svg) no-repeat bottom left;
+    }
 }

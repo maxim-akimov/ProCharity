@@ -201,11 +201,7 @@
 ====================================================================================================================== */
 @import url(./../blocks/social/social.css);
 
-@import url(./../blocks/social/__form/social__form.css);
-
 @import url(./../blocks/social/__icon/social__icon.css);
-
-@import url(./../blocks/social/__text/social__text.css);
 
 @import url(./../blocks/social/input-container/social__input-container.css);
 
@@ -215,8 +211,16 @@
 
 @import url(./../blocks/novigation-btns/novigation-btns.css);
 
+
+
+@import url(../blocks/note/note.css);
+
+
+
 @import url(./../blocks/novigation-btns/__submit-btn/novigation-btns__submit-btn.css);
+
 @import url(./../blocks/novigation-btns/__submit-btn/_inactive/novigation-btns__submit-btn_inactive.css);
+
 @import url(./../blocks/novigation-btns/__submit-btn/_type/novigation-btns__submit-btn_type_save-btn.css);
 
 

@@ -1,34 +1,27 @@
 .registration-block__text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.25px;
-    color: #FFFFFF;
-    margin: 28px 13.59% 0 13.59%;
-    width: 52.12%;
-    
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #FFFFFF;
+  width: 100%;
+  max-width: 368px;
+  margin: 0;
+  padding-bottom: 40px;
 }
 
 @media screen and (max-width: 1250px) {
-    .registration-block__text {
-        font-size: 15px;
-        margin: 28px 5% 0 5%;
-        /*width: 45%;*/
-    }
+  .registration-block__text {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .registration-block__text {
-    
-    min-width: 306px;
-    max-width: 312px;
-    height: 84px;
-    margin: 16px 6.66% 0 6.66% ;
+  .registration-block__text {
+    padding-bottom: 40px;
+    width: 100%;
     font-size: 14px;
     line-height: 21px;
     letter-spacing: 0;
-
-    
-        
-    }
+  }
 }

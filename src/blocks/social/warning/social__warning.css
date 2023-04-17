@@ -1,18 +1,9 @@
 .social__warning {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #7B878F;
-    width: 526px;
-    height: 32px;
-    margin: -8px 0 32px 0;
-   
+    padding: 12px 0 32px 0;
 }
 
 @media screen and (max-width: 900px) {
     .social__warning {
         width: 312px;
-        height: 48px;
-        
     }
 }

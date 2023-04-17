@@ -1,13 +1,11 @@
 .text-area__box{
     width: max-content;
     height: max-content;
-    
     position: relative;
     margin: 0;  
     background: #F1F5F9;
     padding: 23px 48px 25px 16px;
     border-radius: 6px;
-    margin-top: 12px 0 32px 0;
 }
 
 @media screen and (max-width: 900px) {
