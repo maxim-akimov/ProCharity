@@ -1,0 +1,13 @@
+.input__error{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #D20202;
+    display: flex;
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
