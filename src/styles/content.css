@@ -183,7 +183,7 @@
 @import url(../blocks/avatar/avatar.css);
 
 @import url(../blocks/avatar/__box/avatar__box.css);
-@import url(../blocks/avatar/__btn/avatar__btn.css);
+@import url(../blocks/avatar/__input/avatar__input.css);
 @import url(../blocks/avatar/__img/avatar__img.css);
 
 @import url(../blocks/avatar/__max-volume/avatar__max-volume.css);

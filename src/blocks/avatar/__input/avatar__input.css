@@ -1,4 +1,8 @@
-.avatar__btn{
+.avatar__input {
+    display: none;
+}
+
+.avatar__input + label {
     -webkit-appearance: none;
     -moz-appearance: none;
     border: 0;

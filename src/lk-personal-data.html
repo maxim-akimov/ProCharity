@@ -120,8 +120,10 @@
       <form class="personal-date-form">
         <div class="avatar__box">
           <div class="avatar">
-            <img class="avatar__img" alt="Твой аватар">
-            <button type="button" class="avatar__btn">Добавить фотографию</button>
+            <input type="file" class="avatar__input" name="addAvatar" id="addAvatar">
+            <label for="addAvatar">Добавить фотографию</label>
+            <!-- Для просмотра фотографии необходимо удалить свойство display: none из avatar__img.css -->
+            <img class="avatar__img" alt="Твой аватар" src="<%=require('./images/edit-photo-popup.jpg')%>">
           </div>
           <p class="avatar__max-volume">Jpg, png <br>объемом не более 5 Мб</p>
         </div>
