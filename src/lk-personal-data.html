@@ -117,17 +117,17 @@
     </section>
     <section class="content">
       <h1 class="heading heading heading_type_title">Личные данные</h1>
-      <form class="personal-date-form">
-        <div class="avatar__box">
-          <div class="avatar">
-            <input type="file" class="avatar__input" name="addAvatar" id="addAvatar">
-            <label for="addAvatar">Добавить фотографию</label>
-            <!-- Для просмотра фотографии необходимо удалить свойство display: none из avatar__img.css -->
-            <img class="avatar__img" alt="Твой аватар" src="<%=require('./images/edit-photo-popup.jpg')%>">
-          </div>
-          <p class="avatar__max-volume">Jpg, png <br>объемом не более 5 Мб</p>
+      <div class="avatar__box">
+        <div class="avatar">
+          <input type="file" class="avatar__input" name="addAvatar" id="addAvatar">
+          <label for="addAvatar">Добавить фотографию</label>
+          <!-- Для просмотра фотографии необходимо удалить свойство display: none из avatar__img.css -->
+          <img class="avatar__img" alt="Твой аватар" src="<%=require('./images/edit-photo-popup.jpg')%>">
         </div>
-        <fieldset class="form-item" id="userDate">
+        <p class="avatar__max-volume">Jpg, png <br>объемом не более 5 Мб</p>
+      </div>
+      <form name="personalData" id="personalData">
+        <fieldset class="fieldset content_grid_form" id="userDate">
           <legend class="form-item__legend heading heading_type_subtitle">Фонды увидят эти данные на твоей странице
           </legend>
           <div class="input__box input__box_error">
@@ -156,7 +156,7 @@
             <span class="input__error">Ошибка</span>
           </div>
         </fieldset>
-        <fieldset class="form-item" id="userContacts">
+        <fieldset class="fieldset content_grid_form" id="userContacts">
           <legend class="form-item__legend heading heading_type_subtitle">Контакты будут видны фондам, которые выберут
             тебя исполнителем задания
           </legend>
@@ -195,13 +195,33 @@
             </select>
           </div>
         </fieldset>
-        <fieldset class="form-item">
-          <div class="company__btns form-item_company">
-            <label class="company__lable"><input type="radio" class="company__btn" name="btn" id="fisical">
-              <p class="company__text">я частное лицо</p></label>
-            <label class="company__lable"><input type="radio" class="company__btn company__btn_last" name="btn" id="company">
-              <p class="company__text">я представляю компанию</p></label>
+        <fieldset class="fieldset content_grid_cols-1">
+          <div class="radio-switcher">
+            <input type="radio" class="radio-switcher__input" name="volunteerType" id="physical">
+            <label for="physical" class="radio-switcher__label">
+              Я частное лицо
+            </label>
+            <input type="radio" class="radio-switcher__input" name="volunteerType" id="company">
+            <label for="company" class="radio-switcher__label">
+              Я представляю компанию
+            </label>
           </div>
+        </fieldset>
+        <!--
+        <fieldset class="fieldset content_grid_cols-1">
+          <div class="company__btns form-item_company">
+            <label for="physical" class="company__lable">
+              <input type="radio" class="company__btn" name="volunteerType" id="physical">
+              Я частное лицо
+            </label>
+            <label for="company" class="company__lable">
+              <input type="radio" class="company__btn company__btn_last" name="volunteerType" id="company">
+              Я представляю компанию
+            </label>
+          </div>
+        </fieldset>
+        -->
+        <fieldset class="fieldset content_grid_form">
           <div class="input__box">
             <select name="companyName" id="companyName" class="custom-select">
               <option hidden>Выбрать компанию</option>
@@ -221,7 +241,7 @@
             <span class="input__error">Ошибка</span>
           </div>
         </fieldset>
-        <fieldset class="form-item form-item_type_text-area">
+        <fieldset class="fieldset content_grid_cols-1">
           <div class="text-area__box">
             <textarea class="text-area" name="how-found" id="howFound" maxlength="2000"
                       placeholder="Как ты о нас узнал?" required></textarea>

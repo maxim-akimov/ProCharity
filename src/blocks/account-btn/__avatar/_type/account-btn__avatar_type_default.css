@@ -1,4 +1,4 @@
 .account-btn__avatar_type_default {
-  border-left: solid 2px #7DCDD7;
   background: url(../../../../images/user.svg) no-repeat center center;
+  border-left: solid 2px #7DCDD7;
 }
