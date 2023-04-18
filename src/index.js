@@ -11,6 +11,7 @@ handleTextarea();
 import CustomSelect from "./components/CustomSelect";
 import CustomMultiselect from "./components/CustomMultiselect";
 
-//new CustomSelect('#connection').generate();
+new CustomSelect('#connection').generate();
+new CustomSelect('#companyName').generate();
 new CustomMultiselect('#competencies').generate();
 import { Popup } from './components/Popup';

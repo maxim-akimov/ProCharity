@@ -1,3 +1,4 @@
 .custom-select__field_style_multiselect {
   max-width: 100%;
+  flex-wrap: nowrap;
 }

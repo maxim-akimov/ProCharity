@@ -1,6 +1,0 @@
-.my-motivation {
-    display: grid;
-    grid-template-rows: repeat(3, auto);
-    row-gap: 32px;
-}
-

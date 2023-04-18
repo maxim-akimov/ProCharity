@@ -103,11 +103,6 @@ module.exports = {
             template: './src/settings-profile.html',
             inject: 'body'
         }),
-        new HtmlWebpackPlugin({
-            filename: '_ui-kit.html',
-            template: './src/_ui-kit.html',
-            inject: 'body'
-        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin()
     ]

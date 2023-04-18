@@ -3,3 +3,10 @@
   color: #FFFFFF;
   padding: 20px 32px;
 }
+
+@media screen and (max-width: 900px) {
+  .btn_style_primary {
+    margin: 0 auto;
+    width: 100%;
+  }
+}

@@ -1,21 +1,17 @@
-.input_type_calendar{
-    
-}
-
 .input_type_calendar::-webkit-calendar-picker-indicator {
-    color: rgba(0, 0, 0, 0);
-    display: block;
     background: url(../../../images/calendar.svg) no-repeat center;
     background-size: 18px 15px;
     border-width: thin;
-    height: 24px;
-    width: 24px;
-    position: absolute;
-    top: 9px;
-    right: 12px;
+    color: rgba(0, 0, 0, 0);
     cursor: pointer;
+    display: block;
+    height: 24px;
+    position: absolute;
+    right: 12px;
+    top: 9px;
+    width: 24px;
 }
 .input_type_calendar{
     margin: 0;
-    width: 40%;
+    width: calc(100% - 55px);
 }

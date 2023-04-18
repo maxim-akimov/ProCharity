@@ -11,7 +11,7 @@
   cursor: pointer;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 8px;
   background: url(../../../images/arrow.svg) no-repeat right 22px top 22px, #F1F5F9;
 }

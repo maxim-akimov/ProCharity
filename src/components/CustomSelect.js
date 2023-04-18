@@ -116,6 +116,11 @@ export default class CustomSelect {
     // Создание текстового элемента поля
     this._fieldTextElement = this._createFieldText(); //Select
 
+    if (this._options.firstOptionIsTitle) {
+      this._fieldTextElement.textContent = this._selectElement
+        .querySelector('option').textContent;
+    }
+
     // Создание иконки раскрывающегося списка
     this._fieldArrowElement = this._createArrow();
 
