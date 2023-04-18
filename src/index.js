@@ -15,4 +15,8 @@ new CustomSelect('#connection').generate();
 new CustomSelect('#companyName').generate();
 new CustomMultiselect('#competencies').generate();
 
+const popup = new Popup('.popup-edit');
+popup.setEventListeners();
+popup.open();
+
 

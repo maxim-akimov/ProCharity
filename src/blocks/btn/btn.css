@@ -20,15 +20,3 @@
   padding: 0;
   text-transform: uppercase;
 }
-
-.btn:hover {
-  background: none;
-  border: none;
-  outline: none;
-}
-
-.btn:focus {
-  background: none;
-  border: none;
-  outline: none;
-}
