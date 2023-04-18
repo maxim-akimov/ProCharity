@@ -278,23 +278,25 @@ export default class CustomSelect {
 
   //Select
   generate() {
-    // Создание каркаса кастомного селекта
-    this._createDropdownBlock();
-    this._selectElement.after(this._customSelectElement);
+    if (this._selectElement) {
+      // Создание каркаса кастомного селекта
+      this._createDropdownBlock();
+      this._selectElement.after(this._customSelectElement);
 
 
-    // Заполнение каркаса элементами списка
-    this._createItems(
-      this._getOptions(),
-      this._optionsListElement
-    );
+      // Заполнение каркаса элементами списка
+      this._createItems(
+        this._getOptions(),
+        this._optionsListElement
+      );
 
-    // Сработает при инициализации, если параметр options.firstOptionIsTitle = true
-    // первый option из списка будет являться подписью кастомного списка
-    this._setFieldText(); //Select
+      // Сработает при инициализации, если параметр options.firstOptionIsTitle = true
+      // первый option из списка будет являться подписью кастомного списка
+      this._setFieldText(); //Select
 
-    //Установка обработчиков событий
-    this.setEventListeners();
+      //Установка обработчиков событий
+      this.setEventListeners();
+    }
   }
 
 

@@ -509,19 +509,21 @@ export default class CustomMultiselect {
 
   //Multi
   generate() {
-    // Создание каркаса кастомного селекта
-    this._createDropdownBlock();
-    this._selectElement.after(this._customSelectElement);
+    if (this._selectElement) {
+      // Создание каркаса кастомного селекта
+      this._createDropdownBlock();
+      this._selectElement.after(this._customSelectElement);
 
 
-    // Заполнение каркаса элементами списка
-    this._createItems(
-      this._getOptions(),
-      this._optionsListElement
-    );
+      // Заполнение каркаса элементами списка
+      this._createItems(
+        this._getOptions(),
+        this._optionsListElement
+      );
 
-    //Установка обработчиков событий
-    this.setEventListeners();
+      //Установка обработчиков событий
+      this.setEventListeners();
+    }
   }
 
 
