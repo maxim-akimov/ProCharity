@@ -1,4 +1,4 @@
-class Popup {
+export default class Popup {
     constructor(selector) {
         this._selector = selector;
         this._popup = document.querySelector(this._selector);
@@ -10,14 +10,13 @@ class Popup {
     }
     
     close() {
-        this._popup.classList.remove('popup-edit_opened');
+        this._popup.classList.remove('popup__btn-close');
     }
 
     setEventListeners() {
+        console.log(this._popup)
         this._closeButton.addEventListener('click', () => {
             this.close()
         })
     }
 }
-
-export { Popup }
