@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
   <meta name="author" content="Группа 4">
   <title>ProCharity - Профиль</title>
 </head>
-
 <body class="page">
 <header class="header">
   <div class="header__wrap">
@@ -49,97 +47,95 @@
     </a>
   </div>
 </header>
-<div class="main-layout main-layout_style_lk">
-  <main class="main main_template_lk">
-    <nav class="breadcrumbs">
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item">
-          <a href="#" class="breadcrumbs__link">Личный кабинет</a>
-        </li>
-        <li class="breadcrumbs__item">
-          Мои данные
-        </li>
-      </ul>
-    </nav>
-    <section class="sidebar-nav sidebar__block">
-      <ul class="sidebar-nav__list">
-        <li class="sidebar-nav__item">
-          <a href="#" class="sidebar-nav__link">
-            <div class="sidebar-nav__step sidebar-nav__step_style_lk">
-              <span class="sidebar-nav__step-text">1</span>
-            </div>
-            <span class="sidebar-nav__item-text">Уведомления</span>
-          </a>
-        </li>
-        <li class="sidebar-nav__item sidebar-nav__item_type_current">
-          <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_type_current">
-            <span class="sidebar-nav__step-text">2</span>
+<main class="main main_template_lk">
+  <nav class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Личный кабинет</a>
+      </li>
+      <li class="breadcrumbs__item">
+        Мои данные
+      </li>
+    </ul>
+  </nav>
+  <section class="sidebar-nav sidebar__block">
+    <ul class="sidebar-nav__list">
+      <li class="sidebar-nav__item">
+        <a href="#" class="sidebar-nav__link">
+          <div class="sidebar-nav__step sidebar-nav__step_style_lk">
+            <span class="sidebar-nav__step-text">1</span>
           </div>
-          <span class="sidebar-nav__item-text">Профиль</span>
-        </li>
-        <li class="sidebar-nav__item">
-          <a href="#" class="sidebar-nav__link">
-            <div class="sidebar-nav__step sidebar-nav__step_style_lk">
-              <span class="sidebar-nav__step-text">3</span>
-            </div>
-            <span class="sidebar-nav__item-text">Смена пароля</span>
-          </a>
-        </li>
-      </ul>
-      <div class="sidebar-nav__description">
-        <p class="sidebar-nav__description-title">Настройки</p>
-      </div>
-    </section>
-    <section class="sidebar__block">
-      <h3 class="sidebar__title">Статус профиля</h3>
-      <a href="#" class="sidebar__status">Cкрыт</a>
-    </section>
-    <section class="sidebar__block sidebar__profile-progress">
-      <h3 class="sidebar__title">Профиль заполнен на 66%</h3>
-      <div class="progress-bar">
-        <div class="progress-bar__bg">
-          <div class="progress-bar__scale"></div>
+          <span class="sidebar-nav__item-text">Уведомления</span>
+        </a>
+      </li>
+      <li class="sidebar-nav__item sidebar-nav__item_type_current">
+        <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_type_current">
+          <span class="sidebar-nav__step-text">2</span>
         </div>
-        <button class="btn btn_type_refresh"></button>
+        <span class="sidebar-nav__item-text">Профиль</span>
+      </li>
+      <li class="sidebar-nav__item">
+        <a href="#" class="sidebar-nav__link">
+          <div class="sidebar-nav__step sidebar-nav__step_style_lk">
+            <span class="sidebar-nav__step-text">3</span>
+          </div>
+          <span class="sidebar-nav__item-text">Смена пароля</span>
+        </a>
+      </li>
+    </ul>
+    <div class="sidebar-nav__description">
+      <p class="sidebar-nav__description-title">Настройки</p>
+    </div>
+  </section>
+  <section class="sidebar__block">
+    <h3 class="sidebar__title">Статус профиля</h3>
+    <a href="#" class="sidebar__status">Cкрыт</a>
+  </section>
+  <section class="sidebar__block sidebar__profile-progress">
+    <h3 class="sidebar__title">Профиль заполнен на 66%</h3>
+    <div class="progress-bar">
+      <div class="progress-bar__bg">
+        <div class="progress-bar__scale"></div>
       </div>
-      <p class="sidebar__description">Узнай, <a class="sidebar__link" href="">как заполнить
-        профиль,</a> чтобы тебя выбрали исполнителем</p>
-    </section>
-    <section class="content">
-      <h1 class="heading heading_type_title">Профиль</h1>
-      <form>
-        <fieldset class="fieldset content_grid_cols-1">
-          <p class="paragraph">
-            Приватный профиль будет скрыт для неавторизованных пользователей в списке волонтеров и в поиске
-            по сайту
-          </p>
-          <input class="checkbox__input" type="checkbox" name="hideProfile" id="hideProfile" disabled>
-          <label for="hideProfile" class="checkbox">Мой профиль виден толькопользователям ProCharity</label>
-        </fieldset>
-        <fieldset class="fieldset content_grid_cols-1">
-          <p class="paragraph">
-            Если ты не хочешь больше быть волонтером ProCharity, можешь заблокировать свой профиль. Это значит:
-          </p>
-          <ul class="unordered-list">
-            <li class="unordered-list__item">
-              ты не сможешь откликаться на задания
-            </li>
-            <li class="unordered-list__item">
-              твой профиль будет скрыт для всех пользователей
-            </li>
-            <li class="unordered-list__item">
-              ты не будешь получать от нас никаких писем.
-            </li>
-          </ul>
-          <p class="paragraph">Чтобы изменить этот статус, убери галочку в чекбоксе ниже и нажми "Сохранить"</p>
-          <input class="checkbox__input" type="checkbox" name="blockProfile" id="blockProfile">
-          <label for="blockProfile" class="checkbox">Заблокировать профиль</label>
-        </fieldset>
-        <button class="setting-btn" type="submit">сохранить</button>
-      </form>
-    </section>
-  </main>
-</div>
+      <button class="btn btn_type_refresh"></button>
+    </div>
+    <p class="sidebar__description">Узнай, <a class="sidebar__link" href="">как заполнить
+      профиль,</a> чтобы тебя выбрали исполнителем</p>
+  </section>
+  <section class="content">
+    <h1 class="heading heading_type_title">Профиль</h1>
+    <form>
+      <fieldset class="fieldset content_grid_cols-1">
+        <p class="paragraph">
+          Приватный профиль будет скрыт для неавторизованных пользователей в списке волонтеров и в поиске
+          по сайту
+        </p>
+        <input class="checkbox__input" type="checkbox" name="hideProfile" id="hideProfile" disabled>
+        <label for="hideProfile" class="checkbox">Мой профиль виден толькопользователям ProCharity</label>
+      </fieldset>
+      <fieldset class="fieldset content_grid_cols-1">
+        <p class="paragraph">
+          Если ты не хочешь больше быть волонтером ProCharity, можешь заблокировать свой профиль. Это значит:
+        </p>
+        <ul class="unordered-list">
+          <li class="unordered-list__item">
+            ты не сможешь откликаться на задания
+          </li>
+          <li class="unordered-list__item">
+            твой профиль будет скрыт для всех пользователей
+          </li>
+          <li class="unordered-list__item">
+            ты не будешь получать от нас никаких писем.
+          </li>
+        </ul>
+        <p class="paragraph">Чтобы изменить этот статус, убери галочку в чекбоксе ниже и нажми "Сохранить"</p>
+        <input class="checkbox__input" type="checkbox" name="blockProfile" id="blockProfile">
+        <label for="blockProfile" class="checkbox">Заблокировать профиль</label>
+      </fieldset>
+      <button class="btn btn_style_primary" type="submit">Сохранить</button>
+    </form>
+  </section>
+</main>
 <footer class="footer">
   <nav class="footer__menu">
     <div class="footer__menu-chapter ">

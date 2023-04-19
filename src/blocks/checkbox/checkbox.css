@@ -25,6 +25,6 @@
   background: url(../../images/checkbox-checked.svg) no-repeat center center;
 }
 
-.checkbox__input:disabled + .checkbox::before {
+.checkbox__input:disabled + .checkbox {
   opacity: .6;
 }
