@@ -1,9 +1,12 @@
 .social__warning {
-    padding: 12px 0 32px 0;
+    padding: 0;
+    margin-top: -8px;
+    grid-column: 1 / -1;
 }
 
 @media screen and (max-width: 900px) {
     .social__warning {
         width: 312px;
+        margin-top: -4px;
     }
 }
