@@ -20,7 +20,6 @@ export default class CustomSelect {
     wrapClass: 'custom-select__wrap',
     fieldClass: 'custom-select__field',
     fieldTextClass: 'custom-select__field-text',
-    fieldArrowClass: 'custom-select__arrow',
     optionsListContainerClass: 'custom-select__list-container',
     optionsOpenedListContainerClass: 'custom-select__list-container__opened',
     optionsListClass: 'custom-select__list',
@@ -73,14 +72,6 @@ export default class CustomSelect {
   }
 
 
-  _createArrow() {
-    const element = document.createElement('div');
-    element.classList.add(...this._handleClassList(this._options.fieldArrowClass));
-
-    return element;
-  }
-
-
   _createListContainer() {
     const element = document.createElement('div');
     element.classList.add(...this._handleClassList(this._options.optionsListContainerClass));
@@ -121,11 +112,8 @@ export default class CustomSelect {
         .querySelector('option').textContent;
     }
 
-    // Создание иконки раскрывающегося списка
-    this._fieldArrowElement = this._createArrow();
-
     // Добавление текстового элемента и иконки к полю
-    this._fieldElement.append(this._fieldTextElement, this._fieldArrowElement); //Select
+    this._fieldElement.append(this._fieldTextElement); //Select
 
     // Добавление поля в контейнер
     this._customSelectElement.append(this._fieldElement);

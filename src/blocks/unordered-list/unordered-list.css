@@ -1,6 +1,7 @@
 .unordered-list {
-    margin: 8px 0 8px 17px;
-    padding: 0;
+    margin: 0;
+    padding: 0 0 8px 18px;
     color: #72d0dc;
+    list-style-image: url(../../images/icon-list-item.svg);
 }
 

@@ -22,7 +22,6 @@ const avatarImg = document.querySelector('.avatar:has(.avatar__img)');
 
 if (avatarImg) {
   avatarImg.addEventListener('mousedown', () => {
-    console.log(321)
     popup.open();
   });
 }

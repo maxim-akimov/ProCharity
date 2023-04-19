@@ -18,6 +18,12 @@
 @import url(../blocks/btn/_style/btn_style_primary.css);
 @import url(../blocks/btn/_style/btn_style_secondary.css);
 @import url(../blocks/btn/_style/btn_style_inactive.css);
+@import url(../blocks/btn/_style/btn_style_telegram.css);
+
+@import url(../blocks/btn/_type/btn_type_close.css);
+@import url(../blocks/btn/_type/btn_type_refresh.css);
+
+@import url(../blocks/btn/_position/btn_position_right.css);
 
 
 
@@ -127,8 +133,13 @@
 
 
 
-/* Отображение формы регистрации */
+/* checkbox */
 
+@import url(../blocks/checkbox/checkbox.css);
+@import url(../blocks/checkbox/__input/checkbox__input.css);
+@import url(../blocks/checkbox/_style/checkbox_style_notifications.css);
+
+/*
 @import url(../blocks/new-reg-form/new-reg-form.css);
 
 @import url(../blocks/new-reg-form/__checkbox/new-reg-form__checkbox.css);
@@ -142,7 +153,7 @@
 @import url(../blocks/new-reg-form/__src-text/new-reg-form__src-text.css);
 
 @import url(../blocks/new-reg-form/__src/new-reg-form__src.css);
-
+*/
 
 
 /* Всплывающие подсказки */
@@ -284,11 +295,15 @@
 
 @import url(./../blocks/paragraph/_style/paragraph_style_login.css);
 
+@import url(../blocks/unordered-list/unordered-list.css);
+@import url(../blocks/unordered-list/__item/unordered-list__item.css);
+
 
 
 /* Ссылки */
 
 @import url(../blocks/link/link.css);
+@import url(../blocks/link/_style/link_style_dark.css);
 
 
 
@@ -326,7 +341,6 @@
 
 @import url(../blocks/telegram/telegram.css);
 
-@import url(../blocks/telegram/__btn/telegram__btn.css);
 @import url(../blocks/telegram/__text/telegram__text.css);
 
 

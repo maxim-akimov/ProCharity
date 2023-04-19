@@ -2,6 +2,12 @@
   display: grid;
   gap: 32px;
   grid-template-columns: max-content max-content;
-  margin: 0 0 24px 0;
+  padding: 0 0 24px 0;
   position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  .avatar__box {
+    gap: 16px;
+  }
 }

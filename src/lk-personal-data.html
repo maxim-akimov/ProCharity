@@ -11,7 +11,9 @@
 <header class="header">
   <div class="header__wrap">
     <button class="menu-icon" type="button"></button>
-    <img src="<%=require('./images/logo.svg')%>" alt="ProCharity" class="main-logo">
+    <a href="https://procharity.ru/">
+      <img src="<%=require('./images/logo.svg')%>" alt="ProCharity" class="main-logo">
+    </a>
     <nav class="header__nav">
       <ul class="header__menu">
         <li>
@@ -128,9 +130,9 @@
           <img class="avatar__img" alt="Твой аватар" src="<%=require('./images/edit-photo-popup.jpg')%>">
         </div>
         <button class="btn btn_type_close avatar__btn-delete"></button>
-        <p class="avatar__max-volume">Jpg, png <br>объемом не более 5 Мб</p>
+        <p class="avatar__max-volume">Jpg, png объемом не более 5 Мб</p>
       </div>
-      <form name="personalData" id="personalData">
+      <form name="personalData" id="personalData" action="lk-competencies.html">
         <fieldset class="fieldset content_grid_form" id="userDate">
           <legend class="paragraph">Фонды увидят эти данные на твоей странице
           </legend>
@@ -177,7 +179,7 @@
             <span class="input__error">Ошибка</span>
           </div>
           <div class="input__box">
-            <input type="text" class="input" name="tgname" id="tgname" placeholder="Ник в Telegram" required>
+            <input type="text" class="input" name="tgname" id="tgname" placeholder="Ник в Telegram">
             <label for="tgname" class="input__label">Ник в Telegram</label>
             <button type="reset" class="input__delete-icon input__delete-icon_place-before-sth"></button>
             <button type="button" class="input__info-btn">
