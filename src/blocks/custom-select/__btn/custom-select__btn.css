@@ -1,8 +1,8 @@
 .custom-select__btn {
-  width: 100%;
-  max-width: 312px;
-  margin: 16px auto 0 auto;
   display: none;
+  margin: 16px auto 0 auto;
+  max-width: 312px;
+  width: 100%;
 }
 
 @media screen and (max-width: 900px) {

@@ -1,7 +1,6 @@
 .custom-select__wrap {
   position: relative;
   width: 100%;
-  max-width: 358px;
 }
 
 @media screen and (max-width: 900px) {

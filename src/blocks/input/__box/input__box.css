@@ -1,6 +1,6 @@
 .input__box{
     height: 48px;
-    max-width: 358px;
+    width: 100%;
     position: relative;
     background: #F1F5F9;
     border-radius: 6px;

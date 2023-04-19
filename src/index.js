@@ -17,6 +17,13 @@ new CustomMultiselect('#competencies').generate();
 
 const popup = new Popup('.popup-edit');
 popup.setEventListeners();
-//popup.open();
 
+const avatarImg = document.querySelector('.avatar:has(.avatar__img)');
+
+if (avatarImg) {
+  avatarImg.addEventListener('mousedown', () => {
+    console.log(321)
+    popup.open();
+  });
+}
 

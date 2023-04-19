@@ -87,22 +87,6 @@
 
 
 
-/* radio выбора категории волонтера */
-
-@import url(../blocks/company/company.css);
-
-@import url(../blocks/company/__btns/company__btns.css);
-
-@import url(../blocks/company/__btn/company__btn.css);
-
-@import url(../blocks/company/__label/company__label.css);
-
-@import url(../blocks/company/__text/company__text.css);
-
-@import url(../blocks/company/__btn/_last/company__btn_last.css);
-
-
-
 /* textarea */
 
 @import url(../blocks/text-area/text-area.css);
@@ -135,6 +119,7 @@
 @import url(../blocks/input/__delete-icon/_place-before-sth/input__delete-icon_place-before-sth.css);
 
 @import url(../blocks/input/__error/input__error.css);
+@import url(../blocks/input/__error/_visible/input__error_visible.css);
 
 @import url(../blocks/input/_type/input_type_password.css);
 
@@ -176,8 +161,6 @@
 
 @import url(../blocks/help-message/__second-el/_top/help-message__second-el_top.css);
 
-@import url(../blocks/help-message/_place/help-message_place_tg.css);
-
 
 
 @import url(../blocks/hidden/hidden.css);
@@ -189,8 +172,12 @@
 @import url(../blocks/avatar/avatar.css);
 
 @import url(../blocks/avatar/__box/avatar__box.css);
+
 @import url(../blocks/avatar/__input/avatar__input.css);
+
 @import url(../blocks/avatar/__img/avatar__img.css);
+
+@import url(../blocks/avatar/__btn-delete/avatar__btn-delete.css);
 
 @import url(../blocks/avatar/__max-volume/avatar__max-volume.css);
 

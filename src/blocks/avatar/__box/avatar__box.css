@@ -1,7 +1,7 @@
-.avatar__box{
-    display: grid;
-    grid-template-columns: max-content max-content;
-    gap: 32px;
-    margin: 0;
-    margin-bottom: 24px;
+.avatar__box {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: max-content max-content;
+  margin: 0 0 24px 0;
+  position: relative;
 }
