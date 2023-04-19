@@ -1,0 +1,7 @@
+.uploader__btn-delete {
+  grid-column: 3;
+}
+
+.uploader__item_error .uploader__btn-delete {
+  grid-row: 1 / -1;
+}

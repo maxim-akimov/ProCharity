@@ -1,0 +1,13 @@
+.uploader__file-title {
+  color: #374045;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  grid-column: 2;
+  line-height: 24px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

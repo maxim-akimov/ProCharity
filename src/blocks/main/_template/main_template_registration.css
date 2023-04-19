@@ -3,6 +3,7 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  background: #F1F5F9;
 }
 
 @media screen and (max-width: 900px){

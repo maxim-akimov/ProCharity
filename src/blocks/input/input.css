@@ -30,6 +30,3 @@
 .input:not(:placeholder-shown) ~ .input__delete-icon{
     display: flex;
 }
-.input:not(:placeholder-shown) ~ .input__password-checkbox{
-    display: flex;
-}

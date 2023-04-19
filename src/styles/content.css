@@ -22,6 +22,8 @@
 
 @import url(../blocks/btn/_type/btn_type_close.css);
 @import url(../blocks/btn/_type/btn_type_refresh.css);
+@import url(../blocks/btn/_type/btn_type_delete.css);
+@import url(../blocks/btn/_type/btn_type_add.css);
 
 @import url(../blocks/btn/_position/btn_position_right.css);
 
@@ -90,6 +92,7 @@
 /* fieldset */
 
 @import url(../blocks/fieldset/fieldset.css);
+@import url(../blocks/fieldset/_style/fieldset_style_pb-small.css);
 
 
 
@@ -111,8 +114,11 @@
 
 @import url(../blocks/input/input.css);
 
+@import url(../blocks/input/_default/input_default.css);
+
 @import url(../blocks/input/__box/input__box.css);
 @import url(../blocks/input/__box/_error/input__box_error.css);
+@import url(../blocks/input/__box/_type/input__box_type_bottom-interval.css);
 
 @import url(../blocks/input/__label/input__label.css);
 
@@ -129,7 +135,7 @@
 
 @import url(../blocks/input/_type/input_type_password.css);
 
-@import url(../blocks/input/__password-checkbox/input__password-checkbox.css);
+@import url(../blocks/input/__pwd-icon/input__pwd-icon.css);
 
 
 
@@ -174,10 +180,6 @@
 
 
 
-@import url(../blocks/hidden/hidden.css);
-
-
-
 /*Отображение и изменение аватара*/
 
 @import url(../blocks/avatar/avatar.css);
@@ -191,58 +193,6 @@
 @import url(../blocks/avatar/__btn-delete/avatar__btn-delete.css);
 
 @import url(../blocks/avatar/__max-volume/avatar__max-volume.css);
-
-
-
-/* ? */
-@import url(../blocks/setting-btn/setting-btn.css);
-
-
-
-/* Элементы раздела "Портфолио" */
-
-@import url(../blocks/portfolio/portfolio.css);
-
-@import url(../blocks/portfolio/__url-add/portfolio__url-add.css);
-
-@import url(../blocks/portfolio/__url-delete/portfolio__url-delete.css);
-
-@import url(../blocks/portfolio/__url-input/portfolio__url-input.css);
-
-@import url(../blocks/portfolio/__url-item/portfolio__url-item.css);
-
-@import url(../blocks/portfolio/__text-click/portfolio__text-click.css);
-@import url(../blocks/portfolio/__text-click/_style/portfolio__text-click_style.css);
-
-@import url(../blocks/portfolio/__file-preview-delete/portfolio__file-preview-delete.css);
-
-@import url(../blocks/portfolio/__file-preview-elements/portfolio__file-preview-elements.css);
-
-@import url(../blocks/portfolio/__file-preview-error/portfolio__file-preview-error.css);
-
-@import url(../blocks/portfolio/__file-preview-img/portfolio__file-preview-img.css);
-
-@import url(../blocks/portfolio/__file-preview-item/portfolio__file-preview-item.css);
-
-@import url(../blocks/portfolio/__file-preview-title/portfolio__file-preview-title.css);
-
-@import url(../blocks/portfolio/__file-preview/portfolio__file-preview.css);
-
-@import url(../blocks/portfolio/__file-input-info/portfolio__file-input-info.css);
-
-@import url(../blocks/portfolio/__file-input/portfolio__file-input.css);
-
-@import url(../blocks/portfolio/__file-item/portfolio__file-item.css);
-
-@import url(../blocks/portfolio/__file/portfolio__file.css);
-
-@import url(../blocks/portfolio/__form/portfolio__form.css);
-
-@import url(../blocks/portfolio/__label/portfolio__label.css);
-
-@import url(../blocks/portfolio/__text/portfolio__text.css);
-
-@import url(../blocks/portfolio/__title/portfolio__title.css);
 
 
 
@@ -307,18 +257,6 @@
 
 
 
-/* Элементы отображения раздела "Смена пароля" */
-
-@import url(../blocks/change-password/change-password.css);
-@import url(../blocks/change-password/__title/change-password__title.css);
-@import url(../blocks/change-password/__grid-input/change-password__grid-input.css);
-@import url(../blocks/change-password/__item/change-password__item.css);
-@import url(../blocks/change-password/__input/change-password__input.css);
-@import url(../blocks/change-password/__icon/change-password__icon.css);
-@import url(../blocks/setting-btn/setting-btn.css);
-
-
-
 /* Элементы отображения страницы "Смена пароля */
 
 @import url(../blocks/notifications-form/notifications-form.css);
@@ -347,7 +285,6 @@
 
 /* Элементы отображения раздела "Профиль" */
 
-@import url(../blocks/setting-btn/setting-btn.css);
 @import url(../blocks/profile/profile.css);
 @import url(../blocks/profile/__text/profile__text.css);
 @import url(../blocks/profile/__title/profile__title.css);
@@ -370,5 +307,36 @@
 
 
 /* Сетки для отображения содержимого блока content */
+
 @import url(../blocks/content/_grid/content_grid_form.css);
+@import url(../blocks/content/_grid/content_grid_project-links.css);
 @import url(../blocks/content/_grid/content_grid_cols-1.css);
+
+
+/* Загрузчик файлов */
+
+@import url(../blocks/uploader/uploader.css);
+
+@import url(../blocks/uploader/__label/uploader__label.css);
+
+@import url(../blocks/uploader/__input/uploader__input.css);
+
+@import url(../blocks/uploader/__files-list/uploader__files-list.css);
+
+@import url(../blocks/uploader/__item/uploader__item.css);
+@import url(../blocks/uploader/__item/_error/uploader__item_error.css);
+
+@import url(../blocks/uploader/__file-preview-container/uploader__file-preview-container.css);
+@import url(../blocks/uploader/__file-preview-container/_loading/uploader__file-container_loading.css);
+
+@import url(../blocks/uploader/__file-title/uploader__file-title.css);
+
+@import url(../blocks/uploader/__error-message/uploader__error-message.css);
+
+@import url(../blocks/uploader/__btn-delete/uploader__btn-delete.css);
+
+@import url(../blocks/uploader/__input-container/uploader__input-container.css);
+
+@import url(../blocks/uploader/__text-accent/uploader__text-accent.css);
+
+@import url(../blocks/uploader/__note/uploader__note.css);

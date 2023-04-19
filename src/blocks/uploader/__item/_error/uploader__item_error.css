@@ -1,0 +1,4 @@
+.uploader__item_error {
+  grid-template-columns: 48px auto 24px;
+  grid-template-rows: 1fr 1fr;
+}
