@@ -1,6 +1,6 @@
 .footer__menu-chapter {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 160px;
+  display: flex;
+  flex-direction: column;
+  max-width: 160px;
+  width: 100%;
 }

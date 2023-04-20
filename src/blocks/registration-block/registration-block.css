@@ -1,12 +1,12 @@
 .registration-block {
-  height: 352px;
   background-color: #374045;
-  position: relative;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding-top: 64px;
+  height: 352px;
   padding-bottom: 64px;
-  box-sizing: border-box;
+  padding-top: 64px;
+  position: relative;
 }
 
 .registration-block:hover {

@@ -1,7 +1,7 @@
 .sidebar-nav__step_type_reg {
   background-image: url(../../../../images/reg-icon.svg);
-  background-repeat: no-repeat;
   background-position: center center;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 900px) {

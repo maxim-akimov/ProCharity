@@ -1,9 +1,9 @@
 .link {
+  color: #7DCDD7;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.25px;
   text-decoration-line: underline;
-  color: #7DCDD7;
 }
 
 .link:hover {

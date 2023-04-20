@@ -1,6 +1,0 @@
-.notifications-form__label{
-    display: grid;
-    grid-template: max-content / min-content max-content max-content;
-    gap: 8px;
-    width: 100%;
-}

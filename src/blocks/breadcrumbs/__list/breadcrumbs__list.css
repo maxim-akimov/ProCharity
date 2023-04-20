@@ -1,7 +1,7 @@
 .breadcrumbs__list {
   display: flex;
   flex-direction: row;
-  gap:8px;
+  gap: 8px;
   list-style-type: none;
   margin: 0;
   padding: 24px 0 0 0;

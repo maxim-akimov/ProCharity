@@ -1,11 +1,15 @@
 .textarea__label {
-    position: absolute;
-    left: 16px;
-    top: 7px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #7B878F;
-    display: none;
+  color: #7B878F;
+  display: none;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  left: 16px;
+  line-height: 16px;
+  position: absolute;
+  top: 7px;
+}
+
+.textarea__field:not(:placeholder-shown) + .textarea__label {
+  display: flex;
 }

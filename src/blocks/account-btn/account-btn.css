@@ -1,10 +1,10 @@
 .account-btn {
+  align-items: center;
   background: #73B6C0;
   border-radius: 24px;
   display: flex;
   text-decoration: none;
   width: 218px;
-  align-items: center;
 }
 
 .account-btn:hover {

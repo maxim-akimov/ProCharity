@@ -1,16 +1,16 @@
 .main_template_first-step {
+  background: url(../../../images/first-step-background.svg) no-repeat right top, #F1F7FF;
   grid-template-columns: minmax(min-content, 1024px);
   grid-template-rows: auto;
-  padding-top: 64px;
   padding-bottom: 312px;
-  background: url(../../../images/first-step-background.svg) no-repeat right top, #F1F7FF;
+  padding-top: 64px;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
   .main_template_first-step {
-    grid-template-columns: 100%;
-    padding-top: 24px;
-    padding-bottom: 236px;
     background: url(../../../images/first-step-background-reverse.svg) no-repeat bottom 10px center;
+    grid-template-columns: 100%;
+    padding-bottom: 236px;
+    padding-top: 24px;
   }
 }

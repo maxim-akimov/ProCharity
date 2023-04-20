@@ -50,11 +50,11 @@
 @import url(../blocks/custom-select/__item/_style/custom-select__item_style_parent-opened.css);
 @import url(../blocks/custom-select/__item/_style/custom-select__item_style_checkbox.css);
 @import url(../blocks/custom-select/__item/_selected/custom-select__item_selected.css);
-@import url(../blocks/custom-select/__item/_selected/custom-select__item_selected-checkbox.css);
+@import url(../blocks/custom-select/__item/_selected-checkbox/custom-select__item_selected-checkbox.css);
 
 @import url(../blocks/custom-select/__field/custom-select__field.css);
 @import url(../blocks/custom-select/__field/_style/custom-select__field_style_multiselect.css);
-@import url(../blocks/custom-select/__field/_style/custom-select_style_disabled.css);
+@import url(../blocks/custom-select/__field/_style/custom-select__field_style_disabled.css);
 
 @import url(../blocks/custom-select/__field-text/custom-select__field-text.css);
 
@@ -141,7 +141,7 @@
 @import url(../blocks/checkbox/checkbox.css);
 @import url(../blocks/checkbox/__input/checkbox__input.css);
 @import url(../blocks/checkbox/__label/checkbox__label.css);
-@import url(../blocks/checkbox/_style/checkbox_style_notifications.css);
+@import url(../blocks/checkbox/__label/_style/checkbox__label_style_notifications.css);
 
 
 
@@ -152,6 +152,8 @@
 @import url(../blocks/avatar/__container/avatar__container.css);
 
 @import url(../blocks/avatar/__input/avatar__input.css);
+
+@import url(../blocks/avatar/__label/avatar__label.css);
 
 @import url(../blocks/avatar/__img/avatar__img.css);
 
@@ -164,7 +166,6 @@
 /* Примечания */
 
 @import url(../blocks/note/note.css);
-@import url(../blocks/note/__group/note__group.css);
 
 
 
@@ -227,20 +228,6 @@
 @import url(../blocks/telegram/telegram.css);
 
 @import url(../blocks/telegram/__text/telegram__text.css);
-
-
-
-/* Элементы отображения раздела "Профиль" */
-
-@import url(../blocks/profile/profile.css);
-@import url(../blocks/profile/__text/profile__text.css);
-@import url(../blocks/profile/__title/profile__title.css);
-@import url(../blocks/profile/__lists/profile__lists.css);
-@import url(../blocks/profile/__list/profile__list.css);
-@import url(../blocks/profile/__list-style/profile__list-style.css);
-@import url(../blocks/profile/__checkbox/profile__checkbox.css);
-@import url(../blocks/profile/__label-checkbox/profile__label-checkbox.css);
-@import url(../blocks/profile/__label-checkbox/_hide/profile__label-checkbox_hide.css);
 
 
 

@@ -1,18 +1,18 @@
 .menu-icon {
-    display: none;
-    background-image: url(../../images/menu.svg);
-    border: none;
-    background-size: 100%;
-    width: 24px;
-    height: 24px;
-    background-color: rgba(0, 0, 0, 0); 
-    padding: 0;
-    cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../../images/menu.svg);
+  background-size: 100%;
+  border: none;
+  cursor: pointer;
+  display: none;
+  height: 24px;
+  padding: 0;
+  width: 24px;
 }
 
 @media screen and (max-width: 900px) {
-    .menu-icon{
-        display: block;
-        justify-self: left;
-    }
+  .menu-icon {
+    display: block;
+    justify-self: left;
+  }
 }

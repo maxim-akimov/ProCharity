@@ -128,4 +128,5 @@
 ```
 
 Пример инициализации класса CustomMultiselect:
+
 `new CustomMultiselect('#competencies').generate();`

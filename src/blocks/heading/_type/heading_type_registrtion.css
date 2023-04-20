@@ -1,7 +1,7 @@
 .heading_type_registration {
+  grid-column: 1 / -1;
   margin: 0 auto;
   padding-bottom: 64px;
-  grid-column: 1 / -1;
 }
 
 @media screen and (max-width: 900px) {

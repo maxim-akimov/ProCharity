@@ -1,14 +1,14 @@
 .hint__tooltip_position_right-bottom {
-  top: 30px;
   bottom: auto;
   left: -12px;
   right: auto;
+  top: 30px;
 }
 
 .hint__tooltip_position_right-bottom::after {
-  transform: rotate(180deg);
-  top: -16px;
   bottom: auto;
   left: 16px;
   right: auto;
+  top: -16px;
+  transform: rotate(180deg);
 }

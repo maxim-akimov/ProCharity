@@ -1,13 +1,13 @@
 .registration-block__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.25px;
   color: #FFFFFF;
-  width: 100%;
-  max-width: 368px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  line-height: 24px;
   margin: 0;
+  max-width: 368px;
   padding-bottom: 40px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1250px) {
@@ -18,10 +18,10 @@
 
 @media screen and (max-width: 900px) {
   .registration-block__text {
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 21px;
     padding-bottom: 40px;
     width: 100%;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0;
   }
 }

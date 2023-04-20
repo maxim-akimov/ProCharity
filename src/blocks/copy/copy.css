@@ -1,19 +1,19 @@
 .copy {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 64px 0 76px 0;
-    width: 100%;
-    max-width: 1120px;
-    gap: 37px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 37px;
+  max-width: 1120px;
+  padding: 64px 0 76px 0;
+  width: 100%;
 }
 
 @media screen and (max-width: 900px) {
-    .copy {
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        padding: 92px 0 58px 0;
-        gap: 44px;
-    }
+  .copy {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    gap: 44px;
+    padding: 92px 0 58px 0;
+  }
 }
 

@@ -1,13 +1,13 @@
 .footer__social {
+  align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  gap: 32px;
   justify-content: space-between;
-  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  gap: 32px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 900px) {
   .footer__social {
-    max-width: min-content;;
     gap: 32px;
+    max-width: min-content;;
   }
 }

@@ -5,7 +5,7 @@
 @media screen and (max-width: 900px) {
   .custom-select__item_selected-checkbox {
     background: none;
-    color: #E65609;
     border: solid 1px #E65609;
+    color: #E65609;
   }
 }

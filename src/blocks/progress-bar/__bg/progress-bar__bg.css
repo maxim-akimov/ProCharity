@@ -1,9 +1,9 @@
 .progress-bar__bg {
-  width: 216px;
-  height: 24px;
-  border-radius: 24px;
   background-color: #E3E9F0;
+  border-radius: 24px;
+  box-sizing: border-box;
+  height: 24px;
   overflow: hidden;
   padding: 2px;
-  box-sizing: border-box;
+  width: 216px;
 }

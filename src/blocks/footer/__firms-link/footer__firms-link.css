@@ -1,5 +1,5 @@
 .footer__firms-link {
-  text-decoration: none;
-  display: flex;
   align-items: center;
+  display: flex;
+  text-decoration: none;
 }

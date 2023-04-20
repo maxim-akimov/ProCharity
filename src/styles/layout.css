@@ -46,14 +46,6 @@
 
 
 
-@import url(../blocks/main-layout/main-layout.css);
-
-@import url(../blocks/main-layout/_style/main-layout_style_lk.css);
-@import url(../blocks/main-layout/_style/main-layout_style_first-step.css);
-@import url(../blocks/main-layout/_style/main-layout_style_registration.css);
-
-
-
 @import url(../blocks/main/main.css);
 
 @import url(../blocks/main/_template/main_template_lk.css);
@@ -164,8 +156,6 @@
 @import url(../blocks/footer/__firms-link/footer__firms-link.css);
 
 @import url(../blocks/footer/__social/footer__social.css);
-
-@import url(./../blocks/social-logo/social-logo.css);
 
 
 

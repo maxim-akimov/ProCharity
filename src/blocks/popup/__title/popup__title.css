@@ -1,16 +1,16 @@
 .popup__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
-    color: #58646A;
-    position: relative;
-    margin: 0;
-    padding: 0 16px 4px 28px;
+  color: #58646A;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0;
+  padding: 0 16px 4px 28px;
+  position: relative;
 }
 
 .popup__title:before {
-    content: url(../../../images/Group12.svg);
-    position: absolute;
-    left: 0px;
-    top: 0;
+  content: url(../../../images/Group12.svg);
+  left: 0px;
+  position: absolute;
+  top: 0;
 }

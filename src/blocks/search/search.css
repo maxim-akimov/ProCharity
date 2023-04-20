@@ -1,11 +1,11 @@
 .search {
-  background-image: url(../../images/Vector.svg);
-  width: 17px;
-  height: 17px;
   background-color: rgba(0, 0, 0, 0);
+  background-image: url(../../images/Vector.svg);
   border: none;
-  padding: 0;
   cursor: pointer;
+  height: 17px;
+  padding: 0;
+  width: 17px;
 
 }
 

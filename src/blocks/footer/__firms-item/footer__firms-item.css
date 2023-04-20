@@ -1,16 +1,16 @@
 .footer__firms-item {
+  align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 24px;
-  align-items: center;
 }
 
 @media screen and (max-width: 900px) {
   .footer__firms-item {
+    align-items: flex-start;
     flex-direction: column;
     gap: 10px;
-    align-items: flex-start;
   }
 
   .footer__firms-item:last-of-type {
