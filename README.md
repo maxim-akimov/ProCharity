@@ -107,22 +107,25 @@
 
 Пример корректно сформированного select с атрибутом `multiple`:
 
-``
+```
 <select name="competencies" id="competencies" class="custom-select" multiple>
-<option hidden>Выбрать</option>
-<optgroup label="Дизайн и верстка">
-<option value="Тестовый вариант 1">Тестовый вариант 1</option>
-</optgroup>
-<optgroup label="Маркетинг и коммуникации">
-<option value="Социальные сети">Социальные сети</option>
-<option value="Работа с текстами">Работа с текстами</option>
-<option value="Email-рассылки">Email-рассылки</option>
-<option value="Организация мероприятий">Организация мероприятий</option>
-<option value="Реклама">Реклама</option>
-<option value="Стратегический маркетинг / Другое">Стратегический маркетинг / Другое</option>
-</optgroup>
-<optgroup label="IT">
-<option value="Тестовый вариант 2">Тестовый вариант 2</option>
-</optgroup>
+    <option hidden>Выбрать</option>
+    <optgroup label="Дизайн и верстка">
+        <option value="Тестовый вариант 1">Тестовый вариант 1</option>
+    </optgroup>
+        <optgroup label="Маркетинг и коммуникации">
+        <option value="Социальные сети">Социальные сети</option>
+        <option value="Работа с текстами">Работа с текстами</option>
+        <option value="Email-рассылки">Email-рассылки</option>
+        <option value="Организация мероприятий">Организация мероприятий</option>
+        <option value="Реклама">Реклама</option>
+        <option value="Стратегический маркетинг / Другое">Стратегический маркетинг / Другое</option>
+    </optgroup>
+    <optgroup label="IT">
+        <option value="Тестовый вариант 2">Тестовый вариант 2</option>
+    </optgroup>
 </select>
-``
+```
+
+Пример инициализации класса CustomMultiselect:
+`new CustomMultiselect('#competencies').generate();`
