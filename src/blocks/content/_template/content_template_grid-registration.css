@@ -1,0 +1,8 @@
+.content_template_grid-registration {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, minmax(min-content, max-content));
+  width: 100%;
+  max-width: 100%;
+  column-gap: 32px;
+}

@@ -56,7 +56,7 @@
       </li>
     </ul>
   </nav>
-  <section class="sidebar-nav sidebar__block">
+  <section class="sidebar-nav">
     <ul class="sidebar-nav__list">
       <li class="sidebar-nav__item">
         <a href="#" class="sidebar-nav__link">
@@ -101,12 +101,12 @@
       <p class="sidebar-nav__description-title">Профиль волонтера</p>
     </div>
   </section>
-  <section class="sidebar__block">
-    <h3 class="sidebar__title">Статус профиля</h3>
+  <section class="sidebar">
+    <h2 class="sidebar__title">Статус профиля</h2>
     <a href="#" class="sidebar__status">Cкрыт</a>
   </section>
-  <section class="sidebar__block sidebar__profile-progress">
-    <h3 class="sidebar__title">Профиль заполнен на 66%</h3>
+  <section class="sidebar sidebar_type_profile-progress">
+    <h2 class="sidebar__title">Профиль заполнен на 66%</h2>
     <div class="progress-bar">
       <div class="progress-bar__bg">
         <div class="progress-bar__scale"></div>
@@ -119,8 +119,8 @@
   <section class="content">
     <h1 class="heading heading_type_title">Мое портфолио</h1>
     <p class="paragraph">Наличие резюме или портфолио увеличит доверие к тебе как к профессионалу</p>
-    <form id="uploadProjects" name="uploadProjects" enctype="multipart/form-data">
-      <fieldset class="fieldset fieldset_style_pb-small content_grid_cols-1">
+    <form id="uploadProjects" name="uploadProjects" enctype="multipart/form-data" class="uploader">
+      <fieldset class="fieldset fieldset_style_pb-small fieldset_template_grid-one-col">
         <legend class="heading heading_type_subtitle">Резюме или примеры работ</legend>
         <div class="uploader__input-container">
           <input accept=".jpg, .png, .tiff" class="uploader__input" type="file" name="projects" id="projects" multiple>
@@ -131,10 +131,10 @@
         </div>
         <p class="note uploader__note">Jpg, png, pdf объемом не более 20 Мб</p>
       </fieldset>
-      <fieldset class="fieldset content_grid_cols-1">
+      <fieldset class="fieldset fieldset_template_grid-one-col">
         <ul class="uploader__files-list">
           <li class="uploader__item">
-            <div class="uploader__file-preview-container uploader__file-container_loading"></div>
+            <div class="uploader__file-preview-container uploader__file-preview-container_loading"></div>
             <p class="uploader__file-title">CV.png</p>
             <span class="uploader__error-message"></span>
             <button class="btn btn_type_delete uploader__btn-delete"></button>
@@ -158,8 +158,8 @@
         </ul>
       </fieldset>
     </form>
-    <form id="uploadCertificates" name="uploadCertificates" enctype="multipart/form-data">
-      <fieldset class="fieldset content_grid_cols-1">
+    <form id="uploadCertificates" name="uploadCertificates" enctype="multipart/form-data" class="uploader">
+      <fieldset class="fieldset fieldset_template_grid-one-col">
         <legend class="heading heading_type_subtitle">Дипломы и сертификаты</legend>
         <div class="uploader__input-container">
           <input accept=".jpg, .png, .tiff" class="uploader__input" type="file" name="certificates" id="certificates"
@@ -173,14 +173,14 @@
       </fieldset>
     </form>
     <form name="projectLinks" id="projectLinks">
-      <fieldset class="fieldset content_grid_project-links">
+      <fieldset class="fieldset fieldset_template_grid-project-links">
         <legend class="heading heading_type_subtitle">Ссылки</legend>
-        <div class="input__box input__box_type_bottom-interval">
-          <input class="input input_default" type="text" placeholder="Текст ссылки">
+        <div class="input input_type_bottom-interval">
+          <input class="input__field input__field_default" type="text" placeholder="Текст ссылки">
         </div>
-        <div class="input__box input__box_type_bottom-interval">
-          <input class="input input_default" type="url" placeholder="https://">
-          <button type="reset" class="input__delete-icon"></button>
+        <div class="input input_type_bottom-interval">
+          <input class="input__field input__field_default" type="url" placeholder="https://">
+          <button type="reset" class="input__btn input__btn_type_clear-text"></button>
         </div>
         <button type="button" class="btn btn_type_add">Добавить ссылку</button>
       </fieldset>
@@ -191,9 +191,9 @@
 <footer class="footer">
   <nav class="footer__menu">
     <div class="footer__menu-chapter ">
-      <h4 class="footer__menu-title">
+      <h3 class="footer__menu-title">
         <a href="#" class="footer__menu-title-link">О проекте</a>
-      </h4>
+      </h3>
       <ul class="footer__menu-list">
         <li class="footer__menu-item">
           <a href="#" class="footer__menu-link">О платформе</a>
@@ -222,9 +222,9 @@
       </ul>
     </div>
     <div class="footer__menu-chapter">
-      <h4 class="footer__menu-title">
+      <h3 class="footer__menu-title">
         <a href="#" class="footer__menu-title-link">Задания</a>
-      </h4>
+      </h3>
       <ul class="footer__menu-list">
         <li class="footer__menu-item">
           <a href="#" class="footer__menu-link">Ждут исполнителей</a>
@@ -238,9 +238,9 @@
       </ul>
     </div>
     <div class="footer__menu-chapter">
-      <h4 class="footer__menu-title">
+      <h3 class="footer__menu-title">
         <a href="#" class="footer__menu-title-link">Волонтерам</a>
-      </h4>
+      </h3>
       <ul class="footer__menu-list">
         <li class="footer__menu-item">
           <a href="#" class="footer__menu-link">Как помочь</a>
@@ -263,9 +263,9 @@
       </ul>
     </div>
     <div class="footer__menu-chapter">
-      <h4 class="footer__menu-title">
+      <h3 class="footer__menu-title">
         <a href="#" class="footer__menu-title-link">Фондам</a>
-      </h4>
+      </h3>
       <ul class="footer__menu-list">
         <li class="footer__menu-item">
           <a href="#" class="footer__menu-link">Как получить помощь</a>
@@ -285,9 +285,9 @@
       </ul>
     </div>
     <div class="footer__menu-chapter">
-      <h4 class="footer__menu-title">
+      <h3 class="footer__menu-title">
         <a href="#" class="footer__menu-title-link">Бизнесу</a>
-      </h4>
+      </h3>
       <ul class="footer__menu-list">
         <li class="footer__menu-item">
           <a href="#" class="footer__menu-link">Как помочь</a>
@@ -301,9 +301,9 @@
       </ul>
     </div>
     <div class="footer__menu-chapter">
-      <h4 class="footer__menu-title">
+      <h3 class="footer__menu-title">
         <a href="#" class="footer__menu-title-link">FAQ</a>
-      </h4>
+      </h3>
     </div>
   </nav>
   <div class="footer__logo-container">
@@ -327,7 +327,6 @@
         </a>
       </li>
     </ul>
-
     <ul class="footer__social">
       <li>
         <a href="#">
@@ -345,7 +344,6 @@
         </a>
       </li>
     </ul>
-
   </div>
   <div class="copy">
     <p class="copy__text">&copy; 2017-2019 ProCharity</p>
@@ -358,5 +356,4 @@
   </div>
 </footer>
 </body>
-
 </html>

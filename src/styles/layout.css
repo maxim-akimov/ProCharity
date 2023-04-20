@@ -75,13 +75,11 @@
 
 @import url(../blocks/sidebar/sidebar.css);
 
-@import url(../blocks/sidebar/__block/sidebar__block.css);
-
 @import url(../blocks/sidebar/__title/sidebar__title.css);
 
 @import url(../blocks/sidebar/__status/sidebar__status.css);
 
-@import url(../blocks/sidebar/__profile-progress/sidebar__profile-progress.css);
+@import url(../blocks/sidebar/_type/sidebar_type_profile-progress.css);
 
 @import url(../blocks/sidebar/__description/sidebar__description.css);
 
@@ -134,6 +132,8 @@
 
 
 @import url(../blocks/content/content.css);
+
+@import url(../blocks/content/_template/content_template_grid-registration.css);
 
 
 

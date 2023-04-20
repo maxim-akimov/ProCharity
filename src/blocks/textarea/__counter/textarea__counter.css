@@ -1,0 +1,12 @@
+.textarea__counter {
+  bottom: 8px;
+  color: #7B878F;
+  display: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+  position: absolute;
+  right: 12px;
+}

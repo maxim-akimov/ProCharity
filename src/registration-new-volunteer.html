@@ -46,7 +46,7 @@
   </div>
 </header>
 <main class="main main_template_registration-form">
-  <section class="sidebar-nav sidebar__block">
+  <section class="sidebar-nav">
     <ul class="sidebar-nav__list">
       <li class="sidebar-nav__item sidebar-nav__item_type_current">
         <span class="sidebar-nav__step sidebar-nav__step_type_current sidebar-nav__step_type_reg"></span>
@@ -97,55 +97,51 @@
   <section class="content">
     <h1 class="heading heading_type_title">Регистрация нового волонтера</h1>
     <form name="newVolunteer" id="newVolunteer">
-      <fieldset class="fieldset content_grid_form">
+      <fieldset class="fieldset fieldset_template_grid-form">
         <legend class="paragraph">Представители фондов увидят эти данные на твоей странице</legend>
-        <div class="input__box">
-          <input type="text" class="input" name="name" id="name" placeholder="Имя" required>
+        <div class="input">
+          <input type="text" class="input__field" name="name" id="name" placeholder="Имя" required>
           <label for="name" class="input__label">Имя</label>
-          <button type="reset" class="input__delete-icon"></button>
+          <button type="reset" class="input__btn input__btn_type_clear-text"></button>
         </div>
-        <div class="input__box">
-          <input type="text" class="input" name="surname" id="surname" placeholder="Фамилия" required>
+        <div class="input">
+          <input type="text" class="input__field" name="surname" id="surname" placeholder="Фамилия" required>
           <label for="surname" class="input__label">Фамилия</label>
-          <button type="reset" class="input__delete-icon"></button>
+          <button type="reset" class="input__btn input__btn_type_clear-text"></button>
         </div>
       </fieldset>
-      <fieldset class="fieldset content_grid_form">
+      <fieldset class="fieldset fieldset_template_grid-form">
         <legend class="paragraph">Контакты будут видны фондам, которые выберут тебя исполнителем задания</legend>
-        <div class="input__box">
-          <input type="email" class="input" name="email" id="email" placeholder="Email" required>
+        <div class="input">
+          <input type="email" class="input__field" name="email" id="email" placeholder="Email" required>
           <label for="email" class="input__label">Email</label>
-          <button type="reset" class="input__delete-icon"></button>
+          <button type="reset" class="input__btn input__btn_type_clear-text"></button>
         </div>
-        <div class="input__box">
-          <input type="text" class="input" name="tgname" id="tgname" placeholder="Ник в Telegram" required>
+        <div class="input">
+          <input type="text" class="input__field" name="tgname" id="tgname" placeholder="Ник в Telegram" required>
           <label for="tgname" class="input__label">Ник в Telegram</label>
-          <button type="reset" class="input__delete-icon input__delete-icon_place-before-sth"></button>
-          <button type="button" class="input__info-btn">
-            <div class="help-message">
-              <div class="help-message__first-el">
-                <p class="help-message__text">Если тебе удобнее, чтобы представители
-                  фондов писали в Telegram, укажи свой ник (без @ и url)</p>
-              </div>
-              <div class="help-message__second-el"></div>
+          <button type="reset" class="input__btn input__btn_type_clear-text input__btn_position_first"></button>
+          <button type="button" class="hint input__btn input__btn_type_hint">
+            <div class="hint__tooltip">
+              Если тебе удобнее, чтобы представители фондов писали в Telegram, укажи свой ник (без @ и url)
             </div>
           </button>
         </div>
       </fieldset>
-      <fieldset class="fieldset content_grid_form">
+      <fieldset class="fieldset fieldset_template_grid-form">
         <legend class="paragraph">
           Пароль должен содержать не менее 8 знаков и может включать латинские буквы, цифры и специальные символы
         </legend>
-        <div class="input__box">
-          <input type="password" class="input input_type_password" name="password" id="password" placeholder="Пароль"
+        <div class="input">
+          <input type="password" class="input__field input__field_type_password" name="password" id="password" placeholder="Пароль"
                  required>
           <label for="password" class="input__label">
             Пароль
           </label>
           <button class="btn input__pwd-icon"></button>
         </div>
-        <div class="input__box">
-          <input type="password" class="input input_type_password" name="repassword" id="repassword"
+        <div class="input">
+          <input type="password" class="input__field input__field_type_password" name="repassword" id="repassword"
                  placeholder="Подтверди пароль" required>
           <label for="repassword" class="input__label">
             Подтверди пароль
@@ -153,26 +149,28 @@
           <button class="btn input__pwd-icon"></button>
         </div>
       </fieldset>
-      <fieldset class="fieldset content_grid_cols-1">
-        <input class="checkbox__input" type="checkbox" name="confirmLegal" id="confirmLegal" required>
-        <label class="checkbox" for="confirmLegal">
-          Соглашаюсь с
-          <a class="link link_style_dark" href="https://procharity.ru/legal_information.php">правилами сайта</a>
-        </label>
+      <fieldset class="fieldset fieldset_template_grid-one-col">
+        <div class="checkbox">
+          <input class="checkbox__input" type="checkbox" name="confirmLegal" id="confirmLegal" required>
+          <label class="checkbox__label" for="confirmLegal">
+            Соглашаюсь с
+            <a class="link link_style_dark" href="https://procharity.ru/legal_information.php">правилами сайта</a>
+          </label>
+        </div>
       </fieldset>
-      <div class="content_grid_form">
+      <fieldset class="fieldset fieldset_template_grid-form">
         <button type="button" class="btn btn_style_secondary">Назад</button>
         <button type="submit" class="btn btn_style_primary btn_position_right">Зарегистрироваться</button>
-      </div>
+      </fieldset>
     </form>
   </section>
 </main>
 <footer class="footer">
   <nav class="footer__menu">
     <div class="footer__menu-chapter ">
-      <h4 class="footer__menu-title">
+      <h2 class="footer__menu-title">
         <a href="#" class="footer__menu-title-link">О проекте</a>
-      </h4>
+      </h2>
       <ul class="footer__menu-list">
         <li class="footer__menu-item">
           <a href="#" class="footer__menu-link">О платформе</a>
@@ -201,9 +199,9 @@
       </ul>
     </div>
     <div class="footer__menu-chapter">
-      <h4 class="footer__menu-title">
+      <h2 class="footer__menu-title">
         <a href="#" class="footer__menu-title-link">Задания</a>
-      </h4>
+      </h2>
       <ul class="footer__menu-list">
         <li class="footer__menu-item">
           <a href="#" class="footer__menu-link">Ждут исполнителей</a>
@@ -217,9 +215,9 @@
       </ul>
     </div>
     <div class="footer__menu-chapter">
-      <h4 class="footer__menu-title">
+      <h2 class="footer__menu-title">
         <a href="#" class="footer__menu-title-link">Волонтерам</a>
-      </h4>
+      </h2>
       <ul class="footer__menu-list">
         <li class="footer__menu-item">
           <a href="#" class="footer__menu-link">Как помочь</a>
@@ -242,9 +240,9 @@
       </ul>
     </div>
     <div class="footer__menu-chapter">
-      <h4 class="footer__menu-title">
+      <h2 class="footer__menu-title">
         <a href="#" class="footer__menu-title-link">Фондам</a>
-      </h4>
+      </h2>
       <ul class="footer__menu-list">
         <li class="footer__menu-item">
           <a href="#" class="footer__menu-link">Как получить помощь</a>
@@ -264,9 +262,9 @@
       </ul>
     </div>
     <div class="footer__menu-chapter">
-      <h4 class="footer__menu-title">
+      <h2 class="footer__menu-title">
         <a href="#" class="footer__menu-title-link">Бизнесу</a>
-      </h4>
+      </h2>
       <ul class="footer__menu-list">
         <li class="footer__menu-item">
           <a href="#" class="footer__menu-link">Как помочь</a>
@@ -280,9 +278,9 @@
       </ul>
     </div>
     <div class="footer__menu-chapter">
-      <h4 class="footer__menu-title">
+      <h2 class="footer__menu-title">
         <a href="#" class="footer__menu-title-link">FAQ</a>
-      </h4>
+      </h2>
     </div>
   </nav>
   <div class="footer__logo-container">

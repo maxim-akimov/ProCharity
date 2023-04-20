@@ -58,7 +58,7 @@
       </li>
     </ul>
   </nav>
-  <section class="sidebar-nav sidebar__block">
+  <section class="sidebar-nav">
     <ul class="sidebar-nav__list">
       <li class="sidebar-nav__item sidebar-nav__item_type_current">
         <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_type_current">
@@ -87,12 +87,12 @@
       <p class="sidebar-nav__description-title">Настройки</p>
     </div>
   </section>
-  <section class="sidebar__block">
-    <h3 class="sidebar__title">Статус профиля</h3>
+  <section class="sidebar">
+    <h2 class="sidebar__title">Статус профиля</h2>
     <a href="#" class="sidebar__status">Cкрыт</a>
   </section>
-  <section class="sidebar__block sidebar__profile-progress">
-    <h3 class="sidebar__title">Профиль заполнен на 66%</h3>
+  <section class="sidebar sidebar_type_profile-progress">
+    <h2 class="sidebar__title">Профиль заполнен на 66%</h2>
     <div class="progress-bar">
       <div class="progress-bar__bg">
         <div class="progress-bar__scale"></div>
@@ -105,34 +105,41 @@
   <section class="content">
     <h1 class="heading heading_type_title">Уведомления</h1>
     <form name="notifications" id="notifications">
-      <fieldset class="fieldset content_grid_cols-1">
+      <fieldset class="fieldset fieldset_template_grid-one-col">
         <legend class="paragraph">Отметь события, оповещения о которых ты хотел бы получать на email:</legend>
-        <input type="checkbox" class="checkbox__input" name="notification-1" id="notification-1" disabled checked>
-        <label for="notification-1" class="checkbox checkbox_style_notifications">
-          изменения по моим заданиям
-          <button type="button" class="notifications-form__help-btn"></button>
-          <div class="help-message help-message_top">
-            <div class="help-message__first-el"><p class="help-message__text">Мы будем присылать на email все важные
-              уведомления по твоим заданиям</p></div>
-            <div class="help-message__second-el help-message__second-el_top"></div>
+        <div class="fieldset__row-group">
+          <div class="checkbox">
+            <input type="checkbox" class="checkbox__input" name="notification-1" id="notification-1" disabled checked>
+            <label for="notification-1" class="checkbox__label checkbox__label_style_notifications">изменения по моим заданиям</label>
+            <button type="button" class="hint">
+              <div class="hint__tooltip hint__tooltip_position_right-bottom">
+                Мы будем присылать на email все важные уведомления по твоим заданиям
+              </div>
+            </button>
           </div>
-        </label>
-        <input type="checkbox" class="checkbox__input" name="notification-2" id="notification-2">
-        <label for="notification-2" class="checkbox checkbox_style_notifications">
-          фонд выбрал другого исполнителя
-        </label>
-        <input type="checkbox" class="checkbox__input" name="notification-3" id="notification-3">
-        <label for="notification-3" class="checkbox checkbox_style_notifications">
-          подборка заданий по моим компетенциям (раз в неделю)
-        </label>
-        <input type="checkbox" class="checkbox__input" name="notification-4" id="notification-4">
-        <label for="notification-4" class="checkbox">новые задания по моим компетенциям (по мере появления)</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox__input" name="notification-2" id="notification-2">
+          <label for="notification-2" class="checkbox__label checkbox__label_style_notifications">
+            фонд выбрал другого исполнителя
+          </label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox__input" name="notification-3" id="notification-3">
+          <label for="notification-3" class="checkbox__label checkbox__label_style_notifications">
+            подборка заданий по моим компетенциям (раз в неделю)
+          </label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox__input" name="notification-4" id="notification-4">
+          <label for="notification-4" class="checkbox__label">новые задания по моим компетенциям (по мере появления)</label>
+        </div>
       </fieldset>
-      <fieldset class="fieldset content_grid_cols-1">
+      <fieldset class="fieldset fieldset_template_grid-one-col">
         <div class="telegram">
           <p class="telegram__text">Получай уведомления о новых заданиях от бота ProCharity в Telegram. При этом
             рекомендуем отключить уведомления на email из пункта выше.</p>
-          <a href="#" class="btn_style_telegram">Подключить</a>
+          <a href="#" class="btn btn_style_telegram">Подключить</a>
         </div>
       </fieldset>
       <button type="submit" class="btn btn btn_style_primary">Сохранить</button>
@@ -142,9 +149,9 @@
 <footer class="footer">
   <nav class="footer__menu">
     <div class="footer__menu-chapter ">
-      <h4 class="footer__menu-title">
+      <h2 class="footer__menu-title">
         <a href="#" class="footer__menu-title-link">О проекте</a>
-      </h4>
+      </h2>
       <ul class="footer__menu-list">
         <li class="footer__menu-item">
           <a href="#" class="footer__menu-link">О платформе</a>
@@ -173,9 +180,9 @@
       </ul>
     </div>
     <div class="footer__menu-chapter">
-      <h4 class="footer__menu-title">
+      <h2 class="footer__menu-title">
         <a href="#" class="footer__menu-title-link">Задания</a>
-      </h4>
+      </h2>
       <ul class="footer__menu-list">
         <li class="footer__menu-item">
           <a href="#" class="footer__menu-link">Ждут исполнителей</a>
@@ -189,9 +196,9 @@
       </ul>
     </div>
     <div class="footer__menu-chapter">
-      <h4 class="footer__menu-title">
+      <h2 class="footer__menu-title">
         <a href="#" class="footer__menu-title-link">Волонтерам</a>
-      </h4>
+      </h2>
       <ul class="footer__menu-list">
         <li class="footer__menu-item">
           <a href="#" class="footer__menu-link">Как помочь</a>
@@ -214,9 +221,9 @@
       </ul>
     </div>
     <div class="footer__menu-chapter">
-      <h4 class="footer__menu-title">
+      <h2 class="footer__menu-title">
         <a href="#" class="footer__menu-title-link">Фондам</a>
-      </h4>
+      </h2>
       <ul class="footer__menu-list">
         <li class="footer__menu-item">
           <a href="#" class="footer__menu-link">Как получить помощь</a>
@@ -236,9 +243,9 @@
       </ul>
     </div>
     <div class="footer__menu-chapter">
-      <h4 class="footer__menu-title">
+      <h2 class="footer__menu-title">
         <a href="#" class="footer__menu-title-link">Бизнесу</a>
-      </h4>
+      </h2>
       <ul class="footer__menu-list">
         <li class="footer__menu-item">
           <a href="#" class="footer__menu-link">Как помочь</a>
@@ -252,9 +259,9 @@
       </ul>
     </div>
     <div class="footer__menu-chapter">
-      <h4 class="footer__menu-title">
+      <h2 class="footer__menu-title">
         <a href="#" class="footer__menu-title-link">FAQ</a>
-      </h4>
+      </h2>
     </div>
   </nav>
   <div class="footer__logo-container">

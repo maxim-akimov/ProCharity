@@ -1,9 +1,0 @@
-.portfolio__url-item {
-  width: 100%;
-  display: flex;
-  gap: 2px;
-  border-radius: 6px;
-  overflow: hidden;
-  margin: 0 0 12px 0;
-  position: relative;
-}

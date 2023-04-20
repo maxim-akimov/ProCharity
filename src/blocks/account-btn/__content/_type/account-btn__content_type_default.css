@@ -1,6 +1,7 @@
 .account-btn__content_type_default {
   background: #E6560A;
   border-left: solid 2px #7DCDD7;
+  min-height: 48px;
 }
 
 @media screen and (max-width: 900px) {

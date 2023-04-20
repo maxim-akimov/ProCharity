@@ -1,0 +1,15 @@
+.fieldset_template_grid-social-links {
+  align-items: center;
+  display: grid;
+  gap: 20px;
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-template-columns: 33px auto;
+  padding-bottom: 32px;
+}
+
+@media screen and (max-width: 900px) {
+  .fieldset_template_grid-social-links {
+    column-gap: 12px;
+    row-gap: 16px;
+  }
+}
