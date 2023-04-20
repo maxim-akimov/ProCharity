@@ -12,3 +12,7 @@
   text-align: center;
   width: 100%;
 }
+
+.uploader__input:hover + .uploader__label {
+  opacity: .7;
+}

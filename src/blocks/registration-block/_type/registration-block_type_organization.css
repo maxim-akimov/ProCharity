@@ -1,4 +1,4 @@
-.registration-block_NKO {
+.registration-block_type_organization {
     align-items: flex-start;
     text-align: left;
     border-radius: 5px 0 0 5px;
@@ -6,7 +6,7 @@
     grid-column: 2;
 }
 
-.registration-block_NKO:after {
+.registration-block_type_organization:after {
     background: url(../../../images/nko-start-image.svg) no-repeat bottom left;
     content: '';
     bottom: -64px;
@@ -17,16 +17,16 @@
     right: 0;
 }
 
-.registration-block_NKO:hover:after {
+.registration-block_type_organization:hover:after {
     background: url(../../../images/nko-start-image-gray.svg) no-repeat bottom left;
 }
 
 @media screen and (max-width: 1400px) {
-    .registration-block_NKO {
+    .registration-block_type_organization {
         padding-left: 24px;
     }
 
-    .registration-block_NKO:after {
+    .registration-block_type_organization:after {
         background: url(../../../images/nko-start-image-small.svg) no-repeat bottom left;
         background-size: contain;
         content: '';
@@ -38,7 +38,7 @@
         right: 0;
     }
 
-    .registration-block_NKO:hover:after {
+    .registration-block_type_organization:hover:after {
         background: url(../../../images/nko-start-image-small-gray.svg) no-repeat bottom left;
     }
 }

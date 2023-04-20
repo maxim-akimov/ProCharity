@@ -6,11 +6,12 @@ export default class CustomSelect {
    *    wrapClass                       - класс обертки (контейнера) кастомизированного поля
    *    fieldClass                      - класс поля выбора
    *    fieldTextClass                  - класс текстобого блока, вложенного в поле выбора
-   *    fieldArrowClass                 - класс блока иконки выпадающего списка
    *    optionsListContainerClass       - класс контейнера выпадающего списка
    *    optionsOpenedListContainerClass - класс (модификатор) открытого контейнера
-   *    optionsListClass                - класс сипка элементов выбора
-   *    optionClass                     - класс элемента выбора
+   *    optionsListClass                - класс списка элементов выбора <ul>
+   *    optionClass                     - класс элемента выбора <li>
+   *    optionParentClass               - класс, применяющийся к эдементам списка, которые имеют вложенные
+   *                                    (дочерние) элементы
    *    optionSelectedClass             - класс выбранного элемента списка
    *    firstOptionIsTitle              - если установлено в true - первый элемент списка будет
    *                                    использоваться в качестве подписи поля и не будет выводиться

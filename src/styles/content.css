@@ -73,14 +73,6 @@
 
 /* Отображение форм */
 
-/*@import url(../blocks/form-item/form-item.css);*/
-
-/*@import url(../blocks/form-item/__legend/form-item__legend.css);*/
-
-/*@import url(../blocks/form-item/_company/form-item_company.css);*/
-
-/*@import url(../blocks/form-item/_type/form-item_type_text-area.css);*/
-
 @import url(../blocks/radio-switcher/radio-switcher.css);
 
 @import url(../blocks/radio-switcher/__input/radio-switcher__input.css);
@@ -127,7 +119,7 @@
 @import url(../blocks/input/__field/_type/input__field_type_password.css);
 
 
-@import url(../blocks/input/_error/input__error.css);
+@import url(../blocks/input/_error/input_error.css);
 /*@import url(../blocks/input/_type/input_type_bottom-interval.css);*/
 
 @import url(../blocks/input/__label/input__label.css);
@@ -180,19 +172,17 @@
 
 @import url(./../blocks/registration-block/registration-block.css);
 
-@import url(./../blocks/registration-block/__container/registration-block__container.css);
-
-@import url(./../blocks/registration-block/__header/registration-block__header.css);
+@import url(../blocks/registration-block/__heading/registration-block__heading.css);
 
 @import url(./../blocks/registration-block/__text/registration-block__text.css);
 
 @import url(./../blocks/registration-block/__link/registration-block__link.css);
 
-@import url(./../blocks/registration-block/__new-acc-link/registration-block__new-acc-link.css);
+@import url(../blocks/registration-block/__link-create/registration-block__link-create.css);
 
-@import url(./../blocks/registration-block/_volunteer/registration-block_volunteer.css);
+@import url(../blocks/registration-block/_type/registration-block_type_volunteer.css);
 
-@import url(./../blocks/registration-block/_NKO/registration-block_NKO.css);
+@import url(../blocks/registration-block/_type/registration-block_type_organization.css);
 
 
 
@@ -202,8 +192,8 @@
 
 @import url(./../blocks/paragraph/_style/paragraph_style_login.css);
 
-@import url(../blocks/unordered-list/unordered-list.css);
-@import url(../blocks/unordered-list/__item/unordered-list__item.css);
+@import url(../blocks/list/list.css);
+@import url(../blocks/list/__item/list__item.css);
 
 
 

@@ -1,4 +1,4 @@
-.registration-block__new-acc-link {
+.registration-block__link-create {
     color: #7DCDD7;
     font-weight: 700;
     font-size: 14px;
@@ -8,7 +8,7 @@
     text-decoration: none;
 }
 
-.registration-block__new-acc-link:before {
+.registration-block__link-create:before {
     content: '';
     width: 100%;
     height: 100%;
@@ -18,12 +18,12 @@
     left: 0;
 }
 
-.registration-block:hover .registration-block__new-acc-link {
+.registration-block:hover .registration-block__link-create {
     color: #374146;
 }
 
 
 @media screen and (max-width: 900px) {
-    .registration-block__new-acc-link {
+    .registration-block__link-create {
     }
 }

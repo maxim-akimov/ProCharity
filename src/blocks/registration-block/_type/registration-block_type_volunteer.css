@@ -1,4 +1,4 @@
-.registration-block_volunteer {
+.registration-block_type_volunteer {
     text-align: right;
     align-items: flex-end;
     border-radius: 0 5px 5px 0;
@@ -6,7 +6,7 @@
     grid-column: 1;
 }
 
-.registration-block_volunteer:before {
+.registration-block_type_volunteer:before {
     background: url(../../../images/volunteer-start-image.svg) no-repeat top right;
     content: '';
     top: -64px;
@@ -17,16 +17,16 @@
     left: 0;
 }
 
-.registration-block_volunteer:hover:before {
+.registration-block_type_volunteer:hover:before {
     background: url(../../../images/volunteer-start-image-gray.svg) no-repeat top right;
 }
 
 @media screen and (max-width: 1400px) {
-    .registration-block_volunteer {
+    .registration-block_type_volunteer {
         padding-right: 24px;
     }
 
-    .registration-block_volunteer:before {
+    .registration-block_type_volunteer:before {
         background: url(../../../images/volunteer-start-image.svg) no-repeat top right;
         background-size: cover;
         content: '';
@@ -38,7 +38,7 @@
         left: 0;
     }
 
-    .registration-block_volunteer:hover:before {
+    .registration-block_type_volunteer:hover:before {
         background: url(../../../images/volunteer-start-image-gray.svg) no-repeat top right;
         background-size: cover;
 
