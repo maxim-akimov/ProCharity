@@ -6,8 +6,8 @@ function setHeight(el) {
   }
 }
 
-export function handleTextarea(selector) {
-  const textarea = document.querySelectorAll('.text-area_autosize');
+export function handleTextareaAutosize(selector) {
+  const textarea = document.querySelectorAll('.textarea__field_autosize');
 
   textarea.forEach((t) => {
     t.addEventListener('input', () => setHeight(t));
