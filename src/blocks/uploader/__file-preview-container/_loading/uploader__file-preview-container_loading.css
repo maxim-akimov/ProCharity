@@ -1,4 +1,4 @@
-.uploader__file-container_loading::after {
+.uploader__file-preview-container_loading::after {
   animation: loading 1s linear infinite;
   background: url(../../../../images/icon-loading.svg) no-repeat center center;
   content: '';
