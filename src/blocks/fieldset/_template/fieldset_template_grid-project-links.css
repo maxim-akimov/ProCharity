@@ -2,7 +2,7 @@
   column-gap: 2px;
   display: grid;
   grid-auto-rows: minmax(min-content, max-content);
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   padding-bottom: 32px;
   row-gap: 8px;
 }

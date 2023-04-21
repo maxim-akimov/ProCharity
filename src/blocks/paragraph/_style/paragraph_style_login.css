@@ -2,6 +2,13 @@
   font-size: 14px;
   grid-column: 1 / -1;
   line-height: 20px;
+  padding-bottom: 0;
   padding-top: 64px;
   text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .paragraph_style_login {
+    padding-top: 60px;
+  }
 }

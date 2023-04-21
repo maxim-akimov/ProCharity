@@ -131,7 +131,7 @@
       <button class="btn btn_type_close avatar__btn-delete"></button>
       <p class="avatar__max-volume">Jpg, png объемом не более 5 Мб</p>
     </div>
-    <form name="personalData" id="personalData" action="lk-competencies.html" method="post">
+    <form name="personalData" id="personalData" action="lk-competencies.html" method="get">
       <fieldset class="fieldset fieldset_template_grid-form" id="userDate">
         <legend class="paragraph">Фонды увидят эти данные на твоей странице
         </legend>
@@ -163,9 +163,10 @@
         </div>
       </fieldset>
       <fieldset class="fieldset fieldset_template_grid-form" id="userContacts">
-        <legend class="paragraph">Контакты будут видны фондам, которые выберут
+        <legend class="paragraph paragraph_style_desktop">Контакты будут видны фондам, которые выберут
           тебя исполнителем задания
         </legend>
+        <legend class="paragraph paragraph_style_mobile">Контактные данные</legend>
         <div class="input">
           <input type="email" class="input__field" name="email" id="email" placeholder="Электронная почта" required>
           <label for="email" class="input__label">Электронная почта</label>
@@ -201,7 +202,7 @@
           </select>
         </div>
       </fieldset>
-      <fieldset class="fieldset fieldset_template_grid-one-col">
+      <fieldset class="fieldset fieldset_template_grid-one-col fieldset_style_pb-small">
         <div class="radio-switcher">
           <input type="radio" class="radio-switcher__input" name="volunteerType" id="physical">
           <label for="physical" class="radio-switcher__label">
@@ -228,8 +229,8 @@
           <span class="input__error-message">Ошибка</span>
         </div>
         <div class="input">
-          <input type="text" class="input__field" name="post" id="post" placeholder="Должность" required>
-          <label for="post" class="input__label">Должность</label>
+          <input type="text" class="input__field" name="get" id="get" placeholder="Должность" required>
+          <label for="get" class="input__label">Должность</label>
           <button class="btn input__btn input__btn_type_clear-text"></button>
           <span class="input__error-message">Ошибка</span>
         </div>

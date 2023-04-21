@@ -6,3 +6,12 @@
   max-width: 100%;
   width: 100%;
 }
+
+@media screen and (max-width: 900px) {
+  .content_template_grid-registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+  }
+}

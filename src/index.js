@@ -21,7 +21,6 @@ import Cropper from 'cropperjs';
 
 const avatar = document.querySelector('.avatar__container:has(.avatar__img)');
 const image = document.querySelector('.popup__image');
-const popup = new Popup('.popup');
 const inputs = document.querySelectorAll('.input, .textarea');
 
 
@@ -34,13 +33,15 @@ if (image) {
 }
 
 
-
+// Вызов функции, реализующей автоматическое изменение высоты textarea
 handleTextareaAutosize();
 
 
+// Вызов функции, реализующей подсчет количества введенных в textarea символов
 handleTextareaSymbolCounter();
 
 
+// Вызов функции, отвечающей за удаление файлов из списка в разделе "Портфолио"
 setFilesRemover();
 
 
@@ -68,10 +69,13 @@ if (inputs && inputs.length > 0) {
 
 
 // Обеспечение работы модальных окон
-popup.setEventListeners();
+if (document.querySelector('.popup')) {
+  const popup = new Popup('.popup');
+  popup.setEventListeners();
 
-if (avatar) {
-  avatar.addEventListener('mousedown', () => {
-    popup.open();
-  });
+  if (avatar) {
+    avatar.addEventListener('mousedown', () => {
+      popup.open();
+    });
+  }
 }

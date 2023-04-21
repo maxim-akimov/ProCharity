@@ -4,7 +4,7 @@
   border-radius: 8px;
   box-sizing: border-box;
   display: grid;
-  gap: 22px;
+  gap: 20px;
   grid-template: 1fr / 1fr min-content;
   justify-content: space-between;
   padding: 16px;

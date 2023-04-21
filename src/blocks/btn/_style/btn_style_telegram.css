@@ -7,8 +7,16 @@
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
+  letter-spacing: .25px;
   padding: 8px 12px 8px 38px;
   text-decoration: none;
   text-transform: none;
   width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .btn_style_telegram {
+    max-width: max-content;
+    justify-self: end;
+  }
 }

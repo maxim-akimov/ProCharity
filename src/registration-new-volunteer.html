@@ -96,9 +96,9 @@
   </section>
   <section class="content">
     <h1 class="heading heading_type_title">Регистрация нового волонтера</h1>
-    <form name="newVolunteer" id="newVolunteer" action="registration-first-step.html" method="post">
+    <form name="newVolunteer" id="newVolunteer" action="registration-first-step.html" method="get">
       <fieldset class="fieldset fieldset_template_grid-form">
-        <legend class="paragraph">Представители фондов увидят эти данные на твоей странице</legend>
+        <legend class="paragraph">Представители фондов увидят эти данные на твоей странице</legend>
         <div class="input">
           <input type="text" class="input__field" name="name" id="name" placeholder="Имя" required>
           <label for="name" class="input__label">Имя</label>
@@ -139,7 +139,7 @@
           <label for="password" class="input__label">
             Пароль
           </label>
-          <button class="btn input__pwd-icon"></button>
+          <button class="btn input__btn input__btn_type_show-pwd"></button>
         </div>
         <div class="input">
           <input type="password" class="input__field input__field_type_password" name="repassword" id="repassword"
@@ -147,7 +147,7 @@
           <label for="repassword" class="input__label">
             Подтверди пароль
           </label>
-          <button class="btn input__pwd-icon"></button>
+          <button class="btn input__btn input__btn_type_show-pwd"></button>
         </div>
       </fieldset>
       <fieldset class="fieldset fieldset_template_grid-one-col">
@@ -159,7 +159,7 @@
           </label>
         </div>
       </fieldset>
-      <fieldset class="fieldset fieldset_template_grid-form">
+      <fieldset class="fieldset fieldset_template_grid-form fieldset_style_p-none">
         <button type="button" class="btn btn_style_secondary">Назад</button>
         <button type="submit" class="btn btn_style_primary btn_position_right">Зарегистрироваться</button>
       </fieldset>

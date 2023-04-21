@@ -119,18 +119,18 @@
   <section class="content">
     <h1 class="heading heading_type_title">Мое портфолио</h1>
     <p class="paragraph">Наличие резюме или портфолио увеличит доверие к тебе как к профессионалу</p>
-    <form id="uploadProjects" name="uploadProjects" enctype="multipart/form-data" class="uploader" method="post">
+    <form id="uploadProjects" name="uploadProjects" enctype="multipart/form-data" class="uploader" method="get">
       <fieldset class="fieldset fieldset_style_pb-small fieldset_template_grid-one-col">
         <legend class="heading heading_type_subtitle">Резюме или примеры работ</legend>
         <div class="uploader__input-container">
           <input accept=".jpg, .png, .tiff" class="uploader__input" type="file" name="projects" id="projects" multiple>
           <label for="projects" class="uploader__label">
-            <span class="uploader__text-accent">Выберите файл</span> или перетащите его сюда
+            <span class="uploader__text-accent">Выберите файл</span><span class="uploader__text"> или перетащите его сюда</span>
           </label>
         </div>
         <p class="note uploader__note">Jpg, png, pdf объемом не более 20 Мб</p>
       </fieldset>
-      <fieldset class="fieldset fieldset_template_grid-one-col">
+      <fieldset class="fieldset fieldset_template_grid-one-col fieldset_style_pb-small">
         <ul class="uploader__files-list">
           <li class="uploader__item">
             <div class="uploader__file-preview-container uploader__file-preview-container_loading"></div>
@@ -157,28 +157,30 @@
         </ul>
       </fieldset>
     </form>
-    <form id="uploadCertificates" name="uploadCertificates" enctype="multipart/form-data" class="uploader" method="post">
+    <form id="uploadCertificates" name="uploadCertificates" enctype="multipart/form-data" class="uploader" method="get">
       <fieldset class="fieldset fieldset_style_pb-small fieldset_template_grid-one-col">
         <legend class="heading heading_type_subtitle">Дипломы и сертификаты</legend>
         <div class="uploader__input-container">
           <input accept=".jpg, .png, .tiff" class="uploader__input" type="file" name="projects" id="certificates"
                  multiple>
           <label for="certificates" class="uploader__label">
-            <span class="uploader__text-accent">Выберите файл</span> или перетащите его сюда
+            <span class="uploader__text-accent">Выберите файл</span><span class="uploader__text"> или перетащите его сюда</span>
           </label>
         </div>
         <p class="note uploader__note">Jpg, png, pdf объемом не более 20 Мб</p>
       </fieldset>
     </form>
-    <form name="projectLinksForm" id="projectLinksForm" action="lk-social.html" method="post">
+    <form name="projectLinksForm" id="projectLinksForm" action="lk-social.html" method="get">
       <fieldset class="fieldset fieldset_template_grid-project-links">
         <legend class="heading heading_type_subtitle">Ссылки</legend>
-        <div class="input input_type_bottom-interval">
-          <input class="input__field input__field_default" type="text" placeholder="Текст ссылки">
-        </div>
-        <div class="input input_type_bottom-interval">
-          <input class="input__field input__field_default" type="url" placeholder="https://">
-          <button class="btn input__btn input__btn_type_clear-text"></button>
+        <div class="input-group">
+          <div class="input input_type_bottom-interval">
+            <input class="input__field input__field_default" type="text" placeholder="Текст ссылки">
+          </div>
+          <div class="input input_type_bottom-interval">
+            <input class="input__field input__field_default" type="url" placeholder="https://">
+            <button class="btn input__btn input__btn_type_clear-text"></button>
+          </div>
         </div>
         <button type="button" class="btn btn_type_add">Добавить ссылку</button>
       </fieldset>
