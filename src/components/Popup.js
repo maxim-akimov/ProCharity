@@ -6,11 +6,11 @@ export default class Popup {
     }
 
     open() {
-        this._popup.classList.add('popup-edit_opened');
+        this._popup.classList.add('popup_opened');
     }
     
     close() {
-        this._popup.classList.remove('popup-edit_opened');
+        this._popup.classList.remove('popup_opened');
     }
 
     setEventListeners() {

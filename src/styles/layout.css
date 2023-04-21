@@ -70,6 +70,8 @@
 @import url(../blocks/sidebar/__title/sidebar__title.css);
 
 @import url(../blocks/sidebar/__status/sidebar__status.css);
+@import url(../blocks/sidebar/__status/_state/sidebar__status_state_confirm.css);
+@import url(../blocks/sidebar/__status/_state/sidebar__status_state_process.css);
 
 @import url(../blocks/sidebar/_type/sidebar_type_profile-progress.css);
 
@@ -173,8 +175,19 @@
 
 @import url(../blocks/popup/popup.css);
 
+@import url(../blocks/popup/_type/popup_type_message.css);
+@import url(../blocks/popup/_type/popup_type_window.css);
+
+@import url(../blocks/popup/__container/popup__container.css);
+
 @import url(../blocks/popup/__title/popup__title.css);
 
 @import url(../blocks/popup/__text/popup__text.css);
 
+@import url(../blocks/popup/__cropper-container/popup__cropper-container.css);
+
+@import url(../blocks/popup/__image/popup__image.css);
+
 @import url(../blocks/popup/__btn-close/popup__btn-close.css);
+
+@import url(../blocks/popup/_opened/popup_opened.css);

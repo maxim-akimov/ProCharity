@@ -1,6 +1,16 @@
 .popup__btn-close {
-  height: 12px;
   position: absolute;
+}
+
+.popup_type_window .popup__btn-close {
+  height: 20px;
+  right: 20px;
+  top: 20px;
+  width: 20px;
+}
+
+.popup_type_message .popup__btn-close {
+  height: 12px;
   right: 8px;
   top: 8px;
   width: 12px;

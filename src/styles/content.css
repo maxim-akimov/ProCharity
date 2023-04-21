@@ -231,16 +231,6 @@
 
 
 
-/* Popup редактирования аватара */
-
-@import url(../blocks/popup-edit/popup-edit.css);
-@import url(../blocks/popup-edit/__container/popup-edit__container.css);
-@import url(../blocks/popup-edit/__title/popup-edit__title.css);
-@import url(../blocks/popup-edit/__image/popup-edit__image.css);
-@import url(../blocks/popup-edit/_opened/popup-edit_opened.css);
-
-
-
 /* Загрузчик файлов */
 
 @import url(../blocks/uploader/uploader.css);

@@ -130,3 +130,11 @@
 Пример инициализации класса CustomMultiselect:
 
 `new CustomMultiselect('#competencies').generate();`
+
+### Выбор области видимости аватара
+
+Для реализации изменения области видимости (обрезки) аватара в проекте использована библиотека cropperjs
+[сайт](https://fengyuanchen.github.io/cropperjs/v2/guide.html), [Github](https://github.com/fengyuanchen/cropperjs).
+
+Для получения параметров выделенной области изображения необходимо обратиться к методам экземпляра класса в соответствии с документацией. 
+Инициализация библиотеки происходит в src/index.js

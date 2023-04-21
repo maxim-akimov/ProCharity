@@ -7,6 +7,9 @@ function handleFileListClick(evt) {
 }
 
 export function setFilesRemover() {
-  document.querySelector('.uploader__files-list')
-    .addEventListener('mousedown', handleFileListClick);
+  const filesList = document.querySelector('.uploader__files-list');
+
+  if (filesList) {
+    filesList.addEventListener('mousedown', handleFileListClick);
+  }
 }
