@@ -121,18 +121,17 @@
     <div class="avatar">
       <div class="avatar__container">
         <input type="file" class="avatar__input" name="addAvatar" id="addAvatar">
-        <label class="avatar__label
-" for="addAvatar">Добавить фотографию</label>
+        <label class="avatar__label" for="addAvatar">Добавить фотографию</label>
         <!-- В случае, если в контейнере .avatar отсутствует img - будет отображаться поле для
          загрузки файла, если в контейнере присутствует тег img - к контейнеру будут применены
-         дополнительные стили для затемнения фона и отображения иконки фотоаппарата.
+         дополнительные стили для затемнения фона и отображения иконки редактирования аватара.
          Для просмотра состояния поля безх загруженного аватара - удалите тег img-->
         <img class="avatar__img" alt="Твой аватар" src="<%=require('./images/edit-photo-popup.jpg')%>">
       </div>
       <button class="btn btn_type_close avatar__btn-delete"></button>
       <p class="avatar__max-volume">Jpg, png объемом не более 5 Мб</p>
     </div>
-    <form name="personalData" id="personalData" action="lk-competencies.html">
+    <form name="personalData" id="personalData" action="lk-competencies.html" method="post">
       <fieldset class="fieldset fieldset_template_grid-form" id="userDate">
         <legend class="paragraph">Фонды увидят эти данные на твоей странице
         </legend>
@@ -237,11 +236,13 @@
       </fieldset>
       <fieldset class="fieldset fieldset_template_grid-one-col">
         <div class="textarea">
-          <textarea class="textarea__field" name="how-found" id="howFound" maxlength="2000"
-                    placeholder="Как ты о нас узнал?" required></textarea>
+          <textarea class="textarea__field textarea__field_autosize " name="how-found" id="howFound" maxlength="2000"
+                    placeholder="Как ты о нас узнал?"></textarea>
           <label class="textarea__label" for="howFound">Как ты о нас узнал?</label>
+          <div class="textarea__counter">
+            <span class="textarea__count-symbols">0</span>/<span class="textarea__total-symbols">0</span>
+          </div>
           <button class="textarea__btn textarea__btn_type_clear-text"></button>
-          <span class="textarea__counter">0/2000</span>
         </div>
       </fieldset>
       <button type="submit" class="btn btn_style_primary">Сохранить</button>

@@ -119,7 +119,7 @@
   <section class="content">
     <h1 class="heading heading_type_title">Мое портфолио</h1>
     <p class="paragraph">Наличие резюме или портфолио увеличит доверие к тебе как к профессионалу</p>
-    <form id="uploadProjects" name="uploadProjects" enctype="multipart/form-data" class="uploader">
+    <form id="uploadProjects" name="uploadProjects" enctype="multipart/form-data" class="uploader" method="post">
       <fieldset class="fieldset fieldset_style_pb-small fieldset_template_grid-one-col">
         <legend class="heading heading_type_subtitle">Резюме или примеры работ</legend>
         <div class="uploader__input-container">
@@ -157,7 +157,7 @@
         </ul>
       </fieldset>
     </form>
-    <form id="uploadCertificates" name="uploadCertificates" enctype="multipart/form-data" class="uploader">
+    <form id="uploadCertificates" name="uploadCertificates" enctype="multipart/form-data" class="uploader" method="post">
       <fieldset class="fieldset fieldset_style_pb-small fieldset_template_grid-one-col">
         <legend class="heading heading_type_subtitle">Дипломы и сертификаты</legend>
         <div class="uploader__input-container">
@@ -169,20 +169,8 @@
         </div>
         <p class="note uploader__note">Jpg, png, pdf объемом не более 20 Мб</p>
       </fieldset>
-      <!--<fieldset class="fieldset fieldset_template_grid-one-col">
-        <legend class="heading heading_type_subtitle">Дипломы и сертификаты</legend>
-        <div class="uploader__input-container">
-          <input accept=".jpg, .png, .tiff" class="uploader__input" type="file" name="certificates" id="certificates"
-                 multiple>
-          <label for="projects" class="uploader__label">
-            <span class="uploader__text-accent">Выберите файл</span>
-            или перетащите его сюда
-          </label>
-        </div>
-        <p class="note uploader__note">Jpg, png, pdf объемом не более 20 Мб</p>
-      </fieldset>-->
     </form>
-    <form name="projectLinks" id="projectLinks">
+    <form name="projectLinksForm" id="projectLinksForm" action="lk-social.html" method="post">
       <fieldset class="fieldset fieldset_template_grid-project-links">
         <legend class="heading heading_type_subtitle">Ссылки</legend>
         <div class="input input_type_bottom-interval">

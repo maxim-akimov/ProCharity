@@ -349,12 +349,6 @@ export default class CustomMultiselect {
   }
 
 
-  _getSelectedOption() {
-    return this._optionsListElement
-      .querySelector(`.${this._options.optionSelectedClass}`);
-  }
-
-
   //Multi
   _handleItemClick(evt) {
     // Если элемент списка иммеет класс выбранного (отмеченного) элемента
@@ -433,17 +427,6 @@ export default class CustomMultiselect {
       return [classList];
     }
     return classList;
-  }
-
-
-  _handleResetClick(evt) {
-    const selectedOptions = this._customSelectElement
-      .querySelectorAll(`.${this._options.optionSelectedClass}`);
-
-    selectedOptions.forEach((option) => {
-      this._removeChips(option.dataset.val);
-
-    })
   }
 
 
@@ -527,6 +510,30 @@ export default class CustomMultiselect {
   }
 
 
+  _closeOtherItems() {
+    // Поиск открытого дочернего контейнера с элементами следующего уровня
+    const openedChildContainer = this._optionsListContainerElement
+      .querySelector(`.${this._options.optionsOpenedListContainerClass}`);
+
+    // Если открытый контейнер найден
+    if (openedChildContainer) {
+      // Удаление класса "открытого" контейнера
+      openedChildContainer.classList.remove(this._options.optionsOpenedListContainerClass);
+    }
+
+
+    // Поиск пункта списка, являющегося родительским для открытого контейнера
+    const openedParentItem = this._optionsListContainerElement
+      .querySelector(`.${this._options.optionParentOpenedClass}`);
+
+    // Если открытый контейнер найден
+    if (openedParentItem) {
+      // Удаление класса "открытого" контейнера
+      openedParentItem.classList.remove(this._options.optionParentOpenedClass);
+    }
+  }
+
+
   closeDropdown() {
     this._optionsListContainerElement.classList
       .remove(this._options.optionsOpenedListContainerClass);
@@ -588,6 +595,7 @@ export default class CustomMultiselect {
         // (только для мобильных устройств)
         if (evt.target.classList.contains(this._options.optionParentClass)
           && this._screenWidth < this._options.mobileScreenBreakpoint) {
+          this._closeOtherItems();
           this._handleParentItemClick(evt);
         }
 

@@ -3,7 +3,7 @@
   -webkit-appearance: none;
   background: url(../../images/info-btn.svg) no-repeat center;
   border: 0;
-  cursor: pointer;
+  cursor: help;
   height: 24px;
   position: relative;
   width: 24px;

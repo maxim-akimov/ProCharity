@@ -2,6 +2,7 @@ import './styles/layout.css';
 import './styles/content.css';
 import {handleTextareaAutosize} from './components/textarea-autosize';
 import {handleTextareaSymbolCounter} from './components/textarea-symbol-counter';
+import {setFilesRemover} from './components/uploader-file-remover';
 import CustomSelect from "./components/CustomSelect";
 import CustomMultiselect from "./components/CustomMultiselect";
 import Popup from './components/Popup';
@@ -13,6 +14,9 @@ handleTextareaAutosize();
 
 
 handleTextareaSymbolCounter();
+
+
+setFilesRemover();
 
 
 new CustomSelect('#connection').generate();
