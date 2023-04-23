@@ -1,0 +1,16 @@
+.main_template_registration {
+  background: #F1F5F9;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 64px;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .main_template_registration {
+    padding-bottom: 80px;
+    padding-top: 24px;
+  }
+}

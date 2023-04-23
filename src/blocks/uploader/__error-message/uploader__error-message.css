@@ -1,0 +1,13 @@
+.uploader__error-message {
+  color: #D20202;
+  display: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.uploader__item_error .uploader__error-message {
+  display: inline;
+  grid-column: 2;
+}

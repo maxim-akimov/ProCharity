@@ -1,0 +1,11 @@
+.custom-select__heading {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .custom-select__heading {
+    color: #374045;
+    display: block;
+    padding: 32px 24px 8px 24px;
+  }
+}

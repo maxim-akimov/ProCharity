@@ -1,0 +1,22 @@
+.sidebar-nav__list {
+  border: 1px solid #E3E9F0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar-nav__list {
+    border: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 12px;
+    justify-content: space-between;
+    padding: 24px 0 8px 0;
+  }
+}

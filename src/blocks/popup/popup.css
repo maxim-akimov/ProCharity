@@ -1,0 +1,6 @@
+.popup {
+  display: flex;
+  position: fixed;
+  visibility: hidden;
+  z-index: 3;
+}

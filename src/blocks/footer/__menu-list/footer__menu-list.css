@@ -1,0 +1,8 @@
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style-type: none;
+  margin: 0;
+  padding: 22px 0 0;
+}

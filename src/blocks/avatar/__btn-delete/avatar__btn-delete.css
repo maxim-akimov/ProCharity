@@ -1,0 +1,13 @@
+.avatar__btn-delete {
+  background: url(../../../images/icon-x-white.svg) no-repeat center center, #E65609;
+  border-radius: 50%;
+  height: 24px;
+  left: 121px;
+  position: absolute;
+  top: -2px;
+  width: 24px;
+}
+
+.avatar__btn-delete:hover {
+  background: url(../../../images/icon-x-white.svg) no-repeat center center, #E65609;
+}

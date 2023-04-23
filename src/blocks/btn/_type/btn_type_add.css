@@ -1,0 +1,11 @@
+.btn_type_add {
+  background: url(../../../images/icon-add.svg) no-repeat left top -1px;
+  color: #048AA7;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: fit-content;
+  padding-left: 28px;
+  text-transform: none;
+  width: 100%;
+}

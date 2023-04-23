@@ -1,0 +1,10 @@
+.footer__menu-link {
+  color: #A0ABB5;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}

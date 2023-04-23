@@ -1,0 +1,17 @@
+.btn_style_primary {
+  background: #E65609;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  max-width: max-content;
+  padding: 20px 32px;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .btn_style_primary {
+    margin: 0 auto;
+    max-width: 100%;
+    order: 0;
+    width: 100%;
+  }
+}

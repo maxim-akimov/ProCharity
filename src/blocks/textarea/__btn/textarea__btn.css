@@ -1,0 +1,14 @@
+.textarea__btn {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  cursor: pointer;
+  display: none;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 24px;
+}

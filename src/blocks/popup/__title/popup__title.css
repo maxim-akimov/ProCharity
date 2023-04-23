@@ -1,0 +1,25 @@
+.popup__title {
+  margin: 0;
+  padding: 0;
+}
+
+.popup_type_window .popup__title {
+  padding-bottom: 20px;
+}
+
+.popup_type_message .popup__title {
+  color: #58646A;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0;
+  position: relative;
+  padding-left: 28px;
+}
+
+.popup_type_message .popup__title:before {
+  content: url(../../../images/Group12.svg);
+  left: 0;
+  position: absolute;
+  top: 0;
+}

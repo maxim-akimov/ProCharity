@@ -1,0 +1,4 @@
+.custom-select__item_selected {
+  background: url(../../../../images/chose.svg) no-repeat calc(100% - 12px) 8px;
+  background-size: 24px 24px;
+}

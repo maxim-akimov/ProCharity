@@ -1,0 +1,5 @@
+.fieldset_template_grid-one-col {
+  display: grid;
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-template-columns: 1fr;
+}

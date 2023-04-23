@@ -1,0 +1,4 @@
+.fieldset__row-group_type_block {
+  display: block;
+  grid-column: 1 / -1;
+}

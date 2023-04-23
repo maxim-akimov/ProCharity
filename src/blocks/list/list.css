@@ -1,0 +1,7 @@
+.list {
+  color: #72d0dc;
+  list-style-image: url(../../images/icon-list-item.svg);
+  margin: 0;
+  padding: 0 0 8px 18px;
+}
+

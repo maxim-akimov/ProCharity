@@ -1,0 +1,17 @@
+.breadcrumbs__item {
+  color: #7B878F;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.breadcrumbs__item:after {
+  content: '/';
+  padding-left: 8px;
+}
+
+.breadcrumbs__item:last-of-type:after {
+  content: '';
+}

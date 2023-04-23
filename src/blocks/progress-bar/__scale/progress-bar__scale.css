@@ -1,0 +1,7 @@
+.progress-bar__scale {
+  background-color: #72D0DC;
+  border-radius: 24px;
+  display: inline-block;
+  height: 100%;
+  width: 66%;
+}

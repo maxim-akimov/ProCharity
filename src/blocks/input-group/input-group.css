@@ -1,0 +1,13 @@
+.input-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2px
+}
+
+@media screen and (max-width: 900px) {
+  .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+}
