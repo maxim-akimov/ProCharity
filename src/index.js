@@ -18,10 +18,12 @@ import Popup from './components/Popup';
 // Подключение сторонних библиотек
 import 'cropperjs';
 import Cropper from 'cropperjs';
+import PwdViewer from "./components/PwdViewer";
 
 const avatar = document.querySelector('.avatar__container:has(.avatar__img)');
 const image = document.querySelector('.popup__image');
 const inputs = document.querySelectorAll('.input, .textarea');
+const pwdInputs = document.querySelectorAll('.input_type_pwd');
 
 
 // Инициализация библиотеки Cropperjs (обрезка изображений)
@@ -64,6 +66,14 @@ new CustomMultiselect('#competencies').generate();
 if (inputs && inputs.length > 0) {
   inputs.forEach((input) => {
     new FieldTextCleaner(input).setEventListeners();
+  })
+}
+
+
+// Подключение класса для показа/скрытия пароля
+if (pwdInputs && pwdInputs.length > 0) {
+  pwdInputs.forEach((input) => {
+    new PwdViewer(input).setEventListeners();
   })
 }
 

@@ -135,6 +135,7 @@
 
 @import url(../blocks/input/__btn/_type/input__btn_type_clear-text.css);
 @import url(../blocks/input/__btn/_type/input__btn_type_show-pwd.css);
+@import url(../blocks/input/__btn/_type/input__btn_type_show-pwd-visible.css);
 @import url(../blocks/input/__btn/_type/input__btn_type_hint.css);
 @import url(../blocks/input/__btn/_position/input__btn_position_first.css);
 
