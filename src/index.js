@@ -9,6 +9,7 @@ import {handleTextareaAutosize} from './components/textarea-autosize';
 import {handleTextareaSymbolCounter} from './components/textarea-symbol-counter';
 import {setFilesRemover} from './components/uploader-file-remover';
 import FieldTextCleaner from './components/FieldTextCleaner';
+import MobileMenu from "./components/MobileMenu";
 
 import CustomSelect from "./components/CustomSelect";
 import CustomMultiselect from "./components/CustomMultiselect";
@@ -89,3 +90,12 @@ if (document.querySelector('.popup')) {
     });
   }
 }
+
+
+// Управление показом / скрытием меню в мобильной версии
+new MobileMenu({
+  menuBtnClass: 'menu-icon',
+  menuBtnActiveClass: 'menu-icon_active',
+  menuContainerClass: 'header__nav',
+  menuContainerOpenedClass: 'header__nav_opened'
+}).setEventListeners();

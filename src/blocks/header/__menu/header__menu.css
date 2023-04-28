@@ -17,7 +17,9 @@
 
 @media screen and (max-width: 900px) {
   .header__menu {
-    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 20px;
   }
 }
 
