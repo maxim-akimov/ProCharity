@@ -181,7 +181,7 @@ export default class CustomMultiselect {
     element.classList.add(
       ...this._handleClassList(this._options.resetBtnClass)
     );
-    element.textContent = 'Сбровить выбор';
+    element.textContent = 'Сбросить выбор';
 
     return element;
   }
