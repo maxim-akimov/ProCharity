@@ -587,14 +587,11 @@ export default class CustomMultiselect {
         if (evt.target.dataset.isSelectable === 'true') {
           // Обработка клика по элементу
           this._handleItemClick(evt);
-        }
-
-
-        // Если клик по родительскому пункту и ширина экрана
-        // меньше установленной точки перелома - обработка открытия дочернего списка
-        // (только для мобильных устройств)
-        if (evt.target.classList.contains(this._options.optionParentClass)
-          && this._screenWidth < this._options.mobileScreenBreakpoint) {
+        // Если клик был произведен по элементу списка, который не доступен для
+        // выбора - значит это родительский пункт, при нажатии на который
+        // следует раскрыть дочерний список кликабельных элементов
+        } else {
+          // Перед открытием вложенного списка скрываются все ранее открытые элементы
           this._closeOtherItems();
           this._handleParentItemClick(evt);
         }
