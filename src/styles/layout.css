@@ -93,6 +93,7 @@
 @import url(../blocks/btn/btn.css);
 
 @import url(../blocks/btn/_type/btn_type_refresh.css);
+@import url(../blocks/btn/_type/btn_type_refresh-process.css);
 @import url(../blocks/btn/_type/btn_type_close.css);
 
 
