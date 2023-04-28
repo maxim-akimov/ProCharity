@@ -12,6 +12,7 @@
 @import url(./../blocks/header/__wrap/header__wrap.css);
 
 @import url(./../blocks/header/__nav/header__nav.css);
+@import url(./../blocks/header/__nav/_opened/header__nav_opened.css);
 
 @import url(./../blocks/header/__menu/header__menu.css);
 
@@ -24,6 +25,7 @@
 
 
 @import url(./../blocks/menu-icon/menu-icon.css);
+@import url(./../blocks/menu-icon/_active/menu-icon_active.css);
 
 
 

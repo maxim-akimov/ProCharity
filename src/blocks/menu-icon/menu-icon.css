@@ -1,7 +1,6 @@
 .menu-icon {
-  background-color: rgba(0, 0, 0, 0);
-  background-image: url(../../images/menu.svg);
-  background-size: 100%;
+  background: url(../../images/menu.svg) no-repeat center center;
+  background-size: contain;
   border: none;
   cursor: pointer;
   display: none;
