@@ -25,6 +25,7 @@ export default class CustomMultiselect {
     chipsClass: 'custom-select__chips',
     chipsTextClass: 'custom-select__chips-text',
     chipsDeleteBtnClass: ['btn', 'custom-select__chips-delete-btn'],
+    searchInputClass: 'custom-select__input',
     optionsListContainerClass: 'custom-select__list-container',
     optionsOpenedListContainerClass: 'custom-select__list-container__opened',
     linkClass: 'custom-select__link',
@@ -39,11 +40,12 @@ export default class CustomMultiselect {
     optionSelectableClass: 'custom-select__item_style_checkbox',
     optionSelectedClass: 'custom-select__item_selected-checkbox',
     mobileScreenBreakpoint: 900,
-    firstOptionIsTitle: true
+    firstOptionIsTitle: false
   }) {
     this._selectElement = document.querySelector(selector);
     this._options = options;
-    this._screenWidth = window.innerWidth;
+
+    this._handleSearch = this._handleSearch.bind(this);
   }
 
 
@@ -165,6 +167,18 @@ export default class CustomMultiselect {
   }
 
 
+  _createSearchInput() {
+    const element = document.createElement('input');
+    element.classList.add(
+      ...this._handleClassList(this._options.searchInputClass)
+    );
+
+    element.placeholder = 'Выбери из списка или начни печатать для поиска';
+
+    return element;
+  }
+
+
   _createSelectBtn() {
     const element = document.createElement('button');
     element.classList.add(
@@ -274,8 +288,14 @@ export default class CustomMultiselect {
         .querySelector('option').textContent;
     }
 
+    // Создание текстового поля для поиска элементов списка
+    this._searchInputElement = this._createSearchInput();
+
     // Добавление текстового элемента и иконки к полю
-    this._fieldElement.append(this._labelElement);
+    this._fieldElement.append(
+      this._labelElement,
+      this._searchInputElement
+    );
 
     // Добавление поля в контейнер
     this._customSelectElement.append(this._fieldElement);
@@ -378,6 +398,28 @@ export default class CustomMultiselect {
   }
 
 
+  _handleSearch() {
+    let resultCounter = 0;
+
+    // Поиск всех элементов списка на всех уровнях
+    this._optionsListElement.querySelectorAll(`.${this._options.optionClass}`)
+      .forEach((item) => {
+        // Если текстовое содержимое элемента содержит поисковый запрос
+        if (item.textContent.toLowerCase()
+          .includes(this._searchInputElement.value.toLowerCase())) {
+          // Делаем данный элемент видимым
+          item.style.display = 'block';
+          resultCounter += 1;
+        } else {
+          // Скрываем остальные элементы, несоответствующие
+          // поисковому запросу
+          item.style.display = 'none';
+        }
+        console.log(resultCounter)
+      })
+  }
+
+
   //Multi
   _handleSelectGroup(evt) {
     const container = evt.target.parentNode;
@@ -458,8 +500,8 @@ export default class CustomMultiselect {
 
         //Создание контейнера (обертки) дочернего списка
         const container = this._createListContainer();
-       container.append(this._createSelectResetGroupLink());
-       container.append(this._createSelectAllLink());
+        container.append(this._createSelectResetGroupLink());
+        container.append(this._createSelectAllLink());
 
         // Создание элемента дочернего списка
         const list = this._createList();
@@ -537,6 +579,13 @@ export default class CustomMultiselect {
   closeDropdown() {
     this._optionsListContainerElement.classList
       .remove(this._options.optionsOpenedListContainerClass);
+
+    //Удаляем все классы-модификаторы открытых дочерних списков
+    this._optionsListContainerElement
+      .querySelectorAll(`.${this._options.optionsOpenedListContainerClass}`)
+      .forEach((option) => {
+        option.classList.remove(this._options.optionsOpenedListContainerClass);
+      })
   }
 
 
@@ -547,6 +596,10 @@ export default class CustomMultiselect {
 
 
   setEventListeners() {
+    // Обработка текстового поиска по списку
+
+    this._searchInputElement.addEventListener('input', this._handleSearch);
+
     // Обработка клика вне выпадающего списка
     document.addEventListener('mousedown', (evt) => {
       // Если клик был совершен за пределами контейнера
@@ -587,9 +640,9 @@ export default class CustomMultiselect {
         if (evt.target.dataset.isSelectable === 'true') {
           // Обработка клика по элементу
           this._handleItemClick(evt);
-        // Если клик был произведен по элементу списка, который не доступен для
-        // выбора - значит это родительский пункт, при нажатии на который
-        // следует раскрыть дочерний список кликабельных элементов
+          // Если клик был произведен по элементу списка, который не доступен для
+          // выбора - значит это родительский пункт, при нажатии на который
+          // следует раскрыть дочерний список кликабельных элементов
         } else {
           // Перед открытием вложенного списка скрываются все ранее открытые элементы
           this._closeOtherItems();
@@ -602,7 +655,7 @@ export default class CustomMultiselect {
         // Если контейнер выпадающего списка открыт
         // и клик был совершен за пределами дочерних элеменетов пункта списка
         if (this._optionsListContainerElement.classList
-          .contains(this._options.optionsOpenedListContainerClass)
+            .contains(this._options.optionsOpenedListContainerClass)
           && !evt.target.closest(`.${this._options.optionClass}`)) {
           // Закрытие выпадающего списка
           this.closeDropdown();
@@ -614,6 +667,4 @@ export default class CustomMultiselect {
       }
     });
   }
-
-
 }

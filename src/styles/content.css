@@ -58,6 +58,8 @@
 
 @import url(../blocks/custom-select/__field-text/custom-select__field-text.css);
 
+@import url(../blocks/custom-select/__input/custom-select__input.css);
+
 @import url(../blocks/custom-select/__chips/custom-select__chips.css);
 
 @import url(../blocks/custom-select/__chips-text/custom-select__chips-text.css);

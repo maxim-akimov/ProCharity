@@ -8,5 +8,6 @@
   flex-wrap: nowrap;
   gap: 8px;
   max-width: max-content;
+  order: 0;
   padding: 4px 11px 4px 12px;
 }
