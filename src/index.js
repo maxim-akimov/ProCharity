@@ -42,33 +42,35 @@ if (avatarContainer) {
 
 
 // Инициализация библиотеки CropperJS (обрезка изображений)
-const cropper = new Cropper(image, {
-  aspectRatio: 1,
-  viewMode: 3,
-  restore: false
-});
+if (image) {
+  const cropper = new Cropper(image, {
+    aspectRatio: 1,
+    viewMode: 3,
+    restore: false
+  });
 
 
-const avatar = new Avatar({
-  imgChangeHandler: (url) => {
-    // Открытие модального окна для редактирования аватара
-    popup.open();
+  const avatar = new Avatar({
+    imgChangeHandler: (url) => {
+      // Открытие модального окна для редактирования аватара
+      popup.open();
 
-    // Замена url в случае повторной загрузки другого аватара
-    cropper.replace(url)
-  },
-  cropHandler: () => {
-    // Обработка события изменения границ выбранной области или масштаба изображения
-    avatar.handleCrop(
-      // Получение URL-объекта обрезанного изображения
-      cropper.getCroppedCanvas().toDataURL('image/jpeg')
-    );
-  },
-  confirmHandler: () => {
-    popup.close();
-  }
-});
-avatar.init();
+      // Замена url в случае повторной загрузки другого аватара
+      cropper.replace(url)
+    },
+    cropHandler: () => {
+      // Обработка события изменения границ выбранной области или масштаба изображения
+      avatar.handleCrop(
+        // Получение URL-объекта обрезанного изображения
+        cropper.getCroppedCanvas().toDataURL('image/jpeg')
+      );
+    },
+    confirmHandler: () => {
+      popup.close();
+    }
+  });
+  avatar.init();
+}
 
 
 // Вызов функции, реализующей автоматическое изменение высоты textarea
