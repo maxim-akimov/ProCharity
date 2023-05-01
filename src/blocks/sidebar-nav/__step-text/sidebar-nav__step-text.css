@@ -1,9 +1,0 @@
-.sidebar-nav__step-text {
-
-}
-
-@media screen and (max-width: 900px) {
-  .sidebar-nav__step-text {
-    display: none;
-  }
-}

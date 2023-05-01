@@ -1,9 +1,0 @@
-.custom-select__item_style_parent {
-  background: url(../../../../images/arrow-right.svg) no-repeat right 14px center;
-}
-
-@media screen and (max-width: 900px) {
-  .custom-select__item_style_parent {
-    background: url(../../../../images/arrow-bottom.svg) no-repeat right 14px center;
-  }
-}

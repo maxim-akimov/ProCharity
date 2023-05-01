@@ -1,8 +1,0 @@
-.custom-select__input {
-  background: transparent;
-  border: none;
-  flex-grow: 1;
-  order: 1;
-  outline: none;
-  text-overflow: ellipsis;
-}
