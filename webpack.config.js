@@ -44,6 +44,11 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            filename: 'ui-kit.html',
+            template: './src/ui-kit.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './src/index.html',
             inject: 'body'

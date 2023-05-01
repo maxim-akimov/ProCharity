@@ -20,20 +20,55 @@ import Popup from './components/Popup';
 import 'cropperjs';
 import Cropper from 'cropperjs';
 import PwdViewer from "./components/PwdViewer";
+import Avatar from "./components/Avatar";
 
-const avatar = document.querySelector('.avatar__container:has(.avatar__img)');
+const avatarContainer = document.querySelector('.avatar__container');
 const image = document.querySelector('.popup__image');
 const inputs = document.querySelectorAll('.input, .textarea');
 const pwdInputs = document.querySelectorAll('.input_type_pwd');
 
+const popup = new Popup('.popup');
+popup.setEventListeners();
 
-// Инициализация библиотеки Cropperjs (обрезка изображений)
-if (image) {
-  const cropper = new Cropper(image, {
-    aspectRatio: 1,
-    viewMode: 3,
+// Обеспечение работы модальных окон
+if (avatarContainer) {
+  avatarContainer.addEventListener('mousedown', () => {
+    // Открываем popup только в том случае, если в контейнере лежит элемент изображения
+    if (avatarContainer.querySelector('.avatar__img')) {
+      popup.open();
+    }
   });
 }
+
+
+// Инициализация библиотеки CropperJS (обрезка изображений)
+const cropper = new Cropper(image, {
+  aspectRatio: 1,
+  viewMode: 3,
+  restore: false
+});
+
+
+const avatar = new Avatar({
+  imgChangeHandler: (url) => {
+    // Открытие модального окна для редактирования аватара
+    popup.open();
+
+    // Замена url в случае повторной загрузки другого аватара
+    cropper.replace(url)
+  },
+  cropHandler: () => {
+    // Обработка события изменения границ выбранной области или масштаба изображения
+    avatar.handleCrop(
+      // Получение URL-объекта обрезанного изображения
+      cropper.getCroppedCanvas().toDataURL('image/jpeg')
+    );
+  },
+  confirmHandler: () => {
+    popup.close();
+  }
+});
+avatar.init();
 
 
 // Вызов функции, реализующей автоматическое изменение высоты textarea
@@ -76,19 +111,6 @@ if (pwdInputs && pwdInputs.length > 0) {
   pwdInputs.forEach((input) => {
     new PwdViewer(input).setEventListeners();
   })
-}
-
-
-// Обеспечение работы модальных окон
-if (document.querySelector('.popup')) {
-  const popup = new Popup('.popup');
-  popup.setEventListeners();
-
-  if (avatar) {
-    avatar.addEventListener('mousedown', () => {
-      popup.open();
-    });
-  }
 }
 
 

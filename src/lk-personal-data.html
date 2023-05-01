@@ -126,10 +126,11 @@
          загрузки файла, если в контейнере присутствует тег img - к контейнеру будут применены
          дополнительные стили для затемнения фона и отображения иконки редактирования аватара.
          Для просмотра состояния поля безх загруженного аватара - удалите тег img-->
-        <img class="avatar__img" alt="Твой аватар" src="<%=require('./images/edit-photo-popup.jpg')%>">
+        <!--<img class="avatar__img" alt="Твой аватар" src="<%=require('./images/edit-photo-popup.jpg')%>">-->
       </div>
       <button class="btn btn_type_close avatar__btn-delete"></button>
       <p class="avatar__max-volume">Jpg, png объемом не более 5 Мб</p>
+      <input type="hidden" name="croppedImage" id="croppedImage" class="avatar__cropped-image-input">
     </div>
     <form name="personalData" id="personalData" action="lk-competencies.html" method="get">
       <fieldset class="fieldset fieldset_template_grid-form" id="userDate">
@@ -421,9 +422,21 @@
   <div class="popup__container">
     <h2 class="heading heading_type_title popup__title">Выберите фрагмент изображения</h2>
     <div class="popup__cropper-container">
-      <img class="popup__image" src="<%=require('./images/edit-photo-popup.jpg')%>" alt="">
+      <img class="popup__image" src="" alt="Твой аватар">
     </div>
-    <button type="submit" class="btn btn_style_primary">Сохранить</button>
+    <p class="paragraph">Так будет выглядеть на сайте</p>
+    <ul class="avatar__preview-container">
+      <li class="avatar__preview-item avatar__preview-item_size_large">
+        <img src="" alt="" class="avatar__preview-image avatar__preview-image_size_large">
+      </li>
+      <li class="avatar__preview-item">
+        <img src="" alt="" class="avatar__preview-image avatar__preview-image_size_medium">
+      </li>
+      <li class="avatar__preview-item">
+        <img src="" alt="" class="avatar__preview-image avatar__preview-image_size_small">
+      </li>
+    </ul>
+    <button type="submit" class="btn btn_style_primary btn_confirm">Сохранить</button>
     <button class="btn btn_type_close popup__btn-close"></button>
   </div>
 </div>
