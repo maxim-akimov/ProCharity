@@ -9,6 +9,7 @@ import {handleTextareaAutosize} from './components/textarea-autosize';
 import {handleTextareaSymbolCounter} from './components/textarea-symbol-counter';
 import {setFilesRemover} from './components/uploader-file-remover';
 import FieldTextCleaner from './components/FieldTextCleaner';
+import MobileMenu from "./components/MobileMenu";
 
 import CustomSelect from "./components/CustomSelect";
 import CustomMultiselect from "./components/CustomMultiselect";
@@ -18,18 +19,57 @@ import Popup from './components/Popup';
 // Подключение сторонних библиотек
 import 'cropperjs';
 import Cropper from 'cropperjs';
+import PwdViewer from "./components/PwdViewer";
+import Avatar from "./components/Avatar";
 
-const avatar = document.querySelector('.avatar__container:has(.avatar__img)');
+const avatarContainer = document.querySelector('.avatar__container');
 const image = document.querySelector('.popup__image');
 const inputs = document.querySelectorAll('.input, .textarea');
+const pwdInputs = document.querySelectorAll('.input_type_pwd');
+
+const popup = new Popup('.popup');
+popup.setEventListeners();
+
+// Обеспечение работы модальных окон
+if (avatarContainer) {
+  avatarContainer.addEventListener('mousedown', () => {
+    // Открываем popup только в том случае, если в контейнере лежит элемент изображения
+    if (avatarContainer.querySelector('.avatar__img')) {
+      popup.open();
+    }
+  });
+}
 
 
-// Инициализация библиотеки Cropperjs (обрезка изображений)
+// Инициализация библиотеки CropperJS (обрезка изображений)
 if (image) {
   const cropper = new Cropper(image, {
     aspectRatio: 1,
     viewMode: 3,
+    restore: false
   });
+
+
+  const avatar = new Avatar({
+    imgChangeHandler: (url) => {
+      // Открытие модального окна для редактирования аватара
+      popup.open();
+
+      // Замена url в случае повторной загрузки другого аватара
+      cropper.replace(url)
+    },
+    cropHandler: () => {
+      // Обработка события изменения границ выбранной области или масштаба изображения
+      avatar.handleCrop(
+        // Получение URL-объекта обрезанного изображения
+        cropper.getCroppedCanvas().toDataURL('image/jpeg')
+      );
+    },
+    confirmHandler: () => {
+      popup.close();
+    }
+  });
+  avatar.init();
 }
 
 
@@ -68,14 +108,18 @@ if (inputs && inputs.length > 0) {
 }
 
 
-// Обеспечение работы модальных окон
-if (document.querySelector('.popup')) {
-  const popup = new Popup('.popup');
-  popup.setEventListeners();
-
-  if (avatar) {
-    avatar.addEventListener('mousedown', () => {
-      popup.open();
-    });
-  }
+// Подключение класса для показа/скрытия пароля
+if (pwdInputs && pwdInputs.length > 0) {
+  pwdInputs.forEach((input) => {
+    new PwdViewer(input).setEventListeners();
+  })
 }
+
+
+// Управление показом / скрытием меню в мобильной версии
+new MobileMenu({
+  menuBtnClass: 'menu-icon',
+  menuBtnActiveClass: 'menu-icon_active',
+  menuContainerClass: 'header__nav',
+  menuContainerOpenedClass: 'header__nav_opened'
+}).setEventListeners();

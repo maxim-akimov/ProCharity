@@ -1,5 +1,13 @@
 @media screen and (max-width: 900px) {
   .header__nav {
+    background-color: #7DCDD7;
     display: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
+    padding: 24px 24px 24px 48px;
+    top: 100%;
+    z-index: 5;
   }
 }
