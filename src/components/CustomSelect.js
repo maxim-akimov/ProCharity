@@ -19,6 +19,7 @@ export default class CustomSelect {
    */
   constructor(selector, options = {
     wrapClass: 'custom-select__wrap',
+    closeBtnClass: ['btn', 'btn_type_close', 'custom-select__btn-close'],
     fieldClass: 'custom-select__field',
     fieldTextClass: 'custom-select__field-text',
     optionsListContainerClass: 'custom-select__list-container',
@@ -50,6 +51,16 @@ export default class CustomSelect {
     // Обертка позхволит позиционировать раскрывающийся список относительно поля выбора
     const element = document.createElement('div');
     element.classList.add(...this._handleClassList(this._options.wrapClass));
+
+    return element;
+  }
+
+
+  _createCloseBtn() {
+    const element = document.createElement('button');
+    element.classList.add(
+      ...this._handleClassList(this._options.closeBtnClass)
+    );
 
     return element;
   }
@@ -102,6 +113,9 @@ export default class CustomSelect {
     // Создание обертки для кастомного селекта
     this._customSelectElement = this._createWrap();
 
+    // Кнопка закрытия выпадающего списка
+    this._closeBtnElement = this._createCloseBtn();
+
     // Создание поля кастомного селекта
     this._fieldElement = this._createField();
 
@@ -127,7 +141,10 @@ export default class CustomSelect {
 
 
     // Добавление элемента списка в контейнер списка
-    this._optionsListContainerElement.append(this._optionsListElement);
+    this._optionsListContainerElement.append(
+      this._closeBtnElement,
+      this._optionsListElement
+    );
 
     // Добавление контейнера списка в контейнер поля
     this._customSelectElement.append(this._optionsListContainerElement);

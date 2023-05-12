@@ -41,6 +41,7 @@
 @import url(../blocks/custom-select/__wrap/_style/custom-select__wrap_style_multiselect.css);
 
 @import url(../blocks/custom-select/__list/custom-select__list.css);
+@import url(../blocks/custom-select/__list/_type/custom-select__list_type_multiselect.css);
 
 @import url(../blocks/custom-select/__list-container/custom-select__list-container.css);
 @import url(../blocks/custom-select/__list-container/_opened/custom-select__list-container__opened.css);
