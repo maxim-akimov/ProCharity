@@ -4,6 +4,8 @@
   font-weight: 400;
   letter-spacing: 0.25px;
   text-decoration-line: underline;
+  text-underline-position: under;
+  text-underline-offset: 0;
 }
 
 .link:hover {
