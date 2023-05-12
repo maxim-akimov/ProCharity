@@ -14,5 +14,7 @@
   position: absolute;
   text-align: center;
   text-decoration-line: underline;
+  text-underline-position: under;
+  text-underline-offset: 0;
   top: 44px;
 }
