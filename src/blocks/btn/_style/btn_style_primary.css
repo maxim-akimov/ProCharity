@@ -3,8 +3,27 @@
   box-sizing: border-box;
   color: #FFFFFF;
   max-width: max-content;
-  padding: 20px 32px;
+  padding: 16px 28px;
   width: 100%;
+  border: solid 2px transparent;
+}
+
+.btn_style_primary:hover {
+  background: #CC4D00;
+  opacity: 1;
+}
+
+.btn_style_primary:focus {
+  background: #E65609;
+  border: 2px solid #AA4000;
+}
+
+.btn_style_primary:active {
+  background: #AA4000;
+}
+
+.btn_style_primary:disabled {
+  opacity: .6;
 }
 
 @media screen and (max-width: 900px) {

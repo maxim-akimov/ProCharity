@@ -3,6 +3,10 @@
   padding-left: 40px;
 }
 
+.custom-select__item_style_checkbox:hover {
+  background: url(../../../../images/checkbox-hover.svg) no-repeat 12px center #f5f6f8;
+}
+
 @media screen and (max-width: 900px) {
   .custom-select__item_style_checkbox {
     background: none;
@@ -14,5 +18,9 @@
     line-height: 16px;
     padding: 8px 12px;
     width: fit-content;
+  }
+
+  .custom-select__item_style_checkbox:hover {
+    background: none;
   }
 }

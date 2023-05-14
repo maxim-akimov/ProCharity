@@ -3,8 +3,30 @@
   box-sizing: border-box;
   color: #374045;
   max-width: max-content;
-  padding: 20px 32px;
+  padding: 18px 30px;
   width: 100%;
+}
+
+.btn_style_secondary:hover {
+  border-color: #E65609;
+  color: #E65609;
+  opacity: 1;
+}
+
+.btn_style_secondary:focus {
+  border: 2px solid #7B878F;
+  color: #374045;
+  padding: 17px 29px;
+}
+
+.btn_style_secondary:active {
+  border: solid 1px #CC4D00;
+  color: #CC4D00;
+  padding: 18px 30px;
+}
+
+.btn_style_secondary:disabled {
+  opacity: .6;
 }
 
 @media screen and (max-width: 900px) {
