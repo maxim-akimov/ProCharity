@@ -21,6 +21,7 @@ export default class CustomSelect {
     wrapClass: 'custom-select__wrap',
     closeBtnClass: ['btn', 'btn_type_close', 'custom-select__btn-close'],
     fieldClass: 'custom-select__field',
+    fieldDisabledClass: 'custom-select__field_disabled',
     fieldTextClass: 'custom-select__field-text',
     optionsListContainerClass: 'custom-select__list-container',
     optionsOpenedListContainerClass: 'custom-select__list-container__opened',
@@ -121,6 +122,10 @@ export default class CustomSelect {
 
     // Создание текстового элемента поля
     this._fieldTextElement = this._createFieldText(); //Select
+
+    if (this._selectElement.hasAttribute('disabled')) {
+      this.setDisabled();
+    }
 
     if (this._options.firstOptionIsTitle) {
       this._fieldTextElement.textContent = this._selectElement
@@ -318,6 +323,18 @@ export default class CustomSelect {
   }
 
 
+  setDisabled() {
+    this._selectElement.disabled = true;
+    this._fieldElement.classList.add(this._options.fieldDisabledClass);
+  }
+
+
+  resetDisabled() {
+    this._selectElement.disabled = false;
+    this._fieldElement.classList.remove(this._options.fieldDisabledClass);
+  }
+
+
   setEventListeners() {
     document.addEventListener('mousedown', (evt) => {
       // Если клик был совершен за пределами контейнера
@@ -342,8 +359,8 @@ export default class CustomSelect {
           // Закрытие выпадающего списка
           this.closeDropdown();
 
-        } else {
-          // или открываем
+        } else if (!this._fieldElement.classList.contains(this._options.fieldDisabledClass)) {
+          // или открываем, если поле не заблочено
           this.openDropdown();
         }
       }

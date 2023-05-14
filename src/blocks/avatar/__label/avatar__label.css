@@ -1,20 +1,26 @@
 .avatar__input + .avatar__label {
+  align-items: center;
   -moz-appearance: none;
   -webkit-appearance: none;
   background: none;
   border: 0;
   color: #048AA7;
   cursor: pointer;
+  display: flex;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  left: 18px;
+  height: 100%;
+  justify-content: center;
   line-height: 22px;
-  max-width: 99px;
   position: absolute;
   text-align: center;
   text-decoration-line: underline;
-  text-underline-position: under;
   text-underline-offset: 0;
-  top: 44px;
+  text-underline-position: under;
+  width: 100%;
+}
+
+.avatar__input + .avatar__label:hover {
+  text-decoration: none;
 }

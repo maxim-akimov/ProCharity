@@ -2,17 +2,20 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   background: none;
+  background: #F1F5F9;
   border: 0;
+  border-radius: 6px;
   box-sizing: border-box;
   color: #374045;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  margin: 23px 48px 25px 16px;
   min-height: 88px;
   outline: none;
+  padding: 23px 48px 25px 16px;
   resize: none;
   width: 100%;
+
 }
 
 .textarea__field:placeholder-shown {
@@ -20,7 +23,18 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  margin-bottom: 37px;
-  margin-top: 12px;
-  padding-top: 0;
+  padding-top: 12px;
+}
+
+.textarea__field:hover {
+  background: #E0E9F2;
+}
+
+.textarea__field:focus {
+  background: #fff;
+  border: 1px solid #A0ABB5;
+}
+
+.textarea__field:disabled {
+  opacity: .6;
 }

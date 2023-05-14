@@ -4,24 +4,46 @@
   -webkit-appearance: none;
   background: #F1F5F9;
   border: none;
+  border-radius: 6px;
   box-sizing: border-box;
   color: #374045;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  height: max-content;
+  height: 100%;
   line-height: 20px;
   outline: none;
   padding-bottom: 5px;
   padding-left: 16px;
-  width: calc(100% - 55px);
+  padding-top: 23px;
+  width: 100%;
 }
 
 .input__field:placeholder-shown {
-  align-self: center;
   color: #7B878F;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   padding-bottom: 0;
+  padding-top: 0;
+}
+
+.input__field:hover {
+  background: #E0E9F2;
+}
+
+.input__field:focus {
+  background: #fff;
+  border: 1px solid #A0ABB5;
+}
+
+.input__field:read-only {
+  background: #fff;
+  border: 1px solid #E3E9F0;
+}
+
+.input__field:disabled {
+  background: #F1F5F9;
+  border: none;
+  opacity: .6;
 }
