@@ -9,7 +9,9 @@
   padding: 7px 0 0 16px;
   position: absolute;
   right: 50px;
+  text-overflow: ellipsis;
   top: 0;
+  white-space: nowrap;
 }
 
 .input__field:not(:placeholder-shown) + .input__label {

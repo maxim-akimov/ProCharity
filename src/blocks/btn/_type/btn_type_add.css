@@ -1,11 +1,28 @@
 .btn_type_add {
-  background: url(../../../images/icon-add.svg) no-repeat left top -1px;
+  background: url(../../../images/icon-add.svg) no-repeat left top;
+  background-size: 24px;
   color: #048AA7;
   font-size: 16px;
   font-weight: 400;
+  letter-spacing: normal;
   line-height: 24px;
   max-width: fit-content;
   padding-left: 28px;
+  text-decoration: underline;
   text-transform: none;
+  text-underline-offset: 0;
+  text-underline-position: under;
   width: 100%;
+}
+
+.btn_type_add:hover {
+  color: #048AA7;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.btn_type_add:active {
+  background: url(../../../images/icon-add-active.svg) no-repeat left top;
+  background-size: 24px;
+  color: #E65609;
 }

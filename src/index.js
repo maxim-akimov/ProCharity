@@ -26,6 +26,30 @@ const avatarContainer = document.querySelector('.avatar__container');
 const image = document.querySelector('.popup__image');
 const inputs = document.querySelectorAll('.input, .textarea');
 const pwdInputs = document.querySelectorAll('.input_type_pwd');
+const personalDataForm = document.forms.personalData;
+
+if (personalDataForm) {
+  const volunteerSwitcher = personalDataForm.elements.volunteerType;
+  const volunteerPostInput = personalDataForm.elements.post;
+
+  // Обработка выбора типа волонтера
+  volunteerSwitcher.forEach((input) => {
+    // Если происходит изменение значения переключателя типа волонтера
+    input.addEventListener('input', (evt) => {
+      // и выбран тип "я представляю компанию"
+      if (evt.target.value === 'company') {
+        // нснимаем блок с полей "выберите компанию" и "должность"
+        companyNameCustomField.resetDisabled();
+        volunteerPostInput.disabled = false;
+      } else {
+        // если выбран вариант "я физическое лицо" или ничего не выбрано
+        // блокируем эти поля
+        companyNameCustomField.setDisabled();
+        volunteerPostInput.disabled = true;
+      }
+    })
+  })
+}
 
 const popup = new Popup('.popup');
 popup.setEventListeners();
@@ -45,8 +69,8 @@ if (avatarContainer) {
 if (image) {
   const cropper = new Cropper(image, {
     aspectRatio: 1,
-    viewMode: 3,
-    restore: false
+    viewMode: 2,
+    restore: false,
   });
 
 
@@ -92,7 +116,8 @@ new CustomSelect('#connection').generate();
 
 // Инициализация кастомного выпадающего списка для поля
 // "Название компании"
-new CustomSelect('#companyName').generate();
+const companyNameCustomField = new CustomSelect('#companyName');
+companyNameCustomField.generate();
 
 
 // Инициализация кастомного дыухуровнего выпадающего списка для поля

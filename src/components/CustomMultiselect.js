@@ -49,6 +49,7 @@ export default class CustomMultiselect {
       chipsDeleteBtnClass: ['btn', 'custom-select__chips-delete-btn'],
       searchInputClass: 'custom-select__input',
       messageContainerClass: 'custom-select__message',
+      modalClass: 'custom-select__modal',
       optionsListContainerClass: 'custom-select__list-container',
       optionsOpenedListContainerClass: 'custom-select__list-container__opened',
       linkClass: 'custom-select__link',
@@ -56,7 +57,7 @@ export default class CustomMultiselect {
       resetAllGroupLinkClass: 'custom-select__link_type_reset',
       selectBtnClass: ['btn', 'btn_style_primary', 'custom-select__btn', 'custom-select__btn_type_select'],
       resetBtnClass: ['btn', 'btn_style_secondary', 'custom-select__btn', 'custom-select__btn_type_reset'],
-      optionsListClass: 'custom-select__list',
+      optionsListClass: ['custom-select__list', 'custom-select__list_type_multiselect'],
       optionClass: 'custom-select__item',
       optionParentClass: 'custom-select__item_style_parent',
       optionParentOpenedClass: 'custom-select__item_style_parent-opened',
@@ -129,11 +130,13 @@ export default class CustomMultiselect {
 
 
   _createLabel() {
-    // Создание поля кастомного селекта
+    // Создание подписи к полю
     const element = document.createElement('span');
     element.classList.add(
       ...this._handleClassList(this._options.labelClass)
     );
+
+    element.textContent = 'Выбрать';
 
     return element;
   }
@@ -208,8 +211,6 @@ export default class CustomMultiselect {
     element.classList.add(
       ...this._handleClassList(this._options.searchInputClass)
     );
-
-    element.placeholder = 'Выбрать';
 
     return element;
   }
@@ -367,6 +368,10 @@ export default class CustomMultiselect {
       this._resetBtnElement
     );
 
+    this._optionsListContainerElement.classList.add(
+      this._options.modalClass
+    )
+
     // Добавление контейнера списка в контейнер поля
     this._customSelectElement.append(this._optionsListContainerElement);
   }
@@ -438,7 +443,9 @@ export default class CustomMultiselect {
 
   //Multi
   _handleParentItemClick(evt) {
-    if (window.outerWidth < this._options.mobileScreenBreakpoint) {
+    console.log(window.innerWidth, this._options.mobileScreenBreakpoint, window.outerWidth < this._options.mobileScreenBreakpoint)
+
+    if (window.innerWidth < this._options.mobileScreenBreakpoint) {
       evt.target.classList.toggle(this._options.optionParentOpenedClass);
 
       const childContainer = evt.target.querySelector(`.${this._options.optionsListContainerClass}`);
@@ -713,6 +720,7 @@ export default class CustomMultiselect {
         // присутствовать элементы optgroup, не имеющие вложенных элементов option
         // В этом случае клик по пункту никак обработан не будет
         if (evt.target.dataset.isSelectable === 'true') {
+          console.log(987)
           // Обработка клика по элементу
           this._handleItemClick(evt);
 
@@ -727,6 +735,7 @@ export default class CustomMultiselect {
         } else {
           // Перед открытием вложенного списка скрываются все ранее открытые элементы
           this._closeOtherItems();
+          console.log('parent')
           this._handleParentItemClick(evt);
         }
 
