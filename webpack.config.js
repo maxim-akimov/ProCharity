@@ -96,6 +96,11 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+            filename: 'registration-links.html',
+            template: './src/registration-links.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
             filename: 'settings-change-password.html',
             template: './src/settings-change-password.html',
             inject: 'body'
