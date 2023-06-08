@@ -1,0 +1,11 @@
+.main_template_registration_final{
+	justify-items: center;
+	text-align: center;
+	padding: 64px 0 120px 0;
+}
+
+@media screen and (max-width: 900px) {
+  .main_template_registration_final{
+  	padding: 48px 24px 80px;
+  }
+}
