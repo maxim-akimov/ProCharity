@@ -91,6 +91,11 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+            filename: 'registration-confim-email.html',
+            template: './src/registration-confim-email.html',
+            inject: 'body'
+        }),        
+        new HtmlWebpackPlugin({
             filename: 'registration-new-volunteer.html',
             template: './src/registration-new-volunteer.html',
             inject: 'body'
@@ -113,6 +118,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'settings-profile.html',
             template: './src/settings-profile.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'registration-legal.html',
+            template: './src/registration-legal.html',
             inject: 'body'
         }),
         new CleanWebpackPlugin(),
