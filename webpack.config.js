@@ -91,6 +91,11 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+            filename: 'registration-confim-email.html',
+            template: './src/registration-confim-email.html',
+            inject: 'body'
+        }),        
+        new HtmlWebpackPlugin({
             filename: 'registration-new-volunteer.html',
             template: './src/registration-new-volunteer.html',
             inject: 'body'

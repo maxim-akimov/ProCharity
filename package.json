@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maxim-akimov/ProCharity"
+    "url": "git+https://github.com/AKuznetsov07/ProCharity"
   },
   "author": "Группа 4",
   "license": "",
   "bugs": {
-    "url": "https://github.com/maxim-akimov/ProCharity/issues"
+    "url": "https://github.com/AKuznetsov07/ProCharity/issues"
   },
-  "homepage": "https://github.com/maxim-akimov/ProCharity#readme",
+  "homepage": "https://github.com/AKuznetsov07/ProCharity#readme",
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
