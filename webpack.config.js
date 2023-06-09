@@ -86,15 +86,35 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+            filename: 'registration-contact.html',
+            template: './src/registration-contact.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
             filename: 'registration-first-step.html',
             template: './src/registration-first-step.html',
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+            filename: 'registration-confim-email.html',
+            template: './src/registration-confim-email.html',
+            inject: 'body'
+        }),        
+        new HtmlWebpackPlugin({
             filename: 'registration-new-volunteer.html',
             template: './src/registration-new-volunteer.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'registration-links.html',
+            template: './src/registration-links.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'registration-final.html',
+            template: './src/registration-final.html',
+            inject: 'body'
+        }), 
         new HtmlWebpackPlugin({
             filename: 'settings-change-password.html',
             template: './src/settings-change-password.html',
@@ -108,6 +128,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'settings-profile.html',
             template: './src/settings-profile.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'registration-legal.html',
+            template: './src/registration-legal.html',
             inject: 'body'
         }),
         new CleanWebpackPlugin(),

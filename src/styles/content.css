@@ -10,7 +10,7 @@
 @import url(../blocks/main/_template/main_template_registration-fullscreen.css);
 @import url(../blocks/main/_template/main_template_registration-form.css);
 @import url(../blocks/main/_template/main_template_first-step.css);
-
+@import url(../blocks/main/_template/main_template_registration_final.css);
 
 
 @import url(./../blocks/breadcrumbs/breadcrumbs.css);
@@ -123,6 +123,7 @@
 @import url(../blocks/heading/_type/heading_type_title-desktop.css);
 @import url(../blocks/heading/_type/heading_type_title-mobile.css);
 
+@import url(../blocks/heading/_type/heading_type_final.css);
 
 
 /* Кнопки */
