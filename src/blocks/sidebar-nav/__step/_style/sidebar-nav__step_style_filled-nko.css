@@ -1,0 +1,9 @@
+.sidebar-nav__step_style_filled-nko {
+    background-image: url(../../../../images/nko_nav_filled.svg);
+    color: transparent;
+}
+@media screen and (max-width: 900px) {
+    .sidebar-nav__step_style_filled-nko {
+        background-image: none;
+    }
+}

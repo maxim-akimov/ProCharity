@@ -67,9 +67,12 @@
 @import url(../blocks/sidebar-nav/__link/sidebar-nav__link.css);
 
 @import url(../blocks/sidebar-nav/__step/sidebar-nav__step.css);
-@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_reg.css);
-@import url(../blocks/sidebar-nav/__step/_style/sidebar-nav__step_style_lk.css);
 @import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_current.css);
+@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_filled.css);
+@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_next.css);
+@import url(../blocks/sidebar-nav/__step/_style/sidebar-nav__step_style_current-volunteer.css);
+@import url(../blocks/sidebar-nav/__step/_style/sidebar-nav__step_style_filled-nko.css);
+@import url(../blocks/sidebar-nav/__step/_style/sidebar-nav__step_style_current-reg.css);
 
 
 @import url(../blocks/sidebar-nav/__step-text/sidebar-nav__step-text.css);

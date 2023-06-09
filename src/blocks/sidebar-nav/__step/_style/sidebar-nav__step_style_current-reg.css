@@ -1,0 +1,8 @@
+.sidebar-nav__step_style_current-reg{
+
+}
+@media screen and (max-width: 900px) {
+    .sidebar-nav__step_style_current-reg {
+        width: 50%;
+    }
+}
