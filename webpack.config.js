@@ -135,6 +135,11 @@ module.exports = {
             template: './src/registration-legal.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'account-password.html',
+            template: './src/account-password.html',
+            inject: 'body'
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin()
     ]
