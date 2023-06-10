@@ -136,6 +136,11 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+            filename: 'lk-legal.html',
+            template: './src/lk-legal.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
             filename: 'account-password.html',
             template: './src/account-password.html',
             inject: 'body'
