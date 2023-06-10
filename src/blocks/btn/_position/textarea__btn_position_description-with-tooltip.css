@@ -1,0 +1,6 @@
+.textarea__btn_position_description-with-tooltip {
+  right: 36px;
+  /* на странице registration-description крестик очистки текста отключен, при желании можно добавить */
+  /* эти стили только для крестика в первой textarea с тултипом */
+  display: none;
+}

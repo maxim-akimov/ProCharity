@@ -148,3 +148,35 @@ new MobileMenu({
   menuContainerClass: 'header__nav',
   menuContainerOpenedClass: 'header__nav_opened'
 }).setEventListeners();
+
+// экземпляр кастом-селекта для registration-description
+
+new CustomMultiselect('#registration-description-choose-type', {
+  wrapClass: ['custom-select__wrap', 'custom-select__wrap_style_multiselect'],
+  headingClass: ['heading', 'heading__title', 'custom-select__heading'],
+  closeBtnClass: ['btn', 'btn_type_close', 'custom-select__btn-close'],
+  fieldClass: ['custom-select__field', 'custom-select__field_style_multiselect'],
+  labelClass: 'custom-select__label',
+  chipsClass: 'custom-select__chips',
+  chipsTextClass: 'custom-select__chips-text',
+  chipsDeleteBtnClass: ['btn', 'custom-select__chips-delete-btn'],
+  searchInputClass: 'custom-select__input',
+  messageContainerClass: 'custom-select__message',
+  modalClass: 'custom-select__modal',
+  optionsListContainerClass: 'custom-select__list-container',
+  optionsOpenedListContainerClass: 'custom-select__list-container__opened',
+  linkClass: 'custom-select__link',
+  selectAllGroupLinkClass: 'custom-select__link_type_select-all',
+  resetAllGroupLinkClass: 'custom-select__link_type_reset',
+  selectBtnClass: ['btn', 'btn_style_primary', 'custom-select__btn', 'custom-select__btn_type_select'],
+  resetBtnClass: ['btn', 'btn_style_secondary', 'custom-select__btn', 'custom-select__btn_type_reset'],
+  optionsListClass: ['custom-select__list', 'custom-select__list_type_multiselect', 'custom-select__list_style_registration-description'],
+  optionClass: 'custom-select__item',
+  optionParentClass: 'custom-select__item_style_parent',
+  optionParentOpenedClass: 'custom-select__item_style_parent-opened',
+  optionSelectableClass: 'custom-select__item_style_checkbox',
+  optionSelectedClass: 'custom-select__item_selected-checkbox',
+  mobileScreenBreakpoint: 900,
+  firstOptionIsTitle: false,
+  useTextSearch: true
+}).generate();
