@@ -49,10 +49,10 @@
   <nav class="breadcrumbs">
     <ul class="breadcrumbs__list">
       <li class="breadcrumbs__item">
-        <a href="#" class="breadcrumbs__link">Регистрация</a>
+        <a href="#" class="breadcrumbs__link">Личный кабинет</a>
       </li>
       <li class="breadcrumbs__item">
-        НКО
+        Профиль НКО
       </li>
     </ul>
   </nav>
@@ -60,21 +60,21 @@
     <ul class="sidebar-nav__list">
       <li class="sidebar-nav__item">
         <a href="#" class="sidebar-nav__link">
-            <div class="sidebar-nav__step sidebar-nav__step_type_filled sidebar-nav__step_style_filled-nko">
+            <div class="sidebar-nav__step sidebar-nav__step_type_filled">
             <span class="sidebar-nav__step-text">1</span>
             </div>
             <span class="sidebar-nav__item-text">Контактное лицо</span>
         </a>
       </li>
       <li class="sidebar-nav__item sidebar-nav__item_type_current">        
-          <div class="sidebar-nav__step sidebar-nav__step_type_current sidebar-nav__step_style_current-reg">
+          <div class="sidebar-nav__step sidebar-nav__step_type_current">
             <span class="sidebar-nav__step-text">2</span>
           </div>
           <span class="sidebar-nav__item-text">Реквизиты</span>        
       </li>
       <li class="sidebar-nav__item">
         <a href="#" class="sidebar-nav__link">
-          <div class="sidebar-nav__step sidebar-nav__step_type_next">
+          <div class="sidebar-nav__step sidebar-nav__step_type_filled">
             <span class="sidebar-nav__step-text">3</span>
           </div>
           <span class="sidebar-nav__item-text">Документы и файлы</span>
@@ -82,7 +82,7 @@
       </li>
       <li class="sidebar-nav__item">
         <a href="#" class="sidebar-nav__link">
-          <div class="sidebar-nav__step sidebar-nav__step_type_next">
+          <div class="sidebar-nav__step sidebar-nav__step_type_filled">
             <span class="sidebar-nav__step-text">4</span>
           </div>
           <span class="sidebar-nav__item-text">Описание</span>
@@ -90,7 +90,7 @@
       </li>
       <li class="sidebar-nav__item">
         <a href="#" class="sidebar-nav__link">
-          <div class="sidebar-nav__step sidebar-nav__step_type_next">
+          <div class="sidebar-nav__step sidebar-nav__step_type_filled">
             <span class="sidebar-nav__step-text">5</span>
           </div>
           <span class="sidebar-nav__item-text">Ссылки</span>
@@ -99,16 +99,15 @@
     </ul>
     <div class="sidebar-nav__description">
         <p class="sidebar-nav__description-title">Регистрация НКО</p>
-        <p class="sidebar-nav__description-steps">Шаг 2 из 5</p>
     </div>
   </section>
   <section class="sidebar">
     <h2 class="sidebar__title">Статус профиля</h2>
-    <a href="#" class="sidebar__status">Cкрыт</a>
+    <a href="#" class="sidebar__status sidebar__status_state_process">На модерации</a>
   </section>  
   <section class="content">
     <h1 class="heading heading heading_type_title">Реквизиты</h1>
-    <form name="legalForm" id="legalForm" action="registration-legal.html" method="get" novalidate>
+    <form name="legalForm" id="legalForm" action="lk-legal.html" method="get" novalidate>
       <fieldset class="fieldset fieldset_template_grid-form fieldset_style_pb-small" id="legalData"> 
         <div class="input">
           <input type="text" class="input__field" name="inn" id="inn" placeholder="ИНН" required>

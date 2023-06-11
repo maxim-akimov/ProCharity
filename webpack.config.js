@@ -86,6 +86,11 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+            filename: 'lk-links.html',
+            template: './src/lk-links.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
             filename: 'registration.html',
             template: './src/registration.html',
             inject: 'body'
@@ -104,7 +109,7 @@ module.exports = {
             filename: 'registration-confim-email.html',
             template: './src/registration-confim-email.html',
             inject: 'body'
-        }),        
+        }),
         new HtmlWebpackPlugin({
             filename: 'registration-new-volunteer.html',
             template: './src/registration-new-volunteer.html',
@@ -119,7 +124,7 @@ module.exports = {
             filename: 'registration-final.html',
             template: './src/registration-final.html',
             inject: 'body'
-        }), 
+        }),
         new HtmlWebpackPlugin({
             filename: 'settings-change-password.html',
             template: './src/settings-change-password.html',
@@ -138,6 +143,16 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'registration-legal.html',
             template: './src/registration-legal.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'lk-legal.html',
+            template: './src/lk-legal.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'account-password.html',
+            template: './src/account-password.html',
             inject: 'body'
         }),
         new CleanWebpackPlugin(),
