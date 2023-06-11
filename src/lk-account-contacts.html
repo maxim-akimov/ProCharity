@@ -59,43 +59,55 @@
   <section class="sidebar-nav">
     <ul class="sidebar-nav__list">
       <li class="sidebar-nav__item sidebar-nav__item_type_current">
-        <span class="sidebar-nav__step sidebar-nav__step_type_current sidebar-nav__step_style_current-reg">
+        <span class="sidebar-nav__step sidebar-nav__step_type_current">
           <span class="sidebar-nav__step-text">1</span>
         </span>
         <span class="sidebar-nav__item-text">Контактное лицо</span>
       </li>
       <li class="sidebar-nav__item">
-        <span class="sidebar-nav__step sidebar-nav__step_type_next">
+        <span class="sidebar-nav__step sidebar-nav__step_type_filled">
           <span class="sidebar-nav__step-text">2</span>
         </span>
         <span class="sidebar-nav__item-text">Реквизиты</span>
       </li>
       <li class="sidebar-nav__item">
-        <span class="sidebar-nav__step sidebar-nav__step_type_next">
+        <span class="sidebar-nav__step sidebar-nav__step_type_filled">
           <span class="sidebar-nav__step-text">3</span>
         </span>
         <span class="sidebar-nav__item-text">Документы и файлы</span>
       </li>
       <li class="sidebar-nav__item">
-        <span class="sidebar-nav__step sidebar-nav__step_type_next">
+        <span class="sidebar-nav__step sidebar-nav__step_type_filled">
           <span class="sidebar-nav__step-text">4</span>
         </span>
         <span class="sidebar-nav__item-text">Описание</span>
       </li>
       <li class="sidebar-nav__item">
-        <span class="sidebar-nav__step sidebar-nav__step_type_next">
+        <span class="sidebar-nav__step sidebar-nav__step_type_filled">
           <span class="sidebar-nav__step-text">5</span>
         </span>
         <span class="sidebar-nav__item-text">Ссылки</span>
       </li>
     </ul>
     <div class="sidebar-nav__description">
-      <p class="sidebar-nav__description-title">Регистрация НКО</p>
-      <p class="sidebar-nav__description-steps">Шаг 1 из 5</p>
+      <p class="sidebar-nav__description-title">Профиль НКО</p>
     </div>
   </section>
+  <section class="sidebar">
+    <h2 class="sidebar__title">Статус профиля</h2>
+    <a href="#" class="sidebar__status sidebar__status_state_process">на модерации</a>
+  </section>  
   <section class="content">
     <h1 class="heading heading_type_title">Контактное лицо</h1>
+    <div class="avatar">
+      <div class="avatar__container">
+        <input type="file" class="avatar__input" name="addAvatar" id="addAvatar">
+        <label class="avatar__label" for="addAvatar">Добавить фотографию</label>
+      </div>
+      <button class="btn btn_type_close avatar__btn-delete"></button>
+      <p class="avatar__max-volume">Jpg, png объемом не более 5 Мб</p>
+      <input type="hidden" name="croppedImage" id="croppedImage" class="avatar__cropped-image-input">
+    </div>
     <form name="newVolunteer" id="newVolunteer">
       <fieldset class="fieldset fieldset_template_grid-form">
         <legend class="paragraph">Волонтеры увидят эти данные на странице НКО и в ваших заданиях</legend>
@@ -105,20 +117,17 @@
           <button class="btn input__btn input__btn_type_clear-text"></button>
         </div>
         <div class="input">
-          <input type="text" class="input__field" name="surname" id="surname" placeholder="Фамилия" required>
-          <label for="surname" class="input__label">Фамилия</label>
-          <button class="btn input__btn input__btn_type_clear-text"></button>
+          <input type="text" class="input__field" name="name" id="surname" placeholder="Фамилия" required>
+          <label class="input__label" for="surname">Фамилия</label>
+            <button class="btn input__btn input__btn_type_clear-text"></button>
         </div>
+      </fieldset>
+      <fieldset class="fieldset fieldset_template_grid-one-col">
         <div class="input">
-            <input type="text" class="input__field" name="numberFund" id="numberFund" placeholder="ИНН фонда" required>
-            <label for="numberFund" class="input__label">ИНН фонда</label>
+          <input type="text" class="input__field input__field_default" name="jobTitle" id="jobTitle" placeholder="Должность" required>
+          <label class="input__label" for="jobTitle">Должность</label>
             <button class="btn input__btn input__btn_type_clear-text"></button>
-          </div>
-          <div class="input">
-            <input type="text" class="input__field" name="jobTitle" id="jobTitle" placeholder="Должность" required>
-            <label for="jobTitle" class="input__label">Должность</label>
-            <button class="btn input__btn input__btn_type_clear-text"></button>
-          </div>
+        </div>
       </fieldset>
       <fieldset class="fieldset fieldset_template_grid-form">
         <legend class="paragraph">Волонтеры не увидят эти данные. Будем использовать их, если понадобится уточнить детали или рассказать об изменениях на платформе.</legend>
