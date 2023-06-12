@@ -1,0 +1,33 @@
+.custom-select__list_style_registration-description {
+  max-width: 736px;
+  max-height: 296px;
+  overflow: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .custom-select__list_style_registration-description {
+    max-width: 100%;
+    max-height: max-content;
+  }
+}
+
+.custom-select__list_style_registration-description::-webkit-scrollbar {
+  display: block;
+  max-width: 4px;
+}
+
+.custom-select__list_style_registration-description::-webkit-scrollbar-thumb {
+  background-color: #A0ABB5;
+  border-radius: 6px;
+  max-height: 79px;
+}
+
+.custom-select__list_style_registration-description::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 10px; 
+}
+
+.custom-select__list_style_registration-description::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 10px;
+}

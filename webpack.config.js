@@ -46,6 +46,11 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+          filename: 'registration-description.html',
+          template: './src/registration-description.html',
+          inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
             filename: 'ui-kit.html',
             template: './src/ui-kit.html',
             inject: 'body'
