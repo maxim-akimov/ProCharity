@@ -1,0 +1,9 @@
+.sidebar-nav__step_style_current-volunteer {
+    background-image: url(../../../../images/reg-icon.svg);
+    color:transparent;
+}
+@media screen and (max-width: 900px) {
+    .sidebar-nav__step_style_current-volunteer {
+        background-image: none;
+    }
+}

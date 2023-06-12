@@ -1,18 +1,21 @@
 .sidebar-nav__step {
-  align-items: center;
-  background-color: #F5F6F8;
-  border-radius: 50%;
-  display: flex;
-  font-weight: 700;
-  height: 32px;
-  justify-content: center;
-  width: 32px;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    font-weight: 700;
+    height: 32px;
+    justify-content: center;
+    width: 32px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color:#fff;
 }
 
 @media screen and (max-width: 900px) {
-  .sidebar-nav__step {
-    border-radius: 0;
-    height: 100%;
-    width: 100%;
-  }
+    .sidebar-nav__step {
+        background-image: none;
+        border-radius: 0;
+        height: 100%;
+        width: 100%;
+    }
 }
