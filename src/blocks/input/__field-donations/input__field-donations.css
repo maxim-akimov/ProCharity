@@ -1,3 +1,8 @@
 .input__field-donations {
-    width: 91%;
+    width: 87%;
 }
+
+@media screen and (max-width: 900px) {
+    .input__field-donations {
+       width: 80%;
+    }}
