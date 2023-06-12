@@ -11,13 +11,6 @@
   }
 }
 
-/* .custom-select__list_style_registration-description::-webkit-scrollbar {
-  background-color: #A0ABB5;
-  border-radius: 6px;
-  max-height: 50%; 
-  height: 50%;
-} */
-
 .custom-select__list_style_registration-description::-webkit-scrollbar {
   display: block;
   max-width: 4px;

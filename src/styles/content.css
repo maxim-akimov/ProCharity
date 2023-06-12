@@ -245,7 +245,7 @@
 @import url(../blocks/textarea/__error-message/_visible/textarea__error-message_visible.css);
 
 @import url(../blocks/textarea/__field/textarea__field.css);
-@import url(../blocks/textarea/__field/_style/textarea__field_style_registration-description.css);
+@import url(../blocks/textarea/__field/_style/textarea__field_style_size-medium.css);
 
 @import url(../blocks/textarea/__label/textarea__label.css);
 
