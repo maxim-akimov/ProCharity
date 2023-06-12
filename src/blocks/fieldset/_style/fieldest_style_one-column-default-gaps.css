@@ -1,0 +1,9 @@
+.fieldset_style_one-column-default-gaps {
+  gap: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .fieldset_style_one-column-default-gaps {
+    gap: 16px;
+  }
+}
