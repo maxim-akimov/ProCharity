@@ -1,5 +1,7 @@
 .input__donations {
     min-height: 68px;
+    color: #374045;
+    width: 100%;
 }
 
 @media screen and (max-width: 900px) {
