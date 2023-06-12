@@ -46,6 +46,11 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+          filename: 'lk-account-description.html',
+          template: './src/lk-account-description.html',
+          inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
           filename: 'registration-description.html',
           template: './src/registration-description.html',
           inject: 'body'

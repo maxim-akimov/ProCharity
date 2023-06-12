@@ -254,8 +254,6 @@
 @import url(../blocks/textarea/__btn/textarea__btn.css);
 @import url(../blocks/textarea/__btn/_type/textarea__btn_type_clear-text.css);
 
-@import url(../blocks/textarea/__btn/_position/textarea__btn_position_description-with-tooltip.css);
-
 
 
 /* input */
