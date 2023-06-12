@@ -252,7 +252,6 @@
 @import url(../blocks/textarea/__counter/textarea__counter.css);
 
 @import url(../blocks/textarea/__btn/textarea__btn.css);
-@import url(../blocks/textarea/__btn/_type/textarea__btn_type_clear-text.css);
 
 
 
@@ -360,6 +359,7 @@
 
 @import url(../blocks/list/list.css);
 @import url(../blocks/list/__item/list__item.css);
+@import url(../blocks/list/_style/list_style_registration-descrtiption.css);
 
 
 
