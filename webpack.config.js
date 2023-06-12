@@ -110,6 +110,11 @@ module.exports = {
             template: './src/settings-profile.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'registration-documents.html',
+            template: './src/registration-documents.html',
+            inject: 'body'
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin()
     ]
