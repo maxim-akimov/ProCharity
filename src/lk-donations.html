@@ -97,19 +97,24 @@
         <fieldset class="fieldset fieldset_template_grid-donations">
           <legend class="heading_type_subtitle">Ссылка на страницу для пожертвований</legend>
           <div class="input">
-            <input type="url" placeholder="https://" class="input__field input__field_default input__field-donations" required>
-            <button class="btn input__btn input__btn_type_clear-text input__btn_position_first"></button>
+            <input type="url" placeholder="https://" name="email" class="input__field input__field_default" required
+              style="padding-top: 0;">
+            <button class="btn input__btn input__btn_type_clear-text"></button>
           </div>
-          <div class="input input__donations">
-            <textarea type="text" class="input__field input__field-donations" placeholder="На что пойдут собранные средства" required
-              minlength="0" max="2000"></textarea>
-            <button class="btn input__btn input__btn_type_clear-text input__btn_position_first"></button>
+          <div class="textarea">
+            <textarea type="text" name="donation-goal" id="donation-goal"
+              class="textarea__field textarea__field_autosize" placeholder="На что пойдут собранные средства" required
+              minlength="0" maxlength="2000"></textarea>
+            <label class="textarea__label" for="donation-goal">На что пойдут собранные средства</label>
+            <button class="btn textarea__btn textarea__btn_type_clear-text input__btn_position_first"></button>
             <button type="button" class="hint input__btn input__btn_type_hint">
               <div class="hint__tooltip">
                 Например, «Закупим оборудование для медицинского кабинета»
               </div>
             </button>
-            <p class="input__count-text">0/2000</p>
+            <div class="textarea__counter">
+              <span class="textarea__count-symbols">0</span>/<span class="textarea__total-symbols">2000</span>
+            </div>
           </div>
         </fieldset>
         <button type="submit" class="btn btn_style_primary">
