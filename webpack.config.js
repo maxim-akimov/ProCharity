@@ -151,6 +151,16 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+            filename: 'registration-documents.html',
+            template: './src/registration-documents.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'account-documents.html',
+            template: './src/account-documents.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
             filename: 'registration-legal.html',
             template: './src/registration-legal.html',
             inject: 'body'
@@ -165,7 +175,6 @@ module.exports = {
             template: './src/account-password.html',
             inject: 'body'
         }),
-       
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin()
     ]
