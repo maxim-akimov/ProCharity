@@ -1,0 +1,8 @@
+.input__donations {
+    min-height: 68px;
+}
+
+@media screen and (max-width: 900px) {
+    .input__donations {
+        min-height: 96px;
+    }}

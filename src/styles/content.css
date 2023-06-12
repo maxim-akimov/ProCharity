@@ -281,6 +281,8 @@
 
 @import url(../blocks/input/__error-message/input__error-message.css);
 @import url(../blocks/input/__error-message/_visible/input__error-message_visible.css);
+@import url(../blocks/input/__donations/input__donations.css);
+@import url(../blocks/input/__count-text/input__count-text.css);
 
 
 

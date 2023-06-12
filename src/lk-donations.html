@@ -100,17 +100,16 @@
             <input type="url" placeholder="https://" class="input__field input__field_default" required>
             <button class="btn input__btn input__btn_type_clear-text input__btn_position_first"></button>
           </div>
-          <div class="input">
-            <input type="text" class="input__field" placeholder="На что пойдут собранные средства" required
-              minlength="0" max="2000">
+          <div class="input input__donations">
+            <textarea type="text" class="input__field" placeholder="На что пойдут собранные средства" required
+              minlength="0" max="2000"></textarea>
             <button class="btn input__btn input__btn_type_clear-text input__btn_position_first"></button>
             <button type="button" class="hint input__btn input__btn_type_hint">
               <div class="hint__tooltip">
                 Например, «Закупим оборудование для медицинского кабинета»
               </div>
-              <p>0/2000</p>
             </button>
-            
+            <p class="input__count-text">0/2000</p>
           </div>
         </fieldset>
         <button type="submit" class="btn btn_style_primary">
