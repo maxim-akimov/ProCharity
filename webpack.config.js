@@ -90,6 +90,11 @@ module.exports = {
             template: './src/lk-links.html',
             inject: 'body'
         }),
+         new HtmlWebpackPlugin({
+            filename: 'lk-donations.html',
+            template: './src/lk-donations.html',
+            inject: 'body'
+        }),
         new HtmlWebpackPlugin({
             filename: 'registration.html',
             template: './src/registration.html',
@@ -155,6 +160,7 @@ module.exports = {
             template: './src/account-password.html',
             inject: 'body'
         }),
+       
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin()
     ]
