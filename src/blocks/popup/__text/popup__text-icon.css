@@ -1,0 +1,6 @@
+.popup_type_message .popup__text-icon:before {
+    content: url(../../../images/Group12.svg);
+    left: 17px;
+    position: absolute;
+    top: 13px;
+  }
