@@ -1,0 +1,6 @@
+.popup_type_message .popup__text-icon-attention:before {
+    content: url(../../../images/Vector-attention.svg);
+    left: 17px;
+    position: absolute;
+    top: 13px;
+  }
