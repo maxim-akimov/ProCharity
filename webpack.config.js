@@ -110,6 +110,31 @@ module.exports = {
             template: './src/settings-profile.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'lk-rate-fund-hours.html',
+            template: './src/lk-rate-fund-hours.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'lk-rate-fund-review.html',
+            template: './src/lk-rate-fund-review.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'lk-rate-fund.html',
+            template: './src/lk-rate-fund.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'rate-volunteer.html',
+            template: './src/rate-volunteer.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'rate-volunteer-review.html',
+            template: './src/rate-volunteer-review.html',
+            inject: 'body'
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin()
     ]
