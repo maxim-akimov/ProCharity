@@ -1,0 +1,34 @@
+.btn_style_dark {
+    background: #3A464C;;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    max-width: max-content;
+    padding: 20px 32px;
+    width: 100%;
+  }
+  
+  .btn_style_dark:hover {
+    background: #E65609;
+  }
+  
+  .btn_style_dark:focus {
+    background: #3A464C;
+    border: 2px solid #E65609;
+  }
+  
+  .btn_style_dark:active {
+    background: #CC4D00;
+  }
+  
+  .btn_style_dark:disabled {
+    opacity: .6;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .btn_style_dark {
+      margin: 0 auto;
+      max-width: 100%;
+      order: 0;
+      width: 100%;
+    }
+  }
