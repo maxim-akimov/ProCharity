@@ -81,6 +81,11 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+            filename: 'lk-fund-rate.html',
+            template: './src/lk-fund-rate.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
             filename: 'registration.html',
             template: './src/registration.html',
             inject: 'body'

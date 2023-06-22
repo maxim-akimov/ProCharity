@@ -122,6 +122,7 @@
 @import url(../blocks/heading/_type/heading_type_registrtion.css);
 @import url(../blocks/heading/_type/heading_type_title-desktop.css);
 @import url(../blocks/heading/_type/heading_type_title-mobile.css);
+@import url(../blocks/heading/_style/heading_style_pb-small.css);
 
 
 
@@ -224,6 +225,7 @@
 @import url(../blocks/fieldset/_template/fieldset_template_grid-project-links.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-one-col.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-social-links.css);
+@import url(../blocks/fieldset/_template/fieldset_template_grid-rate.css);
 
 
 
@@ -358,6 +360,15 @@
 
 @import url(../blocks/link/link.css);
 @import url(../blocks/link/_style/link_style_dark.css);
+
+
+/* rate (блок оценки по критерию) */
+
+@import url(../blocks/rate/rate.css);
+@import url(../blocks/rate/__heading/rate__heading.css);
+@import url(../blocks/rate/__paragraph/rate__paragraph.css);
+@import url(../blocks/rate/__radio-switcher/rate__radio-switcher.css);
+@import url(../blocks/rate/__radio-label/rate__radio-label.css);
 
 
 
