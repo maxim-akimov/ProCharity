@@ -1,0 +1,6 @@
+.btn__spinner {
+    display: none;
+    width: 16px;
+    height: 16px;
+    background: url("../../../images/btn__spinner.svg") no-repeat center;
+}
