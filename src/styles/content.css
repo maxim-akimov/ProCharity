@@ -142,8 +142,7 @@
 @import url(../blocks/btn/_type/btn_type_add.css);
 
 @import url(../blocks/btn/_position/btn_position_right.css);
-@import url(../blocks/btn/__spinner/btn__spinner.css);
-@import url(../blocks/btn/__spinner/_rotate/btn__spinner_rotate.css);
+@import url(../blocks/btn/_style/btn_style_loading.css);
 
 
 
