@@ -2,3 +2,9 @@
   grid-area: paragraph;
   padding-bottom: 0;
 }
+
+@media screen and (max-width: 900px) {
+  .rate__paragraph {
+    padding-bottom: 12px;
+  }
+}
