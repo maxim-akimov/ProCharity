@@ -110,6 +110,16 @@ module.exports = {
             template: './src/settings-profile.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin({
+            filename: "estimation-work-volonter.html",
+            template: "./src/estimation-work-volonter.html",
+            inject: "body",
+          }),
+          new HtmlWebpackPlugin({
+            filename: "estimation-work-fund.html",
+            template: "./src/estimation-work-fund.html",
+            inject: "body",
+          }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin()
     ]
