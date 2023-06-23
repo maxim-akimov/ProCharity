@@ -1,0 +1,24 @@
+.fieldset_template_grid-rate {
+  padding: 12px 0 32px;
+  box-sizing: border-box;
+  display: grid;
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+.fieldset_template_grid-rate::before {
+  content: '';
+  width: 100%;
+  padding-top: 4px;
+  border-top: 1px solid #E3E9F0;
+  box-sizing: border-box;
+}
+
+.fieldset_template_grid-rate::after {
+  content: '';
+  width: 100%;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #E3E9F0;
+  box-sizing: border-box;
+}

@@ -1,0 +1,12 @@
+.rate__radio-switcher {
+  width: 50%;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media screen and (max-width: 900px) {
+  .rate__radio-switcher {
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+  }
+}

@@ -1,0 +1,13 @@
+.rate {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  column-gap: 32px;
+}
+
+@media screen and (max-width: 900px) {
+  .rate {    
+    flex-wrap: wrap;
+  }
+}

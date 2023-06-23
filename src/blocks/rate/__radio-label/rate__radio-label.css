@@ -1,0 +1,33 @@
+.rate__radio-label {
+  margin: 0 -1px 0 0;
+}
+
+.rate__radio-label:last-of-type {
+  margin: 0;
+}
+
+.radio-switcher__input:checked + .rate__radio-label {
+  z-index: 1;
+}
+
+.radio-switcher__input:last-of-type:checked + .rate__radio-label {
+  border-left-color: #72D0DC;
+}
+
+@media screen and (max-width: 900px) {
+  .rate__radio-label:first-of-type {
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    margin: 0 -1px 0 0;
+  }
+
+  .rate__radio-label:last-of-type {
+    border-radius: 0 6px 6px 0;
+    border-top-color: #048AA7;
+    margin: 0;
+  }
+
+  .radio-switcher__input:first-of-type:checked + .rate__radio-label {
+    border: solid 1px #048AA7;
+  }
+}
