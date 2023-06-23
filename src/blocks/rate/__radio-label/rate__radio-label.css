@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+.radio-switcher__input:checked + .rate__radio-label {
+  z-index: 1;
+}
+
 .radio-switcher__input:last-of-type:checked + .rate__radio-label {
   border-left-color: #72D0DC;
 }

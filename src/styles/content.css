@@ -123,6 +123,7 @@
 @import url(../blocks/heading/_type/heading_type_title-desktop.css);
 @import url(../blocks/heading/_type/heading_type_title-mobile.css);
 
+@import url(../blocks/heading/_style/heading_style_rate.css);
 
 
 /* Кнопки */
@@ -349,6 +350,7 @@
 @import url(./../blocks/paragraph/_style/paragraph_style_first-step.css);
 @import url(./../blocks/paragraph/_style/paragraph_style_desktop.css);
 @import url(./../blocks/paragraph/_style/paragraph_style_mobile.css);
+@import url(./../blocks/paragraph/_style/paragraph_style_rate.css);
 
 @import url(../blocks/list/list.css);
 @import url(../blocks/list/__item/list__item.css);
@@ -364,8 +366,7 @@
 /* rate (блок оценки по критерию) */
 
 @import url(../blocks/rate/rate.css);
-@import url(../blocks/rate/__heading/rate__heading.css);
-@import url(../blocks/rate/__paragraph/rate__paragraph.css);
+@import url(../blocks/rate/__wrapper/rate__wrapper.css);
 @import url(../blocks/rate/__radio-switcher/rate__radio-switcher.css);
 @import url(../blocks/rate/__radio-label/rate__radio-label.css);
 

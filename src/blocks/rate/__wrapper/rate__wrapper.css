@@ -1,0 +1,9 @@
+.rate__wrapper {
+  width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  .rate__wrapper {
+    width: 100%;
+  }
+}
