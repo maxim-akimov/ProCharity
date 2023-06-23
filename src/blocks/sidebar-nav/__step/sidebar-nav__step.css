@@ -9,7 +9,7 @@
   width: 32px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 796px) {
   .sidebar-nav__step {
     border-radius: 0;
     height: 100%;

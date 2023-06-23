@@ -6,7 +6,7 @@
   padding-top: 64px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 796px) {
   .main_template_first-step {
     background: url(../../../images/first-step-background-reverse.svg) no-repeat bottom 10px center;
     grid-template-columns: 100%;
