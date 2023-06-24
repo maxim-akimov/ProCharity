@@ -7,11 +7,14 @@
   text-decoration: none;
 }
 
-.breadcrumbs__item:after {
+/*расстановка слешей относится к классу breadcrumbs__links, а не к breadcrumbs__item
+  во всех предыдущих страницах не было breadcrumbs__links с двумя и более членами*/
+/* .breadcrumbs__item:after {
   content: '/';
   padding-left: 8px;
-}
+} 
 
 .breadcrumbs__item:last-of-type:after {
   content: '';
-}
+  padding-left: 0px;
+} */

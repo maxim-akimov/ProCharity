@@ -1,0 +1,21 @@
+.account-btn__task {
+    align-items: center;
+    background:rgba(230, 86, 10, 1);
+    border-radius: 24px;
+    display: flex;
+    text-decoration: none;
+    margin-right: 10px;
+    width: 168px;
+}
+
+  .account-btn__task:hover {
+    opacity: .7;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .account-btn__task {
+      height: 32px;
+      justify-self: right;
+      max-width: min-content;
+    }
+  }

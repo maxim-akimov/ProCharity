@@ -1,4 +1,4 @@
 .sidebar-nav__step_style_lk {
-  background: #72D0DC;
+  background-color: #72D0DC; /*свойство background перезатирает свойство background-image*/
   color: #fff;
 }

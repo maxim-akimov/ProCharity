@@ -1,3 +1,17 @@
 .breadcrumbs__link {
   color: #048AA7;
+  text-decoration: none;
+  border-bottom: 1px solid #048AA7;
+}
+
+.breadcrumbs__link:after {
+  content: '/';
+  color: #7B878F;
+  padding-left: 8px;
+  padding-right: 8px;  
+  border-bottom: 2px solid #FFF; /*закрасить подчеркивание слеш ссылки цветом фона*/
+}
+
+.breadcrumbs__link:last-of-type:after {
+  padding-right: 0px;  
 }
