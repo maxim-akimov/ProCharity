@@ -1,0 +1,12 @@
+.sidebar-nav__step-text-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar-nav__step-text-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
