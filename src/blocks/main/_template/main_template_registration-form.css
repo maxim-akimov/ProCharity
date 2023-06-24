@@ -4,7 +4,7 @@
   padding-top: 64px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 796px) {
   .main_template_registration-form {
     grid-auto-rows: minmax(min-content, max-content);
     grid-template-columns: 100%;
