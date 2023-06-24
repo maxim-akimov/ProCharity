@@ -58,6 +58,7 @@
 
 
 @import url(../blocks/sidebar-nav/sidebar-nav.css);
+@import url(../blocks/sidebar-nav__volunteer/sidebar-nav__volunteer.css);
 
 @import url(../blocks/sidebar-nav/__list/sidebar-nav__list.css);
 
