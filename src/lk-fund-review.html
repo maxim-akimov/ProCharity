@@ -54,7 +54,13 @@
           <a href="#" class="breadcrumbs__link">Личный кабинет</a>
         </li>
         <li class="breadcrumbs__item">
-          Мои данные
+          <a href="#" class="breadcrumbs__link">Мои задания</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Перевод анкет на немецкий</a>
+        </li>
+        <li class="breadcrumbs__item">
+          Оценка работы с фондом
         </li>
       </ul>
     </nav>
@@ -65,102 +71,57 @@
             <div class="sidebar-nav__step sidebar-nav__step_style_lk">
               <span class="sidebar-nav__step-text">1</span>
             </div>
-            <span class="sidebar-nav__item-text">Личные данные</span>
+            <span class="sidebar-nav__item-text">Трудозатраты</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <div class="sidebar-nav__step sidebar-nav__step_style_lk">
+              <span class="sidebar-nav__step-text">2</span>
+            </div>
+            <span class="sidebar-nav__item-text">Оценка</span>
           </a>
         </li>
         <li class="sidebar-nav__item sidebar-nav__item_type_current">
           <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_type_current">
-            <span class="sidebar-nav__step-text">2</span>
+            <span class="sidebar-nav__step-text">3</span>
           </div>
-          <span class="sidebar-nav__item-text">Компетенции</span>
-        </li>
-        <li class="sidebar-nav__item">
-          <a href="#" class="sidebar-nav__link">
-            <div class="sidebar-nav__step sidebar-nav__step_style_lk">
-              <span class="sidebar-nav__step-text">3</span>
-            </div>
-            <span class="sidebar-nav__item-text">Мотивация</span>
-          </a>
-        </li>
-        <li class="sidebar-nav__item">
-          <a href="#" class="sidebar-nav__link">
-            <div class="sidebar-nav__step sidebar-nav__step_style_lk">
-              <span class="sidebar-nav__step-text">4</span>
-            </div>
-            <span class="sidebar-nav__item-text">Портфолио</span>
-          </a>
-        </li>
-        <li class="sidebar-nav__item">
-          <a href="#" class="sidebar-nav__link">
-            <div class="sidebar-nav__step sidebar-nav__step_style_lk">
-              <span class="sidebar-nav__step-text">5</span>
-            </div>
-            <span class="sidebar-nav__item-text">Социальные сети</span>
-          </a>
+          <span class="sidebar-nav__item-text">Отзывы</span>
         </li>
       </ul>
-      <div class="sidebar-nav__description">
-        <p class="sidebar-nav__description-title">Профиль волонтера</p>
-      </div>
-    </section>
-    <section class="sidebar">
-      <h2 class="sidebar__title">Статус профиля</h2>
-      <a href="#" class="sidebar__status">Cкрыт</a>
-    </section>
-    <section class="sidebar sidebar_type_profile-progress">
-      <h2 class="sidebar__title">Профиль заполнен на 66%</h2>
-      <div class="progress-bar">
-        <div class="progress-bar__bg">
-          <div class="progress-bar__scale"></div>
-        </div>
-        <button class="btn btn_type_refresh btn_type_refresh-process"></button>
-      </div>
-      <p class="sidebar__description">Узнай, <a class="sidebar__link" href="">как заполнить
-          профиль,</a> чтобы тебя выбрали исполнителем</p>
     </section>
     <section class="content">
-      <h1 class="heading heading_type_title">Мои компетенции</h1>
-      <p class="paragraph">Укажи, какие категории заданий тебе интересны и соответствуют твоим навыкам</p>
-      <form name="competenciesForm" id="competenciesForm" action="lk-motivation.html" method="get">
+      <h1 class="heading heading_type_title">Отзывы</h1>
+      <form action="lk-fund-review.html">
         <fieldset class="fieldset">
-          <select name="competencies" id="competencies" class="custom-select" multiple>
-            <option hidden>Выбрать</option>
-            <optgroup label="Дизайн и верстка">
-              <option value="Тестовый вариант 1">Тестовый вариант 1</option>
-            </optgroup>
-            <optgroup label="Маркетинг и коммуникации">
-              <option value="Социальные сети">Социальные сети</option>
-              <option value="Работа с текстами">Работа с текстами</option>
-              <option value="Email-рассылки">Email-рассылки</option>
-              <option value="Организация мероприятий">Организация мероприятий</option>
-              <option value="Реклама">Реклама</option>
-              <option value="Стратегический маркетинг / Другое">Стратегический маркетинг / Другое</option>
-            </optgroup>
-            <optgroup label="IT">
-              <option value="Тестовый вариант 2">Тестовый вариант 2</option>
-            </optgroup>
-            <optgroup label="Финансы и фандрайзинг">
-              <option value="Тестовый вариант 3">Тестовый вариант 3</option>
-            </optgroup>
-            <optgroup label="Фото и видео">
-              <option value="Тестовый вариант 4">Тестовый вариант 4</option>
-            </optgroup>
-            <optgroup label="Юридические услуги">
-              <option value="Тестовый вариант 5">Тестовый вариант 5</option>
-            </optgroup>
-            <optgroup label="Стратегический консалтинг">
-              <option value="Тестовый вариант 6">Тестовый вариант 6</option>
-            </optgroup>
-            <optgroup label="Менеджемент">
-              <option value="Тестовый вариант 7">Тестовый вариант 7</option>
-            </optgroup>
-            <optgroup label="HR">
-              <option value="Тестовый вариант 8">Тестовый вариант 8</option>
-            </optgroup>
-          </select>
+          <p class="paragraph">Публичный отзыв увидят все посетители сайта</p>
+          <div class="textarea">
+            <textarea class="textarea__field textarea__field_autosize" name="public-review" id="public-review"
+              maxlength="2000" placeholder="Публичный отзыв" required style="height: 90px;"></textarea>
+            <label class="textarea__label" for="public-review">Публичный отзыв</label>
+            <button class="btn textarea__btn textarea__btn_type_clear-text"></button>
+            <div class="textarea__counter">
+              <span class="textarea__count-symbols"></span>/<span class="textarea__total-symbols"></span>
+            </div>
         </fieldset>
-        <button type="submit" class="btn btn_style_primary content__btn">Сохранить</button>
+        <fieldset class="fieldset">
+          <p class="paragraph">Если ты не хочешь публиковать негативный отзыв, можешь написать его в этом поле —
+            непубличный отзыв увидит только администрация сайта</p>
+          <div class="textarea">
+            <textarea class="textarea__field textarea__field_autosize" name="private-review" id="private-review"
+              maxlength="2000" placeholder="Непубличный отзыв" required style="height: 90px;"></textarea>
+            <label class="textarea__label" for="private-review">Непубличный отзыв</label>
+            <button class="btn textarea__btn textarea__btn_type_clear-text"></button>
+            <div class="textarea__counter">
+              <span class="textarea__count-symbols"></span>/<span class="textarea__total-symbols"></span>
+            </div>
+        </fieldset>
+        <fieldset class=" fieldset fieldset_style_p-none fieldset_template_grid-form">
+          <button type="submit" class="btn btn_style_primary">Сохранить</button>
+          <button type="reset" class="btn btn_style_secondary btn_position_right">Отмена</button>
+        </fieldset>
       </form>
+      </div>
     </section>
   </main>
   <footer class="footer">
