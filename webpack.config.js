@@ -110,6 +110,11 @@ module.exports = {
       template: './src/settings-profile.html',
       inject: 'body'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'rate_fund-review.html',
+      template: './src/rate_fund-review.html',
+      inject: 'body'
+    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin()
   ]
