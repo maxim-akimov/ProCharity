@@ -110,6 +110,11 @@ module.exports = {
             template: './src/settings-profile.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'lk-fund-hours.html',
+            template: './src/lk-fund-hours.html',
+            inject: 'body'
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin()
     ]
