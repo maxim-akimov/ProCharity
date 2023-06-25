@@ -1,0 +1,9 @@
+.fieldset_style_wrapped {  
+  flex-wrap: nowrap;
+}  
+
+@media screen and (max-width: 900px) {
+  .fieldset_style_wrapped {
+    flex-wrap: wrap;
+  }  
+}

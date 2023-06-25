@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Группа 4">
+  <title>ProCharity - Оценка работы волонтера</title>
+</head>
+<body class="page">
+<header class="header">
+  <div class="header__wrap">
+    <button class="menu-icon" type="button"></button>
+    <a href="https://procharity.ru/">
+      <img src="<%=require('./images/logo.svg')%>" alt="ProCharity" class="main-logo">
+    </a>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li>
+          <a href="#" class="header__menu-link">О проекте</a>
+        </li>
+        <li>
+          <a href="#" class="header__menu-link">Задания</a>
+        </li>
+        <li>
+          <a href="#" class="header__menu-link">Волонтерам</a>
+        </li>
+        <li>
+          <a href="#" class="header__menu-link">Для НКО</a>
+        </li>
+        <li>
+          <a href="#" class="header__menu-link">Бизнесу</a>
+        </li>
+        <li>
+          <a href="#" class="header__menu-link">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="search" type="button"></button>
+    <a href="#" class="account-btn">
+      <div class="account-btn__content account-btn__content_type_lk">
+        <span class="account-btn__text">Личный кабинет</span>
+      </div>
+      <div class="account-btn__avatar"></div>
+    </a>
+  </div>
+</header>
+<main class="main main_template_lk">
+  <nav class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Личный кабинет</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Ваши задания</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Перевод анкет на немецкий</a>
+      </li>
+      <li class="breadcrumbs__item">
+        Оценка работы волонтера
+      </li>
+    </ul>
+  </nav>
+  <section class="sidebar-nav">
+    <ul class="sidebar-nav__list">
+      <li class="sidebar-nav__item">
+        <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_type_current">
+          <span class="sidebar-nav__step-text">1</span>
+        </div>
+        <span class="sidebar-nav__item-text">Оценка</span>
+      </li>
+      <li class="sidebar-nav__item">
+        <div class="sidebar-nav__step">
+          <span class="sidebar-nav__step-text">2</span>
+        </div>
+        <span class="sidebar-nav__item-text">Отзывы</span>
+      </li>
+    </ul>
+    <div class="sidebar-nav__description">
+      <p class="sidebar-nav__description-title">Оценка работы волонтера</p>
+    </div>
+  </section>
+  <section class="content">
+    <h1 class="heading heading_type_title">Оценка</h1>
+    <p class="paragraph">Оцените опыт работы с волонтером по 5-балльной шкале, где 1 — неудовлетворительно, а 5 — отлично. Волонтер не увидит оценку, но она повлияет на его общий рейтинг.</p>
+    <form name="volunteerRate" id="volunteerRate" action="lk-volunteer-review.html" method="get" novalidate>
+      <fieldset class="fieldset fieldset_template_grid-rate" id="rateСriteria">
+        <div class="rate">
+          <div class="rate__wrapper">
+            <h2 class="heading heading_type_subtitle heading_style_rate">Профессионализм</h2>
+            <p class="paragraph paragraph_style_rate">Если вас что-то не устроило в выполненной работе, а волонтер отказался это исправить и не аргументировал свой отказ, поставьте более низкую оценку</p>            
+          </div>
+          <div class="radio-switcher rate__radio-switcher">
+            <input type="radio" class="radio-switcher__input" name="proficiencyRate" id="proficiencyOne" value="1">
+            <label for="proficiencyOne" class="radio-switcher__label rate__radio-label">1</label>
+            <input type="radio" class="radio-switcher__input" name="proficiencyRate" id="proficiencyTwo" value="2">
+            <label for="proficiencyTwo" class="radio-switcher__label rate__radio-label">2</label>
+            <input type="radio" class="radio-switcher__input" name="proficiencyRate" id="proficiencyThree" value="3">
+            <label for="proficiencyThree" class="radio-switcher__label rate__radio-label">3</label>
+            <input type="radio" class="radio-switcher__input" name="proficiencyRate" id="proficiencyFour" value="4">
+            <label for="proficiencyFour" class="radio-switcher__label rate__radio-label">4</label>
+            <input type="radio" class="radio-switcher__input" name="proficiencyRate" id="proficiencyFive" value="5">
+            <label for="proficiencyFive" class="radio-switcher__label rate__radio-label">5</label>
+          </div>
+        </div>
+        <div class="rate">
+          <div class="rate__wrapper">
+            <h2 class="heading heading_type_subtitle heading_style_rate">Инициативность</h2>
+            <p class="paragraph paragraph_style_rate">Если волонтер не выходил за рамки задачи, вы можете снизить оценку</p>            
+          </div>
+          <div class="radio-switcher rate__radio-switcher">
+            <input type="radio" class="radio-switcher__input" name="initiativeRate" id="initiativeOne" value="1">
+            <label for="initiativeOne" class="radio-switcher__label rate__radio-label">1</label>
+            <input type="radio" class="radio-switcher__input" name="initiativeRate" id="initiativeTwo" value="2">
+            <label for="initiativeTwo" class="radio-switcher__label rate__radio-label">2</label>
+            <input type="radio" class="radio-switcher__input" name="initiativeRate" id="initiativeThree" value="3">
+            <label for="initiativeThree" class="radio-switcher__label rate__radio-label">3</label>
+            <input type="radio" class="radio-switcher__input" name="initiativeRate" id="initiativeFour" value="4">
+            <label for="initiativeFour" class="radio-switcher__label rate__radio-label">4</label>
+            <input type="radio" class="radio-switcher__input" name="initiativeRate" id="initiativeFive" value="5">
+            <label for="initiativeFive" class="radio-switcher__label rate__radio-label">5</label>
+          </div>
+        </div>
+        <div class="rate">
+          <div class="rate__wrapper">
+            <h2 class="heading heading_type_subtitle heading_style_rate">Оперативность</h2>
+            <p class="paragraph paragraph_style_rate">Если волонтер не уложился в сроки или долго не отвечал на сообщения, снизьте оценку</p>            
+          </div>
+          <div class="radio-switcher rate__radio-switcher">
+            <input type="radio" class="radio-switcher__input" name="efficiencyRate" id="efficiencyOne" value="1">
+            <label for="efficiencyOne" class="radio-switcher__label rate__radio-label">1</label>
+            <input type="radio" class="radio-switcher__input" name="efficiencyRate" id="efficiencyTwo" value="2">
+            <label for="efficiencyTwo" class="radio-switcher__label rate__radio-label">2</label>
+            <input type="radio" class="radio-switcher__input" name="efficiencyRate" id="efficiencyThree" value="3">
+            <label for="efficiencyThree" class="radio-switcher__label rate__radio-label">3</label>
+            <input type="radio" class="radio-switcher__input" name="efficiencyRate" id="efficiencyFour" value="4">
+            <label for="efficiencyFour" class="radio-switcher__label rate__radio-label">4</label>
+            <input type="radio" class="radio-switcher__input" name="efficiencyRate" id="efficiencyFive" value="5">
+            <label for="efficiencyFive" class="radio-switcher__label rate__radio-label">5</label>
+          </div>
+        </div>
+        <div class="rate">
+          <div class="rate__wrapper">
+            <h2 class="heading heading_type_subtitle heading_style_rate">Вежливость</h2>
+            <p class="paragraph paragraph_style_rate">Насколько волонтер был вежлив и приятен в общении?</p>            
+          </div>
+          <div class="radio-switcher rate__radio-switcher">
+            <input type="radio" class="radio-switcher__input" name="courtesyRate" id="courtesyOne" value="1">
+            <label for="courtesyOne" class="radio-switcher__label rate__radio-label">1</label>
+            <input type="radio" class="radio-switcher__input" name="courtesyRate" id="courtesyTwo" value="2">
+            <label for="courtesyTwo" class="radio-switcher__label rate__radio-label">2</label>
+            <input type="radio" class="radio-switcher__input" name="courtesyRate" id="courtesyThree" value="3">
+            <label for="courtesyThree" class="radio-switcher__label rate__radio-label">3</label>
+            <input type="radio" class="radio-switcher__input" name="courtesyRate" id="courtesyFour" value="4">
+            <label for="courtesyFour" class="radio-switcher__label rate__radio-label">4</label>
+            <input type="radio" class="radio-switcher__input" name="courtesyRate" id="courtesyFive" value="5">
+            <label for="courtesyFive" class="radio-switcher__label rate__radio-label">5</label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="fieldset fieldset__row-group fieldset_style_wrapped">
+        <p class="paragraph">Если вам понравилось работать с волонтером, вы можете добавить его в список «Проверенные волонтеры». Этим волонтерам будут приходить оповещения о ваших новых заданиях по их специализации — так будет больше шансов поработать с ними снова.</p>        
+        <button type="button" class="btn btn_style_dark btn_position_right">Добавить</button>
+      </fieldset>
+      <fieldset class="fieldset fieldset_template_grid-form fieldset_style_p-none">
+        <button type="submit" class="btn btn_style_primary">Оценить</button>
+        <button type="button" class="btn btn_style_secondary btn_position_right">Отмена</button>
+      </fieldset>
+    </form>
+  </section>
+</main>
+<footer class="footer">
+  <nav class="footer__menu">
+    <div class="footer__menu-chapter ">
+      <h2 class="footer__menu-title">
+        <a href="#" class="footer__menu-title-link">О проекте</a>
+      </h2>
+      <ul class="footer__menu-list">
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">О платформе</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Команда</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Новости</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Документы</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Партнеры</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Отзывы</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Контакты</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Пожертвовать в фонды</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__menu-chapter">
+      <h2 class="footer__menu-title">
+        <a href="#" class="footer__menu-title-link">Задания</a>
+      </h2>
+      <ul class="footer__menu-list">
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Ждут исполнителей</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">В работе</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Выполненные</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__menu-chapter">
+      <h2 class="footer__menu-title">
+        <a href="#" class="footer__menu-title-link">Волонтерам</a>
+      </h2>
+      <ul class="footer__menu-list">
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Как помочь</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Задания</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Список НКО</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Бонусы</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Отзывы волонтеров</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Премия ProCharity</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__menu-chapter">
+      <h2 class="footer__menu-title">
+        <a href="#" class="footer__menu-title-link">Фондам</a>
+      </h2>
+      <ul class="footer__menu-list">
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Как получить помощь</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Список волонтеров</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Компании-волонтеры</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Отзывы НКО</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Вебинары</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__menu-chapter">
+      <h2 class="footer__menu-title">
+        <a href="#" class="footer__menu-title-link">Бизнесу</a>
+      </h2>
+      <ul class="footer__menu-list">
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Как помочь</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Список НКО</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">Отзывы НКО</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__menu-chapter">
+      <h2 class="footer__menu-title">
+        <a href="#" class="footer__menu-title-link">FAQ</a>
+      </h2>
+    </div>
+  </nav>
+  <div class="footer__logo-container">
+    <ul class="footer__firms-list">
+      <li class="footer__firms-item">
+        <p class="footer__logo-text">Создатель проекта</p>
+        <a href="#" class="footer__firms-link">
+          <img src="<%=require('./images/logo_fund_frainds.svg')%>" alt="Фонд Друзья" class="footer__logo-img">
+        </a>
+      </li>
+      <li class="footer__firms-item">
+        <p class="footer__logo-text">Генеральный партнер</p>
+        <a href="#" class="footer__firms-link">
+          <img src="<%=require('./images/logo_mastercard.svg')%>" alt="Mastercard" class="footer__logo-img">
+        </a>
+      </li>
+      <li class="footer__firms-item">
+        <a href="#" class="footer__firms-link">
+          <img src="<%=require('./images/pgrants logo gark.svg')%>" alt="Фонд президентских грантов"
+               class="footer__logo-img">
+        </a>
+      </li>
+    </ul>
+    <ul class="footer__social">
+      <li class="footer__social-item">
+        <a href="#" class="footer__social-link">
+          <img src="<%=require('./images/facebook.svg')%>" alt="Facebook" class="footer__social-img">
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a href="#" class="footer__social-link">
+          <img src="<%=require('./images/instagramm.svg')%>" alt="Instagramm-logo" class="footer__logo-img">
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a href="#" class="footer__social-link">
+          <img src="<%=require('./images/vk.svg')%>" alt="Vk" class="footer__logo-img">
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="copy">
+    <p class="copy__text">&copy; 2017-2019 ProCharity</p>
+    <p class="copy__text">
+      <a href="#" class="copy__link">Юридическая информация и защита персональных данных</a>
+    </p>
+    <a href="#" class="buroburo-logo">
+      <img src="<%=require('./images/logo_buroburo.svg')%>" alt="Бюробюро">
+    </a>
+  </div>
+</footer>
+</body>
+</html>
