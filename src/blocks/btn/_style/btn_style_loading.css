@@ -1,0 +1,10 @@
+.btn_style_loading::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../../../images/btn__spinner.svg") no-repeat center;
+    animation: rotation 1s linear infinite;
+    position: absolute;
+    left: 10%;
+}

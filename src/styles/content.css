@@ -125,7 +125,8 @@
 
 @import url(../blocks/heading/_style/heading_style_rate.css);
 
-
+/* Анимации */
+@import url(../blocks/rotation/rotation.css);
 /* Кнопки */
 
 @import url(../blocks/btn/btn.css);
@@ -142,6 +143,7 @@
 @import url(../blocks/btn/_type/btn_type_add.css);
 
 @import url(../blocks/btn/_position/btn_position_right.css);
+@import url(../blocks/btn/_style/btn_style_loading.css);
 
 
 
