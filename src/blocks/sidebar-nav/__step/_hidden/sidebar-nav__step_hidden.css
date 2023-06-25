@@ -1,0 +1,9 @@
+.sidebar-nav__step_hidden {
+    display: none;
+}
+
+@media (max-width: 796px) {
+    .sidebar-nav__step_hidden {
+        display: flex;
+    }
+}

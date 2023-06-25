@@ -3,7 +3,7 @@
   grid-template-rows: repeat(3, minmax(min-content, max-content)) 100%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 796px) {
   .main_template_lk {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, minmax(min-content, max-content)) auto;

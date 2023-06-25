@@ -11,7 +11,7 @@
   border-radius: 4px; /*предыдущие группы не заметили закругление*/
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 796px) {
   .sidebar-nav__list {
     border: none;
     flex-direction: row;
