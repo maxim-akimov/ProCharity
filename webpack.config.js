@@ -4,23 +4,45 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-    entry: {
-        main: "./src/index.js",
-        layout: "./src/layout.js",
-        content: "./src/content.js",
+  entry: {
+    main: './src/index.js',
+    layout: './src/layout.js',
+    content: './src/content.js',
+  },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js',
+    publicPath: '',
+  },
+  mode: 'development',
+  devServer: {
+    static: path.resolve(__dirname, './dist'),
+    open: true,
+    compress: true,
+    port: 8080
+  },
+  module: {
+    rules: [{
+      test: /\.js$/,
+      use: 'babel-loader',
+      exclude: '/node_modules/'
     },
-    output: {
-        path: path.resolve(__dirname, "dist"),
-        filename: "[name].js",
-        publicPath: "",
+    {
+      test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
+      type: 'asset/resource',
     },
-    mode: "development",
-    devServer: {
-        static: path.resolve(__dirname, "./dist"),
-        open: true,
-        compress: true,
-        port: 8080,
+    {
+      test: /\.css$/,
+      use: [MiniCssExtractPlugin.loader, {
+        loader: 'css-loader',
+        options: {
+          importLoaders: 1
+        }
+      },
+        'postcss-loader'
+      ]
     },
+
     module: {
         rules: [
             {
@@ -121,4 +143,5 @@ module.exports = {
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
     ],
+
 
