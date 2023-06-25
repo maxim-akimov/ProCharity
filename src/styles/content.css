@@ -123,9 +123,9 @@
 @import url(../blocks/heading/_type/heading_type_title-desktop.css);
 @import url(../blocks/heading/_type/heading_type_title-mobile.css);
 
+
 /* Анимации */
 @import url(../blocks/rotation/rotation.css);
-
 /* Кнопки */
 
 @import url(../blocks/btn/btn.css);
