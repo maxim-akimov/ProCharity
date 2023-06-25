@@ -128,7 +128,11 @@ module.exports = {
             template: "./src/evaluation-of-volunteer-review.html",
             inject: "body",
         }),
-
+		new HtmlWebpackPlugin({
+            filename: "evaluation-of-the-funds-work-labor-costs.html",
+            template: "./src/evaluation-of-the-funds-work-labor-costs.html",
+            inject: "body",
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
     ],
