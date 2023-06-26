@@ -1,5 +1,11 @@
 .sidebar-nav__volunteer {
-    padding-left: 160px;
-    padding-top: 24px;
-    max-width: 256px;
+  margin-left: auto;
+  padding-top: 24px;
+  min-width: 256px;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar-nav__volunteer {
+    margin: auto;
   }
+}

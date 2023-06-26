@@ -11,6 +11,18 @@
 @import url(../blocks/main/_template/main_template_registration-fullscreen.css);
 @import url(../blocks/main/_template/main_template_registration-form.css);
 @import url(../blocks/main/_template/main_template_first-step.css);
+@import url(../blocks/main/_template/main_template_estimation.css);
+
+@import url(../blocks/main/_estimation/main_estimation.css);
+@import url(../blocks/main/_estimation/_warning/main_estimation_warning.css);
+@import url(../blocks/main/_estimation/_warning/_text/main_estimation_warning_text.css);
+@import url(../blocks/main/_estimation/_warning/_logo/main_estimation_warning_logo.css);
+@import url(../blocks/main/_estimation/_add-volonter/main_estimation_add-volonter.css);
+@import url(../blocks/main/_estimation/_add-volonter/_text/main_estimation_add-volonter_text.css);
+@import url(../blocks/main/_estimation/_choose/main_estimation_choose.css);
+@import url(../blocks/main/_estimation/_choose/_row/main_estimation_choose_row.css);
+@import url(../blocks/main/_estimation/_name/main_estimation_name.css);
+@import url(../blocks/main/_estimation/_text/main_estimation_text.css);
 
 @import url(./../blocks/breadcrumbs/breadcrumbs.css);
 @import url(./../blocks/breadcrumbs/__volunteer/breadcrumbs__volunteer.css);
@@ -42,6 +54,9 @@
 @import url(../blocks/progress-bar/__scale/progress-bar__scale.css);
 
 @import url(../blocks/btn/btn.css);
+
+@import url(../blocks/btn/_field/btn_field.css);
+@import url(../blocks/btn/_field/_add/btn_field_add.css);
 
 @import url(../blocks/btn/_choose-block/btn_choose-block.css);
 
@@ -122,6 +137,7 @@
 @import url(../blocks/btn/_style/btn_style_secondary.css);
 @import url(../blocks/btn/_style/btn_style_inactive.css);
 @import url(../blocks/btn/_style/btn_style_telegram.css);
+@import url(../blocks/btn/_style/btn_style_add.css);
 
 @import url(../blocks/btn/_type/btn_type_close.css);
 @import url(../blocks/btn/_type/btn_type_refresh.css);
@@ -179,6 +195,10 @@
 /* Отображение форм */
 
 @import url(../blocks/radio-switcher/radio-switcher.css);
+
+@import url(../blocks/radio-switcher/_main/radio-switcher_main.css);
+
+@import url(../blocks/radio-switcher/_main/__label/radio-switcher_main__label.css);
 
 @import url(../blocks/radio-switcher/__input/radio-switcher__input.css);
 
@@ -312,6 +332,7 @@
 @import url(./../blocks/paragraph/_style/paragraph_style_first-step.css);
 @import url(./../blocks/paragraph/_style/paragraph_style_desktop.css);
 @import url(./../blocks/paragraph/_style/paragraph_style_mobile.css);
+@import url(./../blocks/paragraph/_style/paragraph_style_estimation.css);
 
 @import url(../blocks/list/list.css);
 @import url(../blocks/list/__item/list__item.css);

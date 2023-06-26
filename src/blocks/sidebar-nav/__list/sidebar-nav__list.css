@@ -8,16 +8,18 @@
   margin: 0;
   padding: 20px;
   width: 100%;
-  border-radius: 4px; /*предыдущие группы не заметили закругление*/
+  border-radius: 4px;
+  /*предыдущие группы не заметили закругление*/
 }
 
 @media screen and (max-width: 796px) {
   .sidebar-nav__list {
-    border: none;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 12px;
     justify-content: space-between;
-    padding: 24px 0 8px 0;
+    padding: auto;
+    margin: auto;
+    border: none;
   }
 }

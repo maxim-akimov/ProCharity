@@ -2,3 +2,9 @@
   padding-left: 160px;
   padding-top: 24px;
 }
+
+@media screen and (max-width: 900px) {
+  .breadcrumbs__volunteer {
+    padding: 0;
+  }
+}

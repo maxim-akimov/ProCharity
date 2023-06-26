@@ -1,0 +1,18 @@
+.main_template_estimation {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 0;
+}
+
+@media screen and (max-width: 1060px) {
+    .main_template_estimation {
+        margin-right: 300px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main_template_estimation {
+        flex-direction: column;
+        margin: 0;
+    }
+}

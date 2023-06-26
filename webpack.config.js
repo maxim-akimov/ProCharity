@@ -4,45 +4,23 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: {
-    main: './src/index.js',
-    layout: './src/layout.js',
-    content: './src/content.js',
-  },
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js',
-    publicPath: '',
-  },
-  mode: 'development',
-  devServer: {
-    static: path.resolve(__dirname, './dist'),
-    open: true,
-    compress: true,
-    port: 8080
-  },
-  module: {
-    rules: [{
-      test: /\.js$/,
-      use: 'babel-loader',
-      exclude: '/node_modules/'
+    entry: {
+        main: "./src/index.js",
+        layout: "./src/layout.js",
+        content: "./src/content.js",
     },
-    {
-      test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
-      type: 'asset/resource',
+    output: {
+        path: path.resolve(__dirname, "dist"),
+        filename: "[name].js",
+        publicPath: "",
     },
-    {
-      test: /\.css$/,
-      use: [MiniCssExtractPlugin.loader, {
-        loader: 'css-loader',
-        options: {
-          importLoaders: 1
-        }
-      },
-        'postcss-loader'
-      ]
+    mode: "development",
+    devServer: {
+        static: path.resolve(__dirname, "./dist"),
+        open: true,
+        compress: true,
+        port: 8080,
     },
-
     module: {
         rules: [
             {
@@ -140,8 +118,38 @@ module.exports = {
             template: "./src/estimation-work-volonter.html",
             inject: "body",
         }),
+        new HtmlWebpackPlugin({
+            filename: "evaluation-of-volunteer-rate.html",
+            template: "./src/evaluation-of-volunteer-rate.html",
+            inject: "body",
+        }),
+        new HtmlWebpackPlugin({
+            filename: "evaluation-of-volunteer-review.html",
+            template: "./src/evaluation-of-volunteer-review.html",
+            inject: "body",
+        }),
+	    new HtmlWebpackPlugin({
+            filename: "evaluation-of-the-funds-work-labor-costs.html",
+            template: "./src/evaluation-of-the-funds-work-labor-costs.html",
+            inject: "body",
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'evaluation-of-the-funds-work-labor-costs.html',
+            template: './src/evaluation-of-the-funds-work-labor-costs.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'evaluation-of-the-funds-work.html',
+            template: './src/evaluation-of-the-funds-work.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'evaluation-of-the-funds-work-reviews.html',
+            template: './src/evaluation-of-the-funds-work-reviews.html',
+            inject: 'body'
+        }),
+
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
     ],
-
-
+};

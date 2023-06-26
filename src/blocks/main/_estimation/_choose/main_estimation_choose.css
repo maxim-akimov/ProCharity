@@ -1,0 +1,12 @@
+.main_estimation_choose {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 900px) {
+    .main_estimation_choose {
+        max-width: 312px;
+        margin: 0 auto;
+    }
+}

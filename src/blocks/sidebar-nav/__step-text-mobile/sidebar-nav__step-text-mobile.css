@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 796px) {
   .sidebar-nav__step-text-mobile {
     display: flex;
     flex-direction: column;
