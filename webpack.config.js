@@ -81,8 +81,28 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+            filename: 'lk-fund-hours.html',
+            template: './src/lk-fund-hours.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
             filename: 'lk-fund-rate.html',
             template: './src/lk-fund-rate.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'lk-fund-review.html',
+            template: './src/lk-fund-review.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'lk-volunteer-rate.html',
+            template: './src/lk-volunteer-rate.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'lk-volunteer-review.html',
+            template: './src/lk-volunteer-review.html',
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
