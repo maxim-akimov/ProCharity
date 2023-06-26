@@ -7,6 +7,6 @@
 @media screen and (max-width: 900px) {
   .sidebar-nav__step_type_checked {
     background-image: none;
-    width: 50%;
+    width: 100%;
   }
 }
