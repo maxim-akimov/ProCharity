@@ -97,18 +97,19 @@
       </div>
     </section>
     <section class='rate-fund-hours'>
-      <h1 class='heading heading_type_title'>Трудозатраты
-      </h1>
+      <h1 class='heading heading_type_title'>Трудозатраты</h1>
       <form class='form-funds-hours'>
         <p class='paragraph'>Примерное время в часах, которое
           ты потратил на выполнение задания. Это твоя личная статиситика,
           фонд ее не увидит.
         </p>
-        <div class="input_field">
-          <p>Время выполнения задания, ч.</p>
-          <input type="text" placeholder="8" class="input__field">
-          <button type="reset" class="btn input__btn input__btn_type_clear-text"></button>
-        </div>
+        <fieldset class="fieldset fieldset_template_hours">
+          <div class="fieldset_style_hours">
+            <legend class="fieldset_style_hours-label">Время выполнения задания, ч.</legend>
+            <input type="text" placeholder="8" class="input__field_type_hours">
+          </div>
+          <button type="reset" class="input__btn input_btn_type_close"></button>
+        </fieldset>
       </form>
       <fieldset class="fieldset fieldset_template_space-between">
         <button type="submit" class="btn btn_style_primary">Далее</button>
