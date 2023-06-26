@@ -434,3 +434,7 @@
 
 /* CropperJS */
 @import url(../vendor/cropperjs.css);
+
+/* Блок информации */
+@import url(../blocks/information/information.css);
+@import url(../blocks/information/__icon/Information__icon.css);
