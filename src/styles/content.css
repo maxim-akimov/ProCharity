@@ -63,6 +63,7 @@
 @import url(../blocks/sidebar-nav/__item/sidebar-nav__item.css);
 @import url(../blocks/sidebar-nav/__item/_type/sidebar-nav__item_type_current.css);
 @import url(../blocks/sidebar-nav/__item/_type/sidebar-nav__item_type_mobile-hidden.css);
+@import url(../blocks/sidebar-nav/__item/_type/sidebar-nav__item_type_disabled.css);
 
 @import url(../blocks/sidebar-nav/__link/sidebar-nav__link.css);
 
