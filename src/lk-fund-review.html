@@ -91,13 +91,13 @@
     </section>
     <section class="content">
       <h1 class="heading heading_type_title">Отзывы</h1>
-      <form action="#">
+      <form name="fundReviewForm" id="fundReviewForm" action="#" method="get" novalidate>
         <fieldset class="fieldset">
           <p class="paragraph">Публичный отзыв увидят все посетители сайта</p>
           <div class="textarea">
-            <textarea class="textarea__field textarea__field_autosize" name="public-review" id="public-review"
+            <textarea class="textarea__field textarea__field_autosize" name="publicReview" id="publicReview"
               maxlength="2000" placeholder="Публичный отзыв" required style="height: 90px;"></textarea>
-            <label class="textarea__label" for="public-review">Публичный отзыв</label>
+            <label class="textarea__label" for="publicReview">Публичный отзыв</label>
             <button class="btn textarea__btn textarea__btn_type_clear-text"></button>
             <div class="textarea__counter">
               <span class="textarea__count-symbols"></span>/<span class="textarea__total-symbols"></span>
@@ -107,9 +107,9 @@
           <p class="paragraph">Если ты не хочешь публиковать негативный отзыв, можешь написать его в этом поле —
             непубличный отзыв увидит только администрация сайта</p>
           <div class="textarea">
-            <textarea class="textarea__field textarea__field_autosize" name="private-review" id="private-review"
+            <textarea class="textarea__field textarea__field_autosize" name="privateReview" id="privateReview"
               maxlength="2000" placeholder="Непубличный отзыв" required style="height: 90px;"></textarea>
-            <label class="textarea__label" for="private-review">Непубличный отзыв</label>
+            <label class="textarea__label" for="privateReview">Непубличный отзыв</label>
             <button class="btn textarea__btn textarea__btn_type_clear-text"></button>
             <div class="textarea__counter">
               <span class="textarea__count-symbols"></span>/<span class="textarea__total-symbols"></span>
