@@ -119,27 +119,38 @@ module.exports = {
             template: "./src/estimation-work-volonter.html",
             inject: "body",
         }),
-
         new HtmlWebpackPlugin({
             filename: "evaluation-of-volunteer-rate.html",
             template: "./src/evaluation-of-volunteer-rate.html",
             inject: "body",
         }),
-
         new HtmlWebpackPlugin({
-            filename: "rate_fund-review.html",
-            template: "./src/rate_fund-review.html",
+            filename: "evaluation-of-volunteer-review.html",
+            template: "./src/evaluation-of-volunteer-review.html",
             inject: "body",
-        }), 
-
-        new HtmlWebpackPlugin({
+        }),
+	    new HtmlWebpackPlugin({
             filename: "evaluation-of-the-funds-work-labor-costs.html",
             template: "./src/evaluation-of-the-funds-work-labor-costs.html",
             inject: "body",
-        }), 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'evaluation-of-the-funds-work-labor-costs.html',
+            template: './src/evaluation-of-the-funds-work-labor-costs.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'evaluation-of-the-funds-work.html',
+            template: './src/evaluation-of-the-funds-work.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'evaluation-of-the-funds-work-reviews.html',
+            template: './src/evaluation-of-the-funds-work-reviews.html',
+            inject: 'body'
+        }),
 
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
-    ]
-}
-
+    ],
+};
