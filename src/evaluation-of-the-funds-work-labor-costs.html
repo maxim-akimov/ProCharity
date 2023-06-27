@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <meta name="author" content="Группа 4">
   <title>ProCharity - Оценка работы фонда</title>
 </head>
+
 <body class="page">
   <header class="header">
     <div class="header__wrap">
@@ -93,6 +95,26 @@
       <div class="sidebar-nav__description">
         <p class="sidebar-nav__description-title">Оценка работы волонтера</p>
       </div>
+    </section>
+    <section class='rate-fund-hours'>
+      <h1 class='heading heading_type_title'>Трудозатраты</h1>
+      <form class='form-funds-hours'>
+        <p class='paragraph'>Примерное время в часах, которое
+          ты потратил на выполнение задания. Это твоя личная статиситика,
+          фонд ее не увидит.
+        </p>
+        <fieldset class="fieldset fieldset_template_hours">
+          <div class="fieldset_style_hours">
+            <legend class="fieldset_style_hours-label">Время выполнения задания, ч.</legend>
+            <input type="text" placeholder="8" class="input__field_type_hours">
+          </div>
+          <button type="reset" class="input__btn input_btn_type_close"></button>
+        </fieldset>
+      </form>
+      <fieldset class="fieldset fieldset_template_space-between">
+        <button type="submit" class="btn btn_style_primary">Далее</button>
+        <button type="button" class="btn btn_style_secondary">Отмена</button>
+      </fieldset>
     </section>
   </main>
   <footer class="footer">
@@ -263,4 +285,5 @@
     </div>
   </footer>
 </body>
+
 </html>

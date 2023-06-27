@@ -4,23 +4,23 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-    entry: {
-        main: "./src/index.js",
-        layout: "./src/layout.js",
-        content: "./src/content.js",
-    },
-    output: {
-        path: path.resolve(__dirname, "dist"),
-        filename: "[name].js",
-        publicPath: "",
-    },
-    mode: "development",
-    devServer: {
-        static: path.resolve(__dirname, "./dist"),
-        open: true,
-        compress: true,
-        port: 8080,
-    },
+  entry: {
+    main: './src/index.js',
+    layout: './src/layout.js',
+    content: './src/content.js',
+  },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js',
+    publicPath: '',
+  },
+  mode: 'development',
+  devServer: {
+    static: path.resolve(__dirname, './dist'),
+    open: true,
+    compress: true,
+    port: 8080
+  },
     module: {
         rules: [
             {
@@ -113,6 +113,7 @@ module.exports = {
             template: "./src/settings-profile.html",
             inject: "body",
         }),
+
         new HtmlWebpackPlugin({
             filename: "estimation-work-volonter.html",
             template: "./src/estimation-work-volonter.html",

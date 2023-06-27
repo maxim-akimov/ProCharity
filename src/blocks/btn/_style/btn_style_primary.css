@@ -26,7 +26,7 @@
   opacity: .6;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 796px) { /* у предыдущих команд была точка перегиба 900px! */
   .btn_style_primary {
     margin: 0 auto;
     max-width: 100%;
