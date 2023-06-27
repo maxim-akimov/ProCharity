@@ -91,13 +91,13 @@
         </section>
         <section class="content">
             <h1 class="heading heading_type_title">Трудозатраты</h1>
-            <form name="competenciesForm" id="competenciesForm" action="lk-fund-rate.html" method="get">
+            <form name="laborCostsForm" id="laborCostsForm" action="lk-fund-rate.html" method="get" novalidate>
                 <p class="paragraph">Приблизительное время в часах, которое ты потратил на выполнение задания. Это
                     твоя личная статистика, фонд ее не увидит.</p>
                 <fieldset class="fieldset fieldset_template_grid-form">
                     <div class="input">
                         <input type="number" class="input__field" name="laborCosts" id="laborCosts"
-                            placeholder="Время выполнения задания, ч." value="0" pattern="^[0-9]+$" required>
+                            placeholder="Время выполнения задания, ч." value="0" required>
                         <label for="laborCosts" class="input__label">Время выполнения задания, ч.</label>
                         <button class="btn input__btn input__btn_type_clear-text"></button>
                         <span class="input__error-message">Ошибка</span>
