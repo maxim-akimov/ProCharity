@@ -10,6 +10,7 @@
 @import url(../blocks/main/_template/main_template_registration-fullscreen.css);
 @import url(../blocks/main/_template/main_template_registration-form.css);
 @import url(../blocks/main/_template/main_template_first-step.css);
+@import url(../blocks/main/_template/main_template_lk-issues.css);
 
 
 
@@ -222,16 +223,15 @@
 @import url(../blocks/fieldset/__row-group/fieldset__row-group.css);
 @import url(../blocks/fieldset/__row-group/_type/fieldset__row-group_type_block.css);
 
-@import url(../blocks/fieldset/_style/fieldset_style_pb-small.css);
-@import url(../blocks/fieldset/_style/fieldset_style_p-none.css);
-@import url(../blocks/fieldset/_style/fieldset_style_wrapped.css);
-
 @import url(../blocks/fieldset/_template/fieldset_template_grid-form.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-project-links.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-one-col.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-social-links.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-rate.css);
 
+@import url(../blocks/fieldset/_style/fieldset_style_pb-small.css);
+@import url(../blocks/fieldset/_style/fieldset_style_p-none.css);
+@import url(../blocks/fieldset/_style/fieldset_style_wrapped.css);
 
 
 /* textarea */
