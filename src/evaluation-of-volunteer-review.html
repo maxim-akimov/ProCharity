@@ -45,7 +45,6 @@
             <span class="account-btn__text">Создать задачу</span>
           </div>
         </a>
-
         <div class="account-btn__avatar">
           <img src="<%=require('./images/btn-avatar.svg')%>" class="account-btn__img" alt="Личный кабинет" />
         </div>
@@ -65,7 +64,6 @@
         </li>
       </ul>
     </nav>
-
     <section class="sidebar-nav">
       <ul class="sidebar-nav__list">
         <li class="sidebar-nav__item">
@@ -73,7 +71,6 @@
             <span class="sidebar-nav__step-text"></span>
           </div>
           <span class="sidebar-nav__item-text">Оценка</span>
-
         </li>
         <li class="sidebar-nav__item">
           <a href="#" class="sidebar-nav__link">
@@ -84,13 +81,46 @@
           </a>
         </li>
       </ul>
-      <div class="sidebar-nav__step-text-mobile">
-        Оценка работы волонтера
+      <div class="sidebar-nav__description">
+        <p class="sidebar-nav__description-title">Оценка работы волонтера</p>
+        <p class="sidebar-nav__description-steps">Шаг 2 из 2</p>
       </div>
     </section>
-
+    <section class="content">
+      <h1 class=" heading heading_type_title">Отзывы</h1>
+      <form name="motivationsForm" id="motivationsForm" action="lk-portfolio.html" method="get">
+        <fieldset class="fieldset">
+          <p class="paragraph">Публичный отзыв увидят все посетители сайта</p>
+          <div class="textarea">
+            <textarea class="textarea__field textarea__field_autosize" name="why-am-i-here" id="why-am-i-here"
+              maxlength="2000" placeholder="Публичный отзыв" required></textarea>
+            <label class="textarea__label" for="why-am-i-here"></label>
+            <button class="btn textarea__btn textarea__btn_type_clear-text"></button>
+            <div class="textarea__counter">
+              <span class="textarea__count-symbols">0</span>/<span class="textarea__total-symbols">0</span>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset">
+          <p class="paragraph">Если вас что-то не устроило в работе по заданию, вы можете оставить непубличный отзыв,
+            который увидит только администрация сайта. Это поможет нам объективно оценить качество работы волонтера.</p>
+          <div class="textarea">
+            <textarea class="textarea__field textarea__field_autosize" name="skills" id="skills" maxlength="2000"
+              required placeholder="Непубличный отзыв"></textarea>
+            <label class="textarea__label" for="skills"></label>
+            <button class="btn textarea__btn textarea__btn_type_clear-text"></button>
+            <div class="textarea__counter">
+              <span class="textarea__count-symbols">0</span>/<span class="textarea__total-symbols">0</span>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset fieldset_template_grid-form fieldset_style_p-none">
+          <button type="submit" class="btn btn_style_primary">Сохранить</button>
+          <button type="button" class="btn btn_style_secondary btn_position_right">Отмена</button>
+        </fieldset>
+      </form>
+    </section>
   </main>
-
   <footer class="footer">
     <nav class="footer__menu">
       <div class="footer__menu-chapter">

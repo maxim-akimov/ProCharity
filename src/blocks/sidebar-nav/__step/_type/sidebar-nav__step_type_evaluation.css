@@ -1,0 +1,8 @@
+.sidebar-nav__step_type_evaluation {
+}
+
+@media screen and (max-width: 796px) {
+  .sidebar-nav__step_type_evaluation {
+    background-color: #F5F6F8;
+  }
+}
