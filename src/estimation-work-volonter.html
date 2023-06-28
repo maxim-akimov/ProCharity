@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="author" content="Группа 4">
-  <title>ProCharity - Оценка работы фонда</title>
+  <meta name="author" content="Группа 24">
+  <title>ProCharity - Оценка работы волонтера - отзывы</title>
 </head>
+
 <body class="page">
   <header class="header">
     <div class="header__wrap">
@@ -45,7 +47,7 @@
       </a>
     </div>
   </header>
-  <main class="main main_template_lk">
+  <main class="main main_template_volunteer">
     <nav class="breadcrumbs">
       <ul class="breadcrumbs__list">
         <li class="breadcrumbs__item">
@@ -64,7 +66,7 @@
     </nav>
     <section class="sidebar-nav">
       <ul class="sidebar-nav__list">
-        <li class="sidebar-nav__item">
+        <!-- <li class="sidebar-nav__item">
           <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_hidden"></div>
         </li>
         <li class="sidebar-nav__item sidebar-nav__item_hidden">
@@ -74,6 +76,12 @@
             </div>
             <span class="sidebar-nav__item-text">Оценка</span>
           </a>
+        </li> -->
+        <li class="sidebar-nav__item">
+          <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_type_selected">
+            <span class="sidebar-nav__step-text"></span>
+          </div>
+          <span class="sidebar-nav__item-text">Оценка</span>
         </li>
         <li class="sidebar-nav__item sidebar-nav__item_type_current">
           <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_type_current">
@@ -83,7 +91,8 @@
         </li>
       </ul>
       <div class="sidebar-nav__description">
-        <p class="sidebar-nav__description-title">Оценка работы волонтера</p>
+        <p class="sidebar-nav__description-title">Оценка работы с волонтером</p>
+        <p class="sidebar-nav__description-steps">Шаг 2 из 2</p>
       </div>
     </section>
     <section class="content">
@@ -93,8 +102,7 @@
           <p class="paragraph">Публичный отзыв увидят все посетители сайта</p>
           <div class="textarea">
             <textarea class="textarea__field textarea__field_autosize" name="why-am-i-here" id="why-am-i-here"
-                      maxlength="2000" placeholder="Публичный отзыв"
-                      required></textarea>
+              maxlength="2000" placeholder="Публичный отзыв" required></textarea>
             <label class="textarea__label" for="why-am-i-here"></label>
             <button class="btn textarea__btn textarea__btn_type_clear-text"></button>
             <div class="textarea__counter">
@@ -103,10 +111,11 @@
           </div>
         </fieldset>
         <fieldset class="fieldset">
-          <p class="paragraph">Если вас что-то не устроило в работе по заданию, вы можете оставить непубличный отзыв, который увидит только администрация сайта. Это поможет нам объективно оценить качество работы волонтера.</p>
+          <p class="paragraph">Если вас что-то не устроило в работе по заданию, вы можете оставить непубличный отзыв,
+            который увидит только администрация сайта. Это поможет нам объективно оценить качество работы волонтера.</p>
           <div class="textarea">
             <textarea class="textarea__field textarea__field_autosize" name="skills" id="skills" maxlength="2000"
-                      required placeholder="Непубличный отзыв"></textarea>
+              required placeholder="Непубличный отзыв"></textarea>
             <label class="textarea__label" for="skills"></label>
             <button class="btn textarea__btn textarea__btn_type_clear-text"></button>
             <div class="textarea__counter">
@@ -289,4 +298,5 @@
     </div>
   </footer>
 </body>
+
 </html>

@@ -1,0 +1,13 @@
+.main_template_fund {
+    grid-template-columns: 256px minmax(min-content, 736px);
+    grid-template-rows: repeat(2, minmax(min-content, max-content)) 100%;
+  }
+  
+  @media screen and (max-width: 796px) {
+    .main_template_fund {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, minmax(min-content, max-content)) auto;
+      padding-bottom: 80px;
+      row-gap: 32px;
+    }
+  }

@@ -8,8 +8,7 @@
   margin: 0;
   padding: 20px;
   width: 100%;
-  border-radius: 4px;
-  /*предыдущие группы не заметили закругление*/
+  border-radius: 4px; /*предыдущие группы не заметили закругление*/
 }
 
 @media screen and (max-width: 796px) {
@@ -21,5 +20,6 @@
     padding: auto;
     margin: auto;
     border: none;
+    padding: 24px 0px 8px 0px;
   }
 }

@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="author" content="Группа 4">
-  <title>ProCharity - Оценка работы фонда</title>
+  <meta name="author" content="Группа 24">
+  <title>ProCharity - Оценка работы фонда - оценка</title>
 </head>
+
 <body class="page">
   <header class="header">
     <div class="header__wrap">
@@ -45,7 +47,7 @@
       </a>
     </div>
   </header>
-  <main class="main main_template_lk">
+  <main class="main main_template_fund">
     <nav class="breadcrumbs">
       <ul class="breadcrumbs__list">
         <li class="breadcrumbs__item">
@@ -64,13 +66,12 @@
     </nav>
     <section class="sidebar-nav">
       <ul class="sidebar-nav__list">
-        <li class="sidebar-nav__item sidebar-nav__item_hidden">
-          <a href="#" class="sidebar-nav__link">
-            <div class="sidebar-nav__step sidebar-nav__step_style_lk">
-              <img src="<%=require('./images/nav-link-check-mark.svg')%>" alt="Галка">
-            </div>
-            <span class="sidebar-nav__item-text">Трудозатраты</span>
-          </a>
+        <li class="sidebar-nav__item"> <!-- sidebar-nav__item_hidden -->
+          <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_type_selected">
+            <span class="sidebar-nav__step-text"></span> <!--<img src="<%=require('./images/nav-link-check-mark.svg')%>" alt="Галка"> -->
+          </div>
+          <span class="sidebar-nav__item-text">Трудозатраты</span>
+
         </li>
         <li class="sidebar-nav__item sidebar-nav__item_type_current">
           <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_type_current">
@@ -79,8 +80,8 @@
           <span class="sidebar-nav__item-text">Оценка</span>
         </li>
         <li class="sidebar-nav__item">
-          <a href="#" class="sidebar-nav__link">
-            <div class="sidebar-nav__step sidebar-nav__item_type_mobile-hidden">
+          <a href="evaluation-of-the-funds-work-reviews.html" class="sidebar-nav__link">
+            <div class="sidebar-nav__step sidebar-nav__step_type_evaluation">  <!--sidebar-nav__item_type_mobile-hidden-->
               <span class="sidebar-nav__step-text">3</span>
             </div>
             <span class="sidebar-nav__item-text">Отзывы</span>
@@ -89,6 +90,7 @@
       </ul>
       <div class="sidebar-nav__description">
         <p class="sidebar-nav__description-title">Оценка работы с фондом</p>
+        <p class="sidebar-nav__description-steps">Шаг 2 из 3</p>
       </div>
     </section>
   </main>
@@ -260,4 +262,5 @@
     </div>
   </footer>
 </body>
+
 </html>

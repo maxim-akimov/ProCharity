@@ -1,0 +1,12 @@
+.content_template_flex-fund-evaluation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+
+@media screen and (max-width: 796px) {
+  .content_template_flex-fund-evaluation {
+    max-width: 100%;
+  }
+}
