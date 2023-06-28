@@ -84,6 +84,8 @@
 @import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_current.css);
 @import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_selected.css);
 @import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_evaluation.css);
+@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_style_grey.css);
+
 
 @import url(../blocks/sidebar-nav/__step-text/sidebar-nav__step-text.css);
 
