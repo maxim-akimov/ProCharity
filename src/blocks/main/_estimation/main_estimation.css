@@ -4,7 +4,7 @@
     padding-top: 24px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 796px) { /*900px*/
     .main_estimation {
        padding: 0;
        margin: 24px auto 0;

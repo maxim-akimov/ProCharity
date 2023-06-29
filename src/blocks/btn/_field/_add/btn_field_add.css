@@ -8,7 +8,7 @@
     min-height: 128px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 796px) { /*900px*/
     .btn_field_add {
         flex-direction: column;
         max-width: 312px;

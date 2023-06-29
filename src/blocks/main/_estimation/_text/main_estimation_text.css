@@ -3,22 +3,23 @@
     font-weight: 400;
     line-height: 24px;
     color: rgba(88, 100, 106, 1);
-    margin-top: 0px;
+    margin: 0;
+    padding-right: 32px;
+    padding-bottom: 20px;
     max-width: 352px;
-    margin-right: 32px;
     height: auto;
-    width: 100%;
+    width: 352px; /*100%;*/
 }
 
-@media screen and (max-width: 1120px) {
+/*@media screen and (max-width: 1120px) {
     .main_estimation_text {
        max-width: 550px;
     }
-}
+}*/
 
 
-@media screen and (max-width: 900px) {
+/*@media screen and (max-width: 796px) {  //900px
     .main_estimation_text {
      margin-top: 24px;
     }
-}
+}*/
