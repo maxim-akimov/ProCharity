@@ -2,7 +2,7 @@
     max-width: 736px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 796px) {
     .main_estimation {
         margin: 24px auto 0;
     }

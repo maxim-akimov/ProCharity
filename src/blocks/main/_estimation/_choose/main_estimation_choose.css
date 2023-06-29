@@ -4,9 +4,9 @@
     margin-top: 24px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 796px) {
     .main_estimation_choose {
-        max-width: 312px;
-        margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
     }
 }

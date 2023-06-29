@@ -7,9 +7,9 @@
 
 @media screen and (max-width: 796px) {
     .btn_field {
-        flex-direction: column;
-        max-width: 312px;
-        margin: 0 auto;
-        height: 128px;
+    flex-direction: column;
+     width: 100%;
+    margin: 0 auto;
+    height: 128px;
     }
 }
