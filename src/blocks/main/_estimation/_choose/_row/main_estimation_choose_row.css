@@ -4,8 +4,9 @@
     width: auto;
 }
 
-@media screen and (max-width: 796px) {
-    .main_estimation_choose_row {
+
+@media screen and (max-width: 796px) { /*900px*/
+.main_estimation_choose_row {
         flex-direction: column;
         margin: 0 auto 20px;
         width: 100%;

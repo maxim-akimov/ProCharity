@@ -3,4 +3,13 @@
     font-weight: 700;
     line-height: 24px;
     color: rgba(88, 100, 106, 1);
+    margin: 0;
+    padding: 0;
+    padding-bottom: 4px;
 }
+
+/* @media screen and (max-width: 796px) { 
+    .main_estimation_name:first-of-type {
+     padding-top: 24px;
+    }
+} */
