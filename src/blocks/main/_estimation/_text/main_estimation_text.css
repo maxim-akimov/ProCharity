@@ -21,5 +21,7 @@
 /*@media screen and (max-width: 796px) {  //900px
     .main_estimation_text {
      margin-top: 24px;
+     width: 100%;
+     margin-right: auto;
     }
 }*/

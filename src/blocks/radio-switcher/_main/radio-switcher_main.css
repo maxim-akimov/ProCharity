@@ -8,9 +8,10 @@
     width: 352px;
   }
 
+
   @media screen and (max-width: 796px) {  /*900*/
     .radio-switcher_main {
-      max-width: 312px;
+     width: 100%;
     }
 }
   
