@@ -13,8 +13,8 @@
 @media screen and (max-width: 1080px) {
   .main_template_volunteer {
     grid-template-columns: max(160px,calc(256*(100vw - 796px)/(1080 - 796))) minmax(min-content, 736px);
-  }
-} 
+  } 
+}  
 
 @media screen and (max-width: 796px) {
   .main_template_volunteer {

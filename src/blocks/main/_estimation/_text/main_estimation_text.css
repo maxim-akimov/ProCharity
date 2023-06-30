@@ -6,15 +6,18 @@
   margin: 0;
   padding-right: 32px;
   padding-bottom: 20px;
-  max-width: 352px;
+  width: 352px;
   height: auto;
   min-width: 352px;
+
+
 }
 
 
  @media screen and (max-width: 1024px) {
   .main_estimation_text {
     padding-right: max(10px, calc(32 * (100vw - 796px) / (1024 - 796)));
+    width: 100%;
   }
 } 
 
