@@ -5,8 +5,8 @@
 
 @media screen and (max-width: 1168px) { /*24+1024+120*/ 
   .main_template_volunteer {
-    padding-right: max(0px, calc((100vw - 1024px) * 120 / (120 + 24)));
-    padding-left: max(0px, calc((100vw - 1024px) * 24 / (120 + 24)));
+    padding-right: max(24px, calc((100vw - 1024px) * 120 / (120 + 24)));
+    /* padding-left: max(0px, calc((100vw - 1024px) * 24 / (120 + 24))); */
   }
 }
 

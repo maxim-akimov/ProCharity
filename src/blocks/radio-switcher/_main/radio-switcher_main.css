@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 /*  margin: 28px 0 auto;*/
-    padding: 0;
+    padding: 0;    
     width: 352px;
   }
 
@@ -17,7 +17,8 @@
 
   @media screen and (max-width: 796px) {  /*900*/
     .radio-switcher_main {
-      width: 312px;
+      width: 100%;
+      min-width: 312px;
 
     }
 }
