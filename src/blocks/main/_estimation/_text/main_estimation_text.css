@@ -8,7 +8,7 @@
   padding-bottom: 20px;
   max-width: 352px;
   height: auto;
-  width: 352px;/*100%;*/
+  min-width: 352px;
 }
 
 
@@ -17,6 +17,14 @@
     padding-right: max(10px, calc(32 * (100vw - 796px) / (1024 - 796)));
   }
 } 
+
+@media screen and (max-width: 796px) {
+  .main_estimation_text {
+    max-width: 100%;
+  }
+} 
+
+
 
 /*@media screen and (max-width: 1120px) {
   .main_estimation_text {
