@@ -2,11 +2,13 @@
     max-width: 736px;
     /* padding-left: 32px; */
     padding-top: 24px;
+
 }
+
 
 @media screen and (max-width: 796px) { /*900px*/
     .main_estimation {
-       padding: 0;
-       margin: 24px auto 0;
+        margin: 24px auto 0;
+        width: 100%;
     }
 }

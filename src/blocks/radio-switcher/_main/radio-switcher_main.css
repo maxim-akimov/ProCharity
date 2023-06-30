@@ -8,6 +8,7 @@
     width: 352px;
   }
 
+
   @media screen and (max-width: 1080px) {  
     .radio-switcher_main {
       width: max(200px, calc(200px + (352 - 200) * (100vw - 796px) / (1080 - 796)));
@@ -17,6 +18,7 @@
   @media screen and (max-width: 796px) {  /*900*/
     .radio-switcher_main {
       width: 312px;
+
     }
 }
   

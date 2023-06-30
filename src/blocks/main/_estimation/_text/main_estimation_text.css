@@ -11,6 +11,7 @@
   width: 352px;/*100%;*/
 }
 
+
  @media screen and (max-width: 1024px) {
   .main_estimation_text {
     padding-right: max(10px, calc(32 * (100vw - 796px) / (1024 - 796)));
@@ -29,3 +30,4 @@
    margin-top: 24px;
   }
 }*/
+
