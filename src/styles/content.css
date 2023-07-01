@@ -9,13 +9,13 @@
 @import url(../blocks/main/_template/main_template_registration-fullscreen.css);
 @import url(../blocks/main/_template/main_template_registration-form.css);
 @import url(../blocks/main/_template/main_template_first-step.css);
-@import url(../blocks/main/_template/main_template_lk-issues.css);
 /* @import url(../blocks/main/_template/main_template_registration-final.css);
 @import url(../blocks/main/_rowgap/main_rowgap_small.css);
 @import url(../blocks/main/_rowgap/main_rowgap_pb-medium.css);
 @import url(../blocks/main/_pb/main_pb_medium.css);
 @import url(../blocks/main/_pb/main_pb_small.css);
 @import url(../blocks/main/_pb/main_pb_xsmall.css); */
+@import url(../blocks/main/_template/main_template_lk-issues.css);
 
 
 /* Хлебные крошки */
@@ -194,18 +194,18 @@
 @import url(../blocks/fieldset/_template/fieldset_template_grid-project-links.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-one-col.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-social-links.css);
-@import url(../blocks/fieldset/_template/fieldset_template_grid-rate.css);
 /* @import url(../blocks/fieldset/_style/fieldset_style_input-column.css); */
+/* @import url(../blocks/fieldset/_pb/fieldset_pb_lmedium.css); */
+/* @import url(../blocks/fieldset/_pb/fieldset_pb_large.css); */
+/* @import url(../blocks/fieldset/_pb/fieldset_pb_xsmall.css); */
+/* @import url(../blocks/fieldset/_pb/fieldset_pb_smaller.css); */
+/* @import url(../blocks/fieldset/_pbm/fieldset_pbm_smedium.css); */
+/* @import url(../blocks/fieldset/_pbm/fieldset_pbm_xsmall.css); */
 @import url(../blocks/fieldset/_style/fieldset_style_pb-small.css);
+/* @import url(../blocks/fieldset/_pbm/fieldset_pbm_small.css); */
+@import url(../blocks/fieldset/_template/fieldset_template_grid-rate.css);
 @import url(../blocks/fieldset/_style/fieldset_style_p-none.css);
 @import url(../blocks/fieldset/_style/fieldset_style_wrapped.css);
-/* @import url(../blocks/fieldset/_pb/fieldset_pb_lmedium.css);
-@import url(../blocks/fieldset/_pb/fieldset_pb_large.css);
-@import url(../blocks/fieldset/_pb/fieldset_pb_xsmall.css);
-@import url(../blocks/fieldset/_pb/fieldset_pb_smaller.css);
-@import url(../blocks/fieldset/_pbm/fieldset_pbm_smedium.css);
-@import url(../blocks/fieldset/_pbm/fieldset_pbm_xsmall.css);
-@import url(../blocks/fieldset/_pbm/fieldset_pbm_small.css); */
 
 
 /* textarea */
@@ -299,13 +299,13 @@
 /* @import url(../blocks/paragraph/_style/paragraph_style_registration-final.css); */
 @import url(../blocks/paragraph/_style/paragraph_style_desktop.css);
 @import url(../blocks/paragraph/_style/paragraph_style_mobile.css);
-@import url(../blocks/paragraph/_style/paragraph_style_rate.css);
-@import url(../blocks/paragraph/_style/paragraph_style_info.css);
 /* @import url(../blocks/paragraph/_style/paragraph_style_slim.css); */
 /* @import url(../blocks/paragraph/_style/paragraph_style_fat.css); */
 /* @import url(../blocks/paragraph/_pb/paragraph_pb_xsmall.css); */
 /* @import url(../blocks/paragraph/_pb/paragraph_pb_medium.css); */
 /* @import url(../blocks/paragraph/_pbm/paragraph_pbm_small.css); */
+@import url(../blocks/paragraph/_style/paragraph_style_rate.css);
+@import url(../blocks/paragraph/_style/paragraph_style_info.css);
 
 
 @import url(../blocks/list/list.css);
@@ -366,6 +366,10 @@
 @import url(../blocks/uploader/__note/uploader__note.css);
 
 
+/* icon-registration-links */
+/* @import url(../blocks/label-icon/label-icon.css); */
+
+
 /* CropperJS */
 @import url(../vendor/cropperjs.css);
 
@@ -373,10 +377,6 @@
 /* Блок информации */
 @import url(../blocks/information/information.css);
 @import url(../blocks/information/__icon/Information__icon.css);
-
-
-/* icon-registration-links */
-/* @import url(../blocks/label-icon/label-icon.css); */
 
 /* table */
 /* @import url(../blocks/table/table.css);
