@@ -1,10 +1,10 @@
 .btn_style_secondary {
-  border: 1px solid #A0ABB5;
   box-sizing: border-box;
   color: #374045;
   max-width: max-content;
-  padding: 18px 30px;
+  padding: 20px 32px;
   width: 100%;
+  border: 1px solid #A0ABB5;
 }
 
 .btn_style_secondary:hover {
@@ -16,13 +16,12 @@
 .btn_style_secondary:focus {
   border: 2px solid #7B878F;
   color: #374045;
-  padding: 17px 29px;
+  padding: 19px 31px;
 }
 
 .btn_style_secondary:active {
   border: solid 1px #CC4D00;
   color: #CC4D00;
-  padding: 18px 30px;
 }
 
 .btn_style_secondary:disabled {
