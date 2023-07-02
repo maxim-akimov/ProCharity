@@ -1,26 +1,26 @@
 // Подключение стилей
-import './styles/layout.css';
-import './styles/content.css';
+import '../styles/layout.css';
+import '../styles/content.css';
 import 'cropperjs/dist/cropper.css'
 
 
 // Подключение компонентов проекта
-import {handleTextareaAutosize} from './components/textarea-autosize';
-import {handleTextareaSymbolCounter} from './components/textarea-symbol-counter';
-import {setFilesRemover} from './components/uploader-file-remover';
-import FieldTextCleaner from './components/FieldTextCleaner';
-import MobileMenu from "./components/MobileMenu";
+import {handleTextareaAutosize} from '../components/textarea-autosize';
+import {handleTextareaSymbolCounter} from '../components/textarea-symbol-counter';
+import {setFilesRemover} from '../components/uploader-file-remover';
+import FieldTextCleaner from '../components/FieldTextCleaner';
+import MobileMenu from "../components/MobileMenu";
 
-import CustomSelect from "./components/CustomSelect";
-import CustomMultiselect from "./components/CustomMultiselect";
-import Popup from './components/Popup';
+import CustomSelect from "../components/CustomSelect";
+import CustomMultiselect from "../components/CustomMultiselect";
+import Popup from '../components/Popup';
 
 
 // Подключение сторонних библиотек
 import 'cropperjs';
 import Cropper from 'cropperjs';
-import PwdViewer from "./components/PwdViewer";
-import Avatar from "./components/Avatar";
+import PwdViewer from "../components/PwdViewer";
+import Avatar from "../components/Avatar";
 
 const avatarContainer = document.querySelector('.avatar__container');
 const image = document.querySelector('.popup__image');
