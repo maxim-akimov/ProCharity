@@ -1,5 +1,5 @@
 .custom-select__field-text {
-  color: #58646A;
+  color: #58646a;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -8,4 +8,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+@media screen and (max-width: 430px) {
+  .custom-select__field-text {
+    max-width: 250px;
+  }
 }
