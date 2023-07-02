@@ -11,13 +11,6 @@
   border-radius: 4px; 
 }
 
-/* @media screen and (max-width: 1024px) {
-  .sidebar-nav__list {
-    padding-left: max(2px, calc(20 * (100vw - 796px) / (1024 - 796)));
-    padding-right: max(2px, calc(20 * (100vw - 796px) / (1024 - 796)));
-  }
-} */
-
 @media screen and (max-width: 796px) {
   .sidebar-nav__list {
     flex-direction: row;
@@ -28,5 +21,6 @@
     margin: auto;
     border: none;
     padding: 24px 0px 8px 0px;
+    min-width: 312px;
   }
 }

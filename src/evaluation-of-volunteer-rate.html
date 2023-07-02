@@ -64,25 +64,22 @@
         </li>
       </ul>
     </nav>
-    <section class="sidebar-nav">
+    <section class="sidebar-nav sidebar-nav__style_evaluation">
       <ul class="sidebar-nav__list">
-
         <li class="sidebar-nav__item">
-            <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_type_current">
-              <span class="sidebar-nav__step-text">1</span>
-            </div>
-            <span class="sidebar-nav__item-text sidebar-nav__item_type_current">Оценка</span>
+          <div class="sidebar-nav__step sidebar-nav__step_style_volunteer sidebar-nav__step_type_current">
+            <span class="sidebar-nav__step-text">1</span>
+          </div>
+          <span class="sidebar-nav__item-text sidebar-nav__item_type_current">Оценка</span>
         </li>
-
         <li class="sidebar-nav__item">
           <a href="evaluation-of-volunteer-review.html" class="sidebar-nav__link">
-            <div class="sidebar-nav__step sidebar-nav__step_style_grey">
+            <div class="sidebar-nav__step sidebar-nav__step_style_volunteer sidebar-nav__step_style_grey">
               <span class="sidebar-nav__step-text">2</span>
             </div>
             <span class="sidebar-nav__item-text">Отзывы</span>
           </a>
         </li>
-
       </ul>
       <div class="sidebar-nav__description">
         <p class="sidebar-nav__description-title">Оценка работы волонтера</p>
@@ -214,8 +211,7 @@
       </div>
 
       <div class="main_estimation_warning">
-        <img src="<%=require('./images/warning.svg')%>" class="main_estimation_warning_logo"
-          alt="Знак предупреждения">
+        <img src="<%=require('./images/warning.svg')%>" class="main_estimation_warning_logo" alt="Знак предупреждения">
         <p class="main_estimation_warning_text">Вы можете попросить волонтера не публиковать результат работы,
           если считаете, что он содержит конфиденциальные данные</p>
 
@@ -224,7 +220,7 @@
         <button type="submit" class="btn btn btn_style_primary">Оценить</button>
         <button type="submit" class="btn btn_style_secondary">Отмена</button>
       </div>
-      </section>
+    </section>
   </main>
   <footer class="footer">
     <nav class="footer__menu">
