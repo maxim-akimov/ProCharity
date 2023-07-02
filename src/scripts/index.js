@@ -1,7 +1,9 @@
+
 // Подключение компонентов проекта
 import {handleTextareaAutosize} from './textarea-autosize';
 import {handleTextareaSymbolCounter} from './textarea-symbol-counter';
 import {setFilesRemover} from './uploader-file-remover';
+
 import FieldTextCleaner from '../components/FieldTextCleaner';
 import MobileMenu from "../components/MobileMenu";
 
@@ -12,6 +14,7 @@ import PopupWithForm from '../components/PopupWithForm';
 import TablePagination from '../components/TablePagination';
 import TableSort from '../components/TableSort';
 import IconAdmin from '../images/Table-key.svg';
+
 
 
 // Подключение сторонних библиотек
@@ -140,6 +143,7 @@ new CustomMultiselect('#npo-activity',{
   useSelectCounter: true,
   isSplash: false
 }).generate();
+
 
 
 // Подключение класса сброса значений полей формы
@@ -709,3 +713,4 @@ if (table) {
     }
   });
 }
+

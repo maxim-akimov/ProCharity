@@ -1,9 +1,9 @@
 .btn_style_primary {
   background: #E65609;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #FFF;
   max-width: max-content;
-  padding: 16px 28px;
+  padding: 20px 32px;
   width: 100%;
   border: solid 2px transparent;
 }
@@ -22,8 +22,13 @@
   background: #AA4000;
 }
 
-.btn_style_primary:disabled {
+.btn_style_primary:disabled,
+.btn_style_primary:disabled:hover,
+.btn_style_primary:disabled:focus,
+.btn_style_primary:disabled:active {
+  background: #E65609;
   opacity: .6;
+  cursor: default;
 }
 
 @media screen and (max-width: 900px) {
