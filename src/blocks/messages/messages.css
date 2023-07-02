@@ -1,7 +1,7 @@
 .messages {
   display: flex;
   position: fixed;
-  right: 64px;
+  right: 24px;
   top: 24px;
   flex-direction: column;
   gap: 12px;
@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 900px) {
   .messages {
-    top: 20px;
+    top: 16px;
     right: 24px;
   }
 }
