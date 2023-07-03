@@ -1,8 +1,6 @@
 .popup_type_message {
   max-width: 352px;
   width: 352px;
-  right: 24px;
-  top: 24px;
 }
 
 .messages .popup_type_message {
@@ -13,8 +11,6 @@
   .popup_type_message {
     max-width: 100%;
     width: 312px;
-    top: 20px;
-    min-height: 128px;
   }
 }
 
