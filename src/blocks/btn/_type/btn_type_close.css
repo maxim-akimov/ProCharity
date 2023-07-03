@@ -1,13 +1,6 @@
 .btn_type_close {
-  background: url(./../../../images/btn-close.svg) no-repeat center center;
-  height: 12px;
-  width: 12px;
-}
-
-.btn_type_close:hover {
-  background: url(./../../../images/btn-close.svg) no-repeat center center;
-}
-
-.btn_type_close:focus {
-  background: url(./../../../images/btn-close.svg) no-repeat center center;
-}
+  background: url(./../../../images/close-delete-icon.svg) no-repeat center center;
+  height: 24px;
+  width: 24px;
+  }
+  

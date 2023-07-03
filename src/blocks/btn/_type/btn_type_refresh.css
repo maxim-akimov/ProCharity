@@ -3,11 +3,3 @@
   height: 24px;
   width: 24px;
 }
-
-.btn_type_refresh:hover {
-  background: url(./../../../images/btn-refresh.svg) no-repeat center center;
-}
-
-.btn_type_refresh:focus {
-  background: url(./../../../images/btn-refresh.svg) no-repeat center center;
-}
