@@ -96,6 +96,26 @@
 @import url(../blocks/btn/_type/btn_type_close.css);
 
 
+/* Попап */
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/popup/_type/popup_type_message.css);
+@import url(../blocks/popup/_type/popup_type_window.css);
+@import url(../blocks/popup/_type/popup_type_window-bottom.css);
+@import url(../blocks/popup/__container/popup__container.css);
+/* @import url(../blocks/popup/__content/popup__content.css); */
+@import url(../blocks/popup/__cropper-container/popup__cropper-container.css);
+@import url(../blocks/popup/__paragraph/popup__paragraph.css);
+@import url(../blocks/popup/__paragraph/_style/popup__paragraph_style_fat.css);
+@import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__title/_type/popup__title_type_error.css);
+@import url(../blocks/popup/__title/_style/popup__title_style_weight.css);
+@import url(../blocks/popup/__title/_icon/popup__title_icon_grey.css);
+@import url(../blocks/popup/__text/popup__text.css);
+@import url(../blocks/popup/__image/popup__image.css);
+@import url(../blocks/popup/__btn-close/popup__btn-close.css);
+
+
 /* Кнопки */
 @import url(../blocks/btn/btn.css);
 @import url(../blocks/btn/_style/btn_style_primary.css);
@@ -115,26 +135,6 @@
 @import url(../blocks/btn/_position/btn_position_mb.css);
 @import url(../blocks/btn/_mb/btn_mb_small.css);
 @import url(../blocks/btn/_style/btn_style_loading.css);
-
-
-/* Попап */
-@import url(../blocks/popup/popup.css);
-@import url(../blocks/popup/_opened/popup_opened.css);
-@import url(../blocks/popup/_type/popup_type_message.css);
-@import url(../blocks/popup/_type/popup_type_window.css);
-@import url(../blocks/popup/_type/popup_type_window-bottom.css);
-@import url(../blocks/popup/__container/popup__container.css);
-/* @import url(../blocks/popup/__content/popup__content.css); */
-@import url(../blocks/popup/__cropper-container/popup__cropper-container.css);
-@import url(../blocks/popup/__paragraph/popup__paragraph.css);
-@import url(../blocks/popup/__paragraph/_style/popup__paragraph_style_fat.css);
-@import url(../blocks/popup/__title/popup__title.css);
-@import url(../blocks/popup/__title/_type/popup__title_type_error.css);
-@import url(../blocks/popup/__title/_style/popup__title_style_weight.css);
-@import url(../blocks/popup/__title/_icon/popup__title_icon_grey.css);
-@import url(../blocks/popup/__text/popup__text.css);
-@import url(../blocks/popup/__image/popup__image.css);
-@import url(../blocks/popup/__btn-close/popup__btn-close.css);
 
 
 /* Пользовательское отображение select */
