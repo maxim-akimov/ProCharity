@@ -142,7 +142,7 @@
 @import url(../blocks/custom-select/__wrap/custom-select__wrap.css);
 @import url(../blocks/custom-select/__wrap/_style/custom-select__wrap_style_multiselect.css);
 @import url(../blocks/custom-select/__list-container/custom-select__list-container.css);
-@import url(../blocks/custom-select/__list-container/_opened/custom-select__list-container__opened.css);
+@import url(../blocks/custom-select/__list-container/_opened/custom-select__list-container_opened.css);
 @import url(../blocks/custom-select/__list/custom-select__list.css);
 @import url(../blocks/custom-select/__list/_type/custom-select__list_type_multiselect.css);
 @import url(../blocks/custom-select/__list/_type/custom-select__list_type_multiselect-full.css);
@@ -150,14 +150,14 @@
 @import url(../blocks/custom-select/__heading/custom-select__heading.css);
 @import url(../blocks/custom-select/__item/custom-select__item.css);
 @import url(../blocks/custom-select/__item/_selected/custom-select__item_selected.css);
-@import url(../blocks/custom-select/__item/_selected-checkbox/custom-select__item_selected-checkbox.css);
+/* @import url(../blocks/custom-select/__item/_selected-checkbox/custom-select__item_selected-checkbox.css); */
 @import url(../blocks/custom-select/__item/_style/custom-select__item_style_checkbox.css);
 @import url(../blocks/custom-select/__item/_style/custom-select__item_style_checked.css);
 @import url(../blocks/custom-select/__item/_style/custom-select__item_style_parent.css);
 @import url(../blocks/custom-select/__item/_style/custom-select__item_style_parent-opened.css);
 @import url(../blocks/custom-select/__field/custom-select__field.css);
 @import url(../blocks/custom-select/__field/_style/custom-select__field_style_multiselect.css);
-@import url(../blocks/custom-select/__field/_style/custom-select_style_simple.css);
+@import url(../blocks/custom-select/custom-select_style_simple.css);
 @import url(../blocks/custom-select/__field/_disabled/custom-select__field_disabled.css);
 @import url(../blocks/custom-select/__field-text/custom-select__field-text.css);
 @import url(../blocks/custom-select/__input/custom-select__input.css);
@@ -228,7 +228,7 @@
 @import url(../blocks/input-group/input-group.css);
 @import url(../blocks/input-group/_type/input-group_type_column.css);
 @import url(../blocks/input/input.css);
-@import url(../blocks/input/_type/_error/input_type_error.css);
+@import url(../blocks/input/_type/input_type_error.css);
 @import url(../blocks/input/_type/input_type_make-sort.css);
 @import url(../blocks/input/_type/input_type_desk-none.css);
 @import url(../blocks/input/__field/input__field.css);
