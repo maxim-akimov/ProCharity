@@ -4,15 +4,16 @@
 }
 
 .custom-select__item_style_checkbox:hover {
-  background: url(../../../../images/checkbox-hover.svg) no-repeat 12px center #f5f6f8;
+  background: url(../../../../images/checkbox-hover.svg) no-repeat 12px center
+    #f5f6f8;
 }
 
 @media screen and (max-width: 900px) {
-  .custom-select__item_style_checkbox {
+  .custom-select__list-container.splash .custom-select__item_style_checkbox {
     background: none;
-    border: solid 1px #C7D0DA;
+    border: solid 1px #c7d0da;
     border-radius: 20px;
-    color: #58646A;
+    color: #58646a;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
@@ -20,7 +21,8 @@
     width: fit-content;
   }
 
-  .custom-select__item_style_checkbox:hover {
+  .custom-select__list-container.splash
+    .custom-select__item_style_checkbox:hover {
     background: none;
   }
 }

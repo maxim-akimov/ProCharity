@@ -1,9 +1,10 @@
 .custom-select__field {
-  background: url(../../../images/arrow.svg) no-repeat right 22px top 22px, #F1F5F9;
+  background: url(../../../images/arrow.svg) no-repeat right 22px top 22px,
+    #f1f5f9;
   border: none;
   border-radius: 6px;
   box-sizing: border-box;
-  color: #7B878F;
+  color: #7b878f;
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -11,8 +12,13 @@
   gap: 8px;
   margin: 0;
   min-height: 48px;
-  padding: 12px 56px 12px 16px;
+  padding: 12px 40px 12px 16px;
   position: relative;
   width: 100%;
 }
 
+@media screen and (max-width: 359px) {
+  .custom-select__field {
+    padding-right: 30px;
+  }
+}

@@ -1,5 +1,6 @@
 @media screen and (max-width: 900px) {
   .custom-select__item_style_parent-opened {
-    background: url(../../../../images/arrow-top.svg) no-repeat right 14px top 14px;
+    background: url(../../../../images/arrow-top.svg) no-repeat right 14px top
+      14px;
   }
 }

@@ -1,5 +1,5 @@
 .custom-select__list {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 24px rgba(0, 77, 95, 0.24);
   height: max-content;
@@ -10,17 +10,19 @@
 }
 
 @media screen and (max-width: 900px) {
-  .custom-select__list {
+  .custom-select__list-container.splash .custom-select__list {
     background: none;
     border-radius: 0;
     box-shadow: none;
-    color: #A0ABB5;
+    color: #a0abb5;
     font-family: HelveticaNeueCyr, Helvetica, Arial, sans-serif;
     max-width: 100%;
     padding: 48px 24px 16px 24px;
   }
 
-  .custom-select__item .custom-select__list {
+  .custom-select__list-container.splash
+    .custom-select__item
+    .custom-select__list {
     display: flex;
     flex-direction: column;
     gap: 8px;
