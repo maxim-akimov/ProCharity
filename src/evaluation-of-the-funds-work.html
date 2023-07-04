@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Группа 24">
+  <title>ProCharity - Оценка работы фонда - Оценка</title>
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="header__wrap">
+      <button class="menu-icon" type="button"></button>
+      <a href="https://procharity.ru/">
+        <img src="<%=require('./images/logo.svg')%>" alt="ProCharity" class="main-logo">
+      </a>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li>
+            <a href="#" class="header__menu-link">О проекте</a>
+          </li>
+          <li>
+            <a href="#" class="header__menu-link">Задания</a>
+          </li>
+          <li>
+            <a href="#" class="header__menu-link">Волонтерам</a>
+          </li>
+          <li>
+            <a href="#" class="header__menu-link">Для НКО</a>
+          </li>
+          <li>
+            <a href="#" class="header__menu-link">Бизнесу</a>
+          </li>
+          <li>
+            <a href="#" class="header__menu-link">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="search" type="button"></button>
+      <a href="#" class="account-btn">
+        <div class="account-btn__content account-btn__content_type_lk">
+          <span class="account-btn__text">Личный кабинет</span>
+        </div>
+        <div class="account-btn__avatar"></div>
+      </a>
+    </div>
+  </header>
+  <main class="main main_template_fund">
+    <nav class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Личный кабинет</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Мои задания</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Перевод анкет на немецкий</a>
+        </li>
+        <li class="breadcrumbs__item">
+          Оценка работы с фондом
+        </li>
+      </ul>
+    </nav>
+    <section class="sidebar-nav sidebar-nav__style_evaluation">
+      <ul class="sidebar-nav__list">
+        <li class="sidebar-nav__item">
+          <a href="evaluation-of-the-funds-work-labor-costs.html" class="sidebar-nav__link">
+            <div class="sidebar-nav__step sidebar-nav__step_style_fund sidebar-nav__step_type_selected">
+              <span class="sidebar-nav__step-text"></span>
+            </div>
+            <span class="sidebar-nav__item-text">Трудозатраты</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item sidebar-nav__item_type_current">
+          <div class="sidebar-nav__step sidebar-nav__step_style_fund sidebar-nav__step_type_current">
+            <span class="sidebar-nav__step-text">2</span>
+          </div>
+          <span class="sidebar-nav__item-text">Оценка</span>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="evaluation-of-the-funds-work-reviews.html" class="sidebar-nav__link">
+            <div class="sidebar-nav__step sidebar-nav__step_style_fund sidebar-nav__step_type_evaluation">
+              <span class="sidebar-nav__step-text">3</span>
+            </div>
+            <span class="sidebar-nav__item-text">Отзывы</span>
+          </a>
+        </li>
+      </ul>
+      <div class="sidebar-nav__description">
+        <p class="sidebar-nav__description-title">Оценка работы с фондом</p>
+        <p class="sidebar-nav__description-steps">Шаг 2 из 3</p>
+      </div>
+    </section>
+    <section class="main_estimation">
+      <h1 class="heading heading_type_title">Оценка</h1>
+      <form name="estimationForm" id="estimationForm" action="evaluation-of-volunteer-review.html" method="get">
+      <legend class="paragraph paragraph_style_estimation">Оцени опыт работы с фондом по 5-балльной шкале, где 1 — неудовлетворительно,  а 5 — отлично. Фонд не увидит твою оценку, но она повлияет на его общий рейтинг.
+      </legend>
+      <div class="main_estimation_choose">
+        <h2 class="main_estimation_name">Четкость ТЗ</h2>
+        <div class="main_estimation_choose_row">
+          <p class="main_estimation_text">Если фонд не предоставил достаточно информации для качественного выполнения задания, поставь более низкую оценку</p>
+          <div class="radio-switcher_main">
+            <input type="radio" class="radio-switcher__input" name="professionalism" id="1" value="1">
+            <label for="1" class="radio-switcher__label">
+              1
+            </label>
+            <input type="radio" class="radio-switcher__input" name="professionalism" id="2" value="2">
+            <label for="2" class="radio-switcher__label">
+              2
+            </label>
+            <input type="radio" class="radio-switcher__input" name="professionalism" id="3" value="3">
+            <label for="3" class="radio-switcher_main__label">
+              3
+            </label>
+            <input type="radio" class="radio-switcher__input" name="professionalism" id="4" value="4">
+            <label for="4" class="radio-switcher_main__label">
+              4
+            </label>
+            <input type="radio" class="radio-switcher__input" name="professionalism" id="5" value="5">
+            <label for="5" class="radio-switcher_main__label">
+              5
+            </label>
+          </div>
+        </div>
+      </div>
+      <h2 class="main_estimation_name">Оперативность</h2>
+      <div class="main_estimation_choose_row">
+        <p class="main_estimation_text">Если представитель фонда долго не отвечал на сообщения, поставь более низкую оценку</p>
+        <div class="radio-switcher_main">
+          <input type="radio" class="radio-switcher__input" name="initiative" id="6" value="1">
+          <label for="6" class="radio-switcher__label">
+            1
+          </label>
+          <input type="radio" class="radio-switcher__input" name="initiative" id="7" value="2">
+          <label for="7" class="radio-switcher__label">
+            2
+          </label>
+          <input type="radio" class="radio-switcher__input" name="initiative" id="8" value="3">
+          <label for="8" class="radio-switcher_main__label">
+            3
+          </label>
+          <input type="radio" class="radio-switcher__input" name="initiative" id="9" value="4">
+          <label for="9" class="radio-switcher_main__label">
+            4
+          </label>
+          <input type="radio" class="radio-switcher__input" name="initiative" id="10" value="5">
+          <label for="10" class="radio-switcher_main__label">
+            5
+          </label>
+        </div>
+      </div>
+      <h2 class="main_estimation_name">Вежливость</h2>
+      <div class="main_estimation_choose_row">
+        <p class="main_estimation_text">Насколько представитель фонда был вежлив и приятен в общении?</p>
+        <div class="radio-switcher_main">
+          <input type="radio" class="radio-switcher__input" name="efficiency" id="11" value="1">
+          <label for="11" class="radio-switcher__label">
+            1
+          </label>
+          <input type="radio" class="radio-switcher__input" name="efficiency" id="12" value="2">
+          <label for="12" class="radio-switcher__label">
+            2
+          </label>
+          <input type="radio" class="radio-switcher__input" name="efficiency" id="13" value="3">
+          <label for="13" class="radio-switcher_main__label">
+            3
+          </label>
+          <input type="radio" class="radio-switcher__input" name="efficiency" id="14" value="4">
+          <label for="14" class="radio-switcher_main__label">
+            4
+          </label>
+          <input type="radio" class="radio-switcher__input" name="efficiency" id="15" value="5">
+          <label for="15" class="radio-switcher_main__label">
+            5
+          </label>
+        </div>
+      </div>
+      <h2 class="main_estimation_name">Соблюдение договоренностей</h2>
+      <div class="main_estimation_choose_row">
+        <p class="main_estimation_text">Если фонд предлагал выполнить дополнительную работу, поставь более низкую оценку</p>
+        <div class="radio-switcher_main">
+          <input type="radio" class="radio-switcher__input" name="polite" id="16" value="1">
+          <label for="16" class="radio-switcher__label">
+            1
+          </label>
+          <input type="radio" class="radio-switcher__input" name="polite" id="17" value="2">
+          <label for="17" class="radio-switcher__label">
+            2
+          </label>
+          <input type="radio" class="radio-switcher__input" name="polite" id="18" value="3">
+          <label for="18" class="radio-switcher_main__label">
+            3
+          </label>
+          <input type="radio" class="radio-switcher__input" name="polite" id="19" value="4">
+          <label for="19" class="radio-switcher_main__label">
+            4
+          </label>
+          <input type="radio" class="radio-switcher__input" name="polite" id="20" value="5">
+          <label for="20" class="radio-switcher_main__label">
+            5
+          </label>
+        </div>
+      </div>
+      <div class="btn_field_add"></div>
+      <div class="btn_field">
+        <button type="submit" class="btn btn btn_style_primary">Оценить</button>
+        <button type="submit" class="btn btn_style_secondary">Отмена</button>
+      </div>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <nav class="footer__menu">
+      <div class="footer__menu-chapter ">
+        <h2 class="footer__menu-title">
+          <a href="#" class="footer__menu-title-link">О проекте</a>
+        </h2>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">О платформе</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Команда</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Новости</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Документы</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Партнеры</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Отзывы</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Контакты</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Пожертвовать в фонды</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu-chapter">
+        <h2 class="footer__menu-title">
+          <a href="#" class="footer__menu-title-link">Задания</a>
+        </h2>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Ждут исполнителей</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">В работе</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Выполненные</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu-chapter">
+        <h2 class="footer__menu-title">
+          <a href="#" class="footer__menu-title-link">Волонтерам</a>
+        </h2>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Как помочь</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Задания</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Список НКО</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Бонусы</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Отзывы волонтеров</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Премия ProCharity</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu-chapter">
+        <h2 class="footer__menu-title">
+          <a href="#" class="footer__menu-title-link">Фондам</a>
+        </h2>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Как получить помощь</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Список волонтеров</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Компании-волонтеры</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Отзывы НКО</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Вебинары</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu-chapter">
+        <h2 class="footer__menu-title">
+          <a href="#" class="footer__menu-title-link">Бизнесу</a>
+        </h2>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Как помочь</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Список НКО</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Отзывы НКО</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu-chapter">
+        <h2 class="footer__menu-title">
+          <a href="#" class="footer__menu-title-link">FAQ</a>
+        </h2>
+      </div>
+    </nav>
+    <div class="footer__logo-container">
+      <ul class="footer__firms-list">
+        <li class="footer__firms-item">
+          <p class="footer__logo-text">Создатель проекта</p>
+          <a href="#" class="footer__firms-link">
+            <img src="<%=require('./images/logo_fund_frainds.svg')%>" alt="Фонд Друзья" class="footer__logo-img">
+          </a>
+        </li>
+        <li class="footer__firms-item">
+          <p class="footer__logo-text">Генеральный партнер</p>
+          <a href="#" class="footer__firms-link">
+            <img src="<%=require('./images/logo_mastercard.svg')%>" alt="Mastercard" class="footer__logo-img">
+          </a>
+        </li>
+        <li class="footer__firms-item">
+          <a href="#" class="footer__firms-link">
+            <img src="<%=require('./images/pgrants logo gark.svg')%>" alt="Фонд президентских грантов"
+              class="footer__logo-img">
+          </a>
+        </li>
+      </ul>
+      <ul class="footer__social">
+        <li>
+          <a href="#">
+            <img src="<%=require('./images/facebook.svg')%>" alt="Facebook" class="footer__social-img">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="<%=require('./images/instagramm.svg')%>" alt="Instagramm-logo" class="footer__logo-img">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="<%=require('./images/vk.svg')%>" alt="Vk" class="footer__logo-img">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="copy">
+      <p class="copy__text">&copy; 2017-2019 ProCharity</p>
+      <p class="copy__text">
+        <a href="#" class="copy__link">Юридическая информация и защита персональных данных</a>
+      </p>
+      <a href="#" class="buroburo-logo">
+        <img src="<%=require('./images/logo_buroburo.svg')%>" alt="Бюробюро">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>

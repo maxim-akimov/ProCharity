@@ -23,7 +23,7 @@
   z-index: 1;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 796px) {
   .main_template_first-step {
     grid-template-columns: 100%;
     padding-bottom: 268px;

@@ -1,0 +1,43 @@
+.main_estimation_text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(88, 100, 106, 1);
+  margin: 0;
+  padding-right: 32px;
+  padding-bottom: 20px;
+  height: auto;
+  max-width: 352px;
+
+
+}
+
+
+ @media screen and (max-width: 1024px) {
+  .main_estimation_text {
+    padding-right: max(10px, calc(32 * (100vw - 796px) / (1024 - 796)));
+    width: 100%;
+  }
+} 
+
+@media screen and (max-width: 796px) {
+  .main_estimation_text {
+    max-width: 100%;
+  }
+} 
+
+
+
+/*@media screen and (max-width: 1120px) {
+  .main_estimation_text {
+    max-width: 550px;
+  }
+}*/
+
+
+/*@media screen and (max-width: 796px) {  //900px
+  .main_estimation_text {
+   margin-top: 24px;
+  }
+}*/
+

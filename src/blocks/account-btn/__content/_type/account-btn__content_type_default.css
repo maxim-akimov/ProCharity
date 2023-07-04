@@ -4,7 +4,7 @@
   min-height: 48px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 796px) {
   .account-btn__content_type_default {
     background: url(../../../../images/add.svg) no-repeat center center, #E6560A;
     height: 32px;

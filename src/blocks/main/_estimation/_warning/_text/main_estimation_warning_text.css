@@ -1,0 +1,12 @@
+.main_estimation_warning_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(88, 100, 106, 1);
+}
+
+@media screen and (max-width: 796px) { /*900px*/
+    .main_estimation_warning_text {
+        margin-right: 16px;
+    }
+}

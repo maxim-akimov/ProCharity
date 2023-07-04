@@ -7,12 +7,19 @@
   white-space: nowrap;
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 1024px) {
+  .sidebar-nav__item {
+    gap: max(0px, calc(12 * (100vw - 796px) / (1024 - 796)));
+  }
+} */
+
+@media screen and (max-width: 796px) {
   .sidebar-nav__item {
     background-color: #F5F6F8;
     border-radius: 4px;
     height: 8px;
     overflow: hidden;
     width: 100%;
+    /* gap: 12px; */
   }
 }

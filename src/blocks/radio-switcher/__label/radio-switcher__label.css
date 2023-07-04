@@ -46,21 +46,4 @@
   opacity: .6;
 }
 
-@media screen and (max-width: 900px) {
-  .radio-switcher__label:first-of-type {
-    border: solid 1px #048AA7;
-    border-radius: 6px 6px 0 0;
-    margin: 0;
-  }
 
-  .radio-switcher__label:last-of-type {
-    border: solid 1px #048AA7;
-    border-radius: 0 0 6px 6px;
-    border-top-color: transparent;
-    margin: -1px 0 0 0;
-  }
-
-  .radio-switcher__input:first-of-type:checked + .radio-switcher__label {
-    border-bottom-color: #048AA7;
-  }
-}

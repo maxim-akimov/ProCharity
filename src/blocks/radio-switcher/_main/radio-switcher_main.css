@@ -1,0 +1,25 @@
+.radio-switcher_main {
+    align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+/*  margin: 28px 0 auto;*/
+    padding: 0;    
+    width: 352px;
+  }
+
+
+  @media screen and (max-width: 1080px) {  
+    .radio-switcher_main {
+      width: max(200px, calc(200px + (352 - 200) * (100vw - 796px) / (1080 - 796)));
+  }
+}
+
+  @media screen and (max-width: 796px) {  /*900*/
+    .radio-switcher_main {
+      width: 100%;
+      min-width: 312px;
+
+    }
+}
+  

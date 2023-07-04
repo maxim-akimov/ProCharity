@@ -1,0 +1,15 @@
+.main_estimation_warning {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid;
+    border-color: rgba(220, 220, 220, .5);
+    margin: 32px 0;
+}
+
+
+@media screen and (max-width: 796px) { 
+.main_estimation_warning {
+       width: 100%;
+    }
+}

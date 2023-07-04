@@ -1,0 +1,12 @@
+.sidebar-nav__step_type_selected{
+  background-image: url(../../../../images/step-selected.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+ 
+@media screen and (max-width: 796px) {
+  .sidebar-nav__step_type_selected {
+    background-image: none;
+    width: 100%;
+  }
+} 

@@ -1,0 +1,48 @@
+.radio-switcher_main__label {
+  background: #FFFFFF;
+  border: 1px solid #048AA7;
+  border-left: none;
+  color: #048AA7;
+  cursor: pointer;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 16px;
+  margin: 0;
+  padding: 16px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.radio-switcher_main__label:hover {
+  opacity: .7;
+}
+
+.radio-switcher_main__label:first-of-type {
+  border-radius: 6px 0 0 6px;
+  margin: 0 -1px 0 0;
+}
+
+.radio-switcher_main__label:last-of-type {
+  border-radius: 0 6px 6px 0;
+}
+
+.radio-switcher__input:checked+.radio-switcher_main__label {
+  background-color: #72D0DC;
+  border-color: #72D0DC;
+  color: #fff;
+}
+
+.radio-switcher__input:checked+.radio-switcher_main__label:hover {
+  background-color: #048AA7;
+  border-color: #048AA7;
+}
+
+.radio-switcher__input:last-of-type:checked+.radio-switcher_main__label {
+  border-left-color: #048AA7;
+}
+
+.radio-switcher__input:disabled+.radio-switcher_main__label {
+  opacity: .6;
+}

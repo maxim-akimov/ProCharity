@@ -1,0 +1,6 @@
+.input_btn_type_close {
+    background: url(../../../../images/icon-close.svg) no-repeat center center;
+    height: 24px;
+    width: 24px;
+    display: flex;
+  }
