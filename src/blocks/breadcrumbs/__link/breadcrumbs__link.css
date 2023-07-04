@@ -1,5 +1,13 @@
 .breadcrumbs__link {
   color: #048AA7;
+
+  text-underline-position: under;
+}
+
+.breadcrumbs__link:hover {
+  text-decoration: none;
+}
+
   text-decoration: none;
   border-bottom: 1px solid #048AA7;
 }
