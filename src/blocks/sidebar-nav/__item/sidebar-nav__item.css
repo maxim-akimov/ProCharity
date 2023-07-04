@@ -13,7 +13,7 @@
   }
 } */
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 900px) {
   .sidebar-nav__item {
     background-color: #F5F6F8;
     border-radius: 4px;

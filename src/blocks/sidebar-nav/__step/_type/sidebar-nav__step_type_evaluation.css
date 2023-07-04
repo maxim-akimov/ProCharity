@@ -3,7 +3,7 @@
   color: #7B878F;
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 900px) {
   .sidebar-nav__step_type_evaluation {
     background-color: #F1F5F9;
   }

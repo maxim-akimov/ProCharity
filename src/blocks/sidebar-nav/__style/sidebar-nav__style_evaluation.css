@@ -1,8 +1,5 @@
-.sidebar-nav__style_evaluation {
-}
-
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 900px) {
   .sidebar-nav__style_evaluation {
-    min-width: 312px;
+   width: 100%;
   }
 }

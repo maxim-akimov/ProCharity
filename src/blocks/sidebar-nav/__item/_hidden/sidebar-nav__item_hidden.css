@@ -2,7 +2,7 @@
     display: flex;
 }
 
-@media (max-width: 796px) {
+@media (max-width: 900px) {
     .sidebar-nav__item_hidden {
         display: none;
     }

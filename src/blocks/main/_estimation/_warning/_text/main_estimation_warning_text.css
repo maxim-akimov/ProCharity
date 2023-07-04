@@ -5,7 +5,7 @@
     color: rgba(88, 100, 106, 1);
 }
 
-@media screen and (max-width: 796px) { /*900px*/
+@media screen and (max-width: 900px) { 
     .main_estimation_warning_text {
         margin-right: 16px;
     }

@@ -11,7 +11,7 @@
   opacity: .7;
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 900px) {
   .account-btn {
     height: 32px;
     justify-self: right;

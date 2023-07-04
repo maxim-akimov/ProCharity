@@ -2,7 +2,7 @@
 
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 900px) {
   .sidebar-nav__item-text {
     display: none;
   }
