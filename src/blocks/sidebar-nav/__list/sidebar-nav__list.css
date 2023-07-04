@@ -11,7 +11,7 @@
   border-radius: 4px; 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 796px) {
   .sidebar-nav__list {
     flex-direction: row;
     flex-wrap: nowrap;

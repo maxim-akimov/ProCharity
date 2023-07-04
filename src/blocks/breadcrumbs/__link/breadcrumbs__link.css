@@ -8,10 +8,6 @@
   text-decoration: none;
 }
 
-  text-decoration: none;
-  border-bottom: 1px solid #048AA7;
-}
-
 .breadcrumbs__link:after {
   content: '/';
   color: #7B878F;
