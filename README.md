@@ -36,11 +36,8 @@
 
 ## Ссылка на бриф
 
-### Предыдущий этап
-[Ссылка на бриф](https://www.notion.so/Procharity-21-f24c880905844ce883efd18a0f39472d)
-
-### Текущий этап
-[Ссылка на бриф](https://www.notion.so/24-Procharity-45432341847c475a892af32ef2a4c217)
+[Ссылка на бриф предыдущего этапа](https://www.notion.so/Procharity-21-f24c880905844ce883efd18a0f39472d)
+[Ссылка на бриф текущего этапа](https://www.notion.so/24-Procharity-45432341847c475a892af32ef2a4c217)
 
 ## Примечания для интеграции
 
