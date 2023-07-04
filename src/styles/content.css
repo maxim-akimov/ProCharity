@@ -262,6 +262,7 @@
 @import url(../blocks/avatar/avatar.css);
 @import url(../blocks/avatar/_location/_preview/avatar_location_preview.css);
 @import url(../blocks/avatar/__container/avatar__container.css);
+@import url(../blocks/avatar/__container/avatar__container_filled.css);
 @import url(../blocks/avatar/__input/avatar__input.css);
 @import url(../blocks/avatar/__label/avatar__label.css);
 @import url(../blocks/avatar/__img/avatar__img.css);
