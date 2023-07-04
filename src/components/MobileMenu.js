@@ -26,6 +26,8 @@ export default class MobileMenu {
 
 
   setEventListeners() {
-    this._menuBtnElement.addEventListener('mousedown', this._handleClick);
+    if (this._menuBtnElement) {
+      this._menuBtnElement.addEventListener('mousedown', this._handleClick);
+    }
   }
 }
