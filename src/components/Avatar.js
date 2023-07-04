@@ -16,6 +16,7 @@ export default class Avatar {
     },
     options = {
       avatarContainerSelector: '.avatar__container',
+      containerFilledClass: 'avatar__container_filled',
       fileInputSelector: '.avatar__input',
       imgClass: 'avatar__img',
       editContainerImgSelector: '.popup__image',
@@ -27,6 +28,7 @@ export default class Avatar {
       confirmBtnSelector: '.btn_confirm'
     }) {
     this._avatarContainerSelector = options.avatarContainerSelector;
+    this._containerFilledClass = options.containerFilledClass;
     this._fileInputSelector = options.fileInputSelector;
     this._imgClass = options.imgClass;
     this._editContainerImgSelector = options.editContainerImgSelector;
@@ -100,7 +102,10 @@ export default class Avatar {
     // Добавление подготовленного изображения в контейнер аватара
     this._avatarContainerElement.append(this._imgElement);
 
-    // Сохранение ссылки на результурующее изоюражение в скрытом поле
+    // Добавление контейнеру аватара класса, убирающего пунктирный бордер
+    this._avatarContainerElement.classList.add(this._containerFilledClass);
+
+    // Сохранение ссылки на результурующее изображение в скрытом поле
     this._croppedImageInputElement.value = this._croppedImageURL;
 
     // Отображение кнопки удаления аватара
@@ -137,6 +142,9 @@ export default class Avatar {
   _handleRemoveClick() {
     // Удаление изображения из контейнера аватара
     this._imgElement.remove();
+
+    // Удаление у контейнера аватара класса, убирающего пунктирный бордер
+    this._avatarContainerElement.classList.remove(this._containerFilledClass);
 
     // Очистка скрытого поля от сохраненного url
     this._croppedImageInputElement.value = '';
