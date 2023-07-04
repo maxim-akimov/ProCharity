@@ -143,6 +143,9 @@ export default class Avatar {
     // Удаление изображения из контейнера аватара
     this._imgElement.remove();
 
+    // Удаление у контейнера аватара класса, убирающего пунктирный бордер
+    this._avatarContainerElement.classList.remove(this._containerFilledClass);
+
     // Очистка скрытого поля от сохраненного url
     this._croppedImageInputElement.value = '';
 
