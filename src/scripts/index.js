@@ -2,6 +2,7 @@
 import {handleTextareaAutosize} from './textarea-autosize';
 import {handleTextareaSymbolCounter} from './textarea-symbol-counter';
 import {setFilesRemover} from './uploader-file-remover';
+import {handleTextareaValidate} from './textarea-validate';
 import FieldTextCleaner from '../components/FieldTextCleaner';
 import MobileMenu from "../components/MobileMenu";
 
@@ -106,6 +107,8 @@ handleTextareaSymbolCounter();
 // Вызов функции, отвечающей за удаление файлов из списка в разделе "Портфолио"
 setFilesRemover();
 
+// Вызов функции, подсвечивающей окно ввода при наличии ошибки валидации
+handleTextareaValidate();
 
 // Инициализация кастомного выпадающего списка для поля
 // "Предпочтительный способ связи"

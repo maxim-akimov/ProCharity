@@ -306,6 +306,7 @@
 /* textarea */
 @import url(../blocks/textarea/textarea.css);
 @import url(../blocks/textarea/_type/textarea_type_error.css);
+@import url(../blocks/textarea/_error/textarea_error.css);
 @import url(../blocks/textarea/__error-message/textarea__error-message.css);
 @import url(../blocks/textarea/__error-message/_visible/textarea__error-message_visible.css);
 @import url(../blocks/textarea/__field/textarea__field.css);
