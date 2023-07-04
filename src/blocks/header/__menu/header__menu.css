@@ -15,7 +15,7 @@
   }
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 900px) {
   .header__menu {
     flex-direction: column;
     flex-wrap: nowrap;
