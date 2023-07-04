@@ -2,7 +2,7 @@
     display: none;
 }
 
-@media (max-width: 796px) {
+@media (max-width: 900px) {
     .sidebar-nav__step_hidden {
         display: flex;
     }

@@ -23,7 +23,7 @@
     opacity: .6;
 }
 
-@media screen and (max-width: 796px) { /*900px*/
+@media screen and (max-width: 900px) { 
     .btn_style_add {
         margin: 0 auto;
         max-width: 100%;

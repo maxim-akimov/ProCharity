@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
 }
  
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 900px) {
   .sidebar-nav__step_type_selected {
     background-image: none;
     width: 100%;

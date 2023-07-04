@@ -3,7 +3,7 @@
   color: #fff;
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 900px) {
   .sidebar-nav__step_style_fund {
     min-width: 96px;
   }

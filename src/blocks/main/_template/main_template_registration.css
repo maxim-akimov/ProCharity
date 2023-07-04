@@ -8,7 +8,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 900px) {
   .main_template_registration {
     padding-bottom: 80px;
     padding-top: 24px;

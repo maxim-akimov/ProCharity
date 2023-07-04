@@ -2,10 +2,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 32px;
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 900px) {
   .content_template_flex-fund-evaluation {
     max-width: 100%;
   }

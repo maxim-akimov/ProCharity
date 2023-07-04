@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 900px) {
   .header__wrap {
     display: grid;  
     grid-template-columns: repeat(3, 1fr);
