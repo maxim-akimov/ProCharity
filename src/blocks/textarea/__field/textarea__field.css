@@ -2,7 +2,7 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   background: none;
-  background: #F1F5F9;
+  background: #f1f5f9;
   border: 0;
   border-radius: 6px;
   box-sizing: border-box;
@@ -12,14 +12,13 @@
   line-height: 20px;
   min-height: 60px;
   outline: none;
-  padding: 22px 65px 8px 16px;
+  padding: 22px 80px 28px 16px;
   resize: none;
   width: 100%;
-
 }
 
 .textarea__field:placeholder-shown {
-  color: #7B878F;
+  color: #7b878f;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -27,16 +26,16 @@
 }
 
 .textarea__field:hover {
-  background: #E0E9F2;
+  background: #e0e9f2;
 }
 
 .textarea__field:focus {
   background: #fff;
-  border: 1px solid #A0ABB5;
+  border: 1px solid #a0abb5;
 }
 
 .textarea__field:disabled {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 900px) {
