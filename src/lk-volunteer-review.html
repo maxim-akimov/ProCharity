@@ -54,13 +54,13 @@
         <nav class="breadcrumbs">
             <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item">
-                    <a href="#" class="breadcrumbs__link">Личный кабинет</a>
+                    <a href="#" class="link breadcrumbs__link">Личный кабинет</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    <a href="#" class="breadcrumbs__link">Ваши задания</a>
+                    <a href="#" class="link breadcrumbs__link">Ваши задания</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    <a href="#" class="breadcrumbs__link">Перевод анкет на немецкий</a>
+                    <a href="#" class="link breadcrumbs__link">Перевод анкет на немецкий</a>
                 </li>
                 <li class="breadcrumbs__item">
                     Оценка работы волонтера
@@ -91,13 +91,13 @@
         </section>
 
         <section class="content">
-            <h1 class=" heading heading_type_title">Отзывы</h1>
+            <h1 class="heading heading_type_title">Отзывы</h1>
             <form name="reviewForm" id="reviewForm" action="#" method="get" novalidate>
 
                 <fieldset class="fieldset">
                     <p class="paragraph">Публичный отзыв увидят все посетители сайта</p>
                     <div class="textarea">
-                        <textarea class="textarea__field " name="publicReview" id="publicReview" maxlength="2000" placeholder="Публичный отзыв"
+                        <textarea class="textarea__field textarea__field_autosize" name="publicReview" id="publicReview" maxlength="2000" placeholder="Публичный отзыв"
                             required></textarea>
                         <label class="textarea__label" for="publicReview">Публичный отзыв</label>
                         <button class="btn textarea__btn textarea__btn_type_clear-text"></button>
@@ -114,8 +114,7 @@
                         работы
                         волонтера.</p>
                     <div class="textarea">
-                        <textarea class="textarea__field textarea__field_autosize" name="privateReview" id="privateReview" maxlength="2000"
-                            required placeholder="Непубличный отзыв"></textarea>
+                        <textarea class="textarea__field textarea__field_autosize" name="privateReview" id="privateReview" maxlength="2000" placeholder="Непубличный отзыв" required ></textarea>
                         <label class="textarea__label" for="privateReview">Непубличный отзыв</label>
                         <button class="btn textarea__btn textarea__btn_type_clear-text"></button>
                         <div class="textarea__counter">
@@ -135,7 +134,7 @@
 
     <footer class="footer">
         <nav class="footer__menu">
-            <div class="footer__menu-chapter ">
+            <div class="footer__menu-chapter">
                 <h2 class="footer__menu-title">
                     <a href="#" class="footer__menu-title-link">О проекте</a>
                 </h2>

@@ -1,0 +1,5 @@
+.link_style_uppercase {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

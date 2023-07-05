@@ -49,7 +49,7 @@
   <nav class="breadcrumbs">
     <ul class="breadcrumbs__list">
       <li class="breadcrumbs__item">
-        <a href="#" class="breadcrumbs__link">Личный кабинет</a>
+        <a href="#" class="link breadcrumbs__link">Личный кабинет</a>
       </li>
       <li class="breadcrumbs__item">
         Мои данные
@@ -103,7 +103,7 @@
   </section>
   <section class="sidebar">
     <h2 class="sidebar__title">Статус профиля</h2>
-    <a href="#" class="sidebar__status">Cкрыт</a>
+    <button href="#" class="sidebar__status">Cкрыт</button>
   </section>
   <section class="sidebar sidebar_type_profile-progress">
     <h2 class="sidebar__title">Профиль заполнен на 66%</h2>
@@ -113,7 +113,7 @@
       </div>
       <button class="btn btn_type_refresh"></button>
     </div>
-    <p class="sidebar__description">Узнай, <a class="sidebar__link" href="">как заполнить
+    <p class="sidebar__description">Узнай, <a class="link link_style_dark" href="">как заполнить
       профиль,</a> чтобы тебя выбрали исполнителем</p>
   </section>
   <section class="content">
@@ -125,12 +125,12 @@
         <div class="uploader__input-container">
           <input accept=".jpg, .png, .tiff" class="uploader__input" type="file" name="projects" id="projects" multiple>
           <label for="projects" class="uploader__label">
-            <span class="uploader__text-accent">Выбери файл</span><span class="uploader__text"> или перетащи его сюда</span>
+            <span class="uploader__text-accent">Выберите файл</span><span class="uploader__text"> или перетащите его сюда</span>
           </label>
         </div>
         <p class="note uploader__note">Jpg, png, pdf объемом не более 20 Мб</p>
       </fieldset>
-      <fieldset class="fieldset fieldset_template_grid-one-col fieldset_style_pb-small">
+      <fieldset class="fieldset fieldset_template_grid-one-col fieldset_pb_large">
         <ul class="uploader__files-list">
           <li class="uploader__item">
             <div class="uploader__file-preview-container uploader__file-preview-container_loading"></div>
@@ -158,13 +158,13 @@
       </fieldset>
     </form>
     <form id="uploadCertificates" name="uploadCertificates" enctype="multipart/form-data" class="uploader" method="get">
-      <fieldset class="fieldset fieldset_style_pb-small fieldset_template_grid-one-col">
+      <fieldset class="fieldset fieldset_pb_large fieldset_template_grid-one-col">
         <legend class="heading heading_type_subtitle">Дипломы и сертификаты</legend>
         <div class="uploader__input-container">
           <input accept=".jpg, .png, .tiff" class="uploader__input" type="file" name="projects" id="certificates"
                  multiple>
           <label for="certificates" class="uploader__label">
-            <span class="uploader__text-accent">Выбери файл</span><span class="uploader__text"> или перетащи его сюда</span>
+            <span class="uploader__text-accent">Выберите файл</span><span class="uploader__text"> или перетащите его сюда</span>
           </label>
         </div>
         <p class="note uploader__note">Jpg, png, pdf объемом не более 20 Мб</p>
@@ -179,6 +179,7 @@
             <button class="btn input__btn input__btn_type_clear-text"></button>
           </div>
           <div class="input">
+
             <input class="input__field input__field_default input__field_padding_center" type="url" placeholder="https://">
             <button class="btn input__btn input__btn_type_clear-text"></button>
           </div>
