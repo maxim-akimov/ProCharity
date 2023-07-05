@@ -1,0 +1,15 @@
+.input__field_type_number::-webkit-outer-spin-button,
+.input__field_type_number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input__field_type_number {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+}
+
+.input__field_type_number:hover,
+.input__field_type_number:focus {
+    -moz-appearance: number-input;
+}
