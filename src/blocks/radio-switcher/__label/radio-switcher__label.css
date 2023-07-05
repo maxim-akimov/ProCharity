@@ -20,7 +20,7 @@
 
 .radio-switcher__label:first-of-type {
   border-radius: 6px 0 0 6px;
-  margin: 0 -1px 0 0;
+  /* margin: 0 -1px 0 0; */
 }
 
 .radio-switcher__label:last-of-type {
