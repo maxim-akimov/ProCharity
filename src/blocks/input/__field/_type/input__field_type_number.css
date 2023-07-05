@@ -6,6 +6,7 @@
 
 .input__field_type_number {
     -moz-appearance: textfield;
+    -webkit-appearance: textfield;
 }
 
 .input__field_type_number:hover,
