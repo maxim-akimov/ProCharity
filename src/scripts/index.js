@@ -390,7 +390,7 @@ if (table) {
     const tbody = table.querySelector('.table__body');
     indexOfRow = [...tbody.children].indexOf(row);
     const email = row.querySelector('.table__email').textContent;
-    const data = `Новый пароль будет отправлен на электронную почту <a href="${email}" class="link link_style_light">${email}</a>`;
+    const data = `Новый пароль будет отправлен на электронную почту <a href="${email}" class="link">${email}</a>`;
     popupReset.insertData(data);
     popupReset.open();
   }
@@ -649,7 +649,7 @@ if (table) {
     // Обработка кнопки 'сбросить пароль'
     btnProfileResetPassword.addEventListener('click', () => {
       const email = row.querySelector('.table__email').textContent;
-      const data = `Новый пароль будет отправлен на электронную почту <a href="${email}" class="link link_style_light">${email}</a>`;
+      const data = `Новый пароль будет отправлен на электронную почту <a href="${email}" class="link">${email}</a>`;
       popupReset.insertData(data);
       popupReset.open();
     });

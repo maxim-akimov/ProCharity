@@ -25,7 +25,6 @@
 /* Ссылки */
 @import url(../blocks/link/link.css);
 @import url(../blocks/link/_style/link_style_dark.css);
-@import url(../blocks/link/_style/link_style_light.css);
 @import url(../blocks/link/_style/link_style_uppercase.css);
 
 

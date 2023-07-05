@@ -1,11 +1,3 @@
 .link_style_dark {
   color: #048AA7;
 }
-
-.link_style_dark:active {
-  color: #374146;
-}
-
-.link_style_dark:visited {
-  color: #7B878F;
-}
