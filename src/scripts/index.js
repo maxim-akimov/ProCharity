@@ -22,6 +22,7 @@ import 'cropperjs';
 import Cropper from 'cropperjs';
 import PwdViewer from "../components/PwdViewer";
 import Avatar from "../components/Avatar";
+import FieldDate from '../components/FieldDate';
 
 const avatarContainer = document.querySelector('.avatar__container');
 const image = document.querySelector('.popup__image');
@@ -714,3 +715,7 @@ if (table) {
   });
 }
 
+new FieldDate({
+  inputFieldClass: 'input__field_type_calendar',
+  btnCalPickerClass: 'input__btn_type_calendar'
+}).setEventListeners();
