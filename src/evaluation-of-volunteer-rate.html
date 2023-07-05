@@ -88,7 +88,6 @@
     </div>
     <section class="main_estimation">
       <h1 class="heading heading_type_title">Оценка</h1>
-      <form name="estimationForm" id="estimationForm" action="evaluation-of-volunteer-review.html" method="get">
         <p class="paragraph paragraph_style_estimation">Оцените опыт работы с волонтером по 5-балльной шкале,
           где 1 — неудовлетворительно, а 5 — отлично. Волонтер не увидит оценку, но она повлияет на его общий рейтинг.
         </p>
@@ -219,10 +218,12 @@
 
         </div>
         <div class="btn_field">
+          <form name="estimationForm" id="estimationForm" action="evaluation-of-volunteer-review.html" method="get">
           <button type="submit" class="btn btn btn_style_primary">Оценить</button>
+        </form>
           <button type="submit" class="btn btn_style_secondary">Отмена</button>
         </div>
-      </form>
+      
     </section>
   </main>
   <footer class="footer">
