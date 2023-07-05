@@ -16,28 +16,13 @@
  @media screen and (max-width: 1024px) {
   .main_estimation_text {
     padding-right: max(10px, calc(32 * (100vw - 796px) / (1024 - 796)));
-    width: 100%;
+    width: 290px;
   }
 } 
 
 @media screen and (max-width: 900px) {
   .main_estimation_text {
-    max-width: 100%;
+    width: 100%;
   }
 } 
-
-
-
-/*@media screen and (max-width: 1120px) {
-  .main_estimation_text {
-    max-width: 550px;
-  }
-}*/
-
-
-/*@media screen and (max-width: 796px) {  //900px
-  .main_estimation_text {
-   margin-top: 24px;
-  }
-}*/
 
