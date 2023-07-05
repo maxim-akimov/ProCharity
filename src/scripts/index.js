@@ -2,7 +2,7 @@
 import {handleTextareaAutosize} from './textarea-autosize';
 import {handleTextareaSymbolCounter} from './textarea-symbol-counter';
 import {setFilesRemover} from './uploader-file-remover';
-import {handleTextareaValidate} from './textarea-validate';
+import {handleTextareaValidate, handleDisableStandartValidation} from './textarea-validate';
 import FieldTextCleaner from '../components/FieldTextCleaner';
 import MobileMenu from "../components/MobileMenu";
 
@@ -109,6 +109,9 @@ setFilesRemover();
 
 // Вызов функции, подсвечивающей окно ввода при наличии ошибки валидации
 handleTextareaValidate();
+
+// Вызов функции, выключающей стандартные браузерные попапы ошибок валидации
+handleDisableStandartValidation();
 
 // Инициализация кастомного выпадающего списка для поля
 // "Предпочтительный способ связи"
