@@ -1,8 +1,11 @@
 .breadcrumbs__link {
   color: #048AA7;
-  text-underline-position: under;
 }
 
-.breadcrumbs__link:hover {
-  text-decoration: none;
+.breadcrumbs__link:active {
+  color: #048AA7;
+}
+
+.breadcrumbs__link:visited {
+  color: #048AA7;
 }
