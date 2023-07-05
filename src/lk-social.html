@@ -106,7 +106,7 @@
     <section class="sidebar">
       <h2 class="sidebar__title">Статус профиля</h2>
       <!--Сменить статус на "На модерации"-->
-      <button href="#" class="sidebar__status sidebar__status_state_process">На модерации</button>
+      <button class="sidebar__status sidebar__status_state_process" type="button">На модерации</button>
     </section>
     <section class="sidebar sidebar_type_profile-progress">
       <h2 class="sidebar__title">Профиль заполнен на 66%</h2>
@@ -149,29 +149,56 @@
               class="input__field input__field_default input__field_padding_center">
             <button class="btn input__btn input__btn_type_clear-text"></button>
           </div>
-          <span class="sidebar-nav__item-text">Портфолио</span>
-        </a>
-      </li>
-      <li class="sidebar-nav__item sidebar-nav__item_type_current">
-        <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_type_current">
-          <span class="sidebar-nav__step-text">5</span>
-        </div>
-        <span class="sidebar-nav__item-text">Социальные сети</span>
-      </li>
-    </ul>
-    <div class="sidebar-nav__description">
-      <p class="sidebar-nav__description-title">Профиль волонтера</p>
-    </div>
-  </section>
-  <section class="sidebar">
-    <h2 class="sidebar__title">Статус профиля</h2>
-    <button class="sidebar__status sidebar__status_state_process">На модерации</button>
-  </section>
-  <section class="sidebar sidebar_type_profile-progress">
-    <h2 class="sidebar__title">Профиль заполнен на 66%</h2>
-    <div class="progress-bar">
-      <div class="progress-bar__bg">
-        <div class="progress-bar__scale"></div>
+          <img src="<%=require('./images/facebook-social.svg')%>" alt="facebook">
+          <div class="input">
+            <input type="url" placeholder="https://facebook.com/username/"
+              class="input__field input__field_default input__field_padding_center">
+            <button class="btn input__btn input__btn_type_clear-text"></button>
+          </div>
+          <div class="fieldset__row-group fieldset__row-group_type_block">
+            <p class="note">Facebook и Instagram — продукты Meta Platforms Inc.</p>
+            <p class="note">Meta Platforms Inc. признана экстремистской организацией, запрещена на территории
+              России</p>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn btn_style_primary">
+          Сохранить
+        </button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <nav class="footer__menu">
+      <div class="footer__menu-chapter ">
+        <h2 class="footer__menu-title">
+          <a href="#" class="footer__menu-title-link">О проекте</a>
+        </h2>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">О платформе</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Команда</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Новости</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Документы</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Партнеры</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Отзывы</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Контакты</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Пожертвовать в фонды</a>
+          </li>
+        </ul>
       </div>
       <div class="footer__menu-chapter">
         <h2 class="footer__menu-title">
