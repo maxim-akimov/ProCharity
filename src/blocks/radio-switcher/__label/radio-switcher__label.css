@@ -48,7 +48,6 @@
 
 @media screen and (max-width: 900px) {
   .radio-switcher__label:first-of-type {
-    border: solid 1px #048AA7;
     margin: 0;
   }
 
