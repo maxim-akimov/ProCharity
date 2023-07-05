@@ -26,12 +26,18 @@
 - Увеличить процент пользователей прошедших все этапы заполнения личных данных.
 
 ## Макет
+    
+    ссылка на макет “Оценка работы волонтера” в figma:
 
-[Ссылка на макет](https://www.notion.so/Procharity-21-f24c880905844ce883efd18a0f39472d)
+    https://www.figma.com/file/fGaasR9yO00LVbmM6EBiB9/Procharity-(%D0%B2%D1%81%D0%B5-%D0%BC%D0%B0%D0%BA%D0%B5%D1%82%D1%8B-%2B-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B)?type=design&node-id=5862-38541&t=qWsSE81Clx97foBf-0
+    
+     ссылка на макет “Оценка работы фонда” в figma: 
+
+    [https://www.figma.com/file/fGaasR9yO00LVbmM6EBiB9/Procharity-(все-макеты-%2B-компоненты)?type=design&node-id=5862%3A38542&t=fB7kTiXsY0TqnWfY-1](https://www.figma.com/file/fGaasR9yO00LVbmM6EBiB9/Procharity-(%D0%B2%D1%81%D0%B5-%D0%BC%D0%B0%D0%BA%D0%B5%D1%82%D1%8B-%2B-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B)?type=design&node-id=5862%3A38542&t=aCKwZZAZubz97dDu-1)
 
 ## Ссылка на бриф
 
-[Ссылка на бриф](https://www.notion.so/Procharity-21-f24c880905844ce883efd18a0f39472d)
+[Ссылка на бриф]  (https://www.notion.so/24-Procharity-45432341847c475a892af32ef2a4c217?pvs=4)
 
 ## Примечания для интеграции
 
