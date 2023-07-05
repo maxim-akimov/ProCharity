@@ -19,3 +19,17 @@ export function handleTextareaValidate() {
     });
   }) 
 }
+
+document.addEventListener('invalid', (function () {
+  return function (e) {
+    e.preventDefault();
+    document.getElementById("fieldse").focus();
+  };
+})(), true);
+
+document.addEventListener('invalid', (function () {
+  return function (e) {
+    e.preventDefault();
+    document.getElementById("field").focus();
+  };
+})(), true);
