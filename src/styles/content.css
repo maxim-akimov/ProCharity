@@ -17,6 +17,17 @@
 @import url(../blocks/main/_pb/main_pb_xsmall.css);
 
 
+@import url(../blocks/list/list.css);
+@import url(../blocks/list/__item/list__item.css);
+@import url(../blocks/list-ul/list-ul.css);
+
+
+/* Ссылки */
+@import url(../blocks/link/link.css);
+@import url(../blocks/link/_style/link_style_dark.css);
+@import url(../blocks/link/_style/link_style_uppercase.css);
+
+
 
 /* Хлебные крошки */
 @import url(../blocks/breadcrumbs/breadcrumbs.css);
@@ -39,7 +50,6 @@
 @import url(../blocks/sidebar/__status/_state/sidebar__status_state_confirm.css);
 @import url(../blocks/sidebar/__status/_state/sidebar__status_state_process.css);
 @import url(../blocks/sidebar/__description/sidebar__description.css);
-@import url(../blocks/sidebar/__link/sidebar__link.css);
 @import url(../blocks/sidebar/__tooltip/sidebar__tooltip.css);
 
 
@@ -233,6 +243,7 @@
 @import url(../blocks/input/__field/_default/input__field_default.css);
 @import url(../blocks/input/__field/_type/input__field_type_calendar.css);
 @import url(../blocks/input/__field/_type/input__field_type_password.css);
+@import url(../blocks/input/__field/_type/input__field_type_number.css);
 @import url(../blocks/input/__field/_padding/input__field_padding_center.css);
 @import url(../blocks/input/__field/_interval/input__field_interval_right_large.css);
 @import url(../blocks/input/__field/_interval/input__field_interval_right_small.css);
@@ -262,6 +273,7 @@
 @import url(../blocks/avatar/avatar.css);
 @import url(../blocks/avatar/_location/_preview/avatar_location_preview.css);
 @import url(../blocks/avatar/__container/avatar__container.css);
+@import url(../blocks/avatar/__container/avatar__container_filled.css);
 @import url(../blocks/avatar/__input/avatar__input.css);
 @import url(../blocks/avatar/__label/avatar__label.css);
 @import url(../blocks/avatar/__img/avatar__img.css);
@@ -304,16 +316,6 @@
 @import url(../blocks/paragraph/_pbm/paragraph_pbm_small.css);
 @import url(../blocks/paragraph/_style/paragraph_style_rate.css);
 @import url(../blocks/paragraph/_style/paragraph_style_info.css);
-
-
-@import url(../blocks/list/list.css);
-@import url(../blocks/list/__item/list__item.css);
-@import url(../blocks/list-ul/list-ul.css);
-
-
-/* Ссылки */
-@import url(../blocks/link/link.css);
-@import url(../blocks/link/_style/link_style_dark.css);
 
 
 /* link published */

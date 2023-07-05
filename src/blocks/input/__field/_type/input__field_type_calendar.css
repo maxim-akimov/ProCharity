@@ -1,7 +1,12 @@
-.input__field_type_calendar {
-
-}
-
-.input__field_type_calendar {
-
+.input__field_type_calendar::-webkit-calendar-picker-indicator {    
+    background: transparent;
+    color: transparent;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: auto;
+    width: auto;
 }

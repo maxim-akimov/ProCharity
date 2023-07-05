@@ -22,6 +22,7 @@ import 'cropperjs';
 import Cropper from 'cropperjs';
 import PwdViewer from "../components/PwdViewer";
 import Avatar from "../components/Avatar";
+import FieldDate from '../components/FieldDate';
 
 const avatarContainer = document.querySelector('.avatar__container');
 const image = document.querySelector('.popup__image');
@@ -322,7 +323,7 @@ if (table) {
     const fullname = row.querySelector('.table__name').textContent.split(' ');
     const isAdmin = row.querySelector('.table__wrench').innerHTML !== '';
     const email = row.querySelector('.table__email').textContent;
-    popupEditEmployer.setInputValues({ 
+    popupEditEmployer.setInputValues({
       name: { type: 'text', value: fullname[1] },
       surname: { type: 'text', value: fullname[0] },
       email: { type: 'email', value: email },
@@ -404,7 +405,7 @@ if (table) {
     const tbody = table.querySelector('.table__body');
     const currentRow = tbody.children[indexOfRow];
     currentRow.remove();
-    
+
     // Новая отрисовка
     pager.innerHTML = '';
     pagination.genTables();
@@ -425,7 +426,7 @@ if (table) {
       mobileTableHead.classList.add('display-none');
       loadMore.classList.add('display-none');
       lkAccess.classList.add('main_pb_small');
-  
+
       if (fieldsetLegend.classList.contains('paragraph_pbm_small')) {
         fieldsetContainer.classList.add('fieldset_style_p-none');
         fieldsetLegend.classList.remove('paragraph_pbm_small');
@@ -552,7 +553,7 @@ if (table) {
 
     const btnEdit = trow.querySelector('.table__btn-redact');
     btnEdit.addEventListener('click', handleBtnContextMenu);
-    
+
     const menuBody = trow.querySelector('.table__menu-body');
     menuBody.addEventListener('click', handleContextMenu);
 
@@ -582,7 +583,7 @@ if (table) {
       mobileTableHead.classList.remove('display-none');
       loadMore.classList.remove('display-none');
       lkAccess.classList.remove('main_pb_small');
-  
+
       if (fieldsetContainer.classList.contains('fieldset_style_p-none')) {
         fieldsetLegend.classList.add('paragraph_pbm_small');
         fieldsetContainer.classList.remove('fieldset_style_p-none');
@@ -637,7 +638,7 @@ if (table) {
       const fullname = row.querySelector('.table__name').textContent.split(' ');
       const isAdmin = row.querySelector('.table__wrench').innerHTML !== '';
       const email = row.querySelector('.table__email').textContent;
-      popupEditEmployer.setInputValues({ 
+      popupEditEmployer.setInputValues({
         name: { type: 'text', value: fullname[1] },
         surname: { type: 'text', value: fullname[0] },
         email: { type: 'email', value: email },
@@ -706,7 +707,7 @@ if (table) {
             pagination.loadMoreVisibility(loadMore, table);
           } else {
             name.removeEventListener('click', handleClickOnName);
-            pagination.openPage(table, 1);         
+            pagination.openPage(table, 1);
           }
         });
       }
@@ -714,3 +715,7 @@ if (table) {
   });
 }
 
+new FieldDate({
+  inputFieldClass: 'input__field_type_calendar',
+  btnCalPickerClass: 'input__btn_type_calendar'
+}).setEventListeners();

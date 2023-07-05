@@ -3,15 +3,11 @@
 }
 
 .popup_type_window .popup__btn-close {
-  height: 20px;
-  right: 18px;
-  top: 16px;
-  width: 20px;
+  right: 14px;
+  top: 14px;
 }
 
 .popup_type_message .popup__btn-close {
-  height: 12px;
-  right: 8px;
-  top: 8px;
-  width: 12px;
+  right: 3px;
+  top: 3px;
 }

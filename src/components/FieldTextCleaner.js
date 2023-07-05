@@ -17,6 +17,7 @@ export default class FieldTextCleaner {
 
     if (this._fieldElement) {
       this._fieldElement.value = '';
+      this._fieldElement.style.height = '100%';
     }
   }
 

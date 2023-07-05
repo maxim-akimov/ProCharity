@@ -1,21 +1,20 @@
 .link {
   color: #7DCDD7;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0.25px;
   text-decoration-line: underline;
   text-underline-position: under;
   text-underline-offset: 0;
-}
-
-.link:hover {
-  text-decoration: none;
+  transition: all 0.5s ease;
 }
 
 .link:active {
   color: #374146;
+  text-decoration: none;
 }
 
 .link:visited {
   color: #7B878F;
+}
+
+.link:hover {
+  text-decoration: none;
 }

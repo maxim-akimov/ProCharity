@@ -1,5 +1,5 @@
 .btn_style_telegram {
-  background: url(../../../images/icon-telegram.svg) no-repeat left 12px center, #54A9EA;
+  background: url(../../../images/icon-telegram.svg) no-repeat left 32px center, #54A9EA;
   border-radius: 6px;
   box-sizing: border-box;
   color: #FFFFFF;
@@ -8,10 +8,11 @@
   font-weight: 400;
   line-height: 16px;
   letter-spacing: .25px;
-  padding: 8px 12px 8px 38px;
+  padding: 20px 32px 20px 58px;
   text-decoration: none;
-  text-transform: none;
+  text-transform: uppercase;
   width: 100%;
+  
 }
 
 @media screen and (max-width: 900px) {
