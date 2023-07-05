@@ -12,7 +12,7 @@
   line-height: 20px;
   min-height: 60px;
   outline: none;
-  padding: 22px 80px 28px 16px;
+  padding: 22px 58px 28px 16px;
   resize: none;
   width: 100%;
 }
@@ -35,7 +35,7 @@
 }
 
 .textarea__field:disabled {
-  opacity: 0.6;
+  opacity: .6;
 }
 
 @media screen and (max-width: 900px) {
