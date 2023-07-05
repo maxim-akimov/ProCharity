@@ -7,3 +7,9 @@
     color: #374045; 
     border: none;
   }
+
+  @media screen and (max-width: 900px) {
+    .input__field_type_hours {
+      width: 150px;
+    }
+  }

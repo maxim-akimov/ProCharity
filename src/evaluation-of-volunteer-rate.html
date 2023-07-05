@@ -14,7 +14,7 @@
     <div class="header__wrap">
       <button class="menu-icon" type="button"></button>
       <a href="https://procharity.ru/">
-        <img src="<%=require('./images/logo.svg')%>" alt="ProCharity" class="main-logo">
+        <img src="<%=require('./images/logo.svg')%>" alt="Логотип" class="main-logo">
       </a>
       <nav class="header__nav">
         <ul class="header__menu">
@@ -64,7 +64,7 @@
         </li>
       </ul>
     </nav>
-    <section class="sidebar-nav sidebar-nav__style_evaluation">
+    <div class="sidebar-nav sidebar-nav__style_evaluation">
       <ul class="sidebar-nav__list">
         <li class="sidebar-nav__item">
           <div class="sidebar-nav__step sidebar-nav__step_style_volunteer sidebar-nav__step_type_current">
@@ -85,13 +85,13 @@
         <p class="sidebar-nav__description-title">Оценка работы волонтера</p>
         <p class="sidebar-nav__description-steps">Шаг 2 из 2</p>
       </div>
-    </section>
+    </div>
     <section class="main_estimation">
       <h1 class="heading heading_type_title">Оценка</h1>
       <form name="estimationForm" id="estimationForm" action="evaluation-of-volunteer-review.html" method="get">
-        <legend class="paragraph paragraph_style_estimation">Оцените опыт работы с волонтером по 5-балльной шкале,
+        <p class="paragraph paragraph_style_estimation">Оцените опыт работы с волонтером по 5-балльной шкале,
           где 1 — неудовлетворительно, а 5 — отлично. Волонтер не увидит оценку, но она повлияет на его общий рейтинг.
-        </legend>
+        </p>
         <div class="main_estimation_choose">
           <h2 class="main_estimation_name">Профессионализм</h2>
           <div class="main_estimation_choose_row">
