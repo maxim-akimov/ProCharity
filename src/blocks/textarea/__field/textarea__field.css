@@ -39,7 +39,13 @@
   opacity: .6;
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
+  .textarea__field {
+    padding: 24px 63px 28px 16px;
+  }
+} */
+
+@media screen and (max-width: 1900px) {
   .textarea__field {
     padding: 24px 63px 28px 16px;
   }

@@ -1,7 +1,16 @@
-.input__field_type_calendar {
+/* .input__field_type_calendar {
 
 }
 
 .input__field_type_calendar {
 
-}
+} */
+.input__field_type_calendar[type="date"]::-webkit-calendar-picker-indicator{
+    background: url(../../../../images/calendar.svg) no-repeat;
+   
+      cursor: pointer;
+      margin-bottom: 16px;
+      margin-right: 10px;
+     
+    }
+  
