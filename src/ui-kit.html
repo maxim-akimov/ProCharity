@@ -65,7 +65,7 @@
       </div>
       <button class="btn btn_type_refresh"></button>
     </div>
-    <p class="sidebar__description">Узнай, <a class="sidebar__link" href="#">как заполнить
+    <p class="sidebar__description">Узнай, <a class="link link_style_dark" href="#">как заполнить
         профиль,</a> чтобы тебя выбрали исполнителем</p>
   </section>
 
@@ -210,6 +210,13 @@
     <button class="btn input__btn input__btn_type_clear-text"></button>
     <span class="input__error-message input__error-message_visible">Ошибка</span>
   </div>
+  <div class="input">
+  <input type="number" class="input__field input__field_type_number" name="numberField" id="numberField"
+      placeholder="Числовое поле" value="" required>
+  <label for="numberField" class="input__label">Числовое поле</label>
+  <button class="btn input__btn input__btn_type_clear-text"></button>
+  <span class="input__error-message">Ошибка</span>
+</div>
 
 
   <div class="input">
@@ -217,6 +224,7 @@
       required>
     <label for="date" class="input__label">Дата</label>
     <button class="btn input__btn input__btn_type_clear-text input__btn_position_first"></button>
+    <button class="btn input__btn input__btn_type_calendar" type="button"></button>
     <span class="input__error-message">Ошибка</span>
   </div>
 
@@ -342,11 +350,12 @@
   <fieldset class="fieldset fieldset_template_grid-project-links">
     <legend class="heading heading_type_subtitle">Сгруппированные поля</legend>
     <div class="input-group">
-      <div class="input input_type_bottom-interval">
+      <div class="input">
         <input class="input__field input__field_default input__field_padding_center" type="text"
           placeholder="Текст ссылки">
+          <button class="btn input__btn input__btn_type_clear-text"></button>
       </div>
-      <div class="input input_type_bottom-interval">
+      <div class="input">
         <input class="input__field input__field_default input__field_padding_center" type="url" placeholder="https://">
         <button class="btn input__btn input__btn_type_clear-text"></button>
       </div>

@@ -51,7 +51,7 @@
     <nav class="breadcrumbs">
       <ul class="breadcrumbs__list">
         <li class="breadcrumbs__item">
-          <a href="#" class="breadcrumbs__link">Личный кабинет</a>
+          <a href="#" class="link breadcrumbs__link">Личный кабинет</a>
         </li>
         <li class="breadcrumbs__item">
           Мои данные
@@ -115,7 +115,7 @@
         </div>
         <button class="btn btn_type_refresh"></button>
       </div>
-      <p class="sidebar__description">Узнай, <a class="sidebar__link" href="#">как заполнить
+      <p class="sidebar__description">Узнай, <a class="link link_style_dark" href="#">как заполнить
           профиль,</a> чтобы тебя выбрали исполнителем</p>
     </section>
     <section class="content">
@@ -139,8 +139,7 @@
           <legend class="paragraph">Фонды увидят эти данные на твоей странице
           </legend>
           <div class="input">
-            <input type="text" class="input__field input__field_default input__field_interval_right_small" name="name"
-              id="name" placeholder="Имя" required>
+            <input type="text" class="input__field input__field_default input__field_interval_right_small" name="name" id="name" placeholder="Имя" required>
             <label for="name" class="input__label">Имя</label>
             <button class="btn input__btn input__btn_type_clear-text"></button>
             <span class="input__error-message">Ошибка</span>
@@ -153,11 +152,11 @@
             <span class="input__error-message">Ошибка</span>
           </div>
           <div class="input">
-            <input type="text" class="input__field input__field_type_calendar" name="date" id="date"
+            <input type="date" class="input__field input__field_type_calendar" name="date" id="date"
               placeholder="Дата рождения" required>
             <label for="date" class="input__label">Дата рождения</label>
-            <button class="btn input__btn input__btn_type_clear-text input__btn_position_first"></button>
-            <button class="btn input__btn input__btn_type_calendar"></button>
+            <button class="btn input__btn input__btn_type_clear-text input__btn_position_first" type="button"></button>
+            <button class="btn input__btn input__btn_type_calendar" type="button"></button>
             <span class="input__error-message">Ошибка</span>
           </div>
           <div class="input">
@@ -434,7 +433,7 @@
       </div>
       <p class="paragraph popup__paragraph">Так будет выглядеть на сайте</p>
       <ul class="avatar avatar_location_preview"">
-      <li class=" avatar__preview-item avatar__preview-item_size_large">
+      <li class="avatar__preview-item avatar__preview-item_size_large">
         <img src="" alt="" class="avatar__preview-image avatar__preview-image_size_large">
         </li>
         <li class="avatar__preview-item">
