@@ -4,12 +4,14 @@
   padding-bottom: 24px;
 }
 
-@media screen and (max-width: 900px) { /*у предыдущей группы было 900px!*/
+@media screen and (max-width: 900px) {
+  /*у предыдущей группы было 900px!*/
   .heading_type_title {
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-    padding-bottom: 20px;
+    padding-top: 14px;
+    /* padding-bottom: 20px; */
     margin-right: auto;
     width: 100%;
   }
