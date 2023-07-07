@@ -18,6 +18,6 @@
     grid-template-columns: 100%;
     padding-bottom: 80px;
     padding-top: 0;
-    row-gap: 16px;
+    row-gap: 32px;
   }
 }

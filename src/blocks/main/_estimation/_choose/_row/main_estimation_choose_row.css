@@ -11,4 +11,7 @@
     margin: 0 auto 20px;
     width: 100%;
   }
+  .main_estimation_choose_row:last-child{
+    margin-bottom: 24px;
+  } 
 }

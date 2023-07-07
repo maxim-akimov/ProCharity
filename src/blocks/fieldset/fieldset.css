@@ -3,3 +3,7 @@
   margin: 0;
   padding: 0 0 32px 0;
 }
+
+.fieldset:first-of-type {
+  padding-bottom: 20px;
+}
