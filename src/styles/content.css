@@ -35,6 +35,8 @@
 @import url(../blocks/breadcrumbs/__btn/_type/breadcrumbs__btn_type_return.css);
 
 /*  */
+@import url(../blocks/account-btn/__content/_type/account-btn__content_type_lk.css);
+@import url(../blocks/account-btn/__content/_type/account-btn__content_type_ld.css);
 
 @import url(../blocks/main/_template/main_template_estimation.css);
 @import url(../blocks/main/_template/main_template_volunteer.css);
