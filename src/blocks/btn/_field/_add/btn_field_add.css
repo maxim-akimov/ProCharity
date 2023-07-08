@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 32px;
+    /*margin-top: 32px;*/
     border-top: 1px solid;
     border-color: rgba(220, 220, 220, .5);
 }
@@ -13,6 +13,6 @@
         flex-direction: column;
         width: 100%;
         margin: 0 auto;
-        /* padding-top: 32px; */
+        padding-top: 32px;
     }
 }

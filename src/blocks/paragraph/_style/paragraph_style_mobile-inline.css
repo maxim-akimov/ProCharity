@@ -1,0 +1,9 @@
+.paragraph_style_mobile-inline {
+    display: none;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .paragraph_style_mobile-inline {
+      display: inline;
+    }
+  }

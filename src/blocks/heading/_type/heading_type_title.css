@@ -2,6 +2,7 @@
   font-size: 32px;
   line-height: 40px;
   padding-bottom: 24px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 900px) { /*у предыдущей группы было 900px!*/
