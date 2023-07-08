@@ -6,9 +6,10 @@
   padding-bottom: 32px;
 }
 
-@media screen and (max-width: 900px) { /*была точка перелома 900px!*/
+@media screen and (max-width: 900px) {
+  /*была точка перелома 900px!*/
   .fieldset_template_grid-form {
-    gap: 16px;
+    gap: 14px;
     grid-template-columns: 1fr;
   }
 }

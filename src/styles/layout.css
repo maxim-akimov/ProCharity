@@ -41,6 +41,7 @@
 
 @import url(../blocks/account-btn/__content/account-btn__content.css);
 @import url(../blocks/account-btn/__content/_type/account-btn__content_type_default.css);
+@import url(../blocks/account-btn/__content/_type/account-btn__content_type_ld.css);
 @import url(../blocks/account-btn/__content/_type/account-btn__content_type_lk.css);
 
 @import url(../blocks/account-btn/__avatar/account-btn__avatar.css);
