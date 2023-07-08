@@ -5,3 +5,10 @@
     color: rgba(88, 100, 106, 1);
     margin-top: 32px;
 }
+
+
+@media screen and (max-width: 900px) {
+    .main_estimation_add-volonter_text {
+      margin-top: 0;
+    }
+  }

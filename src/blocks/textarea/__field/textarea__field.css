@@ -42,5 +42,6 @@
 @media screen and (max-width: 900px) {
   .textarea__field {
     padding: 24px 63px 28px 16px;
+    min-height: 68px;
   }
 }
