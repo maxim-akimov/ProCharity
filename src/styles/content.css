@@ -35,16 +35,19 @@
 @import url(../blocks/main/_template/main_template_estimation.css);
 @import url(../blocks/main/_template/main_template_volunteer.css);
 
-@import url(../blocks/main/_estimation/main_estimation.css);
-@import url(../blocks/main/_estimation/_warning/main_estimation_warning.css);
-@import url(../blocks/main/_estimation/_warning/_text/main_estimation_warning_text.css);
-@import url(../blocks/main/_estimation/_warning/_logo/main_estimation_warning_logo.css);
-@import url(../blocks/main/_estimation/_add-volonter/main_estimation_add-volonter.css);
-@import url(../blocks/main/_estimation/_add-volonter/_text/main_estimation_add-volonter_text.css);
-@import url(../blocks/main/_estimation/_choose/main_estimation_choose.css);
-@import url(../blocks/main/_estimation/_choose/_row/main_estimation_choose_row.css);
-@import url(../blocks/main/_estimation/_name/main_estimation_name.css);
-@import url(../blocks/main/_estimation/_text/main_estimation_text.css);
+@import url(../blocks/main/__estimation/main__estimation.css);
+@import url(../blocks/main/__estimation-warning/main__estimation-warning.css);
+@import url(../blocks/main/__estimation-warning-text/main__estimation-warning-text.css);
+@import url(../blocks/main/__estimation-warning-logo/main__estimation-warning-logo.css);
+@import url(../blocks/main/__estimation-add-volonter/main__estimation-add-volonter.css);
+@import url(../blocks/main/__estimation-add-volonter-text/main__estimation-add-volonter-text.css);
+@import url(../blocks/main/__estimation-choose/main__estimation-choose.css);
+@import url(../blocks/main/__estimation-choose-row/main__estimation-choose-row.css);
+@import url(../blocks/main/__estimation-name/main__estimation-name.css);
+@import url(../blocks/main/__estimation-text/main__estimation-text.css);
+@import url(../blocks/main/__estimation-add/main__estimation-add.css);
+@import url(../blocks/main/__estimation-submit/main__estimation-submit.css);
+@import url(../blocks/main/__estimation-text-mobile-inline/main__estimation-text-mobile-inline.css);
 
 @import url(./../blocks/breadcrumbs/breadcrumbs.css);
 
@@ -97,6 +100,7 @@
 @import url(../blocks/sidebar-nav/__item/_type/sidebar-nav__item_type_current.css);
 @import url(../blocks/sidebar-nav/__item/_type/sidebar-nav__item_type_mobile-hidden.css);
 @import url(../blocks/sidebar-nav/__item-text/sidebar-nav__item-text.css);
+@import url(../blocks/sidebar-nav/__item-text/_type/sidebar-nav__item-text_type_current.css);
 @import url(../blocks/sidebar-nav/__link/sidebar-nav__link.css);
 @import url(../blocks/sidebar-nav/__step/sidebar-nav__step.css);
 @import url(../blocks/sidebar-nav/__step/_hidden/sidebar-nav__step_hidden.css);
@@ -123,7 +127,7 @@
 
 
 
-@import url(../blocks/sidebar-nav/__style/sidebar-nav__style_evaluation.css);
+@import url(../blocks/sidebar-nav/_style/sidebar-nav_style_evaluation.css);
 
 
 @import url(../blocks/content/content.css);
@@ -235,20 +239,18 @@
 @import url(../blocks/custom-select/__btn/_type/custom-select__btn_type_close.css);
 @import url(../blocks/custom-select/__btn/_type/custom-select__btn_type_reset.css);
 
+/* Оценка */
 
-
+@import url(../blocks/radio-switcher-estimation/radio-switcher-estimation.css);
+@import url(../blocks/radio-switcher-estimation/__label/radio-switcher-estimation__label.css);
+@import url(../blocks/radio-switcher-estimation/__input/radio-switcher-estimation__input.css);
+/* @import url(../blocks/radio-switcher/__label/radio-switcher__label.css); */
 
 /* Отображение форм */
 @import url(../blocks/radio-switcher/radio-switcher.css);
 
 @import url(../blocks/radio-switcher/__input/radio-switcher__input.css);
 @import url(../blocks/radio-switcher/__label/radio-switcher__label.css);
-
-
-@import url(../blocks/radio-switcher/_main/radio-switcher_main.css);
-
-@import url(../blocks/radio-switcher/_main/__label/radio-switcher_main__label.css);
-
 
 @import url(../blocks/radio-switcher/__input/radio-switcher__input.css);
 
@@ -298,6 +300,11 @@
 @import url(../blocks/fieldset/_template/fieldset_template_space-between.css);
 @import url(../blocks/fieldset/_template/fieldset_template_hours.css);
 
+@import url(../blocks/fieldset/__input-type-hours/fieldset__input-type-hours.css);
+@import url(../blocks/fieldset/__style-hours/fieldset__style-hours.css);
+@import url(../blocks/fieldset/__style-hours-label/fieldset__style-hours-label.css);
+@import url(../blocks/fieldset/__input-btn/fieldset__input-btn.css);
+@import url(../blocks/fieldset/__input-btn/_type/fieldset__input-btn_type_close.css);
 
 /* textarea */
 @import url(../blocks/textarea/textarea.css);

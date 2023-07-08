@@ -1,0 +1,9 @@
+.main__estimation-text-mobile-inline {
+    display: none;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .main__estimation-text-mobile-inline {
+      display: inline;
+    }
+  }
