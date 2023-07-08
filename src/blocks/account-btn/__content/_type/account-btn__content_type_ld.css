@@ -1,3 +1,4 @@
+/* подправил кнопку на 360px */
 @media screen and (max-width: 900px) {
   .account-btn__content_type_ld {
     background: url(../../../../images/tasks.svg) no-repeat center center,
