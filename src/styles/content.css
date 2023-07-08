@@ -415,6 +415,7 @@
 @import url(../blocks/paragraph/_style/paragraph_style_registration-final.css);
 @import url(../blocks/paragraph/_style/paragraph_style_desktop.css);
 @import url(../blocks/paragraph/_style/paragraph_style_mobile.css);
+@import url(../blocks/paragraph/_style/paragraph_style_mobile-inline.css);
 @import url(../blocks/paragraph/_style/paragraph_style_slim.css);
 @import url(../blocks/paragraph/_style/paragraph_style_fat.css);
 @import url(../blocks/paragraph/_pb/paragraph_pb_xsmall.css);

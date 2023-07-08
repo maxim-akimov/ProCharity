@@ -5,21 +5,21 @@
   color: rgba(88, 100, 106, 1);
   margin: 0;
   padding-right: 32px;
-  padding-bottom: 12px;
+  padding-bottom: 20px;
   height: auto;
-  width: 50%;
+  width: 352px; /*50%;*/
 }
 
  @media screen and (max-width: 1024px) {
   .main_estimation_text {
     padding-right: max(10px, calc(32 * (100vw - 796px) / (1024 - 796)));
-    /* width: 290px; */
   }
 } 
 
 @media screen and (max-width: 900px) {
   .main_estimation_text {
     width: 100%;
+    padding-bottom: 12px;
   }
 } 
 

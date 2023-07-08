@@ -1,5 +1,9 @@
+.paragraph_style_desktop {
+  display: block;
+}
+
 @media screen and (max-width: 900px) {
-    .paragraph_style_desktop {
-        display: none;
-    }
+  .paragraph_style_desktop {
+    display: none;
+  }
 }
