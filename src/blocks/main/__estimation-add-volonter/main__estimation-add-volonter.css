@@ -1,10 +1,10 @@
-.main_estimation_add-volonter {
+.main__estimation-add-volonter {
     margin: auto 32px 0 0;
 }
 
 
 @media screen and (max-width: 900px) {
-    .main_estimation_add-volonter {
+    .main__estimation-add-volonter {
         width: 100%;
         margin: 0;
     }

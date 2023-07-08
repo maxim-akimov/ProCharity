@@ -1,4 +1,4 @@
-.main_estimation_name {
+.main__estimation-name {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -9,7 +9,7 @@
 }
 
 /* @media screen and (max-width: 796px) { 
-    .main_estimation_name:first-of-type {
+    .main__estimation-name:first-of-type {
      padding-top: 24px;
     }
 } */

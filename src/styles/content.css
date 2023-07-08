@@ -35,16 +35,16 @@
 @import url(../blocks/main/_template/main_template_estimation.css);
 @import url(../blocks/main/_template/main_template_volunteer.css);
 
-@import url(../blocks/main/_estimation/main_estimation.css);
-@import url(../blocks/main/_estimation/_warning/main_estimation_warning.css);
-@import url(../blocks/main/_estimation/_warning/_text/main_estimation_warning_text.css);
-@import url(../blocks/main/_estimation/_warning/_logo/main_estimation_warning_logo.css);
-@import url(../blocks/main/_estimation/_add-volonter/main_estimation_add-volonter.css);
-@import url(../blocks/main/_estimation/_add-volonter/_text/main_estimation_add-volonter_text.css);
-@import url(../blocks/main/_estimation/_choose/main_estimation_choose.css);
-@import url(../blocks/main/_estimation/_choose/_row/main_estimation_choose_row.css);
-@import url(../blocks/main/_estimation/_name/main_estimation_name.css);
-@import url(../blocks/main/_estimation/_text/main_estimation_text.css);
+@import url(../blocks/main/__estimation/main__estimation.css);
+@import url(../blocks/main/__estimation-warning/main__estimation-warning.css);
+@import url(../blocks/main/__estimation-warning-text/main__estimation-warning-text.css);
+@import url(../blocks/main/__estimation-warning-logo/main__estimation-warning-logo.css);
+@import url(../blocks/main/__estimation-add-volonter/main__estimation-add-volonter.css);
+@import url(../blocks/main/__estimation-add-volonter-text/main__estimation-add-volonter-text.css);
+@import url(../blocks/main/__estimation-choose/main__estimation-choose.css);
+@import url(../blocks/main/__estimation-choose-row/main__estimation-choose-row.css);
+@import url(../blocks/main/__estimation-name/main__estimation-name.css);
+@import url(../blocks/main/__estimation-text/main__estimation-text.css);
 
 @import url(./../blocks/breadcrumbs/breadcrumbs.css);
 

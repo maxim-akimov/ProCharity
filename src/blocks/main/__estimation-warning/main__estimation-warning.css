@@ -1,4 +1,4 @@
-.main_estimation_warning {
+.main__estimation-warning {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -10,7 +10,7 @@
 
 
 @media screen and (max-width: 900px) { 
-.main_estimation_warning {
+.main__estimation-warning {
       
     }
 }

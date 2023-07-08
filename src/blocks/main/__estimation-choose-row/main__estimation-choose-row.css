@@ -1,4 +1,4 @@
-.main_estimation_choose_row {
+.main__estimation-choose-row {
   display: flex;
   flex-direction: row;
   width: auto;
@@ -6,12 +6,12 @@
 
 
 @media screen and (max-width: 900px) {
-  .main_estimation_choose_row {
+  .main__estimation-choose-row {
     flex-direction: column;
     margin: 0 auto 20px;
     width: 100%;
   }
-  .main_estimation_choose_row:last-child{
+  .main__estimation-choose-row:last-child{
     margin-bottom: 24px;
   } 
 }

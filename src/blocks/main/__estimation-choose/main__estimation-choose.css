@@ -1,14 +1,14 @@
-.main_estimation_choose {
+.main__estimation-choose {
     display: flex;
     flex-direction: column;    
 }
 
-.main_estimation_choose:first-of-type {
+.main__estimation-choose:first-of-type {
     margin-top: 24px;
 }
 
 @media screen and (max-width: 900px) { 
-    .main_estimation_choose {
+    .main__estimation-choose {
     width: 100%;
     margin: 0 auto;
     }
