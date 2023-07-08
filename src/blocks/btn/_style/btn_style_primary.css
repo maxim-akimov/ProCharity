@@ -6,6 +6,7 @@
   padding: 20px 32px; 
   width: 100%;
   border: 1px solid transparent;
+  height: 56px;
 }
 
 .btn_style_primary:hover {
