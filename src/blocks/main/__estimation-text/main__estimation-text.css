@@ -1,0 +1,25 @@
+.main__estimation-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(88, 100, 106, 1);
+  margin: 0;
+  padding-right: 32px;
+  padding-bottom: 20px;
+  height: auto;
+  width: 352px; /*50%;*/
+}
+
+ @media screen and (max-width: 1024px) {
+  .main__estimation-text {
+    padding-right: max(10px, calc(32 * (100vw - 796px) / (1024 - 796)));
+  }
+} 
+
+@media screen and (max-width: 900px) {
+  .main__estimation-text {
+    width: 100%;
+    padding-bottom: 12px;
+  }
+} 
+

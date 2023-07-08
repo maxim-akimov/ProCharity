@@ -1,0 +1,10 @@
+.account-сontent__img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .account-сontent__img {
+    width: 32px;;
+  }
+}

@@ -1,0 +1,9 @@
+.main__estimation-warning-logo {
+    margin: 16px 16px 32px;
+}
+
+@media screen and (max-width: 900px) { 
+    .main__estimation-warning-logo {
+        margin: 16px 16px auto;
+    }
+}

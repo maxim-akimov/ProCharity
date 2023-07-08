@@ -1,0 +1,10 @@
+.main__estimation {
+    max-width: 736px;
+}
+
+
+@media screen and (max-width: 900px) { 
+    .main__estimation {
+        width: 100%;   
+    }
+}

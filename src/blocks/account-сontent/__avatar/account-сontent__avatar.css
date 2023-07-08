@@ -1,0 +1,14 @@
+.account-btn__avatar {
+  background: url(../../../images/avatar-placeholder.svg) no-repeat center center;
+  border-radius: 0 24px 24px 0;
+  height: 48px;
+  width: 48px;
+}
+
+@media screen and (max-width: 900px) {
+  .account-btn__avatar {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+  }
+}

@@ -10,13 +10,13 @@
   justify-content: center;
   line-height: 24px;
   margin: 0 auto;
-  min-width: 350px;
+  min-width: 300px;
   padding: 0 120px 120px 24px;
   row-gap: 24px;
   width: 100%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {  /*Была точка перегиба 900px!*/
   .main {
     padding-right: 24px;
   }

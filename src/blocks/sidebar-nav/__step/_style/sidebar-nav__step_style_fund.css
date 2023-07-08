@@ -1,0 +1,10 @@
+.sidebar-nav__step_style_fund {
+  background-color: #72D0DC; /*свойство background перезатирает свойство background-image*/
+  color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar-nav__step_style_fund {
+    min-width: 96px;
+  }
+}

@@ -1,0 +1,14 @@
+.account-сontent__content_type_default {
+  background: #E6560A;
+  border-right: solid 2px #7DCDD7;
+  min-height: 48px;
+}
+
+@media screen and (max-width: 900px) {
+  .account-сontent__content_type_default {
+    background: url(../../../../images/add.svg) no-repeat center center, #E6560A;
+    height: 32px;
+    min-height: 32px;
+    width: 32px;
+  }
+}

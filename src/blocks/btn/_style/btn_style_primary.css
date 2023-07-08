@@ -1,36 +1,42 @@
 .btn_style_primary {
-  background: #E65609;
+  background: #e65609;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: max-content;
-  padding: 16px 28px;
+  padding: 20px 32px; 
   width: 100%;
-  border: solid 2px transparent;
+  border: 1px solid transparent;
+  height: 56px;
 }
 
 .btn_style_primary:hover {
-  background: #CC4D00;
+  background: #cc4d00;
   opacity: 1;
 }
 
 .btn_style_primary:focus {
-  background: #E65609;
-  border: 2px solid #AA4000;
+  background: #e65609;
+  border: 1px solid #aa4000;
 }
 
 .btn_style_primary:active {
-  background: #AA4000;
+  background: #aa4000;
 }
 
-.btn_style_primary:disabled {
-  opacity: .6;
+.btn_style_primary:disabled,
+.btn_style_primary:disabled:hover,
+.btn_style_primary:disabled:focus,
+.btn_style_primary:disabled:active {
+  background: #e65609;
+  opacity: 0.6;
+  cursor: default;
 }
 
 @media screen and (max-width: 900px) {
   .btn_style_primary {
-    margin: 0 auto;
+    margin-top: 10px;
+    /* margin: 0 auto; */
     max-width: 100%;
     order: 0;
-    width: 100%;
   }
 }
