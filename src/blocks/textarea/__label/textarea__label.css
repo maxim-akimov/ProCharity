@@ -6,10 +6,16 @@
   font-weight: 400;
   left: 16px;
   line-height: 16px;
-  position: absolute;
-  top: 7px;
 }
 
-.textarea__field:not(:placeholder-shown) + .textarea__label {
+@media screen and (max-width: 900px) {
+  .textarea__label {
+    display: flex;
+    position: absolute;
+    top: 7px;
+  }
+}
+
+.textarea__field:not(:placeholder-shown)+.textarea__label {
   display: flex;
 }

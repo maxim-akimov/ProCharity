@@ -5,18 +5,15 @@
   color: rgba(88, 100, 106, 1);
   margin: 0;
   padding-right: 32px;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
   height: auto;
-  max-width: 352px;
-
-
+  width: 50%;
 }
-
 
  @media screen and (max-width: 1024px) {
   .main_estimation_text {
     padding-right: max(10px, calc(32 * (100vw - 796px) / (1024 - 796)));
-    width: 290px;
+    /* width: 290px; */
   }
 } 
 
