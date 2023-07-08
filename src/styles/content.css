@@ -235,20 +235,18 @@
 @import url(../blocks/custom-select/__btn/_type/custom-select__btn_type_close.css);
 @import url(../blocks/custom-select/__btn/_type/custom-select__btn_type_reset.css);
 
+/* Оценка */
 
-
+@import url(../blocks/radio-switcher-estimation/radio-switcher-estimation.css);
+@import url(../blocks/radio-switcher-estimation/__label/radio-switcher-estimation__label.css);
+@import url(../blocks/radio-switcher-estimation/__input/radio-switcher-estimation__input.css);
+/* @import url(../blocks/radio-switcher/__label/radio-switcher__label.css); */
 
 /* Отображение форм */
 @import url(../blocks/radio-switcher/radio-switcher.css);
 
 @import url(../blocks/radio-switcher/__input/radio-switcher__input.css);
 @import url(../blocks/radio-switcher/__label/radio-switcher__label.css);
-
-
-@import url(../blocks/radio-switcher/_main/radio-switcher_main.css);
-
-@import url(../blocks/radio-switcher/_main/__label/radio-switcher_main__label.css);
-
 
 @import url(../blocks/radio-switcher/__input/radio-switcher__input.css);
 
