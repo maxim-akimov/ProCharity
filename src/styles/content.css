@@ -45,6 +45,9 @@
 @import url(../blocks/main/__estimation-choose-row/main__estimation-choose-row.css);
 @import url(../blocks/main/__estimation-name/main__estimation-name.css);
 @import url(../blocks/main/__estimation-text/main__estimation-text.css);
+@import url(../blocks/main/__estimation-add/main__estimation-add.css);
+@import url(../blocks/main/__estimation-submit/main__estimation-submit.css);
+@import url(../blocks/main/__estimation-text-mobile-inline/main__estimation-text-mobile-inline.css);
 
 @import url(./../blocks/breadcrumbs/breadcrumbs.css);
 
@@ -97,6 +100,7 @@
 @import url(../blocks/sidebar-nav/__item/_type/sidebar-nav__item_type_current.css);
 @import url(../blocks/sidebar-nav/__item/_type/sidebar-nav__item_type_mobile-hidden.css);
 @import url(../blocks/sidebar-nav/__item-text/sidebar-nav__item-text.css);
+@import url(../blocks/sidebar-nav/__item-text/_type/sidebar-nav__item-text_type_current.css);
 @import url(../blocks/sidebar-nav/__link/sidebar-nav__link.css);
 @import url(../blocks/sidebar-nav/__step/sidebar-nav__step.css);
 @import url(../blocks/sidebar-nav/__step/_hidden/sidebar-nav__step_hidden.css);
@@ -123,7 +127,7 @@
 
 
 
-@import url(../blocks/sidebar-nav/__style/sidebar-nav__style_evaluation.css);
+@import url(../blocks/sidebar-nav/_style/sidebar-nav_style_evaluation.css);
 
 
 @import url(../blocks/content/content.css);

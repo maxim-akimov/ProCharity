@@ -1,4 +1,4 @@
-.main__estimation-submit {
+.main__estimation-add{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -9,7 +9,7 @@
 
 
 @media screen and (max-width: 900px) { 
-    .main__estimation-submit {
+    .main__estimation-add{
         flex-direction: column;
         width: 100%;
         margin: 0 auto;
