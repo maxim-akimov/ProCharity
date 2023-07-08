@@ -35,6 +35,8 @@
 
 @import url(../blocks/account-btn/account-btn.css);
 
+@import url(../blocks/account-btn/account-btn__task/account-btn__task.css);
+
 @import url(../blocks/account-btn/__text/account-btn__text.css);
 
 @import url(../blocks/account-btn/__content/account-btn__content.css);
@@ -45,6 +47,23 @@
 @import url(../blocks/account-btn/__avatar/_type/account-btn__avatar_type_default.css);
 
 @import url(../blocks/account-btn/__img/account-btn__img.css);
+
+
+/* account-сontent */
+@import url(../blocks/account-сontent/account-сontent.css);
+
+@import url(../blocks/account-сontent/account-сontent__task/account-сontent__task.css);
+
+@import url(../blocks/account-сontent/__text/account-сontent__text.css);
+
+@import url(../blocks/account-сontent/__content/account-сontent__content.css);
+@import url(../blocks/account-сontent/__content/_type/account-сontent__content_type_default.css);
+@import url(../blocks/account-сontent/__content/_type/account-сontent__content_type_lk.css);
+
+@import url(../blocks/account-сontent/__avatar/account-сontent__avatar.css);
+@import url(../blocks/account-сontent/__avatar/_type/account-сontent__avatar_type_default.css);
+
+@import url(../blocks/account-сontent/__img/account-сontent__img.css);
 
 
 
