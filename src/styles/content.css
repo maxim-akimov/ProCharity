@@ -300,6 +300,10 @@
 @import url(../blocks/fieldset/_template/fieldset_template_space-between.css);
 @import url(../blocks/fieldset/_template/fieldset_template_hours.css);
 
+@import url(../blocks/fieldset/__input-type-hours/fieldset__input-type-hours.css);
+@import url(../blocks/fieldset/__style-hours/fieldset__style-hours.css);
+@import url(../blocks/fieldset/__input-btn/fieldset__input-btn.css);
+@import url(../blocks/fieldset/__input-btn/_type/fieldset__input-btn_type_close.css);
 
 /* textarea */
 @import url(../blocks/textarea/textarea.css);
