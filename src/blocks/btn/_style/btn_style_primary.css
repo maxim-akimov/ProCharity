@@ -33,7 +33,7 @@
 
 @media screen and (max-width: 900px) {
   .btn_style_primary {
-    margin-top: 14px;
+    margin-top: 10px;
     /* margin: 0 auto; */
     max-width: 100%;
     order: 0;
