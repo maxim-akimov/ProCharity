@@ -3,11 +3,8 @@
   grid-template-columns: 256px auto;
 }
 
-
-
 @media screen and (max-width: 1080px) {
   .main_template_volunteer {
-    grid-template-columns: max(160px, calc(256*(100vw - 796px)/(1080 - 796))) minmax(min-content, 736px);
     grid-template-columns: max(200px, calc(256*(100vw - 796px)/(1080 - 796))) minmax(min-content, 736px);
   }
 }
