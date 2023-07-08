@@ -84,9 +84,6 @@
 
 @import url(../blocks/btn/btn.css);
 
-@import url(../blocks/btn/_field/btn_field.css);
-@import url(../blocks/btn/_field/_add/btn_field_add.css);
-
 @import url(../blocks/btn/_choose-block/btn_choose-block.css);
 
 @import url(../blocks/btn/_type/btn_type_refresh.css);
